@@ -2,7 +2,7 @@
 
 ## Note
 
-Thanks for [approve](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95) from author of [Genshin-Impact-Wish-Simulator](!https://github.com/Mantan21/Genshin-Impact-Wish-Simulator) 
+> Thanks for [approve](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95) from author of [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator).
 
 ### 前端开发
 
