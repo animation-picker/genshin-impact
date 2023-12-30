@@ -1,0 +1,385 @@
+{
+	"data": [
+		{
+			"date": "01-Sep-2021",
+			"description": [
+				"<strong> Raiden Shogun and Kujou Sara </strong> Banner was here !",
+				"<strong> Engulfing Lightning </strong> Weapon Banner has been added"
+			]
+		},
+		{
+			"date": "10-Sep-2021",
+			"description": [
+				"Now you can <strong>wishing on previous banner</strong> by clicking <strong>(x)</strong> button on the top right of the page",
+				"Now you can <strong>create screenshot and link to share</strong> when wishing"
+			]
+		},
+		{
+			"date": "21-Sep-2021",
+			"description": [
+				"<strong> Sangonomia Kokomi </strong> is ready to pull !",
+				"<strong> Everlasting Moonglow </strong> Weapon Banner has been added"
+			]
+		},
+		{
+			"date": "30-Sep-2021",
+			"description": [
+				"Add more previous banner, <strong> Eula, Zhongli, Tartaglia/Childe, Albedo, Ganyu, Xiao, Hu Tao, Venti </strong> is ready to pull ! <br/> Click <strong>(x)</strong> button on the top right of the page to change the banner"
+			]
+		},
+		{
+			"date": "13-Oct-2021",
+			"description": [
+				"<strong> Tartaglia </strong> is ready to pull !",
+				"<strong> Polar Star </strong> Weapon Banner has been added"
+			]
+		},
+		{
+			"date": "2-Nov-2021",
+			"description": [
+				"<strong> Hu Tao </strong> Character Banner has been added !",
+				"<strong> Thoma </strong> is ready to pull !",
+				"<strong> Staff of Homma </strong> & <strong>Elegy for The End</strong> Weapon Banner has been added"
+			]
+		},
+		{
+			"date": "24-Nov-2021",
+			"description": [
+				"<strong> Albedo </strong> Banner was here !",
+				"<strong> Eula </strong> Banner also here !",
+				"<strong> Freedom Sworn & Song of Broken Pines </strong> Weapon Banner has been added"
+			]
+		},
+		{
+			"date": "08-Des-2021",
+			"description": [
+				"<strong>Fixing Bugs</strong> of History.",
+				"if you find any error, follow this steps to reset browser cache specialy only for WIsh Simulator Site . Open Inpect ELement ( CTRL + Shift i ) -> Application -> Storage -> Click on \"Clear Site Data\" Button",
+				"Ignore the steps above if this is the first time you visit this site or if you already do reset"
+			]
+		},
+		{
+			"date": "14-Des-2021",
+			"description": [
+				"<strong> Arrataki Itto </strong> character Banner is ready to pull",
+				"<strong> Redhorn Stonethresher </strong> Weapon Banner has been added !"
+			]
+		},
+		{
+			"date": "29-Des-2021",
+			"description": ["Implement Epitomized Path System to Weapon Banner for patch 2.0 and above"]
+		},
+		{
+			"date": "05-Jan-2022",
+			"description": [
+				"Now you can pull <strong> Shenhe </strong> and <strong>Yunjin</strong> the Best Waifu!",
+				"<strong>Calamity Queller</strong> Weapon Banner was added"
+			]
+		},
+		{
+			"date": "25-Jan-2022",
+			"description": [
+				"<strong>Gong Xi Fa Cai</strong>. Wish you luck on Lantern Rite event",
+				"<strong> Zhongli and Ganyu Rerun Banner </strong> Already out here !",
+				"<strong> Vortex and Amos </strong> Weapon Rerun Banner is ready to pull too !"
+			]
+		},
+		{
+			"date": "11-Feb-2022",
+			"description": [
+				"Now you can pull without worry about running out of fate, just activate the <b>Unlimited Fates Option</b> in Menu by clicking the <b>(?)</b> button on top of the page"
+			]
+		},
+		{
+			"date": "16-Feb-2022",
+			"description": [
+				"Event Banner Updated, Now you can pull <strong> Yae Miko </strong> here !",
+				"Yae Miko signature Weapon, <strong>Kagura's Verity</strong> is ready to pull too !",
+				"Inventory Updated, Now You can show all Characters and Weapons both you already got or not"
+			]
+		},
+		{
+			"date": "08-Mar-2022",
+			"description": [
+				"<strong> Raiden Shogun Rerun </strong> Banner was here !",
+				"<strong> Sangonomia Kokomi </strong> is ready to pull too!",
+				"Weapon Banner Updated, <b> Engulfing Lightning </b> and <b>Everlasting Moonglow</b> already added"
+			]
+		},
+		{
+			"date": "23-Mar-2022",
+			"featured": true,
+			"description": [
+				"<strong>Due to high number of visitors</strong>, Our monthly bandwidth also increased. We need to upgrade the hosting plan to keep this site alive. So <strong>We'll show some ads </strong> on this site. <br/> We're sorry to you, actually we don't want to ruin your wishing experience. If you feel annoyed with ads, feel free to use Ad blocker, we will not forbit you",
+				"Or for other solution, you can <strong> <a href=\"https://ko-fi.com/post/AdFree-Wish-Simulator-Enjoy-Simulator-Without-Ads-G2G2DQ57O\" target=\"_blank\"> join membership here</a></strong> to get opportunity to use <strong>Simulator without ads</strong>!"
+			]
+		},
+		{
+			"date": "28-Mar-2022",
+			"description": [
+				"<strong> Kamisato Ayato </strong> Banner was here !",
+				"<strong> Venti </strong> is ready to pull too!",
+				"Weapon Banner Updated, <b> Haran Geppaku Futsu </b> and <b>Elegy for the End</b> already added"
+			]
+		},
+		{
+			"date": "17-Apr-2022",
+			"description": [
+				"<strong> Kamisato Ayaka Rerun </strong> Banner already out !",
+				"Weapon Banner Updated, <b> Mistsplitter Reforged </b> and <b>The Unforged</b> was here too!"
+			]
+		},
+		{
+			"date": "20-Apr-2022",
+			"description": [
+				"We recently had to <strong>migrate our server </strong> for other reasons, so the old wishing histories isn't being tracked on the new server, We apologize for the inconvenience. We hope it doesn't happen again in the future, so you can enjoy the simulator peacefully"
+			]
+		},
+		{
+			"date": "29-May-2022",
+			"description": [
+				"<strong> Yelan </strong> Banner already out !",
+				"<strong> Xiao 3rd Rerun </strong> Banner was here !",
+				"Weapon Banner Updated, <b> Aqua Simulacra </b> and <b>Primordial Jade Winged Spear</b> are ready to pull !"
+			]
+		},
+		{
+			"date": "16-Jun-2022",
+			"description": [
+				"<strong> Arataki Itto Rerun </strong> Banner was here !",
+				"Weapon Banner Updated, <b> Redhorn Stonesthresher </b> and <b>Memory of Dust</b> are ready to pull too!"
+			]
+		},
+		{
+			"date": "8-Jul-2022",
+			"description": [
+				"<strong> New!!! </strong> Now you can purchase <strong> Character's Outfit </strong> in the shop. You also can set the costume splash art as result of your wish if you want :D",
+				"<strong> New!!! </strong> Now Blessing of the Welkin Moon is available to purchase"
+			]
+		},
+		{
+			"date": "12-Jul-2022",
+			"description": [
+				"<strong>Kazuha 2nd Rerun </strong> and <strong>Klee 3rd Rerun </strong> Banner was here !",
+				"Weapon Banner Updated, <b> Freedom Sworn </b> and <b>Lost Prayers to the Sacred Winds</b> are ready to pull too!",
+				"New Outfit released! <strong>Red Dead of Night</strong> for Diluc and <strong>Ein Immernachtstraum</strong> for Fischl, purchasable on shop."
+			]
+		},
+		{
+			"date": "21-Jul-2022",
+			"description": [
+				"<strong>Translation Features</strong> is live now, But  only <strong>EN</strong>, <b>RU</b> <strong>CN-Simplified</strong> and <strong>ID</strong> are available for now, if You want to contribute to add more translation, please go to <u><a href=\"https://github.com/AguzzTN54/Genshin-Impact-Wish-Simulator\" target=\"_blank\">Github Repository </a></u>"
+			]
+		},
+		{
+			"date": "28-Jul-2022",
+			"description": [
+				"<strong> Yoimiya 2nd Rerun </strong> Banner already out !",
+				"Weapon Banner Updated, <b> Thundering Pulse </b> and <b>Summit Shaper</b> are ready to pull too !"
+			]
+		},
+		{
+			"date": "22-Agu-2022",
+			"description": [
+				"<strong> WELCOME to SUMERU !!</strong>",
+				"<strong> Tighnari </strong> Banner already out, with new 4★ Character \"<b>Collei</b>\"",
+				"Weapon Banner Updated, <b> Hunter's Path </b> and <b>Vortex Vanquisher</b> are ready to pull too !"
+			]
+		},
+		{
+			"date": "08-Sep-2022",
+			"description": [
+				"<strong> Kokomi 3rd Rerun </strong> and <strong> Ganyu 3rd Rerun </strong> Banner already out !",
+				"Weapon Banner Updated, <b> Amos Bow </b> and <b>Everlasting Moonglow</b> are ready to pull too !"
+			]
+		},
+		{
+			"date": "26-Sep-2022",
+			"description": [
+				"<strong> Cyno </strong> and <strong> Venti 4th Rerun </strong> Banners already out, with new 4★ Character \"<b>Candace</b>\"",
+				"Weapon Banner Updated, <b> Staff of the Scarlet Sands </b> and <b>Elegy for The End</b> are ready to pull too !",
+				"Now you can obtain Tighnari when you lose 50:50 or when you pull Standard Banner starts from version 3.1"
+			]
+		},
+		{
+			"date": "11-Oct-2022",
+			"description": [
+				"<strong> Nilou </strong> and <strong> Albedo 3rd Rerun </strong> Banners already out",
+				"Weapon Banner Updated, <b> Key of Khaj-Nisut </b> and <b>Primordial Jade Cutter</b> are ready to pull too !",
+				"New 4★ Sumeru Weapon Series: <strong>Xiphos' Moonlight</strong> and <strong>Wandering Evenstar</strong>"
+			]
+		},
+		{
+			"date": "31-Oct-2022",
+			"description": [
+				"New Character <strong> Nahida </strong> and <strong> Yoimiya 3rd Rerun </strong> Banners already out",
+				"Weapon Banner Updated, <b> A Thousand Floating Dreams </b> and <b>Thundering Pulse</b> are ready to pull too !"
+			]
+		},
+		{
+			"date": "15-Nov-2022",
+			"description": [
+				"<strong> Yae Miko 2nd Rerun</strong> and <strong> Tartaglia 3rd Rerun </strong> Banners are ready",
+				"New Character <strong> Layla </strong>",
+				"Weapon Banner Updated, <b> Kagura's Verity </b> and <b>Polar Star</b> are ready to pull too !"
+			]
+		},
+		{
+			"date": "18-Nov-2022",
+			"featured": true,
+			"description": [
+				"I'm happy to announce that <b> WishSimulator.App already listed on Google Play Store</b>!!! You can get it <a href=\"https://play.google.com/store/apps/details?id=twa.wishsimulator.app\" target=\"_blank\"><b>here</b> </a> <br/> But actually I still prefer to use and install directly from this web. It's literally use the same technology. I'm not sure You'll feel the difference"
+			]
+		},
+		{
+			"date": "5-Dec-2022",
+			"description": [
+				"Add <strong> Itto 3rd Rerun </strong> Banners",
+				"Add New Character: <strong> Wanderer ( 5★ ) </strong>",
+				"Add New Character: <strong> Faruzan ( 4★ )</strong>",
+				"Update Weapon Banner: <b> Tulaytullah's Remembrance </b> and <b>Redhorn Stonethresher</b>"
+			]
+		},
+		{
+			"date": "23-Dec-2022",
+			"description": [
+				"<strong> 𒀭*𒀮 ๖ۣۜH𝐚𝒑𝒑ɣ ቢēⴓ ɣē𝐚ṛ 2023 𒀮*𒀭 </strong>",
+				"Add <strong> Raiden Shogun</strong> and <strong> Ayato</strong> rerun banners",
+				"Update Weapon Banner: <b> Engulfing Lightning </b> and <b>Haran Geppaku Futsu</b>"
+			]
+		},
+		{
+			"date": "17-Jan-2023",
+			"description": [
+				"Add <strong> Xiao 3rd Rerun </strong> Banner",
+				"Add New Character: <strong> Alhaitham ( 5★ )</strong>",
+				"Add New Character: <strong> Yaoyao ( 4★ )</strong>",
+				"Update Weapon Banner: <b> Light of Foliar Incision </b> and <b>Primordial Jade Winged-Spear</b>",
+				"Add New Character Outfits: <b>Springbloom Missive</b> for Ayaka and <b>A Sobriquet Under Shade </b> for Lisa."
+			]
+		},
+		{
+			"date": "1-Feb-2023",
+			"description": [
+				"Add <strong> Hu Tao 2nd rerun </strong> & <strong> Yelan 1st rerun</strong>",
+				"Add Weapon Banner: <b> Staff of Homa </b> and <b>Aqua Simulacra</b>"
+			]
+		},
+		{
+			"date": "27-Feb-2023",
+			"description": [
+				"Add <b>Cyno 1st Rerun</b> Banner",
+				"Add New Character: <b>Dehya ( 5★ )</b>",
+				"Add New Weapon: <b> Beacon of The Reed Sea ( 5★ )</b>"
+			]
+		},
+		{
+			"date": "16-Mar-2023",
+			"description": [
+				"Add <b>Shenhe 1st Rerun</b> Banner",
+				"Add <b>Ayaka 2nd Rerun</b> Banner",
+				"Add New Character: <b>Mika ( 4★ )</b>",
+				"Update Weapon Banner: <b> Mistsplitter Reforged </b> and <b>Qalamity Queller</b>"
+			]
+		},
+		{
+			"date": "11-Apr-2023",
+			"description": [
+				"Add <b>Nahida 1st Rerun</b> Banner",
+				"Add <b>Nilou 1st Rerun</b> Banner",
+				"Update Weapon Banner: <b> Key of Khaj-Nisut </b> and <b>A Thousand Floating Dreams</b>"
+			]
+		},
+		{
+			"date": "1-May-2023",
+			"description": [
+				"Add New Character: <b>Baizhu ( 5★ )</b>",
+				"Add New Weapon: <b> Jadefall's Splendor ( 5★ )</b>",
+				"Add <b>Ganyu 3rd Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "22-May-2023",
+			"description": [
+				"Add New Character: <b>Kirara ( 4★ )</b>",
+				"Add <b>Yoimiya 3rd Rerun</b> Banner",
+				"Add <b>Yae Miko 2nd Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "23-May-2023",
+			"featured": true,
+			"description": [
+				"<b>LIVE NOW!!!</b> <br/>Gacha Simulator for Honkai: Star Rail 👉 <b><a href='https://hsr.wishsimulator.app' target='_blank'>HSR.WishSimulator.App </a></b> <br/> <img src='https://hsr.wishsimulator.app/meta-picture.jpg' style='width:90%; margin: .5rem 0' alt='HSR Wish Simulator' />"
+			]
+		},
+		{
+			"date": "09-Jun-2023",
+			"description": [
+				"Add <b>Alhaitam 1st Rerun</b> Banner",
+				"Add <b>Kazuha 3rd Rerun</b> Banner",
+				"Update Weapon Banner: <b> Light in Foliar </b> and <b>Freedom-Sworn</b>"
+			]
+		},
+		{
+			"date": "04-Jul-2023",
+			"description": [
+				"Add <b>Eula 2nd Rerun</b> Banner",
+				"Add <b>Klee 3rd Rerun</b> Banner",
+				"Update Weapon Banner: <b> Song of Broken Pines </b> and <b>Lost Prayers to the Sacred Winds</b>",
+				"New Character Outfits: <b>Blossoming Starlight</b> for Klee and <b>Sailwind Shadow </b> for Kaeya."
+			]
+		},
+		{
+			"date": "20-Jul-2023",
+			"description": [
+				"Add <b>Sangonomiya Kokomi 3rd Rerun</b> Banner",
+				"Add <b>Wanderer 1st Rerun</b> Banner",
+				"Update Weapon Banner: <b>Tulaytullah's Remembrance </b> and <b>Everlasting Moonglow</b>"
+			]
+		},
+		{
+			"date": "14-Aug-2023",
+			"description": [
+				"<b>WELCOME TO FONTAINE!</b>",
+				"New Character: <b>Lyney ( 5★ )</b> & <b>Lynette ( 4★ )</b>",
+				"New Weapon: <b>The First Great Magic  ( 5★ ) </b>",
+				"Add Yelan's 2nd Rerun",
+				"<b>New Feature:</b> Now you can <b>Customize the Probabilities</b> and Control how <b>many roll in one multi</b>",
+				"<b>New Feature:</b> Hotkeys/Shortcut have been added, Try to press <b>[ENTER]</b> to \"<u>Wish</u>\" or \"<u>Confirm</u>\" and <b>[ESC]</b> to \"<u>Skip</u>\", \"<u>Cancel</u>\" or \"<u>Close</u>\". More Hotkeys will be added in the future"
+			]
+		},
+		{
+			"date": "31-Aug-2023",
+			"description": [
+				"New Character: <b>Freminet ( 4★ )</b>",
+				"Add <b>Zhongli</b> & <b>Tartaglia</b> <b>4rd Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "25-Sep-2023",
+			"description": [
+				"New Character: <b>Neuvillette ( 5★ )</b>",
+				"Add <b>Hu Tao 4rd Rerun</b> Banner",
+				"Top-Up reset Bonus"
+			]
+		},
+		{
+			"date": "12-Oct-2023",
+			"description": [
+				"New Character: <b>Wriothesley ( 5★ )</b>",
+				"Add <b>Venti 5th Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "06-Nov-2023",
+			"featured": true,
+			"description": [
+				"New Character: <b>Furina ( 5★ )</b>",
+				"New Character: <b>Charlotte ( 4★ )</b>",
+				"New Weapon: <b>Splendor of Tranquil Waters (Sword 5★)</b>",
+				"Add <b>Baizhu 1st Rerun</b> Banner"
+			]
+		}
+	]
+}

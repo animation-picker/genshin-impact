@@ -1,0 +1,382 @@
+{
+	"a-thousand-floating-dreams": "Sonhos Flutuantes das Mil Noites",
+	"akuoumaru": "Akuoumaru",
+	"alley-hunter": "Caçador do Beco",
+	"amos-bow": "Arco de Amos",
+	"aqua-simulacra": "Aqua Simulacra",
+	"aquila-favonia": "Falcão",
+	"beacon-of-the-reed-sea": "Sinal dos Mares",
+	"black-tassel": "Borla Preta",
+	"bloodtained-greatsword": "Espadão Sangrento",
+	"calamity-queller": "Subjugadora de Calamidades",
+	"cashflow-supervision": "Supervisão de Caixa",
+	"cool-steel": "Lâmina Fria",
+	"debate-club": "Pacifista",
+	"dragon_s-bane": "Perdição do Dragão",
+	"elegy-for-the-end": "Elegia do Suspiro Final",
+	"emerald-orb": "Orbe Esmeralda",
+	"engulfing-lightning": "Luz do Cortador de Grama",
+	"everlasting-moonglow": "Fumetsu Gekka",
+	"eye-of-perception": "Olho da Percepção",
+	"favonius-codex": "Codex de Favonius",
+	"favonius-greatsword": "Espadão de Favonius",
+	"favonius-lance": "Lança de Favonius",
+	"favonius-sword": "Espada de Favonius",
+	"favonius-warbow": "Arco de Favonius",
+	"ferrous-shadow": "Espadão de Ferro Branco",
+	"freedom-sworn": "Juramento pela Liberdade",
+	"haran-geppaku-futsu": "Maremoto da Lua de Futsu",
+	"harbinger-of-dawn": "Prenúncio do Alvorecer",
+	"hunter_s-path": "Caminho do Caçador",
+	"jadefall-splendor": "Esplendor Índigo",
+	"kagura_s-verity": "Prova de Kagura",
+	"key-of-khaj-nisut": "Chave de Hierofania",
+	"light-of-foliar-incision": "Luz das Folhas Cortadas",
+	"lion_s-roar": "Rugido do Leão",
+	"lithic-blade": "Espada Antiga de Millelith",
+	"lithic-spear": "Lança de Millelith",
+	"lost-prayer-to-the-sacred-winds": "Oração Perdida aos Ventos Sagrados",
+	"magic-guide": "Guia de Magia",
+	"makhaira-aquamarine": "Água-Marinha de Mahara",
+	"memory-of-dust": "Memória da Poeira",
+	"mistsplitter-reforged": "Cortadora da Neblina Reforjada",
+	"mitternachts-waltz": "Valsa do Crepúsculo",
+	"mouun_s-moon": "Lua de Mouun",
+	"polar-star": "Polar Star",
+	"portable-power-saw": "Serra Elétrica Portátil",
+	"primordial-jade-cutter": "Cortador de Jade Primordial",
+	"primordial-jade-winged-spear": "Lança de Jade Primitiva",
+	"prospector-drill": "Broca do Prospector",
+	"rainslasher": "Segadeira da Chuva",
+	"range-gauge": "Medidor de Alcance",
+	"raven-bow": "Arco de Corvo",
+	"redhorn-stonethresher": "Chifres Vermelhos Destruidores de Pedras",
+	"rust": "Enferrujado",
+	"sacrificial-bow": "Arco do Sacrifício",
+	"sacrificial-fragments": "Memórias de Sacrifício",
+	"sacrificial-greatsword": "Espadão do Sacrifício",
+	"sacrificial-sword": "Espada do Sacrifício",
+	"sharpshooter_s-oath": "Juramento de Sagitário",
+	"skyrider-sword": "Espadão do Cavaleiro do Céu",
+	"skyward-atlas": "Atlas Celestial",
+	"skyward-blade": "Espada Celestial",
+	"skyward-harp": "Harpa Celestial",
+	"skyward-pride": "Orgulho Celestial",
+	"skyward-spine": "Espinha Celestial",
+	"slingshot": "Estilingue",
+	"song-of-broken-pines": "Canção dos Pinhos",
+	"splendor-of-tranquil-waters": "Esplendor das Águas Silenciosas",
+	"staff-of-homa": "Báculo de Homa",
+	"staff-of-the-scarlet-sands": "Báculo das Areias Escarlates",
+	"summit-shaper": "Cortador de Montanhas",
+	"the-alley-flash": "Brilho do Beco",
+	"the-bell": "O Sino",
+	"the-dockhands-assistant": "A Doca",
+	"the-first-great-magic": "Arcana Original",
+	"the-flute": "The Flute",
+	"the-stringless": "Último Acorde",
+	"the-unforged": "Espada Áspera",
+	"the-widsith": "Sinfonia dos Indolentes",
+	"thrilling-tales-of-dragon-slayers": "Histórias Extraordinárias de Caçadores de Dragões",
+	"thundering-pulse": "Agitação Trovejante",
+	"tome-of-the-eternal-flow": "Rito do Fluxo Eterno",
+	"tulaytullah_s-remembrance": "Reminiscências de Tulaytullah",
+	"vortex-vanquisher": "Perfuradora Prismática",
+	"wavebreaker_s-fin": "Barbatana do Quebra Ondas",
+	"wine-and-song": "Vinho e Música",
+	"wandering-evenstar": "Estrela Itinerante",
+	"wolf_s-gravestone": "Túmulo do Lobo",
+	"xiphos-moonlight": "Luz Lunar de Xiphos",
+	"albedo": {
+		"name": "Albedo",
+		"title": "Príncipe do Giz"
+	},
+	"alhaitham": {
+		"name": "Alhaitham",
+		"title": "Reprimenda Instrutiva"
+	},
+	"amber": {
+		"name": "Amber",
+		"title": "Aventureira"
+	},
+	"arataki-itto": {
+		"name": "Arataki Itto",
+		"title": "Heroísmo de Hanamizaka"
+	},
+	"baizhu": {
+		"name": "Baizhu",
+		"title": "Além da Mortalidade"
+	},
+	"barbara": {
+		"name": "Barbara",
+		"title": "Ídolo Radiante"
+	},
+	"beidou": {
+		"name": "Beidou",
+		"title": "Rainha do Mar Sem Coroa"
+	},
+	"bennett": {
+		"name": "Bennett",
+		"title": "Julgamento por Fogo"
+	},
+	"candace": {
+		"name": "Candace",
+		"title": "Promessa Dourada"
+	},
+	"charlotte": {
+		"name": "Charlotte",
+		"title": "Lentes em Busca da Verdade"
+	},
+	"chongyun": {
+		"name": "Chongyun",
+		"title": "Pegadas na Neve"
+	},
+	"collei": {
+		"name": "Collei",
+		"title": "Broto de Renascimento"
+	},
+	"cyno": {
+		"name": "Cyno",
+		"title": "Juiz dos Segredos"
+	},
+	"dehya": {
+		"name": "Dehya",
+		"title": "Leoa Flamejante"
+	},
+	"diluc": {
+		"name": "Diluc",
+		"title": "Herdeiro do Adega do Alvorecer"
+	},
+	"diona": {
+		"name": "Diona",
+		"title": "Coquetel da Cauda do Gato"
+	},
+	"dori": {
+		"name": "Dori",
+		"title": "Tesouro do Jardim dos Sonhos"
+	},
+	"eula": {
+		"name": "Eula",
+		"title": "Dança da Onda Quebradora"
+	},
+	"faruzan": {
+		"name": "Faruzan",
+		"title": "Maquinista Enigmática"
+	},
+	"fischl": {
+		"name": "Fischl",
+		"title": "Contemplações da Estrela Noturna"
+	},
+	"freminet": {
+		"name": "Freminet",
+		"title": "Ansioso por Sonhos Profundos"
+	},
+	"furina": {
+		"name": "Furina",
+		"title": "Dançarina Solitária Eterna"
+	},
+	"ganyu": {
+		"name": "Ganyu",
+		"title": "Defensora Devota"
+	},
+	"gorou": {
+		"name": "Gorou",
+		"title": "Guerreiro Canino"
+	},
+	"hu-tao": {
+		"name": "Hu Tao",
+		"title": "Fragrância de Ameixa Descongelada"
+	},
+	"jean": {
+		"name": "Jean",
+		"title": "Cavaleira de Dandelion"
+	},
+	"kaedehara-kazuha": {
+		"name": "Kaedehara Kazuha",
+		"title": "Samurai Errante que se Separa da sua Terra"
+	},
+	"kaeya": {
+		"name": "Kaeya",
+		"title": "Capitão de Cavalaria"
+	},
+	"kamisato-ayaka": {
+		"name": "Kamisato Ayaka",
+		"title": "Transcendência Solitária"
+	},
+	"kamisato-ayato": {
+		"name": "Kamisato Ayato",
+		"title": "Pilar da Fortaleza"
+	},
+	"kaveh": {
+		"name": "Kaveh",
+		"title": "Refletor Empíreo"
+	},
+	"keqing": {
+		"name": "Keqing",
+		"title": "Trovão Condutor"
+	},
+	"kirara": {
+		"name": "Kirara",
+		"title": "Gatinha dos Beirais"
+	},
+	"klee": {
+		"name": "Klee",
+		"title": "Sol Fugitivo"
+	},
+	"kujou-sara": {
+		"name": "Kujou Sara",
+		"title": "Flecha de Penas de Corvo"
+	},
+	"kuki-shinobu": {
+		"name": "Kuki Shinobu",
+		"title": "Erradicadora das Preocupações"
+	},
+	"layla": {
+		"name": "Layla",
+		"title": "Contemplações da Estrela Noturna"
+	},
+	"lisa": {
+		"name": "Lisa",
+		"title": "Bruxa das Rosas"
+	},
+	"lynette": {
+		"name": "Lynette",
+		"title": "Elegância nas Sombras"
+	},
+	"lyney": {
+		"name": "Lyney",
+		"title": "Espetáculo Fantasmagórico"
+	},
+	"mika": {
+		"name": "Mika",
+		"title": "Topógrafo da Geada Translúcida"
+	},
+	"mona": {
+		"name": "Mona",
+		"title": "Reflexão Astral"
+	},
+	"nahida": {
+		"name": "Nahida",
+		"title": "Pureza Restauradora"
+	},
+	"neuvillette": {
+		"name": "Neuvillette",
+		"title": "Ordenador das Marés"
+	},
+	"nilou": {
+		"name": "Nilou",
+		"title": "Dança da Luz de Lótus"
+	},
+	"ningguang": {
+		"name": "Ningguang",
+		"title": "Estrela em Eclipse"
+	},
+	"noelle": {
+		"name": "Noelle",
+		"title": "Flor da Cavalaria"
+	},
+	"qiqi": {
+		"name": "Qiqi",
+		"title": "Ressurreição Gélida"
+	},
+	"raiden-shogun": {
+		"name": "Raiden Shogun",
+		"title": "Plano da Eutimia"
+	},
+	"razor": {
+		"name": "Razor",
+		"title": "Menino Lobo"
+	},
+	"rosaria": {
+		"name": "Rosaria",
+		"title": "Benevolência Espinhosa"
+	},
+	"sangonomiya-kokomi": {
+		"name": "Sangonomiya Kokomi",
+		"title": "Pérolas de Sabedoria"
+	},
+	"sayu": {
+		"name": "Sayu",
+		"title": "Mujina Ninja"
+	},
+	"shenhe": {
+		"name": "Shenhe",
+		"title": "Transcendência Solitária"
+	},
+	"shikanoin-heizou": {
+		"name": "Shikanoin Heizou",
+		"title": "Mente Condizente"
+	},
+	"sucrose": {
+		"name": "Sucrose",
+		"title": "Doçura Inofensiva"
+	},
+	"tartaglia": {
+		"name": "Tartaglia",
+		"title": "Childe"
+	},
+	"thoma": {
+		"name": "Thoma",
+		"title": "Protetor de Longe"
+	},
+	"tighnari": {
+		"name": "Tighnari",
+		"title": "Andarilho Verdejante"
+	},
+	"venti": {
+		"name": "Venti",
+		"title": "Cantor dos Ventos Celestiais"
+	},
+	"wanderer": {
+		"name": "Wanderer",
+		"title": "Caminhante Eterno"
+	},
+	"wriothesley": {
+		"name": "Wriothesley",
+		"title": "Emissário da Culpa Incógnita"
+	},
+	"xiangling": {
+		"name": "Xiangling",
+		"title": "Mestre de Culinária de Liyue"
+	},
+	"xiao": {
+		"name": "Xiao",
+		"title": "Guardião Yaksha"
+	},
+	"xingqiu": {
+		"name": "Xingqiu",
+		"title": "Galante Juvenil"
+	},
+	"xinyan": {
+		"name": "Xinyan",
+		"title": "Melodia Incandescente"
+	},
+	"yae-miko": {
+		"name": "Yae Miko",
+		"title": "Diversão Astuta"
+	},
+	"yanfei": {
+		"name": "Yanfei",
+		"title": "Inocência Sábia"
+	},
+	"yaoyao": {
+		"name": "Yaoyao",
+		"title": "Burgeoning Grace"
+	},
+	"yelan": {
+		"name": "Yelan",
+		"title": "Vale das Orquídeas"
+	},
+	"yoimiya": {
+		"name": "Yoimiya",
+		"title": "Dança das Chamas"
+	},
+	"yun-jin": {
+		"name": "Yun Jin",
+		"title": "Palco Lúcida"
+	},
+	"zhongli": {
+		"name": "Zhongli",
+		"title": "Andarilho do Reino Mortal"
+	}
+}

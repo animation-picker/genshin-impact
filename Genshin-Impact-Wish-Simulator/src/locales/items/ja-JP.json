@@ -1,0 +1,382 @@
+{
+	"a-thousand-floating-dreams": "千夜に浮かぶ夢",
+	"akuoumaru": "惡王丸",
+	"alley-hunter": "ダークアレイの狩人",
+	"amos-bow": "アモスの弓",
+	"aqua-simulacra": "若水",
+	"aquila-favonia": "風鷹剣",
+	"beacon-of-the-reed-sea": "葦海の標",
+	"black-tassel": "黒纓槍",
+	"bloodtained-greatsword": "龍血を浴びた剣",
+	"calamity-queller": "息災",
+	"cashflow-supervision": "凛流の監視者",
+	"cool-steel": "冷刃",
+	"debate-club": "理屈責め",
+	"dragon_s-bane": "匣中滅龍",
+	"elegy-for-the-end": "終焉を嘆く詩",
+	"emerald-orb": "翡玉法珠",
+	"engulfing-lightning": "草薙の稲光",
+	"everlasting-moonglow": "不滅の月華",
+	"eye-of-perception": "昭心",
+	"favonius-codex": "西風秘典",
+	"favonius-greatsword": "西風大剣",
+	"favonius-lance": "西風長槍",
+	"favonius-sword": "西風剣",
+	"favonius-warbow": "西風猟弓",
+	"ferrous-shadow": "鉄影段平",
+	"freedom-sworn": "蒼古なる自由への誓い",
+	"haran-geppaku-futsu": "波乱月白経津",
+	"harbinger-of-dawn": "黎明の神剣",
+	"hunter_s-path": "狩人の道",
+	"jadefall-splendor": "碧落の瓏",
+	"kagura_s-verity": "神楽の真意",
+	"key-of-khaj-nisut": "聖顕の鍵",
+	"lion_s-roar": "匣中龍吟",
+	"light-of-foliar-incision": "萃光の裁葉",
+	"lithic-blade": "千岩古剣",
+	"lithic-spear": "千岩長槍",
+	"lost-prayer-to-the-sacred-winds": "四風原典",
+	"magic-guide": "魔導緒論",
+	"makhaira-aquamarine": "マカイラの水色",
+	"memory-of-dust": "浮世の錠",
+	"mistsplitter-reforged": "霧切の廻光",
+	"mitternachts-waltz": "幽夜のワルツ",
+	"mouun_s-moon": "曚雲の月",
+	"polar-star": "冬極の白星",
+	"portable-power-saw": "携帯型チェーンソー",
+	"primordial-jade-cutter": "磐岩結緑",
+	"primordial-jade-winged-spear": "和璞鳶",
+	"prospector-drill": "プロスペクタードリル",
+	"rainslasher": "雨裁",
+	"range-gauge": "レンジゲージ",
+	"raven-bow": "鴉羽の弓",
+	"redhorn-stonethresher": "赤角石塵滅砕",
+	"rust": "弓蔵",
+	"sacrificial-bow": "祭礼の弓",
+	"sacrificial-fragments": "祭礼の断片",
+	"sacrificial-greatsword": "祭礼の大剣",
+	"sacrificial-sword": "祭礼の剣",
+	"sharpshooter_s-oath": "シャープシューターの誓い",
+	"skyrider-sword": "飛天御剣",
+	"skyward-atlas": "天空の巻",
+	"skyward-blade": "天空の刃",
+	"skyward-harp": "天空の翼",
+	"skyward-pride": "天空の傲",
+	"skyward-spine": "天空の脊",
+	"slingshot": "弾弓",
+	"song-of-broken-pines": "松韻の響く頃",
+	"splendor-of-tranquil-waters": "静水流転の輝き",
+	"staff-of-homa": "護摩の杖",
+	"staff-of-the-scarlet-sands": "赤砂の杖",
+	"summit-shaper": "斬山の刃",
+	"the-alley-flash": "ダークアレイの閃光",
+	"the-bell": "鐘の剣",
+	"the-dockhands-assistant": "船渠剣",
+	"the-first-great-magic": "最初の大魔術",
+	"the-flute": "笛の剣",
+	"the-stringless": "絶弦",
+	"the-unforged": "無工の剣",
+	"the-widsith": "流浪楽章",
+	"thrilling-tales-of-dragon-slayers": "龍殺しの英傑譚",
+	"thundering-pulse": "飛雷の鳴弦",
+	"tome-of-the-eternal-flow": "久遠流転の大典",
+	"tulaytullah_s-remembrance": "トゥライトゥーラの記憶",
+	"vortex-vanquisher": "破天の槍",
+	"wavebreaker_s-fin": "斬波のひれ長",
+	"wine-and-song": "ダークアレイの酒と詩",
+	"wandering-evenstar": "彷徨える星",
+	"wolf_s-gravestone": "狼の末路",
+	"xiphos-moonlight": "サイフォスの月明かり",
+	"albedo": {
+		"name": "アルベド",
+		"title": "白亜の申し子"
+	},
+	"alhaitham": {
+		"name": "アルハイゼン",
+		"title": "権謀教戒"
+	},
+	"amber": {
+		"name": "アンバー",
+		"title": "飛行チャンピオン"
+	},
+	"arataki-itto": {
+		"name": "荒瀧一斗",
+		"title": "花坂豪快"
+	},
+	"baizhu": {
+		"name": "白朮",
+		"title": "遵生合和"
+	},
+	"barbara": {
+		"name": "バーバラ",
+		"title": "キラキラアイドル"
+	},
+	"beidou": {
+		"name": "北斗",
+		"title": "無冠の龍王"
+	},
+	"bennett": {
+		"name": "ベネット",
+		"title": "運命の試金石"
+	},
+	"candace": {
+		"name": "キャンディス",
+		"title": "浮金の誓願"
+	},
+	"charlotte": {
+		"name": "シャルロット",
+		"title": "真実を求める曇りなきモノクル"
+	},
+	"chongyun": {
+		"name": "重雲",
+		"title": "雪消の跡"
+	},
+	"collei": {
+		"name": "コレイ",
+		"title": "純真を抱く萌蘖"
+	},
+	"cyno": {
+		"name": "セノ",
+		"title": "緘秘の裁き"
+	},
+	"dehya": {
+		"name": "ディシア",
+		"title": "熾鬣の獅子"
+	},
+	"diluc": {
+		"name": "ディルック",
+		"title": "アカツキワイナリーの貴公子"
+	},
+	"diona": {
+		"name": "ディオナ",
+		"title": "キャッツテールスペシャル"
+	},
+	"dori": {
+		"name": "ドリー",
+		"title": "夢の庭に隠せし財宝"
+	},
+	"eula": {
+		"name": "エウルア",
+		"title": "波沫のワルツ"
+	},
+	"faruzan": {
+		"name": "ファルザン",
+		"title": "機求封秘"
+	},
+	"fischl": {
+		"name": "フィッシュル",
+		"title": "断罪の皇女！！"
+	},
+	"freminet": {
+		"name": "フレミネ",
+		"title": "夢想の海を沈んで"
+	},
+	"furina": {
+		"name": "フリーナ",
+		"title": "不休のソリスト"
+	},
+	"ganyu": {
+		"name": "甘雨",
+		"title": "循々守月"
+	},
+	"gorou": {
+		"name": "ゴロー",
+		"title": "雄々しき戎犬"
+	},
+	"hu-tao": {
+		"name": "胡桃",
+		"title": "雪晴梅香"
+	},
+	"jean": {
+		"name": "ジン",
+		"title": "蒲公英騎士"
+	},
+	"kaedehara-kazuha": {
+		"name": "楓原万葉",
+		"title": "風波流浪の紅葉"
+	},
+	"kaeya": {
+		"name": "ガイア",
+		"title": "寒風の剣士"
+	},
+	"kamisato-ayaka": {
+		"name": "神里綾華",
+		"title": "白鷺氷華"
+	},
+	"kamisato-ayato": {
+		"name": "神里綾人",
+		"title": "磐祭葉守"
+	},
+	"kaveh": {
+		"name": "カーヴェ",
+		"title": "天穹の鏡"
+	},
+	"keqing": {
+		"name": "刻晴",
+		"title": "疾雷快雨"
+	},
+	"kirara": {
+		"name": "綺良々",
+		"title": "檐宇遊猫"
+	},
+	"klee": {
+		"name": "クレー",
+		"title": "逃げ回る太陽"
+	},
+	"kujou-sara": {
+		"name": "九条裟羅",
+		"title": "黒羽鳴鏑"
+	},
+	"kuki-shinobu": {
+		"name": "久岐忍",
+		"title": "煩悩刈除"
+	},
+	"layla": {
+		"name": "レイラ",
+		"title": "綺思と夜星"
+	},
+	"lisa": {
+		"name": "リサ",
+		"title": "薔薇の魔女"
+	},
+	"lynette": {
+		"name": "リネット",
+		"title": "綺影で魅せるエレガンス"
+	},
+	"lyney": {
+		"name": "リネ",
+		"title": "幻光で惑わすトリック"
+	},
+	"mika": {
+		"name": "ミカ",
+		"title": "霜晴の測量"
+	},
+	"mona": {
+		"name": "モナ",
+		"title": "星天水鏡"
+	},
+	"nahida": {
+		"name": "ナヒーダ",
+		"title": "白草浄華"
+	},
+	"neuvillette": {
+		"name": "ヌヴィレット",
+		"title": "告諭の潮騒"
+	},
+	"nilou": {
+		"name": "ニィロウ",
+		"title": "絨毯に舞い落ちる蓮光"
+	},
+	"ningguang": {
+		"name": "凝光",
+		"title": "月を覆う天権"
+	},
+	"noelle": {
+		"name": "ノエル",
+		"title": "騎士道の花咲"
+	},
+	"qiqi": {
+		"name": "七七",
+		"title": "冷たき黄泉帰り"
+	},
+	"raiden-shogun": {
+		"name": "雷電将軍",
+		"title": "一心浄土"
+	},
+	"razor": {
+		"name": "レザー",
+		"title": "狼少年"
+	},
+	"rosaria": {
+		"name": "ロサリア",
+		"title": "荊冠の恩典"
+	},
+	"sangonomiya-kokomi": {
+		"name": "珊瑚宮心海",
+		"title": "真珠の智"
+	},
+	"sayu": {
+		"name": "早柚",
+		"title": "忍びの里の貉"
+	},
+	"shenhe": {
+		"name": "申鶴",
+		"title": "孤辰悲哀"
+	},
+	"shikanoin-heizou": {
+		"name": "鹿野院平藏",
+		"title": "乂安を願うもの"
+	},
+	"sucrose": {
+		"name": "スクロース",
+		"title": "無害の甘味"
+	},
+	"tartaglia": {
+		"name": "タルタリヤ",
+		"title": "「公子」"
+	},
+	"thoma": {
+		"name": "トーマ",
+		"title": "渡来介者"
+	},
+	"tighnari": {
+		"name": "ティナリ",
+		"title": "緑土逍遥"
+	},
+	"venti": {
+		"name": "ウェンティ",
+		"title": "風色の詩人"
+	},
+	"wanderer": {
+		"name": "放浪者",
+		"title": "久世浮傾"
+	},
+	"wriothesley": {
+		"name": "リオセスリ",
+		"title": "寂罪の密使"
+	},
+	"xiangling": {
+		"name": "香菱",
+		"title": "万民百味"
+	},
+	"xiao": {
+		"name": "魈",
+		"title": "護法夜叉"
+	},
+	"xingqiu": {
+		"name": "行秋",
+		"title": "少壮気鋭"
+	},
+	"xinyan": {
+		"name": "辛炎",
+		"title": "爆熱リズム"
+	},
+	"yae-miko": {
+		"name": "八重神子",
+		"title": "浮世笑百姿"
+	},
+	"yanfei": {
+		"name": "煙緋",
+		"title": "無邪気な知恵"
+	},
+	"yaoyao": {
+		"name": "ヨォーヨ",
+		"title": "仙蕊玲瓏"
+	},
+	"yelan": {
+		"name": "夜蘭",
+		"title": "幽谷に咲く蘭"
+	},
+	"yoimiya": {
+		"name": "宵宮",
+		"title": "琉焔に舞う大輪"
+	},
+	"yun-jin": {
+		"name": "雲菫",
+		"title": "紅絨毯に舞う麗姿"
+	},
+	"zhongli": {
+		"name": "鍾離",
+		"title": "浮世闊歩"
+	}
+}

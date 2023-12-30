@@ -1,0 +1,69 @@
+{
+	"patch": 1.2,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 1,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "secretum-secretorum-1",
+							"character": "albedo",
+							"textOffset": { "l": 56.5, "b": 5.5 }
+						}
+					],
+					"rateup": ["bennett", "sucrose", "fischl"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-5",
+					"fatepointsystem": false,
+					"featured": [{ "name": "summit-shaper" }, { "name": "skyward-atlas" }],
+					"rateup": [
+						"the-stringless",
+						"favonius-lance",
+						"favonius-greatsword",
+						"lion_s-roar",
+						"the-widsith"
+					],
+					"textOffset": {
+						"featured": { "l": 46, "t": 76 },
+						"rateup": { "l": 76, "b": 18.5 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 1,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "adrift-in-the-harbor-1",
+							"character": "ganyu",
+							"textOffset": { "l": 59.5, "b": 12 }
+						}
+					],
+					"rateup": ["beidou", "xinyan", "xingqiu"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-6",
+					"fatepointsystem": false,
+					"featured": [{ "name": "amos-bow" }, { "name": "skyward-pride" }],
+					"rateup": [
+						"favonius-warbow",
+						"the-bell",
+						"eye-of-perception",
+						"dragon_s-bane",
+						"sacrificial-sword"
+					],
+					"textOffset": {
+						"featured": { "l": 46, "t": 77 },
+						"rateup": { "l": 75, "b": 17 }
+					}
+				}
+			}
+		}
+	]
+}

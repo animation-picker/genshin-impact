@@ -1,0 +1,66 @@
+{
+	"patch": 1.0,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 1,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "ballad-in-goblets-1",
+							"character": "venti",
+							"textOffset": { "l": 57.5, "b": 5.8 }
+						}
+					],
+					"rateup": ["xiangling", "fischl", "barbara"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-1",
+					"fatepointsystem": false,
+					"featured": [{ "name": "amos-bow" }, { "name": "aquila-favonia" }],
+					"rateup": ["the-flute", "the-stringless", "favonius-lance", "the-bell", "the-widsith"],
+					"textOffset": {
+						"featured": { "l": 41, "t": 76 },
+						"rateup": { "l": 75, "b": 18 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 1,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "sparkling-steps-1",
+							"character": "klee",
+							"textOffset": { "l": 60 }
+						}
+					],
+					"rateup": ["sucrose", "xingqiu", "noelle"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-2",
+					"fatepointsystem": false,
+					"featured": [
+						{ "name": "lost-prayer-to-the-sacred-winds" },
+						{ "name": "wolf_s-gravestone" }
+					],
+					"rateup": [
+						"sacrificial-greatsword",
+						"sacrificial-sword",
+						"sacrificial-fragments",
+						"dragon_s-bane",
+						"sacrificial-bow"
+					],
+					"textOffset": {
+						"featured": { "l": 41, "t": 78, "w": 20 },
+						"rateup": { "l": 76, "b": 17 }
+					}
+				}
+			}
+		}
+	]
+}

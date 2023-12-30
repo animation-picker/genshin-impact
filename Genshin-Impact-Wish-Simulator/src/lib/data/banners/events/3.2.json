@@ -1,0 +1,93 @@
+{
+	"patch": 3.2,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 3,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "the-moongrass-enlightenment-1",
+							"character": "nahida",
+							"textOffset": { "l": 48, "b": 8.5 }
+						},
+						{
+							"bannerName": "tapestry-of-golden-flames-3",
+							"character": "yoimiya",
+							"textOffset": { "l": 50 }
+						}
+					],
+
+					"rateup": ["bennett", "razor", "noelle"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-37",
+					"fatepointsystem": true,
+					"featured": [{ "name": "a-thousand-floating-dreams" }, { "name": "thundering-pulse" }],
+					"rateup": [
+						"rust",
+						"favonius-lance",
+						"the-widsith",
+						"the-flute",
+						"sacrificial-greatsword"
+					],
+					"textOffset": {
+						"featured": { "l": 42.5, "t": 62 },
+						"rateup": { "l": 79, "b": 22 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 3,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "everbloom-violet-2",
+							"character": "yae-miko",
+							"textOffset": {
+								"l": 46.6,
+								"b": 13
+							}
+						},
+						{
+							"bannerName": "farewell-of-snezhnaya-4",
+							"character": "tartaglia",
+							"textOffset": {
+								"l": 47,
+								"b": 9
+							}
+						}
+					],
+
+					"rateup": ["layla", "thoma", "shikanoin-heizou"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-38",
+					"fatepointsystem": true,
+					"featured": [
+						{
+							"name": "kagura_s-verity",
+							"buttonPosition": { "l": 64 }
+						},
+						{ "name": "polar-star" }
+					],
+					"rateup": [
+						"favonius-sword",
+						"the-stringless",
+						"dragon_s-bane",
+						"the-bell",
+						"favonius-codex"
+					],
+					"textOffset": {
+						"featured": { "l": 42.5, "t": 67 },
+						"rateup": { "l": 70.5, "b": 22 }
+					}
+				}
+			}
+		}
+	]
+}

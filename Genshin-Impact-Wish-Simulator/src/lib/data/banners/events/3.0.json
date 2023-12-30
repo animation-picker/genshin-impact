@@ -1,0 +1,86 @@
+{
+	"patch": 3.0,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "viridescent-vigil-1",
+							"character": "tighnari"
+						},
+						{
+							"bannerName": "gentry-of-hermitage-4",
+							"character": "zhongli",
+							"textOffset": { "l": 57, "b": 13 }
+						}
+					],
+
+					"rateup": ["collei", "fischl", "diona"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-33",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "hunter_s-path" },
+						{
+							"name": "vortex-vanquisher",
+							"buttonPosition": { "l": 60 }
+						}
+					],
+					"rateup": [
+						"favonius-sword",
+						"the-stringless",
+						"the-bell",
+						"favonius-codex",
+						"favonius-lance"
+					],
+					"textOffset": {
+						"featured": { "l": 42, "t": 68, "w": 32 },
+						"rateup": { "l": 75.5, "b": 20, "w": 15 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "drifting-luminescence-3",
+							"character": "sangonomiya-kokomi",
+							"textOffset": { "l": 51, "b": 8 }
+						},
+						{
+							"bannerName": "adrift-in-the-harbor-3",
+							"character": "ganyu",
+							"textOffset": { "l": 57, "b": 12.8 }
+						}
+					],
+
+					"rateup": ["dori", "xingqiu", "sucrose"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-34",
+					"fatepointsystem": true,
+					"featured": [{ "name": "amos-bow" }, { "name": "everlasting-moonglow" }],
+					"rateup": [
+						"sacrificial-sword",
+						"rust",
+						"dragon_s-bane",
+						"favonius-greatsword",
+						"eye-of-perception"
+					],
+					"textOffset": {
+						"featured": { "l": 44, "t": 71, "w": 28 },
+						"rateup": { "l": 78.5, "b": 19, "w": 15 }
+					}
+				}
+			}
+		}
+	]
+}

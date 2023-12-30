@@ -1,0 +1,85 @@
+{
+	"patch": 2.4,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "the-transcendent-one-returns-1",
+							"character": "shenhe",
+							"textOffset": { "l": 57, "b": 11 }
+						},
+						{
+							"bannerName": "invitation-to-mundane-life-2",
+							"character": "xiao",
+							"textOffset": { "l": 57, "b": 12.5 }
+						}
+					],
+					"rateup": ["yun-jin", "ningguang", "chongyun"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-23",
+					"fatepointsystem": true,
+					"featured": [{ "name": "calamity-queller" }, { "name": "primordial-jade-winged-spear" }],
+					"rateup": [
+						"favonius-warbow",
+						"the-widsith",
+						"favonius-greatsword",
+						"lithic-spear",
+						"the-flute"
+					],
+					"textOffset": {
+						"featured": { "l": 41.5, "t": 68.5 },
+						"rateup": { "l": 78 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "gentry-of-hermitage-3",
+							"character": "zhongli",
+							"textOffset": { "l": 57, "b": 12 }
+						},
+						{
+							"bannerName": "adrift-in-the-harbor-2",
+							"character": "ganyu",
+							"textOffset": { "l": 57, "b": 12 }
+						}
+					],
+					"rateup": ["xingqiu", "yanfei", "beidou"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-24",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "vortex-vanquisher" },
+						{
+							"name": "amos-bow",
+							"buttonPosition": { "l": 70 }
+						}
+					],
+					"rateup": [
+						"sacrificial-bow",
+						"lithic-blade",
+						"favonius-codex",
+						"favonius-sword",
+						"dragon_s-bane"
+					],
+					"textOffset": {
+						"featured": { "l": 41.5, "t": 68, "w": 27 },
+						"rateup": { "l": 78 }
+					}
+				}
+			}
+		}
+	]
+}

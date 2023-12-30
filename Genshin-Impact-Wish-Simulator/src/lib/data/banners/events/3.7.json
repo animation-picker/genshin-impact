@@ -1,0 +1,83 @@
+{
+	"patch": 3.7,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "tapestry-of-golden-flames-4",
+							"character": "yoimiya",
+							"textOffset": { "l": 48.5 }
+						},
+						{
+							"bannerName": "everbloom-violet-3",
+							"character": "yae-miko",
+							"textOffset": { "l": 48.6, "b": 8 }
+						}
+					],
+
+					"rateup": ["kirara", "yun-jin", "chongyun"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-47",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "thundering-pulse" },
+						{
+							"name": "kagura_s-verity",
+							"buttonPosition": { "l": 64 }
+						}
+					],
+					"rateup": ["akuoumaru", "the-flute", "dragon_s-bane", "rust", "the-widsith"],
+					"textOffset": {
+						"featured": { "l": 52.5, "t": 71, "w": 23 },
+						"rateup": { "l": 74.5, "b": 19 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "caution-in-confidence-2",
+							"character": "alhaitham",
+							"textOffset": { "l": 50.5, "b": 10 }
+						},
+						{
+							"bannerName": "leaves-in-the-wind-3",
+							"character": "kaedehara-kazuha",
+							"textOffset": { "l": 46, "b": 12 }
+						}
+					],
+					"rateup": ["yaoyao", "shikanoin-heizou", "xiangling"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-48",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "light-of-foliar-incision" },
+						{ "name": "freedom-sworn", "buttonPosition": { "l": 60 } }
+					],
+					"rateup": [
+						"wavebreaker_s-fin",
+						"favonius-codex",
+						"favonius-sword",
+						"mouun_s-moon",
+						"sacrificial-greatsword"
+					],
+					"textOffset": {
+						"featured": { "l": 52, "t": 72, "w": 27 },
+						"rateup": { "l": 80, "b": 18.5 }
+					}
+				}
+			}
+		}
+	]
+}

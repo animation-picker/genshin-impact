@@ -1,0 +1,37 @@
+{
+	"standard": [
+		{
+			"version": 1,
+			"characters": ["qiqi", "keqing", "diluc", "mona", "jean"],
+			"featured": {
+				"bannerName": "wanderlust-invocation-1",
+				"character": "jean"
+			}
+		},
+		{
+			"version": 2,
+			"characters": ["qiqi", "keqing", "diluc", "mona", "jean"],
+			"featured": {
+				"bannerName": "wanderlust-invocation-2",
+				"character": "qiqi"
+			}
+		},
+		{
+			"version": 3,
+			"characters": ["qiqi", "keqing", "diluc", "mona", "jean", "tighnari"],
+			"featured": {
+				"bannerName": "wanderlust-invocation-2",
+				"character": "qiqi"
+			}
+		},
+		{
+			"version": 4,
+			"characters": ["qiqi", "keqing", "diluc", "mona", "jean", "tighnari", "dehya"],
+			"featured": {
+				"bannerName": "wanderlust-invocation-2",
+				"character": "qiqi"
+			}
+		}
+	]
+}
+

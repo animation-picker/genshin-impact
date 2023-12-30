@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"$lib": ["src/lib"],
+			"$lib/*": ["src/lib/*"],
+			"$post": ["src/post"],
+			"$post/*": ["src/post/*"]
+		},
+		"preserveValueImports": false,
+		"allowJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"ignoreDeprecations": "5.0"
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"],
+	"extends": "./.svelte-kit/tsconfig.json"
+}

@@ -1,0 +1,65 @@
+import { setCacheNameDetails, skipWaiting, clientsClaim } from 'workbox-core';
+import { precacheAndRoute, cleanupOutdatedCaches } from 'workbox-precaching';
+import { registerRoute } from 'workbox-routing';
+import { CacheFirst, NetworkFirst } from 'workbox-strategies';
+import { CacheableResponsePlugin } from 'workbox-cacheable-response';
+
+const cacheVersion = 'v1';
+
+clientsClaim();
+skipWaiting();
+cleanupOutdatedCaches();
+
+setCacheNameDetails({
+	prefix: 'WishSim',
+	precache: 'Core',
+	suffix: cacheVersion
+});
+
+let precache = self.__WB_MANIFEST;
+precache = [];
+precacheAndRoute(precache, { ignoreURLParametersMatching: [/.*/] });
+
+registerRoute('/', new NetworkFirst({ cacheName: `Static-${cacheVersion}` }));
+
+registerRoute(
+	new RegExp('.(?:/?pwa=true|/?pwasc)'),
+	new NetworkFirst({
+		cacheName: `Static-${cacheVersion}`,
+		plugins: [
+			{
+				cachedResponseWillBeUsed: ({ cachedResponse }) => {
+					if (cachedResponse) return cachedResponse;
+					return caches.match('/');
+				},
+				cacheWillUpdate: () => null // prevent update cache
+			}
+		]
+	})
+);
+
+registerRoute(
+	({ url }) =>
+		url.href.includes('videos') || url.href.includes('images') || url.href.includes('sfx'),
+	new CacheFirst({
+		cacheName: `Static-${cacheVersion}`
+	})
+);
+
+registerRoute(
+	({ url }) => {
+		const font = url.href.match(new RegExp('.(?:woff|woff2|ttf)$')) || [];
+		return font.length > 0;
+	},
+	new NetworkFirst({
+		cacheName: `Static-${cacheVersion}`,
+		plugins: [new CacheableResponsePlugin({ statuses: [0, 200] })]
+	})
+);
+
+registerRoute(
+	new RegExp('.(?:css|js|json)$'),
+	new NetworkFirst({
+		cacheName: 'Chunks'
+	})
+);

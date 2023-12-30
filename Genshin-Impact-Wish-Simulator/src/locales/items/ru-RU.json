@@ -1,0 +1,382 @@
+{
+	"a-thousand-floating-dreams": "Сновидения тысячи ночей",
+	"akuoumaru": "Акуомару",
+	"alley-hunter": "Охотник во тьме",
+	"amos-bow": "Лук Амоса",
+	"aqua-simulacra": "Аква симулякрум",
+	"aquila-favonia": "Меч Сокола",
+	"beacon-of-the-reed-sea": "Маяк тростникового моря",
+	"black-tassel": "Чёрная кисть",
+	"bloodtained-greatsword": "Меч драконьей крови",
+	"calamity-queller": "Усмиритель бед",
+	"cashflow-supervision": "Казначейский надзор",
+	"cool-steel": "Холодное лезвие",
+	"debate-club": "Дубина переговоров",
+	"dragon_s-bane": "Гроза драконов",
+	"elegy-for-the-end": "Элегия погибели",
+	"emerald-orb": "Изумрудный шар",
+	"engulfing-lightning": "Сияющая жатва",
+	"everlasting-moonglow": "Вечное лунное сияние",
+	"eye-of-perception": "Око сознания",
+	"favonius-codex": "Кодекс Фавония",
+	"favonius-greatsword": "Двуручный меч Фавония",
+	"favonius-lance": "Копьё Фавония",
+	"favonius-sword": "Меч Фавония",
+	"favonius-warbow": "Боевой лук Фавония",
+	"ferrous-shadow": "Металлическая тень",
+	"freedom-sworn": "Клятва свободы",
+	"haran-geppaku-futsu": "Харан гэппаку фуцу",
+	"harbinger-of-dawn": "Предвестник зари",
+	"hunter_s-path": "Охотничья тропа",
+	"jadefall-splendor": "Великолепие лазурного свода",
+	"kagura_s-verity": "Истина кагура",
+	"key-of-khaj-nisut": "Ключ Хадж-нисут",
+	"lion_s-roar": "Драконий рык",
+	"light-of-foliar-incision": "Свет лиственного разреза",
+	"lithic-blade": "Каменный меч",
+	"lithic-spear": "Каменное копьё",
+	"lost-prayer-to-the-sacred-winds": "Молитва святым ветрам",
+	"magic-guide": "Руководство по магии",
+	"makhaira-aquamarine": "Аквамарин махайры",
+	"memory-of-dust": "Память о пыли",
+	"mistsplitter-reforged": "Рассекающий туман",
+	"mitternachts-waltz": "Вальс Нирваны Ночи",
+	"mouun_s-moon": "Луна Моун",
+	"polar-star": "Полярная звезда",
+	"portable-power-saw": "Переносная мотопила",
+	"primordial-jade-cutter": "Драгоценный омут",
+	"primordial-jade-winged-spear": "Нефритовый коршун",
+	"prospector-drill": "Бур рудоискателя",
+	"rainslasher": "Дождерез",
+	"range-gauge": "Дальномер",
+	"raven-bow": "Лук ворона",
+	"redhorn-stonethresher": "Краснорогий камнеруб",
+	"rust": "Ржавый лук",
+	"sacrificial-bow": "Церемониальный лук",
+	"sacrificial-fragments": "Церемониальные мемуары",
+	"sacrificial-greatsword": "Церемониальный двуручный меч",
+	"sacrificial-sword": "Церемониальный меч",
+	"sharpshooter_s-oath": "Клятва стрелка",
+	"skyrider-sword": "Меч небесного всадника",
+	"skyward-atlas": "Небесный атлас",
+	"skyward-blade": "Небесный меч",
+	"skyward-harp": "Небесное крыло",
+	"skyward-pride": "Небесное величие",
+	"skyward-spine": "Небесная ось",
+	"slingshot": "Рогатка",
+	"song-of-broken-pines": "Песнь разбитых сосен",
+	"splendor-of-tranquil-waters": "Блеск тихих вод",
+	"staff-of-homa": "Посох Хомы",
+	"staff-of-the-scarlet-sands": "Посох алых песков",
+	"summit-shaper": "Кромсатель пиков",
+	"the-alley-flash": "Вспышка во тьме",
+	"the-bell": "Меч-колокол",
+	"the-dockhands-assistant": "Верфь",
+	"the-first-great-magic": "Первый великий фокус",
+	"the-flute": "Меч-флейта",
+	"the-stringless": "Бесструнный",
+	"the-unforged": "Некованый",
+	"the-widsith": "Песнь странника",
+	"thrilling-tales-of-dragon-slayers": "Эпос о драконоборцах",
+	"thundering-pulse": "Громовой пульс",
+	"tome-of-the-eternal-flow": "Обряд вечного течения",
+	"tulaytullah_s-remembrance": "Воспоминания Тулайтуллы",
+	"vortex-vanquisher": "Покоритель вихря",
+	"wavebreaker_s-fin": "Режущий волны плавник",
+	"wine-and-song": "Вино и песни",
+	"wandering-evenstar": "Скитающаяся звезда",
+	"wolf_s-gravestone": "Волчья погибель",
+	"xiphos-moonlight": "Лунное сияние ксифоса",
+	"albedo": {
+		"name": "Альбедо",
+		"title": "Принц мела"
+	},
+	"alhaitham": {
+		"name": "Аль-Хайтам",
+		"title": "Голос разума"
+	},
+	"amber": {
+		"name": "Эмбер",
+		"title": "Чемпион полётов"
+	},
+	"arataki-itto": {
+		"name": "Итто",
+		"title": "Герой Ханамидзаки"
+	},
+	"baizhu": {
+		"name": "Бай Чжу",
+		"title": "Преодоление бренности"
+	},
+	"barbara": {
+		"name": "Барбара",
+		"title": "Сияющая звёздочка"
+	},
+	"beidou": {
+		"name": "Бэй Доу",
+		"title": "Владычица морей"
+	},
+	"bennett": {
+		"name": "Беннет",
+		"title": "Испытание огнём"
+	},
+	"candace": {
+		"name": "Кандакия",
+		"title": "Позолоченная клятва"
+	},
+	"charlotte": {
+		"name": "Шарлотта",
+		"title": "Объективная реальность"
+	},
+	"chongyun": {
+		"name": "Чун Юнь",
+		"title": "Морозная пылкость"
+	},
+	"collei": {
+		"name": "Коллеи",
+		"title": "Росток возрождения"
+	},
+	"cyno": {
+		"name": "Сайно",
+		"title": "Вершитель таинств"
+	},
+	"dehya": {
+		"name": "Дэхья",
+		"title": "Пламенная Грива"
+	},
+	"diluc": {
+		"name": "Дилюк",
+		"title": "Тёмный рассвет"
+	},
+	"diona": {
+		"name": "Диона",
+		"title": "Кошкин коктейль"
+	},
+	"dori": {
+		"name": "Дори",
+		"title": "Сокровище сада снов"
+	},
+	"eula": {
+		"name": "Эола",
+		"title": "Танец морской пены"
+	},
+	"faruzan": {
+		"name": "Фарузан",
+		"title": "Загадочный механик"
+	},
+	"fischl": {
+		"name": "Фишль",
+		"title": "Принцесса осуждения"
+	},
+	"freminet": {
+		"name": "Фремине",
+		"title": "Тоска по невиданным глубинам"
+	},
+	"furina": {
+		"name": "Фурина",
+		"title": "Бесконечный танец одиночества"
+	},
+	"ganyu": {
+		"name": "Гань Юй",
+		"title": "Взгляд полнолуния"
+	},
+	"gorou": {
+		"name": "Горо",
+		"title": "Пёс войны"
+	},
+	"hu-tao": {
+		"name": "Ху Тао",
+		"title": "Весенний аромат"
+	},
+	"jean": {
+		"name": "Джинн",
+		"title": "Рыцарь Одуванчик"
+	},
+	"kaedehara-kazuha": {
+		"name": "Кадзуха",
+		"title": "Багряные листья и неистовые волны"
+	},
+	"kaeya": {
+		"name": "Кэйа",
+		"title": "Зимний клинок"
+	},
+	"kamisato-ayaka": {
+		"name": "Аяка",
+		"title": "Инеевая цапля"
+	},
+	"kamisato-ayato": {
+		"name": "Аято",
+		"title": "Оплот стойкости"
+	},
+	"kaveh": {
+		"name": "Кавех",
+		"title": "Отражение эмпирея"
+	},
+	"keqing": {
+		"name": "Кэ Цин",
+		"title": "Раскаты грома"
+	},
+	"kirara": {
+		"name": "Кирара",
+		"title": "Кошка на гребне крыши"
+	},
+	"klee": {
+		"name": "Кли",
+		"title": "Ускользающее солнце"
+	},
+	"kujou-sara": {
+		"name": "Сара",
+		"title": "Кабурая вороньего пера"
+	},
+	"kuki-shinobu": {
+		"name": "Синобу",
+		"title": "Избавительница"
+	},
+	"layla": {
+		"name": "Лайла",
+		"title": "Дивная вечерняя звезда"
+	},
+	"lisa": {
+		"name": "Лиза",
+		"title": "Пурпурная ведьма"
+	},
+	"lynette": {
+		"name": "Линетт",
+		"title": "Изящество среди теней"
+	},
+	"lyney": {
+		"name": "Лини",
+		"title": "Зрелищные фантасмагории"
+	},
+	"mika": {
+		"name": "Мика",
+		"title": "Картограф чистого инея"
+	},
+	"mona": {
+		"name": "Мона",
+		"title": "Звёздное отражение"
+	},
+	"nahida": {
+		"name": "Нахида",
+		"title": "Средоточие чистоты"
+	},
+	"neuvillette": {
+		"name": "Neuvillette",
+		"title": "Распорядитель неумолимого суда"
+	},
+	"nilou": {
+		"name": "Нилу",
+		"title": "Танец лотоса"
+	},
+	"ningguang": {
+		"name": "Нин Гуан",
+		"title": "Лунное затмение"
+	},
+	"noelle": {
+		"name": "Ноэлль",
+		"title": "Нераспустившийся цветок"
+	},
+	"qiqi": {
+		"name": "Ци Ци",
+		"title": "Ледяное воскрешение"
+	},
+	"raiden-shogun": {
+		"name": "Райдэн",
+		"title": "Царство эвтюмии"
+	},
+	"razor": {
+		"name": "Рэйзор",
+		"title": "Инстинкт стаи"
+	},
+	"rosaria": {
+		"name": "Розария",
+		"title": "Венец милости"
+	},
+	"sangonomiya-kokomi": {
+		"name": "Кокоми",
+		"title": "Жемчужина мудрости"
+	},
+	"sayu": {
+		"name": "Саю",
+		"title": "Мудзина-ниндзя"
+	},
+	"shenhe": {
+		"name": "Шэнь Хэ",
+		"title": "Одиночество превосходства"
+	},
+	"shikanoin-heizou": {
+		"name": "Хэйдзо",
+		"title": "Невозмутимое спокойствие"
+	},
+	"sucrose": {
+		"name": "Сахароза",
+		"title": "Безобидная карамелька"
+	},
+	"tartaglia": {
+		"name": "Тарталья",
+		"title": "Чайльд"
+	},
+	"thoma": {
+		"name": "Тома",
+		"title": "Защитник издалека"
+	},
+	"tighnari": {
+		"name": "Тигнари",
+		"title": "Зелёный странник"
+	},
+	"venti": {
+		"name": "Венти",
+		"title": "Поэт ветров"
+	},
+	"wanderer": {
+		"name": "Странник",
+		"title": "Затерявшийся в вечности"
+	},
+	"wriothesley": {
+		"name": "Ризли",
+		"title": "Эмиссар заточённых злодеяний"
+	},
+	"xiangling": {
+		"name": "Сян Лин",
+		"title": "Миллион вкусов"
+	},
+	"xiao": {
+		"name": "Сяо",
+		"title": "Защитник Якса"
+	},
+	"xingqiu": {
+		"name": "Син Цю",
+		"title": "Галантный юноша"
+	},
+	"xinyan": {
+		"name": "Синь Янь",
+		"title": "Пламенная мелодия"
+	},
+	"yae-miko": {
+		"name": "Яэ Мико",
+		"title": "Озорное лукавство"
+	},
+	"yanfei": {
+		"name": "Янь Фэй",
+		"title": "Непорочная мудрость"
+	},
+	"yaoyao": {
+		"name": "Яо Яо",
+		"title": "Бутон изящества"
+	},
+	"yelan": {
+		"name": "Е Лань",
+		"title": "Орхидея долины"
+	},
+	"yoimiya": {
+		"name": "Ёимия",
+		"title": "Пляшущие огоньки"
+	},
+	"yun-jin": {
+		"name": "Юнь Цзинь",
+		"title": "Изящество на сцене"
+	},
+	"zhongli": {
+		"name": "Чжун Ли",
+		"title": "Бренный скиталец"
+	}
+}

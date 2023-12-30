@@ -1,0 +1,10 @@
+{
+	"version": 2,
+	"standard": {
+		"featured": {
+			"bannerName": "wanderlust-invocation-2",
+			"character": "qiqi"
+		},
+		"characters": ["qiqi", "keqing", "diluc", "mona", "jean"]
+	}
+}

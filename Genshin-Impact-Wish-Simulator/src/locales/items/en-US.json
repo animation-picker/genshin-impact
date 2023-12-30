@@ -1,0 +1,382 @@
+{
+	"a-thousand-floating-dreams": "A Thousand Floating Dreams",
+	"akuoumaru": "Akuoumaru",
+	"alley-hunter": "Alley Hunter",
+	"amos-bow": "Amos' Bow",
+	"aqua-simulacra": "Aqua Simulacra",
+	"aquila-favonia": "Aquila Favonia",
+	"beacon-of-the-reed-sea": "Beacon of the Reed Sea",
+	"black-tassel": "Black Tassel",
+	"bloodtained-greatsword": "Bloodtained Greatsword",
+	"calamity-queller": "Calamity Queller",
+	"cashflow-supervision": "Cashflow Supervision",
+	"cool-steel": "Cool Steel",
+	"debate-club": "Debate Club",
+	"dragon_s-bane": "Dragon's Bane",
+	"elegy-for-the-end": "Elegy for the End",
+	"emerald-orb": "Emerald Orb",
+	"engulfing-lightning": "Engulfing Lightning",
+	"everlasting-moonglow": "Everlasting Moonglow",
+	"eye-of-perception": "Eye of Perception",
+	"favonius-codex": "Favonius Codex",
+	"favonius-greatsword": "Favonius Greatsword",
+	"favonius-lance": "Favonius Lance",
+	"favonius-sword": "Favonius Sword",
+	"favonius-warbow": "Favonius Warbow",
+	"ferrous-shadow": "Ferrous Shadow",
+	"freedom-sworn": "Freedom-Sworn",
+	"haran-geppaku-futsu": "Haran Geppaku Futsu",
+	"harbinger-of-dawn": "Harbinger of Dawn",
+	"hunter_s-path": "Hunter's Path",
+	"jadefall-splendor": "Jadefall's Splendor",
+	"kagura_s-verity": "Kagura's Verity",
+	"key-of-khaj-nisut": "Key of Khaj-Nisut",
+	"light-of-foliar-incision": "Light of Foliar Incision",
+	"lion_s-roar": "Lion's Roar",
+	"lithic-blade": "Lithic Blade",
+	"lithic-spear": "Lithic Spear",
+	"lost-prayer-to-the-sacred-winds": "Lost Prayer to the Sacred Winds",
+	"magic-guide": "Magic Guide",
+	"makhaira-aquamarine": "Makhaira Aquamarine",
+	"memory-of-dust": "Memory of Dust",
+	"mistsplitter-reforged": "Mistsplitter Reforged",
+	"mitternachts-waltz": "Mitternachts Waltz",
+	"mouun_s-moon": "Mouun's Moon",
+	"polar-star": "Polar Star",
+	"portable-power-saw": "Portable Power Saw",
+	"primordial-jade-cutter": "Primordial Jade Cutter",
+	"primordial-jade-winged-spear": "Primordial Jade Winged-Spear",
+	"prospector-drill": "Prospector's Drill",
+	"rainslasher": "Rainslasher",
+	"range-gauge": "Range Gauge",
+	"raven-bow": "Raven Bow",
+	"redhorn-stonethresher": "Redhorn Stonethresher",
+	"rust": "Rust",
+	"sacrificial-bow": "Sacrificial Bow",
+	"sacrificial-fragments": "Sacrificial Fragments",
+	"sacrificial-greatsword": "Sacrificial Greatsword",
+	"sacrificial-sword": "Sacrificial Sword",
+	"sharpshooter_s-oath": "Sharpshooter's Oath",
+	"skyrider-sword": "Skyrider Sword",
+	"skyward-atlas": "Skyward Atlas",
+	"skyward-blade": "Skyward Blade",
+	"skyward-harp": "Skyward Harp",
+	"skyward-pride": "Skyward Pride",
+	"skyward-spine": "Skyward Spine",
+	"slingshot": "Slingshot",
+	"song-of-broken-pines": "Song of Broken Pines",
+	"splendor-of-tranquil-waters": "Splendor of Tranquil Waters",
+	"staff-of-homa": "Staff of Homa",
+	"staff-of-the-scarlet-sands": "Staff of the Scarlet Sands",
+	"summit-shaper": "Summit Shaper",
+	"the-alley-flash": "The Alley Flash",
+	"the-bell": "The Bell",
+	"the-dockhands-assistant": "The Dockhand's Assistant",
+	"the-first-great-magic": "The First Great Magic",
+	"the-flute": "The Flute",
+	"the-stringless": "The Stringless",
+	"the-unforged": "The Unforged",
+	"the-widsith": "The Widsith",
+	"thrilling-tales-of-dragon-slayers": "Thrilling Tales of Dragon Slayers",
+	"thundering-pulse": "Thundering Pulse",
+	"tome-of-the-eternal-flow": "Tome of the Eternal Flow",
+	"tulaytullah_s-remembrance": "Tulaytullah's Remembrance",
+	"vortex-vanquisher": "Vortex Vanquisher",
+	"wavebreaker_s-fin": "Wavebreaker's Fin",
+	"wine-and-song": "Wine and Song",
+	"wandering-evenstar": "Wandering Evenstar",
+	"wolf_s-gravestone": "Wolf's Gravestone",
+	"xiphos-moonlight": "Xiphos' Moonlight",
+	"albedo": {
+		"name": "Albedo",
+		"title": "Kreideprinz"
+	},
+	"alhaitham": {
+		"name": "Alhaitham",
+		"title": "Admonishing Instruction"
+	},
+	"amber": {
+		"name": "Amber",
+		"title": "Outrider Knights of Favonius"
+	},
+	"arataki-itto": {
+		"name": "Arataki Itto",
+		"title": "Hanamizaka Heroics"
+	},
+	"baizhu": {
+		"name": "Baizhu",
+		"title": "Beyond Mortality"
+	},
+	"barbara": {
+		"name": "Barbara",
+		"title": "Knight of Favonius Deaconess"
+	},
+	"beidou": {
+		"name": "Beidou",
+		"title": "Uncrowned Lord of Ocean"
+	},
+	"bennett": {
+		"name": "Bennett",
+		"title": "Trial by Fire"
+	},
+	"candace": {
+		"name": "Candace",
+		"title": "Golden Vow"
+	},
+	"charlotte": {
+		"name": "Charlotte",
+		"title": "Lens of Verity"
+	},
+	"chongyun": {
+		"name": "Chongyun",
+		"title": "Frozen Ardor"
+	},
+	"collei": {
+		"name": "Collei",
+		"title": "Sprout of Rebirth"
+	},
+	"cyno": {
+		"name": "Cyno",
+		"title": "Judicator of Secrets"
+	},
+	"dehya": {
+		"name": "Dehya",
+		"title": "Flame-Mane"
+	},
+	"diluc": {
+		"name": "Diluc",
+		"title": "The Dark Side of Dawn"
+	},
+	"diona": {
+		"name": "Diona",
+		"title": "Kätzlein Cocktail"
+	},
+	"dori": {
+		"name": "Dori",
+		"title": "Treasure of Dream Garden"
+	},
+	"eula": {
+		"name": "Eula",
+		"title": "The Sprindrift Knight"
+	},
+	"faruzan": {
+		"name": "Faruzan",
+		"title": "Enigmatic Machinist"
+	},
+	"fischl": {
+		"name": "Fischl",
+		"title": "Prinzessin der Verurteilung"
+	},
+	"freminet": {
+		"name": "Freminet",
+		"title": "Yearning for Unseen Depths"
+	},
+	"furina": {
+		"name": "Furina",
+		"title": "Endless Solo of Solitude"
+	},
+	"ganyu": {
+		"name": "Ganyu",
+		"title": "Plenilune Gaze"
+	},
+	"gorou": {
+		"name": "Gorou",
+		"title": "Canine Warrior"
+	},
+	"hu-tao": {
+		"name": "Hu Tao",
+		"title": "Fragrance in Thaw"
+	},
+	"jean": {
+		"name": "Jean",
+		"title": "Dandelion Knight"
+	},
+	"kaedehara-kazuha": {
+		"name": "Kaedehara Kazuha",
+		"title": "Scarlet Leaves Pursue Wild Waves"
+	},
+	"kaeya": {
+		"name": "Kaeya",
+		"title": "Knight of Favonius Quarter Master"
+	},
+	"kamisato-ayaka": {
+		"name": "Kamisato Ayaka",
+		"title": "Frostlake Heron"
+	},
+	"kamisato-ayato": {
+		"name": "Kamisato Ayato",
+		"title": "Pillar of Fortitude"
+	},
+	"kaveh": {
+		"name": "Kaveh",
+		"title": "Empyrean Reflection"
+	},
+	"keqing": {
+		"name": "Keqing",
+		"title": "Driving Thunder"
+	},
+	"kirara": {
+		"name": "Kirara",
+		"title": "Cat Upon the Eaves"
+	},
+	"klee": {
+		"name": "Klee",
+		"title": "Fleeing Sunlight"
+	},
+	"kujou-sara": {
+		"name": "Kujou Sara",
+		"title": "Crowfeather Kaburaya"
+	},
+	"kuki-shinobu": {
+		"name": "Kuki Shinobu",
+		"title": "Mender of Tribulations"
+	},
+	"layla": {
+		"name": "Layla",
+		"title": "Fantastical Evening Star"
+	},
+	"lisa": {
+		"name": "Lisa",
+		"title": "Knight of Favonius Librarian"
+	},
+	"lynette": {
+		"name": "Lynette",
+		"title": "Elegance in the Shadows"
+	},
+	"lyney": {
+		"name": "Lyney",
+		"title": "Spectacle of Phantasmagoria"
+	},
+	"mika": {
+		"name": "Mika",
+		"title": "Coordinates of Clear Frost"
+	},
+	"mona": {
+		"name": "Mona",
+		"title": "Astral Reflection"
+	},
+	"nahida": {
+		"name": "Nahida",
+		"title": "Physic of Purity"
+	},
+	"neuvillette": {
+		"name": "Neuvillette",
+		"title": "Ordainer of Inexorable Judgment"
+	},
+	"nilou": {
+		"name": "Nilou",
+		"title": "Dance of Lotuslight"
+	},
+	"ningguang": {
+		"name": "Ningguang",
+		"title": "Eclipsing Star"
+	},
+	"noelle": {
+		"name": "Noelle",
+		"title": "Chivalric Blossom"
+	},
+	"qiqi": {
+		"name": "Qiqi",
+		"title": "Icy Resurrection"
+	},
+	"raiden-shogun": {
+		"name": "Raiden Shogun",
+		"title": "Plane of Euthymia"
+	},
+	"razor": {
+		"name": "Razor",
+		"title": "Legend of Wolvendom"
+	},
+	"rosaria": {
+		"name": "Rosaria",
+		"title": "Thorny Benevolence"
+	},
+	"sangonomiya-kokomi": {
+		"name": "Sangonomiya Kokomi",
+		"title": "Pearl of Wisdom"
+	},
+	"sayu": {
+		"name": "Sayu",
+		"title": "Mujina Ninja"
+	},
+	"shenhe": {
+		"name": "Shenhe",
+		"title": "Lonesome Transcendence"
+	},
+	"shikanoin-heizou": {
+		"name": "Shikanoin Heizou",
+		"title": "Analytical Harmoni"
+	},
+	"sucrose": {
+		"name": "Sucrose",
+		"title": "Harmless Sweetie"
+	},
+	"tartaglia": {
+		"name": "Tartaglia",
+		"title": "Childe"
+	},
+	"thoma": {
+		"name": "Thoma",
+		"title": "Protector From Afar"
+	},
+	"tighnari": {
+		"name": "Tighnari",
+		"title": "Verdant Strider"
+	},
+	"venti": {
+		"name": "Venti",
+		"title": "Windborne Bard"
+	},
+	"wanderer": {
+		"name": "Wanderer",
+		"title": "Eons Adrift"
+	},
+	"wriothesley": {
+		"name": "Wriothesley",
+		"title": "Emissary of Solitary Iniquity"
+	},
+	"xiangling": {
+		"name": "Xiangling",
+		"title": "Exquisite Delicacy"
+	},
+	"xiao": {
+		"name": "Xiao",
+		"title": "Vigilant Yaksha"
+	},
+	"xingqiu": {
+		"name": "Xingqiu",
+		"title": "Juvenile Galant"
+	},
+	"xinyan": {
+		"name": "Xinyan",
+		"title": "Blazing Riff"
+	},
+	"yae-miko": {
+		"name": "Yae Miko",
+		"title": "Astute Amusement"
+	},
+	"yanfei": {
+		"name": "Yanfei",
+		"title": "Wise Innocence"
+	},
+	"yaoyao": {
+		"name": "Yaoyao",
+		"title": "Burgeoning Grace"
+	},
+	"yelan": {
+		"name": "Yelan",
+		"title": "Valley Orchid"
+	},
+	"yoimiya": {
+		"name": "Yoimiya",
+		"title": "Frolicking Flames"
+	},
+	"yun-jin": {
+		"name": "Yun Jin",
+		"title": "Stage Lucida"
+	},
+	"zhongli": {
+		"name": "Zhongli",
+		"title": "Vago Mundo"
+	}
+}

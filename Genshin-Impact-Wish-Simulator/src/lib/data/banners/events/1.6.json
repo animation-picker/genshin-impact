@@ -1,0 +1,68 @@
+{
+	"patch": 1.6,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "sparkling-steps-2",
+							"character": "klee"
+						}
+					],
+					"rateup": ["fischl", "barbara", "sucrose"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-13",
+					"fatepointsystem": false,
+					"featured": [{ "name": "lost-prayer-to-the-sacred-winds" }, { "name": "skyward-pride" }],
+					"rateup": [
+						"mitternachts-waltz",
+						"the-widsith",
+						"the-bell",
+						"favonius-lance",
+						"lion_s-roar"
+					],
+					"textOffset": {
+						"featured": { "l": 42.5 },
+						"rateup": { "l": 71.5, "b": 18 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "leaves-in-the-wind-1",
+							"character": "kaedehara-kazuha",
+							"textOffset": { "w": 25 }
+						}
+					],
+					"rateup": ["rosaria", "bennett", "razor"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-14",
+					"fatepointsystem": false,
+					"featured": [{ "name": "freedom-sworn" }, { "name": "skyward-atlas" }],
+					"rateup": [
+						"alley-hunter",
+						"wine-and-song",
+						"favonius-greatsword",
+						"dragon_s-bane",
+						"the-alley-flash"
+					],
+					"textOffset": {
+						"featured": { "l": 41, "t": 71 },
+						"rateup": { "l": 72, "b": 18 }
+					}
+				}
+			}
+		}
+	]
+}

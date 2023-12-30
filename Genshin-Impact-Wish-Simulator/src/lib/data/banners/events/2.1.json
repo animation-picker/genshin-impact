@@ -1,0 +1,66 @@
+{
+	"patch": 2.1,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "reign-of-serenity-1",
+							"character": "raiden-shogun",
+							"textOffset": { "l": 61, "b": 13 }
+						}
+					],
+					"rateup": ["xiangling", "sucrose", "kujou-sara"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-17",
+					"fatepointsystem": true,
+					"featured": [{ "name": "engulfing-lightning" }, { "name": "the-unforged" }],
+					"rateup": ["the-bell", "sacrificial-bow", "favonius-lance", "the-widsith", "lion_s-roar"],
+					"textOffset": {
+						"featured": { "l": 39.5, "w": 30 },
+						"rateup": { "l": 76 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "drifting-luminescence-1",
+							"character": "sangonomiya-kokomi",
+							"textOffset": { "w": 23, "l": 51 }
+						}
+					],
+					"rateup": ["rosaria", "xingqiu", "beidou"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-18",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "primordial-jade-cutter", "buttonPosition": { "l": 25 } },
+						{ "name": "everlasting-moonglow" }
+					],
+					"rateup": [
+						"dragon_s-bane",
+						"the-stringless",
+						"favonius-codex",
+						"favonius-greatsword",
+						"the-flute"
+					],
+					"textOffset": {
+						"featured": { "l": 42, "w": 30, "t": 66 },
+						"rateup": { "l": 75.5 }
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"patch": 2.2,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "farewell-of-snezhnaya-3",
+							"character": "tartaglia",
+							"textOffset": { "l": 50.5 }
+						}
+					],
+					"rateup": ["yanfei", "chongyun", "ningguang"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-19",
+					"fatepointsystem": true,
+					"featured": [{ "name": "polar-star" }, { "name": "memory-of-dust" }],
+					"rateup": ["favonius-lance", "rust", "eye-of-perception", "akuoumaru", "favonius-sword"],
+					"textOffset": {
+						"featured": { "l": 42.2, "t": 67 },
+						"rateup": { "l": 76.5, "b": 19 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "moment-of-bloom-2",
+							"character": "hu-tao",
+							"textOffset": { "l": 56 }
+						}
+					],
+					"rateup": ["thoma", "diona", "sayu"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-20",
+					"fatepointsystem": true,
+					"featured": [{ "name": "elegy-for-the-end" }, { "name": "staff-of-homa" }],
+					"rateup": [
+						"wavebreaker_s-fin",
+						"mouun_s-moon",
+						"the-widsith",
+						"rainslasher",
+						"sacrificial-sword"
+					],
+					"textOffset": {
+						"featured": { "l": 38.5, "t": 68 },
+						"rateup": { "l": 74, "b": 18 }
+					}
+				}
+			}
+		}
+	]
+}

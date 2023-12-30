@@ -1,0 +1,113 @@
+{
+	"outfits": [
+		{
+			"name": "5-star-outrider",
+			"characterName": "amber",
+			"rarity": 4
+		},
+		{
+			"name": "favonian-fevotion",
+			"characterName": "jean",
+			"rarity": 4
+		},
+		{
+			"name": "executor_s-thorns",
+			"characterName": "rosaria",
+			"rarity": 4
+		},
+		{
+			"name": "flowing-fate",
+			"characterName": "mona",
+			"rarity": 4,
+			"wishBoxPosition": { "l": 35, "h": 190 }
+		},
+		{
+			"release": 1.6,
+			"name": "sea-breeze-dandelion",
+			"characterName": "jean",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"wishBoxPosition": { "t": 90, "h": 200, "l": 20 }
+		},
+		{
+			"release": 1.6,
+			"name": "summertime-sparkle",
+			"characterName": "barbara",
+			"rarity": 4,
+			"price": 1680,
+			"wishBoxPosition": { "t": 72, "l": 140, "h": 185 }
+		},
+		{
+			"release": 2.4,
+			"name": "opulent-splendor",
+			"characterName": "keqing",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"wishBoxPosition": { "t": 83 }
+		},
+		{
+			"release": 2.4,
+			"name": "orchid_s-evening-gown",
+			"characterName": "ningguang",
+			"rarity": 4,
+			"price": 1680,
+			"wishBoxPosition": { "h": 200, "t": 90, "l": 23 }
+		},
+		{
+			"release": 2.8,
+			"name": "ein-immernachtstraum",
+			"characterName": "fischl",
+			"rarity": 4,
+			"price": 1680,
+			"wishBoxPosition": { "l": 15 }
+		},
+		{
+			"release": 2.8,
+			"name": "red-dead-of-night",
+			"characterName": "diluc",
+			"rarity": 5,
+			"price": 2480,
+			"promoPrice": 1980,
+			"wishBoxPosition": { "l": -54, "h": 200, "t": 85 },
+			"cardBoxPosition": { "l": -45 }
+		},
+		{
+			"release": 3.4,
+			"name": "a-sobriquet-under-shade",
+			"characterName": "lisa",
+			"rarity": 4,
+			"price": 1680,
+			"wishBoxPosition": { "l": -45, "t": 70 }
+		},
+		{
+			"release": 3.4,
+			"name": "springbloom-missive",
+			"characterName": "kamisato-ayaka",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"wishBoxPosition": { "l": 60, "h": 190, "t": 70 },
+			"cardBoxPosition": { "l": -10, "w": 90, "t": -35 }
+		},
+		{
+			"release": 3.8,
+			"name": "sailwind-shadow",
+			"characterName": "kaeya",
+			"rarity": 4,
+			"price": 1680,
+			"wishBoxPosition": { "l": 23, "t": 70, "h": 210 }
+		},
+		{
+			"release": 3.8,
+			"name": "blossoming-starlight",
+			"characterName": "klee",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"wishBoxPosition": { "l": 80, "h": 185, "t": 50 },
+			"cardBoxPosition": { "l": -20, "w": 120, "t": -42 }
+		}
+	]
+}

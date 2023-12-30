@@ -1,0 +1,60 @@
+{
+	"name": "wishsimulator.app",
+	"description": "Realistic Genshin Impact Wish Simulator, Unlimited Gacha, 100% running on browser",
+	"version": "2.0.0",
+	"author": {
+		"name": "AguzzTN54",
+		"email": "admin@wishsimulator.app",
+		"url": "https://github.com/AguzzTN54"
+	},
+	"repository": {
+		"url": "https://github.com/AguzzTN54/Genshin-Impact-Wish-Simulator"
+	},
+	"license": "MIT",
+	"homepage": "https://wishsimulator.app",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"type": "module",
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "^1.0.0-next.66",
+		"@sveltejs/kit": "^1.0.0-next.551",
+		"autoprefixer": "^10.4.8",
+		"dotenv": "^16.0.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"postcss": "^8.4.16",
+		"postcss-load-config": "^4.0.1",
+		"postcss-nested": "^5.0.6",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.47.0",
+		"svelte-check": "^2.9.2",
+		"svelte-preprocess": "^4.10.6",
+		"uuid": "^9.0.0",
+		"vite": "^3.1.8",
+		"vite-plugin-markdown": "^2.1.0",
+		"vite-plugin-pwa": "^0.13.1",
+		"workbox-cacheable-response": "^6.5.4",
+		"workbox-core": "^6.5.4",
+		"workbox-precaching": "^6.5.4",
+		"workbox-routing": "^6.5.4"
+	},
+	"dependencies": {
+		"file-saver": "^2.0.5",
+		"firebase": "^9.19.1",
+		"hotkeys-js": "^3.12.0",
+		"howler": "^2.2.3",
+		"html-to-image": "^1.8.5",
+		"idb": "^6.1.2",
+		"overlayscrollbars": "^1.13.1",
+		"svelte-i18n": "^3.4.0"
+	}
+}

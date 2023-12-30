@@ -1,0 +1,235 @@
+{
+	"currencies": [
+		{
+			"country": ["br"],
+			"currency": "BRL",
+			"symbol": "R$",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 25.9,
+				"genesis": {
+					"60": 4.9,
+					"300": 25.9,
+					"980": 76.9,
+					"1980": 154.9,
+					"3280": 254.9,
+					"6480": 499.9
+				}
+			}
+		},
+		{
+			"country": ["cn"],
+			"currency": "CNY",
+			"symbol": "¥",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 30,
+				"genesis": {
+					"60": 6,
+					"300": 30,
+					"980": 98,
+					"1980": 198,
+					"3280": 328,
+					"6480": 648
+				}
+			}
+		},
+		{
+			"country": ["ad", "at", "be", "cy", "gr", "es", "fr", "de", "fi", "it", "pt", "nl"],
+			"currency": "EUR",
+			"symbol": "€",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 4.49,
+				"genesis": {
+					"60": 1.19,
+					"300": 5.99,
+					"980": 17.99,
+					"1980": 35.99,
+					"3280": 59.99,
+					"6480": 119.99
+				}
+			}
+		},
+		{
+			"country": ["uk"],
+			"currency": "GBP",
+			"symbol": "£",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 4.49,
+				"genesis": {
+					"60": 0.89,
+					"300": 4.49,
+					"980": 12.99,
+					"1980": 25.99,
+					"3280": 44.99,
+					"6480": 89.99
+				}
+			}
+		},
+		{
+			"country": ["id"],
+			"currency": "IDR",
+			"symbol": "Rp",
+			"format": "{symbol} {nominal}",
+			"list": {
+				"welkin": 81000,
+				"genesis": {
+					"60": 16500,
+					"300": 81000,
+					"980": 255000,
+					"1980": 489000,
+					"3280": 815000,
+					"6480": 1629000
+				}
+			}
+		},
+		{
+			"country": ["ja"],
+			"currency": "JPY",
+			"symbol": "¥",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 610,
+				"genesis": {
+					"60": 120,
+					"300": 610,
+					"980": 1840,
+					"1980": 3680,
+					"3280": 6100,
+					"6480": 12000
+				}
+			}
+		},
+		{
+			"country": ["ko"],
+			"currency": "KRW",
+			"symbol": "₩",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 5900,
+				"genesis": {
+					"60": 1200,
+					"300": 5900,
+					"980": 19000,
+					"1980": 37000,
+					"3280": 65000,
+					"6480": 119000
+				}
+			}
+		},
+		{
+			"country": ["ph"],
+			"currency": "PHP",
+			"symbol": "₱",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 280,
+				"genesis": {
+					"60": 55,
+					"300": 280,
+					"980": 830,
+					"1980": 1670,
+					"3280": 2800,
+					"6480": 5500
+				}
+			}
+		},
+		{
+			"country": ["ru"],
+			"currency": "RUB",
+			"symbol": "₽",
+			"format": "{nominal}{symbol}",
+			"list": {
+				"welkin": 499,
+				"genesis": {
+					"60": 99,
+					"300": 499,
+					"980": 1390,
+					"1980": 2790,
+					"3280": 4690,
+					"6480": 9490
+				}
+			}
+		},
+		{
+			"country": ["th"],
+			"currency": "THB",
+			"symbol": "฿",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 179,
+				"genesis": {
+					"60": 35,
+					"300": 179,
+					"980": 549,
+					"1980": 1100,
+					"3280": 1800,
+					"6480": 3700
+				}
+			}
+		},
+		{
+			"country": ["tw"],
+			"currency": "NTD",
+			"symbol": "NT$",
+			"format": "{symbol} {nominal}",
+			"list": {
+				"welkin": 170,
+				"genesis": {
+					"60": 33,
+					"300": 170,
+					"980": 490,
+					"1980": 990,
+					"3280": 1690,
+					"6480": 3290
+				}
+			}
+		},
+		{
+			"country": ["us"],
+			"currency": "USD",
+			"symbol": "US$",
+			"format": "{symbol}{nominal}",
+			"list": {
+				"welkin": 4.99,
+				"genesis": {
+					"60": 0.99,
+					"300": 4.99,
+					"980": 14.99,
+					"1980": 29.99,
+					"3280": 49.99,
+					"6480": 99.99
+				}
+			}
+		},
+		{
+			"country": ["vn"],
+			"currency": "VND",
+			"symbol": "đ",
+			"format": "{nominal}{symbol}",
+			"list": {
+				"welkin": 109000,
+				"genesis": {
+					"60": 22000,
+					"300": 109000,
+					"980": 329000,
+					"1980": 699000,
+					"3280": 1099000,
+					"6480": 2199000
+				}
+			}
+		}
+	],
+	"genesisBonus": {
+		"versionReset": [1.0, 2.1, 3.1, 4.1],
+		"topupBonus": {
+			"300": 30,
+			"980": 110,
+			"1980": 260,
+			"3280": 600,
+			"6480": 1600
+		}
+	}
+}

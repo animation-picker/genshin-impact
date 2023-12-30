@@ -1,0 +1,72 @@
+{
+	"patch": 1.4,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "ballad-in-goblets-2",
+							"character": "venti",
+							"textOffset": { "l": 57, "b": 6 }
+						}
+					],
+					"rateup": ["razor", "sucrose", "noelle"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-9",
+					"fatepointsystem": false,
+					"featured": [{ "name": "elegy-for-the-end" }, { "name": "skyward-blade" }],
+					"rateup": [
+						"favonius-warbow",
+						"wine-and-song",
+						"dragon_s-bane",
+						"favonius-greatsword",
+						"the-alley-flash"
+					],
+					"textOffset": {
+						"featured": { "l": 40, "t": 72 },
+						"rateup": { "l": 74, "b": 18 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "farewell-of-snezhnaya-2",
+							"character": "tartaglia",
+							"textOffset": { "l": 57.5, "b": 6 }
+						}
+					],
+					"rateup": ["barbara", "fischl", "rosaria"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-10",
+					"fatepointsystem": false,
+					"featured": [
+						{ "name": "skyward-harp" },
+						{ "name": "lost-prayer-to-the-sacred-winds", "buttonPosition": { "l": 70 } }
+					],
+					"rateup": [
+						"alley-hunter",
+						"favonius-codex",
+						"sacrificial-greatsword",
+						"favonius-lance",
+						"favonius-sword"
+					],
+					"textOffset": {
+						"featured": { "l": 44, "t": 72 },
+						"rateup": { "l": 75, "b": 16 }
+					}
+				}
+			}
+		}
+	]
+}

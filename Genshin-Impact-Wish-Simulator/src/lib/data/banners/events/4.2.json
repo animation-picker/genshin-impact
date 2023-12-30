@@ -1,0 +1,43 @@
+{
+	"patch": 4.2,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "chanson-of-many-waters-1",
+							"character": "furina",
+							"textOffset": { "l": 50.75, "b": 9 }
+						},
+						{
+							"bannerName": "immaculate-pulse-2",
+							"character": "baizhu",
+							"textOffset": { "l": 50.75, "b": 9 }
+						}
+					],
+					"rateup": ["charlotte", "beidou", "collei"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-55",
+					"fatepointsystem": true,
+					"featured": [{ "name": "splendor-of-tranquil-waters" }, { "name": "jadefall-splendor" }],
+					"rateup": [
+						"sacrificial-sword",
+						"the-stringless",
+						"the-bell",
+						"sacrificial-fragments",
+						"dragon_s-bane"
+					],
+					"textOffset": {
+						"featured": { "l": 47, "t": 70, "w": 29 },
+						"rateup": { "l": 77.5, "b": 20 }
+					}
+				}
+			}
+		}
+	]
+}
+

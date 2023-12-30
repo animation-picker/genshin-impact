@@ -1,0 +1,517 @@
+{
+	"onlyStandard": ["amber", "kaeya", "lisa"],
+	"data": [
+		{
+			"name": "furina",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": -35, "h": 205, "t": 62 },
+			"buttonOffset": { "l": 52, "w": 130, "t": 35 }
+		},
+		{
+			"name": "charlotte",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "4.2-1",
+			"wishBoxPosition": { "l": 35, "h": 200, "t": 60 }
+		},
+		{
+			"name": "wriothesley",
+			"vision": "cryo",
+			"rarity": 5,
+			"wishBoxPosition": { "l": -32, "h": 210, "t": 88 },
+			"buttonOffset": { "l": 50, "w": 120, "t": 25 }
+		},
+		{
+			"name": "neuvillette",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 68, "h": 190, "t": 74 },
+			"buttonOffset": { "l": 54, "w": 105, "t": 20 }
+		},
+		{
+			"name": "freminet",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "4.0-2",
+			"wishBoxPosition": { "l": -55, "h": 170, "t": 58 }
+		},
+		{
+			"name": "lynette",
+			"vision": "anemo",
+			"rarity": 4,
+			"release": "4.0-1",
+			"wishBoxPosition": { "l": 70, "h": 175, "t": 55 }
+		},
+		{
+			"name": "lyney",
+			"vision": "pyro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 23, "h": 205, "t": 70 },
+			"buttonOffset": { "l": 55, "w": 105, "t": 20 }
+		},
+		{
+			"name": "kirara",
+			"vision": "dendro",
+			"rarity": 4,
+			"release": "3.7-1",
+			"wishBoxPosition": { "l": 98, "h": 200, "t": 78 }
+		},
+		{
+			"name": "baizhu",
+			"vision": "dendro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 128, "h": 205, "t": 74 },
+			"buttonOffset": { "l": 50, "w": 105, "t": 35 }
+		},
+		{
+			"name": "kaveh",
+			"vision": "dendro",
+			"rarity": 4,
+			"release": "3.6-2",
+			"wishBoxPosition": { "l": 20, "h": 215, "t": 85 }
+		},
+		{
+			"name": "mika",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "3.5-2",
+			"wishBoxPosition": { "l": 85, "h": 160, "t": 70 }
+		},
+		{
+			"name": "dehya",
+			"vision": "pyro",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 89, "l": 25, "h": 220 },
+			"buttonOffset": { "w": 130, "t": 24, "l": 55 }
+		},
+		{
+			"name": "alhaitham",
+			"vision": "dendro",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 90, "l": 80, "h": 200 },
+			"buttonOffset": { "w": 130, "t": 24, "l": 55 }
+		},
+		{
+			"name": "yaoyao",
+			"vision": "dendro",
+			"rarity": 4,
+			"release": "3.4-1",
+			"wishBoxPosition": { "t": 63, "l": 35, "h": 140 }
+		},
+		{
+			"name": "wanderer",
+			"vision": "anemo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 73, "l": 60, "h": 185 },
+			"buttonOffset": { "w": 120, "t": 27 }
+		},
+		{
+			"name": "faruzan",
+			"vision": "anemo",
+			"rarity": 4,
+			"release": "3.3-1",
+			"wishBoxPosition": { "t": 73, "l": 78, "h": 185 }
+		},
+		{
+			"name": "layla",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "3.2-2",
+			"wishBoxPosition": { "h": 160, "t": 65 }
+		},
+		{
+			"name": "nahida",
+			"vision": "dendro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 70, "t": 45 },
+			"buttonOffset": { "w": 130, "t": 30 }
+		},
+		{
+			"name": "nilou",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 70, "h": 200, "t": 66 },
+			"buttonOffset": { "w": 145, "t": 35, "l": 55 }
+		},
+		{
+			"name": "cyno",
+			"vision": "electro",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 83, "l": 40, "h": 195 },
+			"buttonOffset": { "w": 160, "t": 35, "l": 55 }
+		},
+		{
+			"name": "candace",
+			"vision": "hydro",
+			"rarity": 4,
+			"release": "3.1-1",
+			"wishBoxPosition": { "l": 35, "h": 170, "t": 60 }
+		},
+		{
+			"name": "dori",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "3.0-2",
+			"wishBoxPosition": { "l": -15, "h": 180, "t": 65 }
+		},
+		{
+			"name": "tighnari",
+			"vision": "dendro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 50, "h": 195, "t": 85 },
+			"buttonOffset": { "w": 95, "t": 35, "l": 30 }
+		},
+		{
+			"name": "collei",
+			"vision": "dendro",
+			"rarity": 4,
+			"release": "3.0-1",
+			"wishBoxPosition": { "l": 140, "h": 170, "t": 65 }
+		},
+		{
+			"name": "shikanoin-heizou",
+			"vision": "anemo",
+			"rarity": 4,
+			"release": "2.8-1",
+			"wishBoxPosition": { "t": 65, "l": 25 }
+		},
+		{
+			"name": "kuki-shinobu",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "2.7-2",
+			"wishBoxPosition": { "h": 160, "t": 66, "l": 15 }
+		},
+		{
+			"name": "yelan",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "h": 220, "t": 82, "l": 80 },
+			"buttonOffset": { "w": 100, "t": 32, "l": 50 }
+		},
+		{
+			"name": "kamisato-ayato",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "h": 210, "l": 100, "t": 90 },
+			"buttonOffset": { "w": 140, "t": 35, "l": 50 }
+		},
+		{
+			"name": "yae-miko",
+			"vision": "electro",
+			"rarity": 5,
+			"wishBoxPosition": { "h": 210, "t": 87, "l": 10 },
+			"buttonOffset": { "w": 170, "t": 24, "l": 50 }
+		},
+		{
+			"name": "shenhe",
+			"vision": "cryo",
+			"rarity": 5,
+			"wishBoxPosition": { "h": 190, "l": -15, "t": 78 },
+			"buttonOffset": { "w": 170, "t": 20, "l": 30 }
+		},
+		{
+			"name": "yun-jin",
+			"vision": "geo",
+			"rarity": 4,
+			"release": "2.4-1",
+			"wishBoxPosition": { "h": 165, "l": 70, "t": 70 }
+		},
+		{
+			"name": "arataki-itto",
+			"vision": "geo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 85, "l": 75, "h": 195 },
+			"buttonOffset": { "w": 190, "t": 30, "l": 50 }
+		},
+		{
+			"name": "gorou",
+			"vision": "geo",
+			"rarity": 4,
+			"release": "2.3-2",
+			"wishBoxPosition": { "l": 100, "h": 165, "t": 65 }
+		},
+		{
+			"name": "thoma",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "2.2-2",
+			"wishBoxPosition": { "l": 80, "h": 160, "t": 70 }
+		},
+		{
+			"name": "sangonomiya-kokomi",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "h": 190, "l": 65 },
+			"buttonOffset": { "w": 180, "t": 25, "l": 55 }
+		},
+		{
+			"name": "raiden-shogun",
+			"vision": "electro",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 80, "l": 95, "h": 200 },
+			"buttonOffset": { "w": 160, "t": 5 }
+		},
+		{
+			"name": "kujou-sara",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "2.1-1",
+			"wishBoxPosition": { "h": 210, "t": 85 }
+		},
+		{
+			"name": "yoimiya",
+			"vision": "pyro",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 66, "l": 40 },
+			"buttonOffset": { "w": 150, "t": 20, "l": 40 }
+		},
+		{
+			"name": "sayu",
+			"vision": "anemo",
+			"rarity": 4,
+			"release": "2.0-2",
+			"wishBoxPosition": { "t": 63, "h": 185, "l": -50 }
+		},
+		{
+			"name": "kamisato-ayaka",
+			"vision": "cryo",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 40 },
+			"buttonOffset": { "w": 82, "t": 32 }
+		},
+		{
+			"name": "kaedehara-kazuha",
+			"vision": "anemo",
+			"rarity": 5,
+			"wishBoxPosition": { "h": 230, "t": 90, "l": 70 },
+			"buttonOffset": { "w": 110, "t": 32 }
+		},
+		{
+			"name": "eula",
+			"vision": "cryo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 83, "h": 200 },
+			"buttonOffset": { "w": 140, "t": 32 }
+		},
+		{
+			"name": "yanfei",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "1.5-1",
+			"wishBoxPosition": { "l": 160, "t": 70 }
+		},
+		{
+			"name": "rosaria",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "1.4-2",
+			"wishBoxPosition": { "h": 175, "t": 80, "l": 60 }
+		},
+		{
+			"name": "hu-tao",
+			"vision": "pyro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": -110, "h": 200, "t": 70 },
+			"buttonOffset": { "w": 160, "t": 22 }
+		},
+		{
+			"name": "xiao",
+			"vision": "anemo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 50 },
+			"buttonOffset": { "w": 120, "t": 30, "l": 50 }
+		},
+		{
+			"name": "ganyu",
+			"vision": "cryo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 79, "h": 175, "l": 55 },
+			"buttonOffset": { "w": 200, "t": 25 }
+		},
+		{
+			"name": "albedo",
+			"vision": "geo",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 22, "t": 72, "h": 190 },
+			"buttonOffset": { "w": 170, "t": 28, "l": 50 }
+		},
+		{
+			"name": "zhongli",
+			"vision": "geo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 80, "l": 80, "h": 200 },
+			"buttonOffset": { "w": 120, "t": 25, "l": 70 }
+		},
+		{
+			"name": "xinyan",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "1.1-2",
+			"wishBoxPosition": { "h": 200, "t": 72 }
+		},
+		{
+			"name": "tartaglia",
+			"vision": "hydro",
+			"rarity": 5,
+			"wishBoxPosition": { "l": 120, "h": 225, "t": 75 },
+			"buttonOffset": { "w": 160, "t": 22 }
+		},
+		{
+			"name": "diona",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "1.1-1",
+			"wishBoxPosition": { "t": 50, "l": 80, "h": 190 }
+		},
+		{
+			"name": "klee",
+			"vision": "pyro",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 43, "h": 160, "l": 45 },
+			"buttonOffset": { "w": 110, "t": 32 }
+		},
+		{
+			"name": "venti",
+			"vision": "anemo",
+			"rarity": 5,
+			"wishBoxPosition": { "t": 70, "l": 90 },
+			"buttonOffset": { "w": 180, "t": 30, "l": 50 }
+		},
+		{
+			"name": "keqing",
+			"vision": "electro",
+			"rarity": 5,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 70, "l": 25 },
+			"buttonOffset": { "w": 150, "t": 22, "l": 50 }
+		},
+		{
+			"name": "mona",
+			"vision": "hydro",
+			"rarity": 5,
+			"release": "1.0-0",
+			"wishBoxPosition": { "l": 55, "h": 190 }
+		},
+		{
+			"name": "qiqi",
+			"vision": "cryo",
+			"rarity": 5,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 55 },
+			"buttonOffset": { "w": 100, "t": 30 }
+		},
+		{
+			"name": "diluc",
+			"vision": "pyro",
+			"rarity": 5,
+			"release": "1.0-0"
+		},
+		{
+			"name": "jean",
+			"vision": "anemo",
+			"rarity": 5,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 80, "h": 190, "l": 85 },
+			"buttonOffset": { "w": 90, "t": 35, "l": 55 }
+		},
+		{
+			"name": "sucrose",
+			"vision": "anemo",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "h": 175, "t": 72 }
+		},
+		{
+			"name": "chongyun",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 70, "l": 40, "h": 190 }
+		},
+		{
+			"name": "noelle",
+			"vision": "geo",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 70 },
+			"buttonOffset": { "w": 100, "t": 30 }
+		},
+		{
+			"name": "bennett",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "l": -22, "t": 55, "h": 190 }
+		},
+		{
+			"name": "fischl",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 65, "l": 10, "h": 170 }
+		},
+		{
+			"name": "ningguang",
+			"vision": "geo",
+			"rarity": 4,
+			"release": "1.0-0"
+		},
+		{
+			"name": "xingqiu",
+			"vision": "hydro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "h": 200, "t": 80, "l": 40 }
+		},
+		{
+			"name": "beidou",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "l": 35 }
+		},
+		{
+			"name": "xiangling",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "l": 120, "t": 66, "h": 175 }
+		},
+		{
+			"name": "razor",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "l": -5, "t": 65 }
+		},
+		{
+			"name": "barbara",
+			"vision": "hydro",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 75, "h": 155 }
+		},
+		{
+			"name": "lisa",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "1.0-0"
+		},
+		{
+			"name": "kaeya",
+			"vision": "cryo",
+			"rarity": 4,
+			"release": "1.0-0",
+			"wishBoxPosition": { "l": 20, "t": 82, "h": 190 }
+		},
+		{
+			"name": "amber",
+			"rarity": 4,
+			"vision": "pyro",
+			"release": "1.0-0",
+			"wishBoxPosition": { "t": 55, "h": 170, "l": 120 }
+		}
+	]
+}

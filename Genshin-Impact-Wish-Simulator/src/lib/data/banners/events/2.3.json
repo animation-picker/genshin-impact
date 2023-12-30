@@ -1,0 +1,80 @@
+{
+	"patch": 2.3,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "secretum-secretorum-2",
+							"character": "albedo",
+							"textOffset": { "l": 55.5, "b": 9 }
+						},
+						{
+							"bannerName": "born-of-ocean-swell-2",
+							"character": "eula",
+							"textOffset": { "l": 57, "b": 11 }
+						}
+					],
+					"rateup": ["bennett", "noelle", "rosaria"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-21",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "freedom-sworn" },
+						{
+							"name": "song-of-broken-pines",
+							"buttonPosition": { "l": 60 }
+						}
+					],
+					"rateup": [
+						"lion_s-roar",
+						"alley-hunter",
+						"wine-and-song",
+						"dragon_s-bane",
+						"sacrificial-greatsword"
+					],
+					"textOffset": {
+						"featured": { "t": 68, "w": 30 },
+						"rateup": { "l": 71, "b": 19 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 2,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "oni_s-royale-1",
+							"character": "arataki-itto",
+							"textOffset": { "l": 50, "b": 9.5 }
+						}
+					],
+					"rateup": ["barbara", "xiangling", "gorou"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-22",
+					"fatepointsystem": true,
+					"featured": [{ "name": "skyward-harp" }, { "name": "redhorn-stonethresher" }],
+					"rateup": [
+						"the-alley-flash",
+						"mitternachts-waltz",
+						"sacrificial-fragments",
+						"favonius-lance",
+						"the-bell"
+					],
+					"textOffset": {
+						"featured": { "t": 67, "w": 30 },
+						"rateup": { "b": 19, "l": 71 }
+					}
+				}
+			}
+		}
+	]
+}
