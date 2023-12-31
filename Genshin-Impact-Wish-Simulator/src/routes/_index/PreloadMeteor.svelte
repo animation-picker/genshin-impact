@@ -4,7 +4,7 @@
 	import { t } from 'svelte-i18n';
 	import { check, loadAnimation, loadProggress } from '$lib/helpers/meteor-loader';
 	import { assets, autoskip } from '$lib/store/app-stores';
-	import { localConfig } from '$lib/store/localstore-manager';
+	import { localConfig } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import ButtonGeneral from '$lib/components/ButtonGeneral.svelte';
 
@@ -42,9 +42,14 @@
 		readyToPull.set(true);
 		onProgress = false;
 	};
+
+	if (!ready) {
+		preloadMeteor();
+	}
+
 </script>
 
-{#if !ready}
+<!-- {#if !ready}
 	<div class="tooltip" transition:fade={{ duration: 250 }}>
 		{#if onProgress}
 			<div class="loader">
@@ -75,7 +80,7 @@
 			</div>
 		{/if}
 	</div>
-{/if}
+{/if} -->
 
 <style>
 	.tooltip {

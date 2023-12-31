@@ -6,7 +6,7 @@
 
 	import { primogem } from '$lib/store/app-stores';
 	import { initialAmount } from '$lib/data/wish-setup.json';
-	import { localBalance, localConfig } from '$lib/store/localstore-manager';
+	import { localBalance, localConfig } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	import Icon from '$lib/components/Icon.svelte';
@@ -40,7 +40,7 @@
 	const preview = (val) => (previewDOM ? previewDOM(val) : null);
 
 	const filterShot = (node) => {
-		const notIncluded = ['close', 'share', 'skip', 'outfit-toggle'];
+		const notIncluded = ['close', 'share', 'skip', 'outfit-toggle', 'zoomer'];
 		if (node.classList) return !notIncluded.some((cl) => node.classList.contains(cl));
 		return true;
 	};

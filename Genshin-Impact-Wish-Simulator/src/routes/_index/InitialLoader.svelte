@@ -2,7 +2,7 @@
 	import { getContext, onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { mobileMode, isMobile, assets } from '$lib/store/app-stores';
-	import { listingAssets, blobAssets, getItemlist } from '$lib/helpers/assets';
+	import { itemList, listingAssets, blobAssets } from '$lib/helpers/assets';
 
 	export let isBannerLoaded = false;
 	export let directLoad = false;
@@ -32,11 +32,11 @@
 		}
 
 		const loadedAssets = await Promise.all(arr);
-		const itemList = await getItemlist();
+		const list = await itemList();
 		assets.update((pv) => {
 			pv = {};
 			loadedAssets.forEach(({ url, name }) => (pv[name] = url));
-			return { ...pv, ...itemList };
+			return { ...pv, ...list };
 		});
 
 		if (anyError === false) handleLoaded();

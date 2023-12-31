@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { initializeAppCheck, ReCaptchaV3Provider } from 'firebase/app-check';
 import { getDatabase } from 'firebase/database';
 import { v4 as uuidv4 } from 'uuid';
-import { cookie } from '$lib/store/cookie';
+import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 import {
 	API_KEY,
 	AUTH_DOMAIN,

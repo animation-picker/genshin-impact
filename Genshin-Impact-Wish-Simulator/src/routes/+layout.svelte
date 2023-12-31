@@ -5,7 +5,7 @@
 	import { page } from '$app/stores';
 	import { dev } from '$app/environment';
 	import { onMount, setContext } from 'svelte';
-	import { writable } from 'svelte/store';
+	import 'zoomist/css';
 
 	import {
 		viewportHeight,
@@ -14,25 +14,29 @@
 		mobileMode,
 		isPWA
 	} from '$lib/store/app-stores';
-	import { retriveOldData } from '$lib/helpers/migrator/collect-old-data';
+	import { IDBUpdater } from '$lib/helpers/migrator/IDBUpdater';
+	import { storageLocal } from '$lib/helpers/dataAPI/api-localstore';
 	import { HOST, DESCRIPTION, KEYWORDS, APP_TITLE } from '$lib/env';
+	import { sync } from '$lib/helpers/dataAPI/sync';
+	import { autoExport } from '$lib/store/filesystem-store';
 	import { mountLocale } from '$lib/helpers/i18n';
 	import { mobileDetect } from '$lib/helpers/mobileDetect';
 	import { wakeLock } from '$lib/helpers/wakeLock';
+	import { syncCustomBanner } from '$lib/helpers/custom-banner';
+	// import { initializeDriveAPI } from '$lib/helpers/dataAPI/google-api';
 	import '../app.css';
 
 	import Iklan from '$lib/components/Iklan.svelte';
+	import Toasts from '$lib/components/Toasts.svelte';
 	import Loader from './_index/InitialLoader.svelte';
 
 	let innerHeight;
 	let innerWidth;
 	let isBannerLoaded = false;
 	let isloaded = false;
-	const showAd = writable(false);
 
 	setContext('bannerLoaded', () => (isBannerLoaded = true));
 	setContext('loaded', () => (isloaded = true));
-	setContext('showAd', showAd);
 
 	let font = '';
 	$: {
@@ -43,9 +47,20 @@
 
 	$: viewportWidth.set(innerWidth);
 	$: viewportHeight.set(innerHeight);
-	$: path = $page.url.pathname.split('/');
-	$: directLoad = path[1] !== '';
-	$: preview = path[1] === 'screen';
+
+	let directLoad = false;
+	let preview = false;
+
+	const checkPath = () => {
+		const path = $page.url.pathname.split('/');
+		directLoad = !!path[1];
+		preview = path[1] === 'screen';
+
+		const validPaths = ['adkey', 'bnlist', 'install', 'privacy-policy', 'screen'];
+		const isPathValid = validPaths.includes(path[1].toLowerCase());
+		const redirect = path[1] && !isPathValid;
+		return redirect;
+	};
 
 	const setMobileMode = () => {
 		if ($isPWA) return mobileMode.set(true);
@@ -54,26 +69,13 @@
 		mobileMode.set(rotate);
 	};
 
-	const validPaths = ['adkey', 'install', 'privacy-policy', 'screen'];
-	$: isPathValid = validPaths.includes(path[1].toLowerCase());
-
-	const redirectIfNotValidPath = () => {
-		const isCDNHost = $page.url.host.includes('cdn.');
-		if (isCDNHost) return window.location.replace('https://wishsimulator.app/');
-		if (path[1] && !isPathValid) return window.location.replace('/');
-	};
-
 	mountLocale();
-	onMount(() => {
-		redirectIfNotValidPath();
+	onMount(async () => {
+		if (checkPath()) return window.location.replace('/');
 
 		const url = new URL(window.location.href);
 		const searchParams = new URLSearchParams(url.search);
 		isPWA.set(searchParams.get('pwa') === 'true' || !!searchParams.get('pwasc'));
-
-		registerSW();
-		wakeLock();
-		retriveOldData();
 
 		isMobile.set(mobileDetect() || innerWidth < 601);
 		if ($isMobile) setMobileMode();
@@ -82,6 +84,14 @@
 			if ($isMobile) setMobileMode();
 		});
 
+		storageLocal.initEvent(); //for autoexport
+		registerSW(); // Service Worker for faster load
+		wakeLock(); // Prevent screen off while open the app
+		await IDBUpdater(); // Update site data to the newer Version
+		syncCustomBanner(); // Sync Custom Banner
+		// initializeDriveAPI(); // Drive API for cloud Sync
+
+		document.addEventListener('storageUpdate', () => sync($autoExport));
 		// prevent Righ click (hold on android) on production mode
 		if (!dev) document.addEventListener('contextmenu', (e) => e.preventDefault());
 	});
@@ -108,9 +118,13 @@
 	<meta name="twitter:description" content={DESCRIPTION} />
 	<meta name="twitter:image" content="{HOST}/meta-picture.jpg" />
 
-	{#if path[1] && !isPathValid}
-		<link rel="canonical" href={HOST} />
-	{/if}
+	<link
+		rel="preload"
+		href="/fonts/aaqishu.woff"
+		as="font"
+		type="font/woff"
+		crossorigin
+	/>
 
 	<link
 		rel="preload"
@@ -145,9 +159,7 @@
 		<link rel="manifest" href="/appmanifest.json" />
 	{/if}
 
-	{#if isloaded && $showAd}
-		<Iklan head />
-	{/if}
+	<!-- <Iklan head /> -->
 </svelte:head>
 
 <Loader {isBannerLoaded} {directLoad} />
@@ -161,6 +173,8 @@
 		: '100vh'};--screen-width: {$viewportWidth}px;
 		--genshin-font: var(--gi-{font}-font);"
 >
+	<Toasts />
+
 	{#if !$isLoading && isloaded}
 		<slot />
 	{/if}
@@ -170,11 +184,9 @@
 		class="uid"
 		title="Try Your Luck by this Simulator"
 	>
-	
+		<!-- WishSimulator.App -->
 	</a>
 </main>
-
-<Iklan type="pop" />
 
 <style global>
 	@import '../../node_modules/overlayscrollbars/css/OverlayScrollbars.css';
@@ -205,6 +217,14 @@
 		src: url('/fonts/optimized_zh_web.woff2') format('woff2');
 		font-weight: normal;
 		font-style: normal;
+	}
+
+	
+	@font-face {
+		font-family: 'AAQISHU';
+		src: url('/fonts/aaqishu.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
 	}
 
 	:global(.os-theme-light > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle) {

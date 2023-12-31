@@ -4,34 +4,32 @@
 	import OverlayScrollbars from 'overlayscrollbars';
 
 	import { data } from '$lib/data/updates.json';
-	import { isMobile, isPWA } from '$lib/store/app-stores';
-	import { adKey } from '$lib/helpers/accessKey';
+	import { isPWA } from '$lib/store/app-stores';
+	import { adKey, verifyKey } from '$lib/helpers/accessKey';
 	import { browserDetect } from '$lib/helpers/mobileDetect';
+	import { playSfx } from '$lib/helpers/audio/audio';
 	import Modal from '$lib/components/ModalTpl.svelte';
 
 	let content;
 	let contentHeight;
-	let adKeyValid = false;
 	let savedKey = '';
 	let dateExpired = '';
 
-	const closeDisclaimer = getContext('closeWelcomeModal');
-	const showAd = getContext('showAd');
+	const startApp = getContext('startApp');
 	const updates = data.filter(({ featured }) => !!featured);
-
-	const handleConfirm = () => {
-		closeDisclaimer();
-		if ($isPWA && $isMobile) return;
-		showAd.set(!adKeyValid);
-	};
 
 	onMount(async () => {
 		OverlayScrollbars(content, { sizeAutoCapable: false, className: 'os-theme-light' });
-		const { validity, expiryDate, storedKey } = await adKey.checkLocal();
-		adKeyValid = validity;
-		savedKey = storedKey;
+		const { expiryDate, storedKey } = await adKey.initialLoad();
 		dateExpired = expiryDate;
+		savedKey = storedKey;
 	});
+
+	const handleConfirm = () => {
+		playSfx();
+		startApp();
+		verifyKey();
+	};
 </script>
 
 <Modal confirmOnly title={$t('title')} on:confirm={handleConfirm}>

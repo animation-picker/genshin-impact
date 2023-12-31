@@ -1,5 +1,5 @@
 <script>
-	import { getContext } from 'svelte';
+	import { getContext, setContext } from 'svelte';
 	import { t } from 'svelte-i18n';
 	import hotkeys from 'hotkeys-js';
 	import {
@@ -11,15 +11,23 @@
 		intertwined,
 		wishAmount,
 		activeVersion,
-		multipull
+		multipull,
+		editorMode,
+		preloadVersion,
+		editID,
+
 	} from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { isNewOutfitReleased } from '$lib/helpers/outfit';
+	import { localBanner } from '$lib/helpers/custom-banner';
+	import { pushToast } from '$lib/helpers/toast';
 
 	import Icon from '$lib/components/Icon.svelte';
 	import NoticeMark from '$lib/components/NoticeMark.svelte';
 	import ButtonGeneral from '$lib/components/ButtonGeneral.svelte';
 	import EpitomizedButton from './epitomized-path/_button.svelte';
+	import BannerPublisher from '../_custom-banner/Publisher.svelte';
+	import { memberDB } from '$lib/helpers/member-loader';
 
 	export let bannerType = 'beginner';
 
@@ -47,30 +55,79 @@
 
 	const roll = getContext('doRoll');
 	const handleSingleRollClick = () => {
+		if (bannerType === 'member') {
+			if (!Array.isArray(memberDB) || memberDB.length == 0) {
+				alert("请点击左上角问号去上传名单");
+				return;
+			}
+		}
+		
+
 		playSfx('roll');
 		roll(1, bannerType);
 	};
 	const handleMultiRollClick = () => {
+		if (bannerType === 'member') {
+			if (!Array.isArray(memberDB) || memberDB.length == 0) {
+				alert("请点击左上角问号去上传名单");
+				return;
+			}
+		}
+
 		playSfx('roll');
 		roll(isBeginner ? 10 : $multipull, bannerType);
 	};
 
+	// Footer for Editor
+	const finishAndWish = async () => {
+		playSfx();
+		const isComplete = await localBanner.isComplete($editID);
+		if (isComplete) return preloadVersion.set({ patch: 'Custom', phase: $editID });
+
+		// Benner not Complete
+		const toastMsg = $t('customBanner.completeAllField');
+		pushToast({ message: toastMsg, type: 'error' });
+		return;
+	};
+
+	let showUploader = false;
+	const publishBanner = async () => {
+		playSfx();
+		const isComplete = await localBanner.isComplete($editID);
+		if (isComplete) return (showUploader = true);
+		const toastMsg = $t('customBanner.completeAllField');
+		pushToast({ message: toastMsg, type: 'error' });
+	};
+
+	setContext('closePublisher', () => (showUploader = false));
+	setContext('publishDone', () => {
+		preloadVersion.set({ patch: 'Custom', phase: $editID });
+		showUploader = false;
+		playSfx('close');
+	});
+
+	setContext('publishError', () => {
+		const toastMsg = $t('customBanner.networkError');
+		pushToast({ message: toastMsg, type: 'error' });
+		showUploader = false;
+	});
+
 	// ShortCut
 	const appReady = getContext('appReady');
 	hotkeys('enter', 'index', (e) => {
-		if (!$appReady || $onWish) return;
+		if (!$appReady || $onWish || $editorMode) return;
 		e.preventDefault();
 		handleMultiRollClick();
 	});
 
 	hotkeys('shift+enter', 'index', (e) => {
-		if (!$appReady || $onWish || isBeginner) return;
+		if (!$appReady || $onWish || isBeginner || $editorMode) return;
 		e.preventDefault();
 		handleSingleRollClick();
 	});
 
 	hotkeys('s,c,h,d', 'index', (e) => {
-		if (!$appReady || $onWish) return;
+		if (!$appReady || $onWish || $editorMode) return;
 		e.preventDefault();
 		const [key] = hotkeys.getPressedKeyString();
 		const to = key.toLocaleLowerCase();
@@ -81,83 +138,123 @@
 	});
 </script>
 
+{#if showUploader}
+	<BannerPublisher />
+{/if}
+
 <div id="footer" style="width: 100%; height: 100%">
-	<div class="footer-info">
-		{#if !$mobileMode}
-			{#if bannerType === 'weapon-event'}
-				<EpitomizedButton />
-			{/if}
-			<div class="wish">
-				<div class="starglitter">
-					<Icon type="starglitter" />
-					<span> {$starglitter} </span>
-				</div>
-				<div class="stardust">
-					<Icon type="stardust" />
-					<span> {$stardust} </span>
-				</div>
-			</div>
-		{/if}
-	</div>
-
-	<div class="row">
-		<div class="left menu-button">
-			<ButtonGeneral on:click={() => changePage('shop')}>
-				{#if hasNewOutfit}
-					<NoticeMark name={openedNotices} style="transform: translateX(70%) translateY(-80%)" />
+	{#if !$editorMode}
+		<div class="footer-info">
+			{#if !$mobileMode}
+				{#if bannerType === 'weapon-event'}
+					<EpitomizedButton />
 				{/if}
-				{$t('shop.text')}
-			</ButtonGeneral>
-
-			<ButtonGeneral on:click={() => changePage('inventory')}>
-				{$t('inventory.text')}
-			</ButtonGeneral>
-			<ButtonGeneral on:click={() => changePage('history')}>
-				{$t('history.text')}
-			</ButtonGeneral>
+				<div class="wish">
+					<div class="starglitter">
+						<Icon type="starglitter" />
+						<span> {$starglitter} </span>
+					</div>
+					<div class="stardust">
+						<Icon type="stardust" />
+						<span> {$stardust} </span>
+					</div>
+				</div>
+			{/if}
 		</div>
-		<div class="right roll-button">
-			{#if !isBeginner}
+	{/if}
+
+	<div class="row" style="--bg:url({$assets['button.webp']})">
+		{#if !$editorMode}
+			<div class="left menu-button">
+				<ButtonGeneral on:click={() => changePage('shop')}>
+					{#if hasNewOutfit}
+						<NoticeMark name={openedNotices} style="transform: translateX(70%) translateY(-80%)" />
+					{/if}
+					{$t('shop.text')}
+				</ButtonGeneral>
+
+				<ButtonGeneral on:click={() => changePage('inventory')}>
+					{$t('inventory.text')}
+				</ButtonGeneral>
+				<ButtonGeneral on:click={() => changePage('history')}>
+					{$t('history.text')}
+				</ButtonGeneral>
+			</div>
+
+			<div class="right roll-button">
+				{#if !isBeginner}
+					<button
+						class="single wish-button"
+						on:click={handleSingleRollClick}
+						disabled={$onWish || !$readyToPull}
+					>
+						<div class="top">{$t('wish.rollButton', { values: { count: '×1' } })}</div>
+						<div class="bottom">
+							<Icon type={fateType} />
+							<span style="margin-left: 7px" class:red={currencyUsed < 1 && !isUnlimited}>
+								x 1
+							</span>
+						</div>
+					</button>
+				{/if}
+
 				<button
-					class="single wish-button"
-					style="background-image: url({$assets['button.webp']})"
-					on:click={handleSingleRollClick}
+					class="ten wish-button"
+					on:click={handleMultiRollClick}
 					disabled={$onWish || !$readyToPull}
 				>
-					<div class="top">{$t('wish.rollButton', { values: { count: '×1' } })}</div>
+					{#if bannerType === 'beginner'}
+						<span class="discount">-20%</span>
+					{/if}
+
+					<div class="top">
+						{$t('wish.rollButton', { values: { count: `×${isBeginner ? 10 : $multipull}` } })}
+					</div>
+
 					<div class="bottom">
 						<Icon type={fateType} />
-						<span style="margin-left: 7px" class:red={currencyUsed < 1 && !isUnlimited}> x 1 </span>
+						{#if isBeginner}
+							<span style="margin-left: 7px" class:red={currencyUsed < 8 && !isUnlimited}>
+								x 8
+							</span>
+						{:else}
+							<span style="margin-left: 7px" class:red={currencyUsed < $multipull && !isUnlimited}>
+								x {$multipull}
+							</span>
+						{/if}
 					</div>
 				</button>
-			{/if}
+			</div>
+		{:else}
+			<div class="left menu-button" />
+			<div class="right roll-button">
+				<button
+					class="wish-button"
+					style="flex-direction: row; line-height: 0;"
+					on:click={finishAndWish}
+				>
+					<i class="gi-primo-star" style="transform: translateX(-50%);" />
+					<span> {$t('customBanner.finishAndWish')} </span>
+				</button>
 
-			<button
-				class="ten wish-button"
-				style="background-image: url({$assets['button.webp']})"
-				on:click={handleMultiRollClick}
-				disabled={$onWish || !$readyToPull}
-			>
-				{#if bannerType === 'beginner'}
-					<span class="discount">-20%</span>
-				{/if}
-
-				<div class="top">
-					{$t('wish.rollButton', { values: { count: `×${isBeginner ? 10 : $multipull}` } })}
-				</div>
-
-				<div class="bottom">
-					<Icon type={fateType} />
-					{#if isBeginner}
-						<span style="margin-left: 7px" class:red={currencyUsed < 8 && !isUnlimited}> x 8 </span>
-					{:else}
-						<span style="margin-left: 7px" class:red={currencyUsed < $multipull && !isUnlimited}>
-							x {$multipull}
-						</span>
-					{/if}
-				</div>
-			</button>
-		</div>
+				<button
+					class="wish-button"
+					style="flex-direction: row; line-height: 0;"
+					on:click={publishBanner}
+				>
+					<i class="gi-share" style="transform: translateX(-50%);" />
+					{#await localBanner.isHostedBanner($editID)}
+						<span> {$t('customBanner.publish')} </span>
+					{:then isHosted}
+						{#if isHosted}
+							<span> {$t('customBanner.updateAndShare')} </span>
+						{:else}
+							<span> {$t('customBanner.publish')} </span>
+						{/if}
+					{/await}
+				</button>
+			</div>
+		{/if}
 	</div>
 </div>
 
@@ -198,6 +295,7 @@
 		transition: all 0.2s;
 		color: #4a5265;
 		text-decoration: none;
+		z-index: +5;
 		position: relative;
 	}
 
@@ -222,6 +320,7 @@
 	}
 
 	.roll-button button {
+		background-image: var(--bg);
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;

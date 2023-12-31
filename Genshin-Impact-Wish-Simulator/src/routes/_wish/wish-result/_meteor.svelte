@@ -4,10 +4,10 @@
 	import { t } from 'svelte-i18n';
 	import hotkeys from 'hotkeys-js';
 
-	import { localConfig } from '$lib/store/localstore-manager';
+	import { localConfig } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { assets } from '$lib/store/app-stores';
-	import Toast from '$lib/components/Toast.svelte';
+	import { pushToast } from '$lib/helpers/toast';
 
 	export let rarity = 3;
 	export let show = false;
@@ -18,8 +18,6 @@
 	let v4star;
 	let v5starSingle;
 	let v5star;
-
-	let showToast = false;
 	let showSkipButton = false;
 
 	const showSplashArt = getContext('showSplashArt');
@@ -60,7 +58,8 @@
 		}
 
 		if (!videoContent || videoContent.error || isNaN(videoContent.duration)) {
-			showToast = true;
+			const message = $t('wish.result.meteorFailed');
+			pushToast({ message });
 			console.error("Can't play Meteor Animation because it cannot be loaded", videoContent.error);
 			return meteorEnd();
 		}
@@ -86,10 +85,6 @@
 		showSkipButton = true;
 	});
 </script>
-
-{#if showToast}
-	<Toast on:close={() => (showToast = false)}>{$t('wish.result.meteorFailed')}</Toast>
-{/if}
 
 <div class="meteor-wrapper" class:show on:mousedown={() => (showSkipButton = true)}>
 	<div class="video">

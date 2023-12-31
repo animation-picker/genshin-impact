@@ -4,76 +4,94 @@
 	import { t } from 'svelte-i18n';
 	import { getName } from '$lib/helpers/nameText';
 	import { playSfx } from '$lib/helpers/audio/audio';
-	import { activeBanner, activeVersion } from '$lib/store/app-stores';
-	import { localConfig } from '$lib/store/localstore-manager';
+	import { activeVersion, assets, preloadVersion } from '$lib/store/app-stores';
+	import { imageCDN } from '$lib/helpers/assets';
 
 	export let groupby = 'version';
 	export let groupName;
 	export let data;
+
+	const isCustom = groupName.toLowerCase() === 'custom';
 
 	const navigate = getContext('navigate');
 	const selectBanner = (patch, phase) => {
 		playSfx();
 		// If select the same banner with the active one, change nothing just back to index
 		const { patch: activePatch, phase: activePhase } = $activeVersion;
-		if (activePhase === phase && activePatch === patch) return navigate('index');
+		navigate('index');
+		if (activePhase === phase && activePatch === patch) return;
 
 		// Select a banner
-		activeBanner.set(0);
-		activeVersion.set({ patch, phase });
-		localConfig.set('version', `${patch}-${phase}`);
-		navigate('index');
+		preloadVersion.set({ patch, phase });
 	};
 </script>
 
 <div class="group-title">
-	<h2>
-		{groupby === 'version'
-			? `${$t('version')} ${groupName}`
-			: groupby === 'weapon'
-			? $t(groupName)
-			: $t(`${groupName}.name`)}
-		<i class="gi-primo-star" />
-	</h2>
+	{#if isCustom}
+		<h2>Created by Travelers <i class="gi-primo-star" /></h2>
+	{:else}
+		<h2>
+			{#if groupby === 'version'}
+				{$t('version')} {groupName}
+			{:else if groupby === 'weapon'}
+				{$t(groupName)}
+			{:else}
+				{$t(`${groupName}.name`)}
+			{/if}
+			<i class="gi-primo-star" />
+		</h2>
+	{/if}
 </div>
 
 {#each data as { patch, phase, chars, weapons }, i (i)}
 	<a
 		href="/"
 		class="item"
+		class:custom={isCustom}
 		title={getName(chars.map(({ character }) => character).join(', '))}
 		in:fade={{ duration: 300, delay: Math.sqrt(i * 10000) }}
 		on:click={() => selectBanner(patch, phase)}
 	>
 		<div class="banner">
 			<div class:dual={chars?.length > 1}>
-				{#each chars as { character, bannerName }, i}
-					<img
-						src="/images/banner/thumbnail/{bannerName}.webp"
-						alt={getName(character)}
-						class="dual{i + 1}"
-						style={chars.length > 1 ? '' : `width: 100%; height: 100%`}
-						crossorigin="anonymous"
-						loading="lazy"
-						on:error={(e) => e.target.remove()}
-					/>
+				{#each chars as { character, bannerName, images }, i}
+					{#if isCustom}
+						<img src={imageCDN(images)} alt={character} crossorigin="anonymous" loading="lazy" />
+					{:else}
+						{#key bannerName}
+							<img
+								src={$assets[`thumbnail/${bannerName}`]}
+								alt={getName(character)}
+								class="dual{i + 1}"
+								crossorigin="anonymous"
+								loading="lazy"
+							/>
+						{/key}
+					{/if}
 				{/each}
 			</div>
-			<div>
-				<img
-					src="/images/banner/thumbnail/{weapons.bannerName}.webp"
-					alt={getName(weapons.bannerName)}
-					crossorigin="anonymous"
-					loading="lazy"
-					on:error={(e) => e.target.remove()}
-				/>
-			</div>
+
+			{#if !isCustom}
+				<div class="weapon">
+					<img
+						src={$assets[`thumbnail/${weapons.bannerName}`]}
+						alt={getName(weapons.bannerName)}
+						crossorigin="anonymous"
+						loading="lazy"
+					/>
+				</div>
+			{/if}
 		</div>
-		<h3 class="name">
-			{chars.map(({ character }) => $t(`${character}.name`)).join(', ')}
-			&
-			{weapons.list.map(({ name }) => $t(name)).join(', ')}
-		</h3>
+		{#if isCustom}
+			<h3 class="name">
+				{chars.map(({ character }) => character).join('')}
+			</h3>
+		{:else}
+			<h3 class="name">
+				{chars.map(({ character }) => $t(`${character}.name`)).join(', ')}
+				& {weapons.list.map(({ name }) => $t(name)).join(', ')}
+			</h3>
+		{/if}
 	</a>
 {/each}
 
@@ -107,16 +125,26 @@
 		margin: 0.5rem 0.5rem 1rem;
 		text-align: center;
 	}
+	.item.custom {
+		width: 30vh;
+	}
 
 	@media screen and (max-width: 1000px) {
 		.item {
 			width: 46%;
 			min-width: 125px;
 		}
+		.item.custom {
+			width: 23%;
+			min-width: 62.5px;
+		}
 	}
 
 	:global(.mobile) .item {
 		width: 65vh;
+	}
+	:global(.mobile) .item.custom {
+		width: 32.5vh;
 	}
 
 	.banner {
@@ -131,6 +159,9 @@
 		background-size: 400%;
 		display: flex;
 		animation: infinite alternate 2s skeleton;
+	}
+	.custom .banner > div {
+		width: 98%;
 	}
 
 	@keyframes skeleton {

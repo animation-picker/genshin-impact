@@ -6,8 +6,10 @@
 	import SvgIcon from '$lib/components/SVGIcon.svelte';
 
 	export let staticMode = false;
+	export let custom = false;
 
 	export let itemName = '';
+	export let chineseChar = '';
 	export let type = '';
 	export let vision = '';
 	export let weaponType = '';
@@ -32,7 +34,11 @@
 		{/if}
 
 		<div class="text" class:animate={!staticMode} use:removeAnimClass>
-			{#if type === 'outfit'}
+			{#if custom}
+				{itemName}
+			{:else if type === 'member'}
+				{chineseChar}
+			{:else if type === 'outfit'}
 				{$t(`outfit.item.${outfitName}.name`)}
 			{:else if weaponType}
 				{$t(itemName)}
@@ -87,6 +93,8 @@
 		align-items: center;
 		width: 1200px;
 		max-width: 95%;
+		z-index: +1;
+		pointer-events: none;
 	}
 	.info {
 		left: 50%;
@@ -125,6 +133,11 @@
 		line-height: 1.2em;
 		color: #fff;
 		-webkit-text-stroke: 0.04rem #000;
+	}
+
+	.text,
+	.star {
+		filter: drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
 	}
 
 	:global(.zh-CN) .name .text,

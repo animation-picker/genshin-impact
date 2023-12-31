@@ -1,17 +1,19 @@
 <script>
-	import { getContext, onMount, setContext } from 'svelte';
+	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 	import { writable } from 'svelte/store';
+	import { getContext, onMount, setContext } from 'svelte';
 	import hotkeys from 'hotkeys-js';
 
 	import browserState from '$lib/helpers/browserState';
-	import { activeVersion, assets, showBeginner } from '$lib/store/app-stores';
-	import { dailyWelkin, localConfig } from '$lib/store/localstore-manager';
-	import { importLocalConfig, setBannerVersionAndPhase } from '$lib/helpers/storage-reader';
+	import { assets, preloadVersion, showBeginner } from '$lib/store/app-stores';
+	import { dailyWelkin, localConfig } from '$lib/helpers/dataAPI/api-localstore';
+	import { importLocalConfig, setBannerVersionAndPhase } from '$lib/helpers/dataAPI/storage-reader';
 	import { handleShowStarter, initializeBanner } from '$lib/helpers/banner-loader';
 	import { userCurrencies } from '$lib/helpers/currencies';
 	import { pauseSfx, playSfx } from '$lib/helpers/audio/audio';
 
+	import ModalInitBanner from './_custom-banner/ModalInitBanner.svelte';
 	import ModalWelcome from './_index/ModalWelcome.svelte';
 	import WelkinCheckin from './_index/WelkinCheckin.svelte';
 	import PreloadMeteor from './_index/PreloadMeteor.svelte';
@@ -20,6 +22,7 @@
 	let status = '';
 	let pageActive = 'index';
 	let showWelcomeModal = true;
+	let shareID = '';
 
 	let appReady = writable(false);
 	let onWish = writable(false);
@@ -59,21 +62,22 @@
 	};
 	setContext('closeWelkin', () => (showWelkinScreen = false));
 
-	// Welcome Modal
-	const closeWelcomeModal = () => {
-		showWelcomeModal = false;
+	const startApp = () => {
 		appReady.set(true);
 		hotkeys.setScope('index');
+		showWelcomeModal = false;
 		welkinCheckin();
 		playSfx();
 	};
-	setContext('closeWelcomeModal', closeWelcomeModal);
+	// Welcome Modal && Custom Banner Modal
+	setContext('startApp', startApp);
 
 	// Menu
 	let showMenu = false;
-	const handleMenu = () => {
-		playSfx(showMenu ? 'close' : 'click');
+	const handleMenu = (act) => {
 		showMenu = !showMenu;
+		if (act === 'mute') return;
+		playSfx(!showMenu ? 'close' : 'click');
 	};
 	setContext('handleMenu', handleMenu);
 
@@ -110,13 +114,13 @@
 	const bannerLoaded = getContext('bannerLoaded');
 	const loadBanner = async (patchPhase) => {
 		const initBanner = await initializeBanner(patchPhase);
-		({ status } = initBanner);
+		({ status } = initBanner || {});
 		bannerLoaded();
 	};
 
 	onMount(() => {
 		setBannerVersionAndPhase();
-		activeVersion.subscribe(loadBanner);
+		preloadVersion.subscribe(loadBanner);
 		showBeginner.subscribe(handleShowStarter);
 
 		importLocalConfig();
@@ -130,6 +134,10 @@
 			navigate('index');
 		});
 		document.addEventListener('visibilitychange', bgmHandle);
+
+		// Check Custom Banner
+		const { url } = $page;
+		shareID = url.searchParams.get('banner');
 	});
 
 	// Obtained
@@ -220,16 +228,21 @@
 	<svelte:component this={ModalConvert} />
 {/if}
 
-{#if chatLoaded}
+<!-- {#if chatLoaded}
 	<svelte:component this={Feedback} show={showChat} />
-{/if}
+{/if} -->
 
 {#if showWelkinScreen}
 	<WelkinCheckin />
 {/if}
-{#if showWelcomeModal}
-	<ModalWelcome />
-{/if}
+
+<!-- {#if showWelcomeModal}
+	{#if shareID}
+		<ModalInitBanner {shareID} />
+	{:else}
+		<ModalWelcome />
+	{/if}
+{/if} -->
 
 <PreloadMeteor />
 

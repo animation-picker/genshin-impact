@@ -2,7 +2,7 @@
 	import { getContext } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
-	import { localPity } from '$lib/store/localstore-manager';
+	import { localPity } from '$lib/helpers/dataAPI/api-localstore';
 	import { getRate, setRate } from '$lib/helpers/gacha/probabilities';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import ButtonGeneral from '$lib/components/ButtonGeneral.svelte';
@@ -103,8 +103,6 @@
 		if (variable === 'now4') localPity.set(`pity4-${type}`, value);
 		if (variable === 'now5') localPity.set(`pity5-${type}`, value);
 	};
-
-	$: console.log(winRate);
 </script>
 
 <div class="editor {type}" class:fullscreenEditor out:fade|local>

@@ -2,13 +2,14 @@
 	import { getContext, setContext } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
-	import { assets } from '$lib/store/app-stores';
+	import { assets, isCustomBanner } from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
-	import BeginnerFrame from './_beginner-frame.svelte';
-	import StandardFrame from './_standard-frame.svelte';
-	import CharacterFrame from './_character-frame.svelte';
-	import WeaponFrame from './_weapon-frame.svelte';
+	import FrameBeginner from './_frame-beginner.svelte';
+	import FrameCharacter from './_frame-character.svelte';
+	import FrameWeapon from './_frame-weapon.svelte';
+	import FrameStandard from './_frame-standard.svelte';
+	import FrameCustom from './_frame-custom.svelte';
 	import BannerImage from './_banner-image.svelte';
 	import ProbEditor from './_probability-editor.svelte';
 
@@ -17,8 +18,10 @@
 	export let fullscreenEditor = false;
 	export let editor = false;
 
-	let type, featured, character, bannerName, rateup, textOffset;
-	$: ({ type, featured, character, bannerName, rateup, textOffset } = data);
+	// prettier-ignore
+	let type, featured, character, bannerName, rateup, textOffset, charTitle, vision, images, artPosition;
+	// prettier-ignore
+	$: ({ type, featured, character, bannerName, rateup, textOffset, charTitle, vision, images, artPosition, watermark } = data);
 
 	let clientWidth;
 	let clientHeight;
@@ -48,7 +51,19 @@
 		{/if}
 	</div>
 	<div class="front">
-		{#if type === 'beginner'}
+		{#if $isCustomBanner}
+			<BannerImage
+				custom
+				src={images?.artURL}
+				alt={bannerName}
+				wrapperClass="card-image skeleton"
+				{artPosition}
+				{vision}
+			/>
+			<div class="frame skeleton">
+				<FrameCustom {bannerName} {character} {charTitle} {vision} {watermark} />
+			</div>
+		{:else if type === 'beginner'}
 			<BannerImage
 				src={$assets['beginner']}
 				isError={imageError}
@@ -56,7 +71,7 @@
 				wrapperClass="card-image skeleton"
 			/>
 			<div class="frame skeleton">
-				<BeginnerFrame {character} />
+				<FrameBeginner {character} />
 			</div>
 		{:else if type === 'weapon-event'}
 			<BannerImage
@@ -66,7 +81,7 @@
 				wrapperClass="card-image skeleton-event"
 			/>
 			<div class="frame skeleton-event">
-				<WeaponFrame {featured} {rateup} {textOffset} />
+				<FrameWeapon {featured} {rateup} {textOffset} />
 			</div>
 		{:else if type === 'character-event'}
 			<BannerImage
@@ -87,7 +102,7 @@
 				</div>
 			{/if}
 			<div class="frame skeleton-event">
-				<CharacterFrame {character} {textOffset} {bannerName} event2={index === 2} />
+				<FrameCharacter {character} {textOffset} {bannerName} event2={index === 2} />
 			</div>
 		{:else if type === 'standard'}
 			<BannerImage
@@ -97,7 +112,17 @@
 				wrapperClass="card-image {imageError ? 'skeleton' : ''}"
 			/>
 			<div class="frame">
-				<StandardFrame {bannerName} />
+				<FrameStandard {bannerName} />
+			</div>
+		{:else if type === 'member'}
+			<BannerImage
+				isError={imageError}
+				src={$assets[bannerName]}
+				alt="Member Banner"
+				wrapperClass="card-image {imageError ? 'skeleton' : ''}"
+			/>
+			<div class="frame">
+				<FrameStandard {bannerName} />
 			</div>
 		{/if}
 
@@ -200,6 +225,7 @@
 		bottom: 8%;
 		display: flex;
 		align-items: center;
+		z-index: +10;
 	}
 
 	.info button {

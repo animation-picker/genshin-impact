@@ -1,6 +1,6 @@
 import { browser } from '$app/environment';
 import { Howl } from 'howler';
-import { localConfig } from '$lib/store/localstore-manager';
+import { localConfig } from '../dataAPI/api-localstore';
 
 import camera from './camera';
 import changebanner from './changebanner';

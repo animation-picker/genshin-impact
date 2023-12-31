@@ -1,1393 +1,712 @@
 {
 	"data": [
 		{
+			"itemID": 163,
+			"name": "verdict",
+			"rarity": 5,
+			"weaponType": "claymore",
+			"limited": true,
+			"offset": {
+				"button": { "t": 1, "w": 70, "l": 38 }
+			}
+		},
+		{
+			"itemID": 161,
 			"name": "splendor-of-tranquil-waters",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"t": -15,
-				"w": 90,
-				"l": 30
+			"offset": {
+				"button": { "t": -15, "w": 90, "l": 30 }
 			}
 		},
 		{
+			"itemID": 158,
 			"name": "prospector-drill",
 			"rarity": 4,
 			"weaponType": "polearm",
 			"limited": true
 		},
 		{
+			"itemID": 157,
 			"name": "range-gauge",
 			"rarity": 4,
 			"weaponType": "bow",
 			"limited": true
 		},
 		{
+			"itemID": 156,
 			"name": "cashflow-supervision",
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
-			"buttonOffset": {
-				"t": 35,
-				"w": 70,
-				"l": 35
+			"offset": {
+				"button": { "t": 35, "w": 70, "l": 35 }
 			}
 		},
 		{
+			"itemID": 155,
 			"name": "portable-power-saw",
 			"rarity": 4,
 			"weaponType": "claymore",
 			"limited": true
 		},
 		{
+			"itemID": 154,
 			"name": "the-dockhands-assistant",
 			"rarity": 4,
 			"weaponType": "sword",
 			"limited": true
 		},
 		{
+			"itemID": 153,
 			"name": "tome-of-the-eternal-flow",
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
-			"buttonOffset": {
-				"t": 15,
-				"w": 80,
-				"l": 35
+			"offset": {
+				"button": { "t": 15, "w": 80, "l": 35 }
 			}
 		},
 		{
+			"itemID": 152,
 			"name": "the-first-great-magic",
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "bow",
-			"buttonOffset": {
-				"t": 10,
-				"w": 75,
-				"l": 30
+			"offset": {
+				"button": { "t": 10, "w": 75, "l": 30 }
 			}
 		},
 		{
+			"itemID": 151,
 			"name": "jadefall-splendor",
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "catalyst",
-			"buttonOffset": {
-				"w": 65,
-				"t": 35,
-				"l": 65
+			"offset": {
+				"button": { "w": 65, "t": 35, "l": 65 }
 			}
 		},
 		{
+			"itemID": 150,
 			"name": "beacon-of-the-reed-sea",
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "claymore",
-			"buttonOffset": {
-				"t": 10,
-				"w": 70,
-				"l": 30
+			"offset": {
+				"button": { "t": 10, "w": 70, "l": 30 }
 			}
 		},
 		{
+			"itemID": 149,
 			"name": "light-of-foliar-incision",
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "sword",
-			"buttonOffset": {
-				"t": -15,
-				"w": 90,
-				"l": 30
+			"offset": {
+				"button": { "t": -15, "w": 90, "l": 30 }
 			}
 		},
 		{
+			"itemID": 148,
 			"name": "tulaytullah_s-remembrance",
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "catalyst",
-			"buttonOffset": {
-				"w": 70,
-				"t": 30,
-				"l": 35
+			"offset": {
+				"button": { "w": 70, "t": 30, "l": 35 }
 			}
 		},
 		{
+			"itemID": 147,
 			"name": "a-thousand-floating-dreams",
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
-			"buttonOffset": {
-				"w": 70,
-				"t": 30,
-				"l": 65
+			"offset": {
+				"button": { "w": 70, "t": 30, "l": 65 }
 			}
 		},
 		{
+			"itemID": 146,
 			"name": "key-of-khaj-nisut",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"t": -10,
-				"w": 90,
-				"l": 30
+			"offset": {
+				"button": { "t": -10, "w": 90, "l": 30 }
 			}
 		},
 		{
+			"itemID": 145,
 			"name": "xiphos-moonlight",
 			"rarity": 4,
 			"weaponType": "sword",
 			"limited": true
 		},
 		{
+			"itemID": 144,
 			"name": "wandering-evenstar",
 			"rarity": 4,
 			"weaponType": "catalyst",
 			"limited": true
 		},
 		{
+			"itemID": 143,
 			"name": "staff-of-the-scarlet-sands",
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
-			"buttonOffset": { "w": 80, "t": 15, "l": 60 }
+			"offset": {
+				"button": { "w": 80, "t": 15, "l": 60 }
+			}
 		},
 		{
+			"itemID": 142,
 			"name": "makhaira-aquamarine",
 			"rarity": 4,
 			"weaponType": "claymore",
 			"limited": true
 		},
 		{
+			"itemID": 141,
 			"name": "hunter_s-path",
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
-			"buttonOffset": {
-				"w": 70,
-				"l": 35,
-				"t": 0
+			"offset": {
+				"button": { "w": 70, "l": 35, "t": 0 }
 			}
 		},
 		{
+			"itemID": 140,
 			"name": "aqua-simulacra",
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
-			"buttonOffset": {
-				"t": 5,
-				"w": 80,
-				"l": 35
+			"offset": {
+				"button": { "t": 5, "w": 80, "l": 35 }
 			}
 		},
 		{
+			"itemID": 139,
 			"name": "redhorn-stonethresher",
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
-			"buttonOffset": {
-				"t": 10,
-				"w": 80,
-				"l": 60
+			"offset": {
+				"button": { "t": 10, "w": 80, "l": 60 }
 			}
 		},
 		{
+			"itemID": 138,
 			"name": "haran-geppaku-futsu",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"t": -35,
-				"w": 120,
-				"l": 55
+			"offset": {
+				"button": { "t": -35, "w": 120, "l": 55 }
 			}
 		},
 		{
+			"itemID": 137,
 			"name": "kagura_s-verity",
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
-			"buttonOffset": {
-				"w": 70,
-				"t": 25,
-				"l": 37
+			"offset": {
+				"button": { "w": 70, "t": 25, "l": 37 }
 			}
 		},
 		{
+			"itemID": 136,
 			"name": "calamity-queller",
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
-			"buttonOffset": {
-				"w": 80,
-				"t": 10,
-				"l": 60
+			"offset": {
+				"button": { "w": 80, "t": 10, "l": 60 }
 			}
 		},
 		{
+			"itemID": 135,
 			"name": "mouun_s-moon",
 			"rarity": 4,
 			"weaponType": "bow",
 			"limited": true
 		},
 		{
+			"itemID": 134,
 			"name": "wavebreaker_s-fin",
 			"rarity": 4,
 			"weaponType": "polearm",
 			"limited": true
 		},
 		{
+			"itemID": 133,
 			"name": "polar-star",
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
-			"buttonOffset": {
-				"w": 70,
-				"t": 2,
-				"l": 35
+			"offset": {
+				"button": { "w": 70, "t": 2, "l": 35 }
 			}
 		},
 		{
+			"itemID": 132,
 			"name": "akuoumaru",
 			"rarity": 4,
 			"weaponType": "claymore",
 			"limited": true
 		},
 		{
+			"itemID": 131,
 			"name": "everlasting-moonglow",
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
-			"buttonOffset": {
-				"w": 70,
-				"t": 40,
-				"l": 60
+			"offset": {
+				"button": { "w": 70, "t": 40, "l": 60 }
 			}
 		},
 		{
+			"itemID": 130,
 			"name": "engulfing-lightning",
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
-			"buttonOffset": {
-				"w": 80,
-				"t": 20,
-				"l": 30
+			"offset": {
+				"button": { "w": 80, "t": 20, "l": 30 }
 			}
 		},
 		{
+			"itemID": 129,
 			"name": "thundering-pulse",
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "bow",
-			"buttonOffset": {
-				"w": 70,
-				"t": 10,
-				"l": 35
+			"offset": {
+				"button": { "w": 70, "t": 10, "l": 35 }
 			}
 		},
 		{
+			"itemID": 128,
 			"name": "mistsplitter-reforged",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"w": 100,
-				"t": -20,
-				"l": 30
+			"offset": {
+				"button": { "w": 90, "t": -22, "l": 30 }
 			}
 		},
 		{
+			"itemID": 127,
 			"name": "freedom-sworn",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"w": 100,
-				"t": -20,
-				"l": 30
+			"offset": {
+				"button": { "w": 100, "t": -20, "l": 30 }
 			}
 		},
 		{
+			"itemID": 126,
 			"name": "mitternachts-waltz",
 			"rarity": 4,
 			"weaponType": "bow",
 			"limited": true
 		},
 		{
+			"itemID": 125,
 			"name": "song-of-broken-pines",
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
-			"buttonOffset": {
-				"w": 80,
-				"t": 10,
-				"l": 35
+			"offset": {
+				"button": { "w": 80, "t": 10, "l": 35 }
 			}
 		},
 		{
+			"itemID": 124,
 			"name": "alley-hunter",
 			"rarity": 4,
 			"weaponType": "bow",
 			"limited": true
 		},
 		{
+			"itemID": 123,
 			"name": "elegy-for-the-end",
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
-			"buttonOffset": {
-				"w": 70,
-				"t": 10,
-				"l": 35
+			"offset": {
+				"button": { "w": 70, "t": 10, "l": 35 }
 			}
 		},
 		{
+			"itemID": 122,
 			"name": "the-alley-flash",
 			"rarity": 4,
 			"weaponType": "sword",
 			"limited": true
 		},
 		{
+			"itemID": 121,
 			"name": "wine-and-song",
 			"rarity": 4,
 			"weaponType": "catalyst",
 			"limited": true
 		},
 		{
+			"itemID": 120,
 			"name": "staff-of-homa",
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
-			"buttonOffset": {
-				"w": 90,
-				"t": 15,
-				"l": 60
+			"offset": {
+				"button": { "w": 90, "t": 15, "l": 60 }
 			}
 		},
 		{
+			"itemID": 119,
 			"name": "lithic-blade",
 			"rarity": 4,
 			"weaponType": "claymore",
 			"limited": true
 		},
 		{
+			"itemID": 118,
 			"name": "lithic-spear",
 			"rarity": 4,
 			"weaponType": "polearm",
 			"limited": true
 		},
 		{
+			"itemID": 117,
 			"name": "primordial-jade-cutter",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"w": 100,
-				"t": -14,
-				"l": 60
+			"offset": {
+				"button": { "w": 100, "t": -14, "l": 60 }
 			}
 		},
 		{
+			"itemID": 116,
 			"name": "primordial-jade-winged-spear",
 			"rarity": 5,
 			"weaponType": "polearm",
-			"buttonOffset": {
-				"w": 80,
-				"t": 10,
-				"l": 30
+			"offset": {
+				"button": { "w": 80, "t": 10, "l": 30 }
 			}
 		},
 		{
+			"itemID": 115,
 			"name": "summit-shaper",
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
-			"buttonOffset": {
-				"w": 90,
-				"t": -10,
-				"l": 30
+			"offset": {
+				"button": { "w": 90, "t": -10, "l": 30 }
 			}
 		},
 		{
+			"itemID": 114,
 			"name": "vortex-vanquisher",
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
-			"buttonOffset": {
-				"w": 90,
-				"t": 20,
-				"l": 30
+			"offset": {
+				"button": { "w": 90, "t": 20, "l": 30 }
 			}
 		},
 		{
+			"itemID": 113,
 			"name": "the-unforged",
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
-			"buttonOffset": {
-				"w": 60,
-				"t": 20,
-				"l": 60
+			"offset": {
+				"button": { "w": 60, "t": 20, "l": 60 }
 			}
 		},
 		{
+			"itemID": 112,
 			"name": "memory-of-dust",
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
-			"buttonOffset": {
-				"w": 65,
-				"t": 30,
-				"l": 65
+			"offset": {
+				"button": { "w": 65, "t": 30, "l": 65 }
 			}
 		},
 		{
+			"itemID": 111,
 			"name": "eye-of-perception",
 			"rarity": 4,
 			"weaponType": "catalyst"
 		},
 		{
+			"itemID": 110,
 			"name": "rainslasher",
 			"rarity": 4,
 			"weaponType": "claymore"
 		},
 		{
+			"itemID": 109,
 			"name": "rust",
 			"rarity": 4,
 			"weaponType": "bow"
 		},
 		{
+			"itemID": 108,
 			"name": "lost-prayer-to-the-sacred-winds",
 			"rarity": 5,
 			"weaponType": "catalyst",
-			"buttonOffset": {
-				"w": 55,
-				"t": 40,
-				"l": 40
+			"offset": {
+				"button": { "w": 55, "t": 40, "l": 40 }
 			}
 		},
 		{
+			"itemID": 107,
 			"name": "wolf_s-gravestone",
 			"rarity": 5,
 			"weaponType": "claymore",
-			"buttonOffset": {
-				"w": 80,
-				"t": 15,
-				"l": 65
+			"offset": {
+				"button": { "w": 80, "t": 15, "l": 65 }
 			}
 		},
 		{
+			"itemID": 106,
 			"name": "amos-bow",
 			"rarity": 5,
 			"weaponType": "bow",
-			"buttonOffset": {
-				"w": 70,
-				"t": 0,
-				"l": 35
+			"offset": {
+				"button": { "w": 70, "t": 0, "l": 35 }
 			}
 		},
 		{
+			"itemID": 105,
 			"name": "aquila-favonia",
 			"rarity": 5,
 			"weaponType": "sword",
-			"buttonOffset": {
-				"w": 80,
-				"t": -10,
-				"l": 65
+			"offset": {
+				"button": { "w": 80, "t": -10, "l": 65 }
 			}
 		},
 		{
+			"itemID": 104,
 			"name": "skyward-pride",
 			"rarity": 5,
 			"weaponType": "claymore",
-			"buttonOffset": { "w": 80, "t": 10, "l": 65 }
+			"offset": {
+				"button": { "w": 80, "t": 10, "l": 65 }
+			}
 		},
 		{
+			"itemID": 103,
 			"name": "skyward-atlas",
 			"rarity": 5,
 			"weaponType": "catalyst",
-			"buttonOffset": {
-				"w": 65,
-				"t": 40,
-				"l": 70
+			"offset": {
+				"button": { "w": 65, "t": 40, "l": 70 }
 			}
 		},
 		{
+			"itemID": 102,
 			"name": "skyward-harp",
 			"rarity": 5,
 			"weaponType": "bow",
-			"buttonOffset": {
-				"w": 70,
-				"t": 10,
-				"l": 35
+			"offset": {
+				"button": { "w": 70, "t": 10, "l": 35 }
 			}
 		},
 		{
+			"itemID": 101,
 			"name": "skyward-spine",
 			"rarity": 5,
 			"weaponType": "polearm",
-			"buttonOffset": {
-				"w": 80,
-				"t": 10,
-				"l": 60
+			"offset": {
+				"button": { "w": 80, "t": 10, "l": 60 }
 			}
 		},
 		{
+			"itemID": 100,
 			"name": "skyward-blade",
 			"rarity": 5,
 			"weaponType": "sword",
-			"buttonOffset": {
-				"w": 90,
-				"t": -10,
-				"l": 60
+			"offset": {
+				"button": { "w": 90, "t": -10, "l": 60 }
 			}
 		},
 		{
+			"itemID": 99,
 			"name": "the-flute",
 			"rarity": 4,
 			"weaponType": "sword"
 		},
 		{
+			"itemID": 98,
 			"name": "the-widsith",
 			"rarity": 4,
 			"weaponType": "catalyst"
 		},
 		{
+			"itemID": 97,
 			"name": "dragon_s-bane",
 			"rarity": 4,
 			"weaponType": "polearm"
 		},
 		{
+			"itemID": 96,
 			"name": "lion_s-roar",
 			"rarity": 4,
 			"weaponType": "sword"
 		},
 		{
+			"itemID": 95,
 			"name": "sacrificial-bow",
 			"rarity": 4,
 			"weaponType": "bow"
 		},
 		{
+			"itemID": 94,
 			"name": "sacrificial-fragments",
 			"rarity": 4,
 			"weaponType": "catalyst"
 		},
 		{
+			"itemID": 93,
 			"name": "sacrificial-greatsword",
 			"rarity": 4,
 			"weaponType": "claymore"
 		},
 		{
+			"itemID": 92,
 			"name": "sacrificial-sword",
 			"rarity": 4,
 			"weaponType": "sword"
 		},
 		{
+			"itemID": 91,
 			"name": "favonius-greatsword",
 			"rarity": 4,
 			"weaponType": "claymore"
 		},
 		{
+			"itemID": 90,
 			"name": "favonius-sword",
 			"rarity": 4,
 			"weaponType": "sword"
 		},
 		{
+			"itemID": 89,
 			"name": "favonius-warbow",
 			"rarity": 4,
 			"weaponType": "bow"
 		},
 		{
+			"itemID": 88,
 			"name": "favonius-codex",
 			"rarity": 4,
 			"weaponType": "catalyst"
 		},
 		{
+			"itemID": 87,
 			"name": "favonius-lance",
 			"rarity": 4,
 			"weaponType": "polearm"
 		},
 		{
+			"itemID": 86,
 			"name": "the-bell",
 			"rarity": 4,
 			"weaponType": "claymore"
 		},
 		{
+			"itemID": 85,
 			"name": "the-stringless",
 			"rarity": 4,
 			"weaponType": "bow"
 		},
 		{
-			"name": "a22-01",
+			"itemID": 84,
+			"name": "black-tassel",
 			"rarity": 3,
-			"weaponType": "bow"
+			"weaponType": "polearm"
 		},
 		{
-			"name": "a22-02",
+			"itemID": 83,
+			"name": "bloodtained-greatsword",
 			"rarity": 3,
-			"weaponType": "bow"
+			"weaponType": "claymore"
 		},
 		{
-			"name": "a22-03",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-04",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-05",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-06",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-07",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-08",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-09",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-10",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-11",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-12",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-13",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-14",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-15",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-16",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-17",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-18",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-19",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-20",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-21",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-22",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-23",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-24",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-25",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-26",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-27",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-28",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-29",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-30",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-31",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-32",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-33",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-34",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-35",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-36",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-37",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-38",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-39",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-40",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-41",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-42",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-43",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-44",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-45",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-46",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-47",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-48",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-49",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-50",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a22-51",
-			"rarity": 3,
-			"weaponType": "bow"
-		},
-		{
-			"name": "a03-01",
+			"itemID": 82,
+			"name": "cool-steel",
 			"rarity": 3,
 			"weaponType": "sword"
 		},
 		{
-			"name": "a03-02",
+			"itemID": 81,
+			"name": "debate-club",
+			"rarity": 3,
+			"weaponType": "claymore"
+		},
+		{
+			"itemID": 80,
+			"name": "emerald-orb",
+			"rarity": 3,
+			"weaponType": "catalyst"
+		},
+		{
+			"itemID": 79,
+			"name": "ferrous-shadow",
+			"rarity": 3,
+			"weaponType": "claymore"
+		},
+		{
+			"itemID": 78,
+			"name": "harbinger-of-dawn",
 			"rarity": 3,
 			"weaponType": "sword"
 		},
 		{
-			"name": "a03-03",
+			"itemID": 77,
+			"name": "magic-guide",
+			"rarity": 3,
+			"weaponType": "catalyst"
+		},
+		{
+			"itemID": 76,
+			"name": "raven-bow",
+			"rarity": 3,
+			"weaponType": "bow"
+		},
+		{
+			"itemID": 75,
+			"name": "sharpshooter_s-oath",
+			"rarity": 3,
+			"weaponType": "bow"
+		},
+		{
+			"itemID": 74,
+			"name": "skyrider-sword",
 			"rarity": 3,
 			"weaponType": "sword"
 		},
 		{
-			"name": "a03-04",
+			"itemID": 73,
+			"name": "slingshot",
 			"rarity": 3,
-			"weaponType": "sword"
+			"weaponType": "bow"
 		},
 		{
-			"name": "a03-05",
+			"itemID": 72,
+			"name": "thrilling-tales-of-dragon-slayers",
 			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-06",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-07",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-08",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-09",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-10",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-11",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-12",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-13",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-14",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-15",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-16",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-17",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-18",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-19",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-20",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-21",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-22",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-23",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-24",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-25",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-26",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-27",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-28",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-29",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-30",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-31",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-32",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-33",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-34",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-35",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-36",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-37",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-38",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-39",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-40",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-41",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-42",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-43",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-44",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-45",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-46",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-47",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-48",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-49",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a03-50",
-			"rarity": 3,
-			"weaponType": "sword"
-		},
-		{
-			"name": "a14-01",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-02",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-03",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-04",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-05",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-06",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-07",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-08",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-09",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-10",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-11",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-12",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-13",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-14",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-15",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-16",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-17",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-18",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-19",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-20",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-21",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-22",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-23",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-24",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-25",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-26",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-27",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-28",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-29",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-30",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-31",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-32",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-33",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-34",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-35",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-36",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-37",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-38",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-39",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-40",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-41",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-42",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-43",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-44",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-45",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-46",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-47",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-48",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-49",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-50",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-51",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-52",
-			"rarity": 3,
-			"weaponType": "polearm"
-		},
-		{
-			"name": "a14-53",
-			"rarity": 3,
-			"weaponType": "polearm"
+			"weaponType": "catalyst"
 		}
 	]
 }

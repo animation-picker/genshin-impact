@@ -81,6 +81,7 @@
 	"thundering-pulse": "Громовой пульс",
 	"tome-of-the-eternal-flow": "Обряд вечного течения",
 	"tulaytullah_s-remembrance": "Воспоминания Тулайтуллы",
+	"verdict": "Вердикт",
 	"vortex-vanquisher": "Покоритель вихря",
 	"wavebreaker_s-fin": "Режущий волны плавник",
 	"wine-and-song": "Вино и песни",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "Нахида",
 		"title": "Средоточие чистоты"
+	},
+	"navia": {
+		"name": "Навия",
+		"title": "Штурвал цветущей розы"
 	},
 	"neuvillette": {
 		"name": "Neuvillette",

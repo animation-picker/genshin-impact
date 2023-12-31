@@ -1,12 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import { getContext, onMount } from 'svelte';
+	import Background from '$lib/components/RandomBackground.svelte';
 
-	const random = (min, max) => {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	};
 	const loaded = getContext('isBannerLoaded');
 	onMount(loaded);
 </script>
@@ -16,7 +12,7 @@
 </svelte:head>
 
 <section>
-	<img class="bg" src="/images/background/bg{random(1, 25)}.webp" alt="background" />
+	<Background />
 	<div class="container">
 		<i class="gi-primo-star top-left" />
 		<i class="gi-primo-star top-right" />
@@ -38,17 +34,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.bg {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 110%;
-		height: 110%;
-		object-fit: cover;
-		filter: blur(5px);
 	}
 
 	.container {

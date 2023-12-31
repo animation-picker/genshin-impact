@@ -81,6 +81,7 @@
 	"thundering-pulse": "Battito tonante",
 	"tome-of-the-eternal-flow": "Tomo del flusso perenne",
 	"tulaytullah_s-remembrance": "Rimembranza di Tulaytullah",
+	"verdict": "Verdetto",
 	"vortex-vanquisher": "Squarciavortice",
 	"wavebreaker_s-fin": "Pinna del Frangionde",
 	"wine-and-song": "Vino e musica",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "Nahida",
 		"title": "Fisica della purezza"
+	},
+	"navia": {
+		"name": "Navia",
+		"title": "Timoniere della rosa splendente"
 	},
 	"neuvillette": {
 		"name": "Neuvillette",

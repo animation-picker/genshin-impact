@@ -242,3 +242,42 @@
 .gi-gear:before {
 	content: '\27';
 }
+.gi-zoom-in:before {
+	content: '\28';
+}
+.gi-zoom-out:before {
+	content: '\29';
+}
+.gi-reset:before {
+	content: '\2a';
+}
+.gi-pen:before {
+	content: '\2b';
+}
+.gi-move:before {
+	content: '\2c';
+}
+.gi-lock:before {
+	content: '\2d';
+}
+.gi-share:before {
+	content: '\2e';
+}
+.gi-network:before {
+	content: '\2f';
+}
+.gi-cloud:before {
+	content: '\3a';
+}
+.gi-cloud-sync:before {
+	content: '\3b';
+}
+.gi-drive:before {
+	content: '\3c';
+}
+.gi-local:before {
+	content: '\3d';
+}
+.gi-import:before {
+	content: '\3e';
+}

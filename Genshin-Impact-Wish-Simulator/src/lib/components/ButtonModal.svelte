@@ -8,6 +8,7 @@
 	export let disabled = false;
 	export let light = false;
 	export let width = '';
+	export let icon = '';
 
 	const dispatch = createEventDispatcher();
 	const click = () => dispatch('click');
@@ -19,7 +20,9 @@
 	class:light
 	style={width ? `width:${width}` : ''}
 >
-	{#if type === 'confirm'}
+	{#if icon}
+		<i class="gi-{icon}" />
+	{:else if type === 'confirm'}
 		<i class="gi-circle-o" />
 	{:else}
 		<i class="gi-times" />
@@ -92,11 +95,11 @@
 		background-color: #c3b8a1;
 	}
 
-	.gi-times {
-		color: #3f9ad1;
-	}
-	.gi-circle-o {
+	button i {
 		color: #ffc107;
+	}
+	button i.gi-times {
+		color: #3f9ad1;
 	}
 
 	:global(.mobile) button {

@@ -1,7 +1,38 @@
-import { allPatch } from '$lib/data/wish-setup.json';
-import { data as charDB } from '$lib/data/characters.json';
-import { data as weaponsDB } from '$lib/data/weapons.json';
-import { outfits } from '$lib/data/outfits.json';
+import { API_HOST, HOST } from '$lib/env';
+
+const imageModules = import.meta.glob(['@images/**/*'], {
+	query: { as: 'picture' },
+	import: 'default',
+	eager: true
+});
+
+export const itemList = () => {
+	const pathList = {};
+	Object.keys(imageModules).map((key) => {
+		const [keyName] = key.split('/').reverse();
+		const [keyNoExt] = keyName.split('.');
+
+		const { img = {} } = imageModules[key];
+		const { src = '' } = img;
+
+		if (key.match(/face\//)) {
+			pathList[`face/${keyNoExt}`] = src;
+		} else if (key.match(/splash-art/)) {
+			pathList[`splash-art/${keyNoExt}`] = src;
+		} else if (key.match(/banner-button/)) {
+			pathList[`button/${keyNoExt}`] = src;
+		} else if (key.match(/thumbnail/)) {
+			pathList[`thumbnail/${keyNoExt}`] = src;
+		} else if (key.match(/blank/)) {
+			pathList[`blank/${keyNoExt}`] = src;
+		} else if (key.match(/(banner|weapons)/)) {
+			pathList[keyNoExt] = src;
+		} else {
+			pathList[keyName] = src;
+		}
+	});
+	return pathList;
+};
 
 const images = [
 	{
@@ -25,6 +56,7 @@ const images = [
 			'3star-bg.webp',
 			'4star-bg.webp',
 			'5star-bg.webp',
+			'5star-special.webp',
 			'acquaint-fate.webp',
 			'bg-bonus.webp',
 			'book.webp',
@@ -44,7 +76,6 @@ const images = [
 			'history-select-bg.webp',
 			'imbroke.webp',
 			'intertwined-fate.webp',
-			'menu-active.png',
 			'modal-bg-icon.png',
 			'payment-childe.webp',
 			'payment-tears.webp',
@@ -71,11 +102,12 @@ const previewImages = [
 			'bg-claymore.webp',
 			'bg-polearm.webp',
 			'bg-sword.webp',
+			'face-placeholder.webp',
 			'genshin-logo-cn.webp',
 			'genshin-logo.webp',
 			'masterless-stardust.webp',
 			'masterless-starglitter.webp',
-			'resultcard-bg.svg',
+			'resultcard-bg.webp',
 			'stella-fortuna-4star.webp',
 			'stella-fortuna-5star.webp'
 		]
@@ -84,56 +116,21 @@ const previewImages = [
 
 const bgList = () => {
 	const paths = [];
-	for (let i = 0; i < 20; i++) {
+	for (let i = 0; i < 10; i++) {
 		paths.push(`bg${i + 1}.webp`);
 	}
 	return { dir: 'background', paths };
 };
 
-export const getItemlist = async () => {
-	const pathList = {};
-	outfits.forEach(({ name }) => {
-		pathList[`face/${name}`] = `/images/outfits/face/${name}.webp`;
-		pathList[`splash-art/${name}`] = `/images/outfits/splash-art/${name}.webp`;
-		pathList[`thumbnail/${name}`] = `/images/outfits/thumbnail/${name}.webp`;
-	});
-
-	charDB.forEach(({ name, rarity }) => {
-		pathList[`face/${name}`] = `/images/characters/face/${rarity}star/${name}.webp`;
-		pathList[`splash-art/${name}`] = `/images/characters/splash-art/${rarity}star/${name}.webp`;
-	});
-
-	weaponsDB.forEach(({ name, weaponType, rarity }) => {
-		pathList[name] = `/images/weapons/${weaponType}/${rarity}star/${name}.webp`;
-	});
-
-	for await (const patch of allPatch) {
-		const json = await import(`$lib/data/banners/events/${patch.toFixed(1)}.json`);
-		const { data } = json.default;
-		data.forEach(({ banners }) => {
-			const { bannerName } = banners.weapons;
-			pathList[bannerName] = `/images/banner/weapons/${bannerName}.webp`;
-			const event = banners.events.featured;
-			event.forEach(({ bannerName }) => {
-				pathList[bannerName] = `/images/banner/character-events/${bannerName}.webp`;
-			});
-		});
-	}
-
-	pathList['wanderlust-invocation-1'] = '/images/banner/standard/wanderlust-invocation-1.webp';
-	pathList['wanderlust-invocation-2'] = '/images/banner/standard/wanderlust-invocation-2.webp';
-	pathList['beginner'] = '/images/banner/beginner/beginner.webp';
-	return pathList;
-};
-
 export const listingAssets = (param) => {
 	const arr = [];
+	const globList = itemList();
 	const allImg = [bgList(), ...previewImages, ...images];
 	const imgs = param === 'preview' ? previewImages : allImg;
 
-	imgs.forEach(({ dir, paths }) => {
+	imgs.forEach(({ paths }) => {
 		paths.forEach((path) => {
-			const pathdir = `/images/${dir}/${path}`;
+			const pathdir = globList[path];
 			const item = { path: pathdir, asset: path };
 			arr.push(item);
 		});
@@ -154,4 +151,45 @@ export const blobAssets = async (path) => {
 		console.error(e);
 		return 'error';
 	}
+};
+
+export const base64ToBlob = (image) => {
+	const [dataType, base64Data] = image.split(';base64,');
+	const [, contentType] = dataType.split(':');
+	const byteCharacters = atob(base64Data);
+	const byteNumbers = new Array(byteCharacters.length);
+
+	for (let i = 0; i < byteCharacters.length; i++) {
+		byteNumbers[i] = byteCharacters.charCodeAt(i);
+	}
+
+	const byteArray = new Uint8Array(byteNumbers);
+	return new Blob([byteArray], { type: contentType });
+};
+
+export const initCDNURL = async () => {
+	const check = document.head.querySelector('.imagecdn');
+	if (check) return;
+
+	try {
+		const loadScript = new Promise((resolve, reject) => {
+			const cdn = document.createElement('script');
+			cdn.crossOrigin = 'anonymous';
+			cdn.src = API_HOST + '/js/image-cdn';
+			cdn.classList.add('imagecdn');
+			document.head.append(cdn);
+
+			cdn.addEventListener('load', () => resolve('ok'));
+			cdn.addEventListener('error', () => reject('cannot use imagecdn'));
+		});
+		return loadScript;
+	} catch (e) {
+		console.log(e);
+	}
+};
+
+export const imageCDN = (imgs, width = 0) => {
+	if (!('getCDNImageURL' in window)) return imgs;
+	const finalURL = window.getCDNImageURL(imgs, width, HOST);
+	return finalURL;
 };

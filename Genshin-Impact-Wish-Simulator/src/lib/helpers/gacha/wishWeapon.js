@@ -1,6 +1,6 @@
 // import { fatePoint, selectedCourse } from '$lib/store/stores';
 import { course } from '$lib/store/app-stores';
-import { fatepointManager, guaranteedStatus } from '$lib/store/localstore-manager';
+import { fatepointManager, guaranteedStatus } from '../dataAPI/api-localstore';
 import {
 	rand,
 	get3StarItem,
@@ -10,10 +10,6 @@ import {
 	checkGuaranteed
 } from './itemdrop-base';
 import { getRate, prob } from './probabilities';
-
-const getNameList = () => {
-	return get3StarItem().filter(({ weaponType }) => weaponType == 'sword');
-};
 
 const fatepoint = {
 	init({ version, phase, featured, fatesystemON }) {
@@ -66,18 +62,9 @@ const weaponWish = {
 	get(rarity) {
 		// 3 star items
 		if (rarity === 3) {
-			const droplist = getNameList();
+			const droplist = get3StarItem();
 			return rand(droplist);
 		}
-		if (rarity === 4) {
-			const droplist = getNameList();
-			return rand(droplist);
-		}
-		if (rarity === 5) {
-			const droplist = getNameList();
-			return rand(droplist);
-		}
-
 
 		// 4 star items (Character or Weapon)
 		if (rarity === 4) {

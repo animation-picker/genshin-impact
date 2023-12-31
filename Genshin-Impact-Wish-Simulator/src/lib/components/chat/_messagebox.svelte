@@ -2,7 +2,7 @@
 	import { push, ref } from 'firebase/database';
 	import { db } from '$lib/helpers/chat/firebaseApp';
 	import { playSfx } from '$lib/helpers/audio/audio';
-	import { cookie } from '$lib/store/cookie';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 	import Badwords from '$lib/helpers/chat/badwords';
 	import ButtonModal from '../ButtonModal.svelte';
 

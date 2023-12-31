@@ -1,6 +1,15 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import { activeBanner, bannerList, assets, activeVersion } from '$lib/store/app-stores';
+	import { afterUpdate } from 'svelte';
+	import OverlayScrollbars from 'overlayscrollbars';
+	import {
+		activeBanner,
+		bannerList,
+		assets,
+		activeVersion,
+		isCustomBanner,
+		customData
+	} from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { getBannerName } from '$lib/helpers/nameText';
 	import {
@@ -23,11 +32,11 @@
 		bannerName,
 		type,
 		stdver,
-		character = {},
+		character = '',
 		featured = [],
 		rateup = []
 	} = $bannerList[$activeBanner];
-	const { vision } = getCharDetails(character);
+	const { vision } = $isCustomBanner ? $customData : getCharDetails(character);
 
 	// Get Droplist
 	const { patch: version, phase } = $activeVersion;
@@ -60,7 +69,7 @@
 		rateupItem: type.match('weapon') ? featured.map(({ name }) => name) : [character] || []
 	});
 
-	character = { ...getCharDetails(character), rateup: true };
+	character = { ...($isCustomBanner ? $customData : getCharDetails(character)), rateup: true };
 	const weapons = featured
 		.map(({ name }) => getWpDetails(name))
 		.map((val) => {
@@ -75,7 +84,8 @@
 	// BannerName
 	const bannerSlug = getBannerName(bannerName).name;
 	const isStd = type === 'standard';
-	$: bannerName = $t(`banner.${isStd ? 'wanderlust' : bannerSlug || 'beginner'}`);
+	const defaultName = $t(`banner.${isStd ? 'wanderlust' : bannerSlug || 'beginner'}`);
+	bannerName = $isCustomBanner ? $customData.bannerName : defaultName;
 
 	const noPromo = type.match(/(standard|beginner)/);
 	let activeContent = noPromo ? 2 : 1;
@@ -86,9 +96,14 @@
 		activeContent = selected;
 		playSfx();
 	};
+
+	let scrollable;
+	afterUpdate(() => {
+		OverlayScrollbars(scrollable, { sizeAutoCapable: false, className: 'os-theme-light' });
+	});
 </script>
 
-<Title {type} {bannerName} {vision} {tplVersion} />
+<Title {type} {vision} {bannerName} {tplVersion} />
 
 {#if tplVersion === 'v2'}
 	<nav style="background-image: url({$assets['book-select-bg.webp']});">
@@ -104,14 +119,24 @@
 			<button on:click={() => select(3)}> {$t('details.itemlist')} </button>
 		</div>
 	</nav>
-	<div class="content">
-		{#if activeContent === 1}
-			<PromotionalV2 data={{ weapons, character, bannerType: type, rateup }} />
-		{:else if activeContent === 2}
-			<Description bannerType={type} {bannerName} {weapons} {character} {rateup} tplVersion="v2" />
-		{:else if activeContent === 3}
-			<List {drop5star} {drop4star} {drop3star} bannerType={type} tplVersion="v2" />
-		{/if}
+
+	<div class="content" bind:this={scrollable}>
+		<div class="wrapper">
+			{#if activeContent === 1}
+				<PromotionalV2 data={{ weapons, character, bannerType: type, rateup }} />
+			{:else if activeContent === 2}
+				<Description
+					bannerType={type}
+					{bannerName}
+					{weapons}
+					{character}
+					{rateup}
+					tplVersion="v2"
+				/>
+			{:else if activeContent === 3}
+				<List {drop5star} {drop4star} {drop3star} bannerType={type} tplVersion="v2" />
+			{/if}
+		</div>
 	</div>
 {:else}
 	<PromotionalV1 data={{ weapons, character, bannerType: type, rateup }} />
@@ -160,6 +185,5 @@
 
 	.content {
 		height: 100%;
-		overflow-y: auto;
 	}
 </style>

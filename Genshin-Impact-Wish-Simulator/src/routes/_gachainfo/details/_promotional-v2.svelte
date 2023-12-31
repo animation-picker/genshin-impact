@@ -1,12 +1,14 @@
 <script>
 	import { t } from 'svelte-i18n';
-	import { assets } from '$lib/store/app-stores';
+	import { assets, customData, isCustomBanner } from '$lib/store/app-stores';
 	import { getName } from '$lib/helpers/nameText';
 	import { lazyLoad } from '$lib/helpers/lazyload';
+	import Iklan from '$lib/components/Iklan.svelte';
 
 	export let data = {};
 	let { weapons = [], character = {}, bannerType = null, rateup = [] } = data;
 	const isWP = bannerType === 'weapon-event';
+	const bg = $isCustomBanner ? $assets['5star-special.webp'] : $assets['5star-bg.webp'];
 </script>
 
 {#if bannerType.match('event')}
@@ -27,18 +29,29 @@
 		{#if !isWP}
 			<div class="name">
 				<span class="{character.vision}-flat">
-					{$t(`${character.name}.name`)}
+					{$isCustomBanner ? character.name : $t(`${character.name}.name`)}
 				</span>
 			</div>
 			<div class="pic">
 				<div class="pic-item">
-					<picture class="star5" style="background-image:url('{$assets['5star-bg.webp']}');">
+					<picture class="star5" style="background-image:url('{bg}');">
 						<i class="gi-{character.vision} {character.vision} icon-gradient filter-drop" />
-						<img
-							crossorigin="anonymous"
-							use:lazyLoad={$assets[`face/${character.name}`]}
-							alt={getName(character.name)}
-						/>
+
+						{#if $isCustomBanner}
+							{@const { images = {}, name = '' } = $customData || {}}
+							<img
+								use:lazyLoad={images?.faceURL}
+								data-placeholder={$assets['face-placeholder.webp']}
+								alt={name}
+								crossorigin="anonymous"
+							/>
+						{:else}
+							<img
+								use:lazyLoad={$assets[`face/${character.name}`]}
+								alt={getName(character.name)}
+								crossorigin="anonymous"
+							/>
+						{/if}
 					</picture>
 					<span class="stars">
 						{#each Array(5) as i}
@@ -78,6 +91,8 @@
 			</div>
 		{/if}
 	</div>
+
+	<Iklan type="banner" />
 
 	<!-- 4 Star Item -->
 	<h3 class="star4">

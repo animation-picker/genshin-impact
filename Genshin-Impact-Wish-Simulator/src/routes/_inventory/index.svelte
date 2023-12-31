@@ -6,46 +6,36 @@
 	import OverlayScrollbars from 'overlayscrollbars';
 
 	// Store
+	import { writable } from 'svelte/store';
 	import { APP_TITLE } from '$lib/env';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { viewportHeight } from '$lib/store/app-stores';
-	import { cookie } from '$lib/store/cookie';
 
 	import Background from './_background.svelte';
 	import Header from './_header.svelte';
 	import Navlink from './_navlink.svelte';
-	import Filter from './_filter.svelte';
+	import Footer from './_footer.svelte';
 	import InventoryList from './_inventory-list.svelte';
 	import InventoryDetail from './_inventory-detail.svelte';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 
 	let headerHeight = 0;
+	let activeItem = cookie.get('inventoryTab') || 'character';
+	$: cookie.set('inventoryTab', activeItem);
 
-	let activeItem = 'character';
-	let orderby = 'rarity';
-	let reverse = false;
-	setContext('reverse', () => (reverse = !reverse));
-
-	let showAll = cookie.get('showAllInventory');
-	$: cookie.set('showAllInventory', showAll);
-	setContext('showAll', (v) => (showAll = v));
-
-	let itemQty = { owned: 0, all: 0 };
-	setContext('setItemQty', (obj) => (itemQty = obj));
+	let loaded = false;
+	const itemList = writable([]);
+	const loadedList = writable([]);
+	setContext('loaded', () => (loaded = true));
+	setContext('itemList', itemList);
+	setContext('loadedList', loadedList);
 
 	const showItem = (item) => {
 		if (activeItem === item) return;
 		playSfx('shopnav');
 		activeItem = item;
-		orderby = 'rarity';
 	};
 	setContext('showItem', showItem);
-
-	const orderData = (order = 'rarity') => {
-		if (orderby === order) return;
-		orderby = order;
-		playSfx();
-	};
-	setContext('orderby', orderData);
 
 	let content;
 	onMount(() => {
@@ -56,11 +46,11 @@
 	});
 
 	let detailItem = {};
-	let outfitData = { charName: '', outfitName: '' };
 	let showInventoryDetail = false;
-	const showDetail = (detail) => {
+	const showDetail = (itemID) => {
 		playSfx('collectionitem');
-		detailItem = detail;
+		const data = $itemList.find(({ itemID: id }) => itemID === id);
+		detailItem = data;
 		showInventoryDetail = true;
 	};
 	setContext('showDetail', showDetail);
@@ -70,11 +60,6 @@
 		showInventoryDetail = false;
 	};
 	setContext('closeDetail', closeDetail);
-
-	const refreshAfterOutfitChanged = (charName, outfitName) => {
-		outfitData = { outfitName, charName };
-	};
-	setContext('applyOutfit', refreshAfterOutfitChanged);
 </script>
 
 <svelte:head>
@@ -98,9 +83,9 @@
 				bind:this={content}
 				style="--headerHeight:{$viewportHeight - headerHeight}px;"
 			>
-				<InventoryList {activeItem} {showAll} {reverse} {orderby} {outfitData} />
+				<InventoryList {loaded} />
 			</div>
-			<Filter {activeItem} {itemQty} {showAll} {orderby} />
+			<Footer {activeItem} />
 		</div>
 	</div>
 </section>

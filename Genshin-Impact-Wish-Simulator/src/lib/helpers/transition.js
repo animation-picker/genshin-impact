@@ -9,6 +9,7 @@ export const [morphOut, morphIn] = crossfade({
 export const removeAnimClass = (el) => {
 	el.addEventListener('animationend', () => {
 		el.classList.remove('animate');
+		el.classList.remove('anim');
 	});
 };
 

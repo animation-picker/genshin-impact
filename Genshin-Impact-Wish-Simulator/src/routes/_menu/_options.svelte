@@ -8,14 +8,14 @@
 		acquaint as ac,
 		intertwined as iw,
 		stardust as sd,
-		starglitter as sg,
-		multipull
+		starglitter as sg
 	} from '$lib/store/app-stores';
-	import { localBalance, localConfig } from '$lib/store/localstore-manager';
-	import { cookie } from '$lib/store/cookie';
+	import { localBalance, localConfig } from '$lib/helpers/dataAPI/api-localstore';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { localeName, flags } from '$lib/data/country.json';
 	import { availableCurrencies, userCurrencies } from '$lib/helpers/currencies';
+	import { loadMembers } from '$lib/helpers/member-loader';
 
 	export let name;
 	export let useInput = false;
@@ -84,15 +84,11 @@
 	};
 
 	$: balance = gameCurrencyList[inputValue];
+	const setMultiPull = getContext('setMultiPull');
 
 	const setGameCurrencies = (value) => {
 		gameCurrencyList[inputValue]?.set(value);
 		localBalance.set(inputValue, value);
-	};
-
-	const setMultiPull = (value) => {
-		localConfig.set('multipull', value);
-		multipull.set(value);
 	};
 
 	const setValues = (e) => {
@@ -105,6 +101,16 @@
 		if (name === 'currencyItem') return setGameCurrencies(value);
 		if (name === 'multi') return setMultiPull(value);
 	};
+
+	let files;
+
+	const handleUpload = () => {
+		if (files) {
+			// console.log(files[0]);
+			loadMembers(files[0]);
+		}
+	}
+
 </script>
 
 <div class="option" class:sub>
@@ -146,15 +152,6 @@
 							<span style="text-align:left;width:100%"> {localeName[locale]} </span>
 						</button>
 					{/each}
-					<button on:click|stopPropagation>
-						<a
-							href="https://github.com/AguzzTN54/Genshin-Impact-Wish-Simulator/tree/master/src/locales"
-							target="_blank"
-							style="text-align:left;width:100%; padding: .5rem; text-align:center"
-						>
-							Contribute
-						</a>
-					</button>
 				</div>
 			{/if}
 		</div>
@@ -223,6 +220,12 @@
 		</button>
 
 		<!-- General Option -->
+	{:else if name === 'upload'}
+		<input class="option-select-square" bind:files type="file" id="fileInput" accept=".txt" />
+			
+		<button class="option-select" on:click={handleUpload}>
+			上传
+		</button>
 	{:else}
 		<div class="option-select">
 			<button
@@ -285,6 +288,20 @@
 		border-bottom: #dcd4c2 dashed 0.12rem;
 		border-left: #dcd4c2 dashed 0.12rem;
 		opacity: 0.5;
+	}
+
+	.option-select-square {
+		background-color: #dcd4c2;
+		width: 40%;
+		max-width: 14rem;
+		text-align: center;
+		position: relative;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.2s;
+		border: solid transparent;
+		border-width: 0.2rem 0.2rem 0.2rem 0;
 	}
 
 	.option-select {

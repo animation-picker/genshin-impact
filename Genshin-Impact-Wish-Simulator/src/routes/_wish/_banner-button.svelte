@@ -3,7 +3,7 @@
 	import { fade } from 'svelte/transition';
 	import { data as charDB } from '$lib/data/characters.json';
 	import { data as weaponDB } from '$lib/data/weapons.json';
-	import positionToStyle from '$lib/helpers/cssPosition';
+	import { positionToStyle } from '$lib/helpers/cssPosition';
 	import { noticeMark } from '$lib/helpers/noticeMark';
 	import { activeVersion, isFatepointSystem, assets } from '$lib/store/app-stores';
 	import NoticeMark from '$lib/components/NoticeMark.svelte';
@@ -16,9 +16,10 @@
 
 	const buttonOffset = (itemName, buttonPosition = {}) => {
 		const data = type === 'weapon-event' ? weaponDB : charDB;
-		const { buttonOffset } = data.find(({ name }) => name === itemName) || {};
-		Object.keys(buttonPosition).forEach((key) => (buttonOffset[key] = buttonPosition[key]));
-		return buttonOffset;
+		const { offset = {} } = data.find(({ name }) => name === itemName) || {};
+		const { button = {} } = offset;
+		Object.keys(buttonPosition).forEach((key) => (button[key] = buttonPosition[key]));
+		return button;
 	};
 
 	let patch, phase;
@@ -61,7 +62,7 @@
 			{:else}
 				<img
 					in:fade
-					src="/images/characters/banner-button/{character}.webp"
+					src={$assets[`button/${character}`]}
 					alt="{type} Wish"
 					style={positionToStyle(buttonOffset(character))}
 					on:error={(e) => e.target.remove()}

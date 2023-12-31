@@ -2,18 +2,16 @@
 	import { getContext } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
-	import { assets, bannerList } from '$lib/store/app-stores';
-	import Reset from './_reset.svelte';
+	import { assets } from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
+	import Reset from './_reset.svelte';
 
 	export let v2 = false;
 	export let banner;
 	let showSelectList = false;
 
-	$: list = $bannerList.filter((item, i, arr) => i === arr.findIndex((v) => v.type === item.type));
-	//  check if beginner banner already gone, push it to hostory list
-	$: if (list.findIndex(({ type }) => type === 'beginner') < 0) list.unshift({ type: 'beginner' });
-	$: nowOpenIndex = list.findIndex(({ type }) => type === banner.toLocaleLowerCase());
+	const list = ['beginner', 'character-event', 'weapon-event', 'standard'];
+	$: nowOpenIndex = list.findIndex((type) => type === banner.toLocaleLowerCase());
 	$: selected = nowOpenIndex < 0 ? 2 : nowOpenIndex;
 
 	const selectBanner = getContext('selectBanner');
@@ -40,7 +38,7 @@
 
 			{#if showSelectList}
 				<div class="select-list" transition:fade={{ duration: 200 }}>
-					{#each list as { type }, i}
+					{#each list as type, i}
 						<button class="item" class:active={selected === i} on:click={() => select(type)}>
 							{@html $t(`wish.banner.${type}`)}
 						</button>
@@ -109,7 +107,7 @@
 		color: #757575;
 		text-decoration: none;
 		padding: 6px 15px;
-		transition: all 0.2s;
+		transition: background 0.2s;
 	}
 	.item.active,
 	.item:hover {
@@ -141,24 +139,24 @@
 		background-repeat: no-repeat;
 		aspect-ratio: 201/11;
 		justify-content: flex-start;
-		font-size: calc(0.016 * var(--content-width));
+		font-size: calc(0.014 * var(--content-width));
 		margin-bottom: calc(0.005 * var(--content-width));
 	}
 
 	.wish-type.v2 > span {
-		padding: 0 calc(0.02 * var(--content-width));
-		width: calc(0.215 * var(--content-width));
+		width: calc(0.23 * var(--content-width));
 		text-align: right;
 		line-height: 90%;
 	}
 
 	.v2 .select-box {
-		width: calc(0.525 * var(--content-width));
+		width: 100%;
 		margin: 0;
 	}
 
 	.v2 .selected {
-		font-size: calc(0.0175 * var(--content-width));
+		padding-left: calc(0.035 * var(--content-width));
+		font-size: calc(0.014 * var(--content-width));
 		color: var(--text-color);
 		background-color: transparent;
 		border: transparent;
@@ -197,7 +195,8 @@
 	}
 
 	.selectType.v2 .reset {
-		width: calc(0.08 * var(--content-width));
+		width: calc(0.13 * var(--content-width));
+		text-align: center;
 	}
 
 	.arrow.icon {

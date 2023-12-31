@@ -2,18 +2,20 @@
 	import { getContext, onDestroy, setContext } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
+	import hotkeys from 'hotkeys-js';
 
-	import { isMobile, mobileMode } from '$lib/store/app-stores';
+	import { editorMode, isMobile, mobileMode } from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	// Components
 	import Options from './Settings.svelte';
 	import Updates from './Updates.svelte';
 	import Sidebar from './_sidebar.svelte';
-	import RemoveAds from './RemoveAds.svelte';
-	import hotkeys from 'hotkeys-js';
+	import ProAccess from './ProAccess.svelte';
+	import CustomBanner from './CustomBanner.svelte';
+	import BackupRestore from './BackupRestore.svelte';
 
-	let activeContent = 'options';
+	let activeContent = $editorMode ? 'customBanner' : 'options';
 
 	const selectMenu = (menu) => {
 		if (activeContent === menu) return;
@@ -49,8 +51,12 @@
 				<Options />
 			{:else if activeContent === 'updates'}
 				<Updates />
-			{:else if activeContent === 'removeAds'}
-				<RemoveAds />
+			{:else if activeContent === 'proAccess'}
+				<ProAccess />
+			{:else if activeContent === 'customBanner'}
+				<CustomBanner />
+			{:else if activeContent === 'backupRestore'}
+				<BackupRestore />
 			{/if}
 
 			{#if $isMobile && !$mobileMode}

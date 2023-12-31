@@ -11,9 +11,10 @@
 		acquaint,
 		intertwined,
 		stardust,
-		starglitter
+		starglitter,
+		customData
 	} from '$lib/store/app-stores';
-	import { localBalance, localConfig } from '$lib/store/localstore-manager';
+	import { localBalance, localConfig } from '$lib/helpers/dataAPI/api-localstore';
 	import { APP_TITLE } from '$lib/env';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import WISH, { roll } from '$lib/helpers/gacha/Wish';
@@ -42,7 +43,7 @@
 	// Load Wish Configuration When changing banner Version
 	const initialWish = async ({ patch, phase }) => {
 		if (!patch || !phase) return;
-		WishInstance = await WISH.init(patch, phase);
+		WishInstance = await WISH.init(patch, phase, $customData);
 	};
 	onMount(() => activeVersion.subscribe(initialWish));
 
@@ -64,6 +65,7 @@
 	let onWish = getContext('onWish');
 
 	const doRoll = async (count, bannerToRoll) => {
+
 		rollCount = count;
 		multi = count > 1;
 		const tmp = [];
@@ -87,7 +89,7 @@
 	setContext('doRoll', doRoll);
 
 	const updateFatesBalance = (banner) => {
-		const isAcquaint = ['beginner', 'standard'].includes(banner);
+		const isAcquaint = ['beginner', 'standard', 'member'].includes(banner);
 		const funds = isAcquaint ? acquaint : intertwined;
 		funds.update((n) => {
 			const afterUpdate = n - (banner === 'beginner' && rollCount > 1 ? 8 : rollCount);
@@ -139,11 +141,15 @@
 		const autoSkip = localConfig.get('autoskip');
 		if (autoSkip) return showSplashArt({ skip: true });
 
-		const stars = result.map(({ rarity }) => rarity);
-		single = stars.length === 1;
-		meteorStar = 3;
-		if (stars.includes(4)) meteorStar = 4;
-		if (stars.includes(5)) meteorStar = 5;
+		if (bannerType === 'member') {
+			meteorStar = Math.floor(Math.random() * 3) + 3;
+		} else {
+			const stars = result.map(({ rarity }) => rarity);
+			single = stars.length === 1;
+			meteorStar = 3;
+			if (stars.includes(4)) meteorStar = 4;
+			if (stars.includes(5)) meteorStar = 5;
+		}
 		showMeteor = true;
 	};
 
@@ -154,9 +160,10 @@
 	};
 	setContext('closeModal', closeModal);
 
-	const reroll = () => {
+	const reroll = (amount) => {
 		playSfx();
-		doRoll(multi ? 10 : 1, bannerType);
+		const multiAmount = bannerType === 'beginner' ? 10 : amount;
+		doRoll(multi ? multiAmount : 1, bannerType);
 		showConvertModal = false;
 	};
 	setContext('reroll', reroll);
@@ -192,7 +199,7 @@
 <div class="wish-container" class:show={showMeteor || showWishResult}>
 	<Meteor show={showMeteor} isSingle={single} rarity={meteorStar} />
 	{#if showWishResult}
-		<WishResult list={result} skip={skipSplashArt} />
+		<WishResult list={result} skip={skipSplashArt} bannerType={bannerType} />
 	{/if}
 </div>
 
@@ -200,10 +207,12 @@
 	<div class="col top">
 		<Header {bannerType} />
 	</div>
+
 	<div class="col banner">
 		<div class="item">
 			<BannerItem />
 		</div>
+
 		<div class="col button" in:fly={{ y: 20, duration: 1000 }}>
 			<Footer {bannerType} />
 		</div>

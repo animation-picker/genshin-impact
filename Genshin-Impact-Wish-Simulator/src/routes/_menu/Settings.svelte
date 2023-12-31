@@ -5,27 +5,24 @@
 	import { locale, t } from 'svelte-i18n';
 	import OverlayScrollbars from 'overlayscrollbars';
 
-	import { autoskip, multipull, wishAmount } from '$lib/store/app-stores';
-	import { localConfig } from '$lib/store/localstore-manager';
+	import { autoskip, isCustomBanner, multipull, wishAmount } from '$lib/store/app-stores';
+	import { localConfig } from '$lib/helpers/dataAPI/api-localstore';
+	import { calculateByteSize } from '$lib/helpers/dataAPI/api-filesystem';
 	import { pauseSfx, playSfx } from '$lib/helpers/audio/audio';
 	import { check as meteorCheck } from '$lib/helpers/meteor-loader';
-	import factoryReset from '$lib/helpers/storage-reset';
+	import { factoryReset } from '$lib/helpers/dataAPI/storage-reset';
+	import { pushToast } from '$lib/helpers/toast';
+	import { assets } from '$lib/store/app-stores';
 
 	import Modal from '$lib/components/ModalTpl.svelte';
-	import Toast from '$lib/components/Toast.svelte';
 	import Icon from '$lib/components/Icon.svelte';
+	import CheckBox from '$lib/components/CheckBox.svelte';
 	import OptionMenu from './_options.svelte';
 
 	let optionToShow = '';
 	const handleOption = (selected) => (optionToShow = selected);
 	setContext('handleOption', handleOption);
 	let isMuted = localConfig.get('muted');
-
-	// const handleSelect = (option, e) => {
-	// 	const { selected } = e.detail;
-	// 	const optionValue = selected === 'yes';
-	// 	localConfig.set(option, optionValue);
-	// };
 
 	// Handle Muted
 	const handleMuted = ({ detail }) => {
@@ -66,16 +63,23 @@
 		wishAmount.set(detail);
 	};
 
+	// Multipull Amount
+	const setMultiPull = (value) => {
+		localConfig.set('multipull', value);
+		multipull.set(value);
+	};
+	setContext('setMultiPull', setMultiPull);
+
 	// Reset
 	let showResetModal = false;
 	let keepSetting = false;
 	let clearCache = false;
-	let showToast = false;
 
 	const getStorageSize = async () => {
-		const { usage } = await navigator.storage.estimate();
-		const size = (usage / 1000000).toFixed(2);
-		return `${size}MB`;
+		const { usageDetails = {} } = await navigator.storage.estimate();
+		const { caches = 0 } = usageDetails;
+		const size = calculateByteSize(caches);
+		return size;
 	};
 
 	const reset = () => {
@@ -87,13 +91,14 @@
 	const confirmReset = async () => {
 		playSfx();
 		showResetModal = false;
-		await factoryReset({ clearCache, keepSetting });
-		showToast = true;
+		await factoryReset({ clearCache, keepSetting, isCustom: $isCustomBanner });
+		pushToast({ message: $t('menu.resetSuccess'), type: 'success' });
 		if (keepSetting) return;
 
 		playSfx('wishBacksound');
 		handleAnimatedBG();
 		selectedAmount = 'default';
+		setMultiPull(10);
 	};
 
 	const cancelReset = () => {
@@ -110,50 +115,35 @@
 {#if showResetModal}
 	<Modal title={$t('menu.resetTitle')} on:confirm={confirmReset} on:cancel={cancelReset}>
 		<div class="confirmation">
-			<div style="padding: 0 1rem">
+			<caption>
 				{@html $t('menu.resetPrompt')}
+			</caption>
 
-				<div class="checkbox keep-setting" style="margin-top: 5%;">
-					<input
-						type="checkbox"
-						name="keepsetting"
-						id="keepsetting"
-						style="margin-right: 2%;"
-						bind:checked={keepSetting}
-						on:change={() => playSfx()}
-					/>
-					<label for="keepsetting">
-						<i>✔</i>
-						<span> {@html $t('menu.keepSetting')}</span>
-					</label>
-				</div>
-				<div class="checkbox clear-cache">
-					<input
-						type="checkbox"
-						name="cache"
-						id="cache"
-						style="margin-right: 2%;"
-						bind:checked={clearCache}
-						on:change={() => playSfx()}
-					/>
-					<label for="cache">
-						<i>✔</i>
-						{#await getStorageSize()}
-							<span>..B</span>
-						{:then size}
-							<span>
-								{@html $t('menu.clearCache', { values: { size: size } })}
-							</span>
-						{/await}
-					</label>
-				</div>
+			<div class="delete-option">
+				<CheckBox
+					id="_setting"
+					checked={keepSetting}
+					on:change={({ detail }) => (keepSetting = !!detail.checked)}
+				>
+					<span> {@html $t('menu.keepSetting')}</span>
+				</CheckBox>
+
+				<CheckBox
+					id="_cache"
+					checked={clearCache}
+					on:change={({ detail }) => (clearCache = !!detail.checked)}
+				>
+					{#await getStorageSize()}
+						<span>..B</span>
+					{:then size}
+						<span>
+							{@html $t('menu.clearCache', { values: { size: size } })}
+						</span>
+					{/await}
+				</CheckBox>
 			</div>
 		</div>
 	</Modal>
-{/if}
-
-{#if showToast}
-	<Toast on:close={() => (showToast = false)}>{$t('menu.resetSuccess')}</Toast>
 {/if}
 
 <div in:fade={{ duration: 200 }} class="content-container" bind:this={optionsContainer}>
@@ -214,47 +204,13 @@
 		{$t('menu.animatedbg')}
 	</OptionMenu>
 
-	<OptionMenu name="switchBanner">{$t('menu.switchBanner')}</OptionMenu>
+
+	<!-- <OptionMenu name="switchBanner">{$t('menu.switchBanner')}</OptionMenu> -->
 
 	<OptionMenu name="reset">{$t('menu.factoryReset')}</OptionMenu>
 
-	<h2>Notes :</h2>
-	<div class="notes">
-		<ol>
-			<li>
-				I tried to create the simulator with pity system almost like the real game, the rate of
-				getting rare item will increase once you reach a certain pity depending on where banner you
-				pull. you can go <a
-					on:click|stopPropagation
-					href="https://github.com/AguzzTN54/Genshin-Impact-Wish-Simulator#pity-system"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Here
-				</a>
-				to find details of the probability. If you has any idea, please send me feedback by creating
-				<a
-					on:click|stopPropagation
-					href="https://github.com/AguzzTN54/Genshin-Impact-Wish-Simulator/issues"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					new issue here
-				</a>
-			</li>
-			<li>
-				This app use Localstorage and IndexedDB to save your pull history, it's native on your
-				browser, if you clear your browser data, you will lost your data that related to this app
-				too. No chance to recover it back, because we never store your data on cloud
-			</li>
-			<li>
-				This App does not collect or store any personally identifiable information about you.
-				However, this app use third party services that may collect information used to identify
-				you. The information that these third party services request will be retained on your device
-				and is not collected by me in any way.
-			</li>
-		</ol>
-	</div>
+	<OptionMenu name="upload">导入名单</OptionMenu>
+
 </div>
 
 <style>
@@ -262,49 +218,32 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		width: 100%;
 		height: 100%;
 	}
 
-	.checkbox {
+	.delete-option {
 		font-size: 80%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		margin: 2% 0;
-	}
-	.checkbox label {
 		width: 80%;
+	}
+
+	.delete-option :global(.checkbox) {
+		margin-top: 3% !important;
+	}
+
+	.delete-option :global(label) {
 		text-align: left;
 		display: flex;
 		align-items: center;
 	}
-	.checkbox :global(small) {
+	.delete-option :global(small) {
 		display: block;
 	}
 
-	.checkbox input + label i {
-		color: white;
-		border: 1px solid #aaa;
-		display: inline-block;
-		width: 1rem;
-		aspect-ratio: 1/1;
-		line-height: 1rem;
+	.delete-option :global(label i) {
 		margin-right: 2%;
-		background-color: #fff;
-		transition: all 0.2s;
-	}
-	.checkbox input:checked + label i {
-		background-color: #06bbff;
-	}
-
-	.checkbox:hover input + label i {
-		border: 1px solid #06bbff;
-		box-shadow: rgba(106, 168, 230, 0.6) 0px 0px 7px 5px;
-	}
-
-	.checkbox input {
-		display: none;
 	}
 
 	.notes {

@@ -6,9 +6,10 @@
 	import OverlayScrollbars from 'overlayscrollbars';
 	import { APP_TITLE } from '$lib/env';
 	import { activeBanner, bannerList } from '$lib/store/app-stores';
-	import { localPity } from '$lib/store/localstore-manager';
+	import { localPity } from '$lib/helpers/dataAPI/api-localstore';
 
 	// Components
+	import Iklan from '$lib/components/Iklan.svelte';
 	import SelectBanner from './_select-banner.svelte';
 	import Reset from './_reset.svelte';
 	import Report from './_report.svelte';
@@ -63,9 +64,9 @@
 	const navigation = (page) => (activepage = page);
 	setContext('navigation', navigation);
 
-	let content;
+	let container;
 	onMount(() => {
-		OverlayScrollbars(content, { sizeAutoCapable: false, className: 'os-theme-light' });
+		OverlayScrollbars(container, { sizeAutoCapable: false, className: 'os-theme-light' });
 	});
 </script>
 
@@ -78,13 +79,16 @@
 {#if tplVersion === 'v2'}
 	<Title type="history" />
 	<SelectBanner v2 {banner} />
-	<div class="container">
-		<p class="v2">{$t('history.disclaimer')}</p>
-		<div class="row">
-			<Report {dataLength} v2 />
-			<Filter {filterBy} v2 />
+	<div class="container" bind:this={container}>
+		<div class="wrapper">
+			<p class="v2">{$t('history.disclaimer')}</p>
+			<div class="row">
+				<Report {dataLength} v2 />
+				<Filter {filterBy} v2 />
+			</div>
+			<List v2 {banner} filter={filterBy} page={{ activepage, itemPerPage }} />
+			<Iklan type="banner" />
 		</div>
-		<List v2 {banner} filter={filterBy} page={{ activepage, itemPerPage }} />
 	</div>
 	<Legends {banner} v2 />
 	<Pagination v2 dataLength={filteredDataLength} {itemPerPage} {activepage} />
@@ -120,6 +124,13 @@
 		align-items: flex-end;
 		margin-bottom: 0.5rem;
 	}
+
+	.info > .right {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
 	@media screen and (max-width: 450px) {
 		.info {
 			flex-direction: column;
@@ -129,11 +140,6 @@
 			width: 100%;
 		}
 	}
-	.info > .right {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-	}
 
 	/* V2 */
 	.row {
@@ -142,8 +148,8 @@
 
 	.container {
 		height: 100%;
-		overflow: auto;
 	}
+
 	p.v2 {
 		color: #8e8e8e;
 		line-height: 120%;

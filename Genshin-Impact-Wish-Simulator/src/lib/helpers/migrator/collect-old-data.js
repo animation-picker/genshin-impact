@@ -1,4 +1,4 @@
-import { HistoryManager } from '$lib/store/IDB-manager';
+import { HistoryManager } from '../dataAPI/api-indexeddb';
 import {
 	guaranteedStatus,
 	localBalance,
@@ -7,29 +7,19 @@ import {
 	localPity,
 	rollCounter,
 	localConfig
-} from '$lib/store/localstore-manager';
+} from '../dataAPI/api-localstore';
 import { getSplashArtData } from '../outfit';
 
-const { getListByBanner, addHistory } = HistoryManager;
+const { getListByBanner } = HistoryManager;
 
-const migrateWpBannerHistory = async () => {
-	const list = await getListByBanner('weapons');
+const migrateWishHistory = async () => {
+	const beginner = await getListByBanner('beginner');
+	const character = await getListByBanner('character-event');
+	const weapons = await getListByBanner('weapon-event');
+	const standard = await getListByBanner('standard');
+	const list = [...beginner, ...character, ...weapons, ...standard];
 	if (list.length < 1) return;
-	list.map((d) => {
-		d.banner = 'weapon-event';
-		owneditem.put({ name: d.name });
-		addHistory(d);
-	});
-};
-
-const migrateCharBannerHistory = async () => {
-	const list = await getListByBanner('events');
-	if (list.length < 1) return;
-	list.map((d) => {
-		d.banner = 'character-event';
-		owneditem.put({ name: d.name });
-		addHistory(d);
-	});
+	list.map(({ itemID }) => owneditem.put({ itemID }));
 };
 
 const migratePity = () => {
@@ -164,7 +154,6 @@ export const retriveOldData = async () => {
 	migrateFirstTimeShare();
 
 	// IDB
-	await migrateWpBannerHistory();
-	await migrateCharBannerHistory();
+	const wish = await migrateWishHistory();
+	return wish;
 };
-

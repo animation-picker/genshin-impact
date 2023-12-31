@@ -13,6 +13,7 @@
 	export let blank = false;
 	export let disabled = false;
 	export let confirmOnly = false;
+	export let noDimiss = false;
 
 	let content;
 	onMount(() =>
@@ -21,8 +22,10 @@
 
 	const dispatch = createEventDispatcher();
 	const confirmClick = () => dispatch('confirm');
-	const cancelClik = () => {
-		if (confirmOnly) return;
+	const cancelClik = () => dispatch('cancel');
+
+	const dimiss = () => {
+		if (confirmOnly || noDimiss) return;
 		dispatch('cancel');
 	};
 
@@ -48,7 +51,7 @@
 	class:dark
 	in:fade={{ duration: 200 }}
 	out:fade={{ duration: 80 }}
-	on:mousedown|self={cancelClik}
+	on:mousedown|self={dimiss}
 >
 	<div
 		class="modal-content"

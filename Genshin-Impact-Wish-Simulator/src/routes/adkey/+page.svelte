@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { playSfx } from '$lib/helpers/audio/audio';
+	import { assets } from '$lib/store/app-stores';
 	import { adKey } from '$lib/helpers/accessKey';
 	import ButtonModal from '$lib/components/ButtonModal.svelte';
 
@@ -49,7 +50,7 @@
 </svelte:head>
 
 <section in:fly={{ x: -200, duration: 200 }}>
-	<img class="bg" src="/images/background/bg{random(1, 20)}.webp" alt="background" />
+	<img class="bg" src={$assets[`bg${random(1, 20)}.webp`]} alt="background" />
 	<div class="container">
 		<i class="gi-primo-star top-left" />
 		<i class="gi-primo-star top-right" />

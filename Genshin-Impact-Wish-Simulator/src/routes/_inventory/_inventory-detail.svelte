@@ -1,37 +1,49 @@
 <script>
-	import { getContext, onDestroy, setContext } from 'svelte';
+	import { getContext, onDestroy, onMount, setContext } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
 	import hotkeys from 'hotkeys-js';
 
-	import { HistoryManager } from '$lib/store/IDB-manager';
-	import { assets, viewportHeight, viewportWidth } from '$lib/store/app-stores';
-	import { lazyLoad } from '$lib/helpers/lazyload';
-	import { getCharDetails } from '$lib/helpers/gacha/itemdrop-base';
-	import { owneditem } from '$lib/store/localstore-manager';
+	import { assets } from '$lib/store/app-stores';
+	import { HistoryManager } from '$lib/helpers/dataAPI/api-indexeddb';
+	import { playSfx } from '$lib/helpers/audio/audio';
 
 	// Component
-	import ItemInfo from './../_wish/wish-result/_item-info.svelte';
 	import ScreenshotShare from '../_index/ScreenshotShare.svelte';
 	import OutfitToggle from './_outfit-toggle.svelte';
+	import SplashArt from '../_custom-banner/SplashArtEditor/SplashArt.svelte';
 
-	export let name;
+	export let itemID;
 	export let useOutfit = false;
 	export let outfitName = '';
+	export let custom = false;
+	export let rarity = 3;
+	export let type = 'character';
+	export let name = '';
+	export let localName = '';
+	export let vision = '';
+	export let weaponType = '';
+	export let qty = 0;
+	export let isOwned = true;
+	export let images = {};
+	export let offset = {};
 
-	const previewOutfit = (outfit) => {
+	let hideInfo = false;
+	setContext('toggleInfoHide', () => {
+		hideInfo = !hideInfo;
+		playSfx();
+	});
+
+	const previewOutfit = (outfit, position) => {
 		outfitName = outfit;
+		offset = position;
 		useOutfit = outfit !== 'default';
 	};
 	setContext('previewOutfit', previewOutfit);
-	const closeDetail = getContext('closeDetail');
 
-	const calculateWrapperHeight = (vw, vh) => {
-		if (vw < vh) return '80vw';
-		if (vw < vh * 1.5) return '65vw';
-		return '100%';
-	};
-	$: wrapperHeight = calculateWrapperHeight($viewportWidth, $viewportHeight);
+	let onshot = false;
+	const closeDetail = getContext('closeDetail');
+	setContext('preview', (val) => (onshot = val));
 
 	const getQtyInfo = (type, qty) => {
 		if (type === 'weapon') {
@@ -49,21 +61,20 @@
 		return info;
 	};
 
-	const loadItem = async () => {
-		if (!name) return;
-		const dt = await HistoryManager.getByName(name);
+	const getArtURL = (outfitName) => {
+		if (custom) return images?.artURL;
+		if (type === 'weapon') return $assets[name];
 
-		// If no data in IDB
-		if (dt.length < 1 || !dt[0]) {
-			const result = getCharDetails(name);
-			result.qty = owneditem.get(name)?.qty || 0;
-			return result;
-		}
-
-		const result = dt[0];
-		result.qty = dt.length;
-		return result;
+		const useOutfit = outfitName && outfitName !== 'default';
+		const artKey = useOutfit ? outfitName : name;
+		return $assets[`splash-art/${artKey}`];
 	};
+
+	let time = '';
+	onMount(async () => {
+		const idbData = await HistoryManager.getByID(itemID);
+		({ time = 'UnTracked' } = idbData[0] || {});
+	});
 
 	// Shortcut
 	hotkeys('esc', 'itemdetail', (e) => {
@@ -74,74 +85,55 @@
 	onDestroy(() => hotkeys.deleteScope('itemdetail', 'inventory'));
 </script>
 
-<div
-	class="wish-result"
-	style="background-image: url({$assets['detailbg.webp']});"
-	transition:fade={{ duration: 250 }}
->
-	<div class="uid">WishSimulator.App</div>
+<SplashArt
+	character={name}
+	artURL={getArtURL(outfitName)}
+	position={offset}
+	preview
+	{weaponType}
+	{localName}
+	{vision}
+	{onshot}
+	{isOwned}
+	{rarity}
+	{hideInfo}
+	on:close={closeDetail}
+/>
 
-	<button class="close" on:click={closeDetail}>
-		<i class="gi-close" />
-	</button>
-
-	<div class="container">
-		{#await loadItem()}
-			<div class="wrapper">
-				<span style="color:#fff">{$t('waiting')}...</span>
-			</div>
-		{:then { time, vision, type, weaponType, rarity, qty }}
+{#if !hideInfo}
+	<div transition:fade={{ duration: 250 }} class="handler-container">
+		<div class="wrapper">
 			{#if type === 'character'}
 				<OutfitToggle charName={name} />
 			{/if}
 
-			<div class="wrapper" in:fade={{ duration: 250 }} style="height: {wrapperHeight};">
-				{#if type === 'weapon'}
-					<div class="splash-art weapon {weaponType}-parent">
-						<img src={$assets[`bg-${weaponType}.webp`]} alt={weaponType} class="weaponbg" />
-						<img use:lazyLoad={$assets[name]} alt={name} class={weaponType} />
-					</div>
-				{:else}
-					<div class="splash-art">
-						{#key outfitName}
-							<img
-								use:lazyLoad={$assets[`splash-art/${useOutfit ? outfitName : name}`]}
-								alt={name}
-								crossorigin="anonymous"
-							/>
-						{/key}
-					</div>
-				{/if}
+			{#if qty > 0}
+				<div class="detail">
+					<span class="qty"> {getQtyInfo(type, qty)} </span>
+					<small> {$t('inventory.firstSummon', { values: { date: time } })} </small>
+				</div>
+			{/if}
 
-				<ItemInfo staticMode itemName={name} {rarity} {vision} {weaponType} />
-			</div>
-			<div class="detail">
-				<span class="qty"> {getQtyInfo(type, qty)} </span>
-				<small> {$t('inventory.firstSummon', { values: { date: time } })} </small>
-			</div>
-		{/await}
+			{#if qty > 0}
+				<div class="share">
+					<ScreenshotShare />
+				</div>
+			{/if}
+		</div>
 	</div>
-
-	<div class="share">
-		<ScreenshotShare />
-	</div>
-</div>
+{/if}
 
 <style>
-	.close {
+	.handler-container {
+		width: 100%;
+		height: 100%;
 		position: fixed;
-		top: 30px;
-		right: 2%;
-		z-index: 10;
+		top: 0;
+		left: 0;
+		z-index: +15;
+		pointer-events: none;
 	}
 
-	:global(.mobile) .close {
-		top: 0.3rem;
-		right: 6%;
-	}
-
-	.wish-result,
-	.container,
 	.wrapper {
 		width: 100%;
 		height: 100%;
@@ -151,69 +143,9 @@
 		position: relative;
 	}
 
-	.wish-result {
-		background-size: cover;
-		background-position: center;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: +100000;
-	}
-
-	.splash-art {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		position: relative;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.splash-art img {
-		height: 120%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		top: 50%;
-	}
-
-	.splash-art.weapon img.weaponbg {
-		height: 85%;
-	}
-
-	.bow-parent .weaponbg {
-		height: 90% !important;
-		transform: translate(-53%, -50%) !important;
-	}
-	.catalyst-parent .weaponbg {
-		height: 90% !important;
-	}
-
-	.bow,
-	.polearm,
-	.sword,
-	.claymore,
-	.catalyst {
-		filter: drop-shadow(0.6rem 0.6rem 0.05rem rgb(0, 0, 0));
-	}
-
-	.bow {
-		height: 100%;
-	}
-
-	.claymore {
-		height: 105% !important;
-	}
-
-	.catalyst {
-		height: 40% !important;
-	}
-
-	.polearm {
-		top: 65% !important;
-		left: 48% !important;
-		height: 130% !important;
+	.wrapper > :global(div),
+	.wrapper :global(button) {
+		pointer-events: initial;
 	}
 
 	.share {
@@ -230,19 +162,6 @@
 		z-index: 999;
 	}
 
-	button:active {
-		transform: scale(0.9);
-	}
-
-	.uid {
-		left: unset;
-		right: 5%;
-		width: fit-content;
-		display: none;
-		font-size: x-large;
-		font-family: var(--gi-font);
-	}
-
 	.detail {
 		position: absolute;
 		left: 5%;
@@ -251,6 +170,7 @@
 		color: #fff;
 		font-size: large;
 		-webkit-text-stroke: #000 0.015rem;
+		filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5)) drop-shadow(0 0 1rem rgba(0, 0, 0, 1));
 	}
 	.detail span,
 	.detail small {

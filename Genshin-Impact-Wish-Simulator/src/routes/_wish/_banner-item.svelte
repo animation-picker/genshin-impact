@@ -4,18 +4,24 @@
 	import { t } from 'svelte-i18n';
 	import hotkeys from 'hotkeys-js';
 
-	import { localrate } from '$lib/store/localstore-manager';
+	import { localrate } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import {
 		activeBanner,
 		bannerList,
+		editID,
+		editorMode as editBanner,
 		isMobile,
 		mobileMode,
 		viewportHeight,
-		viewportWidth
+		viewportWidth,
+		customData
 	} from '$lib/store/app-stores';
-	import BannerCard from './banner-card/BannerCard.svelte';
+	import { pushToast } from '$lib/helpers/toast';
 	import ModalTpl from '$lib/components/ModalTpl.svelte';
+	import BannerCard from './banner-card/BannerCard.svelte';
+	import CustomEditor from '../_custom-banner/CustomEditor.svelte';
+	import ModalDelete from '../_custom-banner/ModalDelete.svelte';
 
 	$: landscape = $viewportWidth / 2.1 > $viewportHeight;
 	$: tabletBannerStyle = landscape ? 'width: 90vh' : '';
@@ -57,6 +63,8 @@
 	setContext('editprob', editProb);
 
 	let showModalReset = false;
+	let ModalDeleteCustom = false;
+
 	setContext('showModalReset', () => {
 		showModalReset = true;
 	});
@@ -72,6 +80,23 @@
 	const cancelModal = () => {
 		playSfx('close');
 		showModalReset = false;
+		ModalDeleteCustom = false;
+	};
+
+	// Modal to Delete Custom banner
+	setContext('deleteBanner', () => {
+		ModalDeleteCustom = true;
+		playSfx();
+	});
+
+	const deleteDone = () => {
+		const message = 'Banner Removed';
+		pushToast({ message, type: 'success' });
+		ModalDeleteCustom = false;
+	};
+	const deleteError = () => {
+		const message = 'Failed to Remove';
+		pushToast({ message, type: 'error' });
 	};
 
 	// Shortcut
@@ -96,44 +121,52 @@
 	});
 </script>
 
-<div class="banner-container" {style}>
-	{#each $bannerList as data, i}
-		{#if $activeBanner === i}
-			<div
-				class="banner-item"
-				class:editorOpen={editor}
-				class:fullscreen={$isMobile && $mobileMode}
-				style={mobileBannerStyle}
-				in:fly={{ x: 25, duration: 580 }}
-			>
-				<BannerCard {data} {editor} index={i} fullscreenEditor={$isMobile && $mobileMode} />
+<div class="banner-container" {style} class:editMode={$editBanner}>
+	{#if $editBanner}
+		{#key $editID}
+			<div class="banner-item" style={mobileBannerStyle} in:fly={{ x: 25, duration: 580 }}>
+				<CustomEditor />
 			</div>
-		{/if}
-	{/each}
+		{/key}
+	{:else}
+		{#each $bannerList as data, index}
+			{#if $activeBanner === index}
+				<div
+					class="banner-item"
+					class:editorOpen={editor}
+					class:fullscreen={$isMobile && $mobileMode}
+					style={mobileBannerStyle}
+					in:fly={{ x: 25, duration: 580 }}
+				>
+					<BannerCard {data} {editor} {index} fullscreenEditor={$isMobile && $mobileMode} />
+				</div>
+			{/if}
+		{/each}
 
-	<div class="navigate">
-		{#if $activeBanner > 0}
-			<button
-				class="left"
-				style="margin-right: auto;"
-				on:click={() => navigateBanner('left')}
-				transition:fade|local={{ duration: 200 }}
-			>
-				<i class="gi-arrow-left" />
-			</button>
-		{/if}
+		<div class="navigate">
+			{#if $activeBanner > 0}
+				<button
+					class="left"
+					style="margin-right: auto;"
+					on:click={() => navigateBanner('left')}
+					transition:fade|local={{ duration: 200 }}
+				>
+					<i class="gi-arrow-left" />
+				</button>
+			{/if}
 
-		{#if $activeBanner < $bannerList.length - 1}
-			<button
-				class="left"
-				style="margin-left: auto;"
-				on:click={() => navigateBanner('right')}
-				transition:fade|local={{ duration: 200 }}
-			>
-				<i class="gi-arrow-right" />
-			</button>
-		{/if}
-	</div>
+			{#if $activeBanner < $bannerList.length - 1}
+				<button
+					class="left"
+					style="margin-left: auto;"
+					on:click={() => navigateBanner('right')}
+					transition:fade|local={{ duration: 200 }}
+				>
+					<i class="gi-arrow-right" />
+				</button>
+			{/if}
+		</div>
+	{/if}
 </div>
 
 {#if showModalReset}
@@ -144,6 +177,15 @@
 			</p>
 		</div>
 	</ModalTpl>
+{/if}
+
+{#if ModalDeleteCustom}
+	<ModalDelete
+		idToDelete={$customData.itemID}
+		on:cancel={cancelModal}
+		on:done={deleteDone}
+		on:error={deleteError}
+	/>
 {/if}
 
 <style>
@@ -176,6 +218,13 @@
 		aspect-ratio: 27/14;
 		perspective: 1000px;
 	}
+
+	.editMode .banner-item {
+		aspect-ratio: 1080/533;
+		perspective: unset;
+		position: relative;
+	}
+
 	.fullscreen.banner-item {
 		perspective: unset;
 	}

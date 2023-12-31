@@ -1,8 +1,11 @@
 import { standard } from '$lib/data/banners/standard.json';
 import { data as weaponsDB } from '$lib/data/weapons.json';
 import { data as charsDB, onlyStandard } from '$lib/data/characters.json';
+// import { data as memberDB } from '$lib/data/members.json';
+import { memberDB } from '../member-loader';
 import { getRate, prob } from './probabilities';
-import { guaranteedStatus } from '$lib/store/localstore-manager';
+import { guaranteedStatus } from '../dataAPI/api-localstore';
+
 
 const standardWeapons = (star) => {
 	return getAllWeapons(star).filter(({ limited }) => !limited);
@@ -24,6 +27,10 @@ export const rand = (array) => {
 	return array[Math.floor(Math.random() * array.length)];
 };
 
+export const randomNumber = (min = 1, max = 9) => {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
 const getAllChars = (star) => {
 	return charsDB
 		.filter(({ rarity }) => rarity === star)
@@ -41,6 +48,16 @@ const getAllWeapons = (star) => {
 			return arr;
 		});
 };
+
+export const getMemberItem = () => {
+	return memberDB
+		.map((arr) => {
+			arr.type = 'member';
+			arr.weaponType = "catalyst";
+			arr.rarity = 3;
+			return arr;
+		}); 
+}
 
 export const getCharDetails = (charName) => {
 	if (!charName) return {};
@@ -116,10 +133,25 @@ export const get5StarItem = ({
 	stdver = 1,
 	type = null,
 	useRateup = false,
-	rateupItem = []
+	rateupItem = [],
+	customData = {}
 } = {}) => {
 	// Featured Char Result
 	if (useRateup && banner === 'character-event') {
+		if (Object.keys(customData).length > 0) {
+			const { vision, character, artPosition, itemID } = customData;
+			const result = {
+				vision,
+				itemID,
+				name: character,
+				offset: artPosition || {},
+				type: 'character',
+				rarity: 5,
+				custom: true
+			};
+			return result;
+		}
+
 		const featured = getAllChars(5).find(({ name }) => name === rateupItem[0]);
 		return featured;
 	}
@@ -185,4 +217,3 @@ export const checkGuaranteed = (banner, rarity) => {
 	const always = guaranteedSystem === 'always';
 	return { status, never, always };
 };
-

@@ -37,7 +37,46 @@
 					}
 				}
 			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "twilight-arbiter-3",
+							"character": "cyno",
+							"textOffset": { "l": 50, "b": 10.5 }
+						},
+						{
+							"bannerName": "azure-excursion-3",
+							"character": "kamisato-ayato",
+							"textOffset": { "l": 50, "b": 11 }
+						}
+					],
+					"rateup": ["xiangling", "kuki-shinobu", "kirara"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-56",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "staff-of-the-scarlet-sands", "buttonPosition": { "l": 30 } },
+						{ "name": "haran-geppaku-futsu" }
+					],
+					"rateup": [
+						"lion_s-roar",
+						"favonius-warbow",
+						"favonius-lance",
+						"favonius-greatsword",
+						"the-widsith"
+					],
+					"textOffset": {
+						"featured": { "l": 47, "t": 73, "w": 29 },
+						"rateup": { "l": 80.5, "b": 19 }
+					}
+				}
+			}
 		}
 	]
 }
-

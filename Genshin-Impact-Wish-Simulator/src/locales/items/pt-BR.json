@@ -81,6 +81,7 @@
 	"thundering-pulse": "Agitação Trovejante",
 	"tome-of-the-eternal-flow": "Rito do Fluxo Eterno",
 	"tulaytullah_s-remembrance": "Reminiscências de Tulaytullah",
+	"verdict": "Veredito",
 	"vortex-vanquisher": "Perfuradora Prismática",
 	"wavebreaker_s-fin": "Barbatana do Quebra Ondas",
 	"wine-and-song": "Vinho e Música",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "Nahida",
 		"title": "Pureza Restauradora"
+	},
+	"navia": {
+		"name": "Navia",
+		"title": "Leme da Rosa Radiante"
 	},
 	"neuvillette": {
 		"name": "Neuvillette",

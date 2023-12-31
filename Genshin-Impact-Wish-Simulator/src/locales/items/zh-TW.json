@@ -81,6 +81,7 @@
 	"thundering-pulse": "飛雷之弦振",
 	"tome-of-the-eternal-flow": "久遠龍天百科全書",
 	"tulaytullah_s-remembrance": "圖萊拉拉的回憶",
+	"verdict": "裁斷",
 	"vortex-vanquisher": "貫虹之槊",
 	"wavebreaker_s-fin": "斷浪長鰭",
 	"wine-and-song": "暗巷的酒與詩",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "納西妲",
 		"title": "白草淨華"
+	},
+	"navia": {
+		"name": "娜維婭",
+		"title": "明花蔓舵"
 	},
 	"neuvillette": {
 		"name": "那維萊特",

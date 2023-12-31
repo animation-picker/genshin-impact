@@ -1,4 +1,4 @@
-import { guaranteedStatus } from '$lib/store/localstore-manager';
+import { guaranteedStatus } from '../dataAPI/api-localstore';
 import {
 	get3StarItem,
 	get4StarItem,
@@ -8,32 +8,21 @@ import {
 	checkGuaranteed
 } from './itemdrop-base';
 
-const getNameList = () => {
-	return get3StarItem().filter(({ weaponType }) => weaponType == 'polearm');
-};
-
 const characterWish = {
-	init({ indexOfBanner, featured, rateup, version, phase, stdver }) {
+	init({ indexOfBanner, featured, rateup, version, phase, stdver, customData }) {
 		this._featured = featured;
 		this._rateup = rateup;
 		this._indexOfBanner = indexOfBanner;
 		this._version = version;
 		this._phase = phase;
 		this._stdver = stdver;
+		this._customData = customData;
 		return this;
 	},
 
 	get(rarity) {
 		if (rarity === 3) {
-			const droplist = getNameList();
-			return rand(droplist);
-		}
-		if (rarity === 4) {
-			const droplist = getNameList();
-			return rand(droplist);
-		}
-		if (rarity === 5) {
-			const droplist = getNameList();
+			const droplist = get3StarItem();
 			return rand(droplist);
 		}
 
@@ -55,7 +44,7 @@ const characterWish = {
 		}
 
 		if (rarity === 5) {
-			const { _featured, _indexOfBanner, _stdver } = this;
+			const { _featured, _indexOfBanner, _stdver, _customData } = this;
 			const { status: isGuaranteed, never, always } = checkGuaranteed('character-event', 5);
 			const useRateup = (isGuaranteed && !never) || always || isRateup('character-event');
 
@@ -63,6 +52,7 @@ const characterWish = {
 				banner: 'character-event',
 				stdver: _stdver,
 				rateupItem: [_featured[_indexOfBanner].character],
+				customData: _customData,
 				useRateup
 			});
 			const result = rand(droplist);

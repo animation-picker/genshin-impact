@@ -1,6 +1,6 @@
 import { beginnerRemaining, showBeginner } from '$lib/store/app-stores';
-import { HistoryManager } from '$lib/store/IDB-manager';
-import { localPity, owneditem, rollCounter } from '$lib/store/localstore-manager';
+import { HistoryManager } from '../dataAPI/api-indexeddb';
+import { localPity, owneditem, rollCounter } from '../dataAPI/api-localstore';
 import { getRate, prob, rates } from './probabilities';
 
 const { addHistory } = HistoryManager;
@@ -13,6 +13,25 @@ const { addHistory } = HistoryManager;
  * @returns Wish Result Object
  */
 const roll = async (banner, WishInstance, indexOfBanner) => {
+	if (banner === "member") {
+
+		// Get Item
+		const randomItem = WishInstance.getItem(5, banner, indexOfBanner);
+		// const { manual, wish } = owneditem.put({ itemID: randomItem.itemID });
+		// const numberOfOwnedItem = manual + wish - 1;
+		// const isNew = numberOfOwnedItem < 1;
+		let pity = 1;
+		const isNew = false;
+
+		// Milestone Bonus (Stardust or Starglitter)
+		const bonusType = randomItem.rarity === 3 ? 'stardust' : 'starglitter';
+		const bonusQty = 20;
+
+		const result = { pity, isNew, bonusType, bonusQty, ...randomItem };
+		return result;
+	}
+
+
 	const pity5 = localPity.get(`pity5-${banner}`) + 1;
 	const pity4 = localPity.get(`pity4-${banner}`) + 1;
 	const maxPity = getRate(banner, 'max5');
@@ -89,7 +108,7 @@ const roll = async (banner, WishInstance, indexOfBanner) => {
 
 	// Get Item
 	const randomItem = WishInstance.getItem(rarity, banner, indexOfBanner);
-	const { manual, wish } = owneditem.put({ name: randomItem.name });
+	const { manual, wish } = owneditem.put({ itemID: randomItem.itemID });
 	const numberOfOwnedItem = manual + wish - 1;
 	const isNew = numberOfOwnedItem < 1;
 
@@ -114,8 +133,7 @@ const saveResult = async (result) => {
 	const data = { ...result };
 	delete data.release;
 	delete data.limited;
-	delete data.wishBoxPosition;
-	delete data.buttonOffset;
+	delete data.offset;
 	await addHistory(data);
 };
 

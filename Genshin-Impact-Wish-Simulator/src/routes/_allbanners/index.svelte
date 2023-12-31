@@ -4,18 +4,20 @@
 	import { t } from 'svelte-i18n';
 	import { flip } from 'svelte/animate';
 	import OverlayScrollbars from 'overlayscrollbars';
+	import hotkeys from 'hotkeys-js';
 
 	import { allPatch } from '$lib/data/wish-setup.json';
 	import { APP_TITLE } from '$lib/env';
-	import { assets } from '$lib/store/app-stores';
+	import { BannerManager } from '$lib/helpers/dataAPI/api-indexeddb';
+	import { assets, isMobile } from '$lib/store/app-stores';
 	import { getBannerName } from '$lib/helpers/nameText';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import ItemBanner from './_item-banner.svelte';
 	import FormBox from './_form-box.svelte';
-	import hotkeys from 'hotkeys-js';
 
 	let allBanners = [];
 	let dataToShow = [];
+	let customBanner = [];
 	let groupby = 'version';
 	const query = getContext('query');
 
@@ -169,20 +171,35 @@
 	};
 	setContext('handleSearch', handleSearch);
 
-	const navigate = getContext('navigate');
-	const handleClose = () => {
-		navigate('index');
-		playSfx('close');
+	const readSavedCustomBanner = async () => {
+		const data = await BannerManager.getListByStatus('cloud');
+		const proccessed = data.map(({ bannerName, hostedImages, character, itemID, rateup }) => {
+			const { thumbnail } = hostedImages || {};
+			const chars = [{ bannerName, character, images: thumbnail }];
+			const itemData = { rateup, chars, phase: itemID, patch: 'Custom' };
+			return itemData;
+		});
+		customBanner = ['Custom', proccessed];
+	};
+	const loadData = async () => {
+		await checkAllBanner();
+		await readSavedCustomBanner();
+		return 'ok';
 	};
 
 	let content;
 	onMount(async () => {
 		playSfx('prevbanner');
-		await checkAllBanner();
 		OverlayScrollbars(content, { sizeAutoCapable: false, className: 'os-theme-light' });
 	});
 
 	onDestroy(() => query.set(''));
+
+	const navigate = getContext('navigate');
+	const handleClose = () => {
+		navigate('index');
+		playSfx('close');
+	};
 
 	// Shortcut
 	hotkeys('esc', 'allbanners', (e) => {
@@ -207,14 +224,27 @@
 		<FormBox {groupby} />
 		<div class="content" bind:this={content}>
 			<div id="content">
-				{#each dataToShow as [groupName, data], i (groupName)}
-					<div
-						animate:flip={{ duration: (i) => 10 * Math.sqrt(i) }}
-						in:fade={{ duration: 300, delay: Math.sqrt(i * 20000) }}
-					>
-						<ItemBanner {data} {groupName} {groupby} />
-					</div>
-				{/each}
+				{#await loadData() then _}
+					{@const bn = customBanner[1].length < 1 ? dataToShow : [customBanner, ...dataToShow]}
+
+					{#if $isMobile}
+						{#each bn as [groupName, data]}
+							<div in:fade={{ duration: 300 }} class:custom={groupName.match(/custom/gi)}>
+								<ItemBanner {data} {groupName} {groupby} />
+							</div>
+						{/each}
+					{:else}
+						{#each bn as [groupName, data], i (groupName)}
+							<div
+								animate:flip={{ duration: (i) => 10 * Math.sqrt(i) }}
+								in:fade={{ duration: 300, delay: Math.sqrt(i * 20000) }}
+								class:custom={groupName.match(/custom/gi)}
+							>
+								<ItemBanner {data} {groupName} {groupby} />
+							</div>
+						{/each}
+					{/if}
+				{/await}
 			</div>
 		</div>
 	</div>
@@ -269,5 +299,9 @@
 		width: 100%;
 		height: 100%;
 		display: block;
+	}
+
+	#content > .custom {
+		border-bottom: 1px solid #ccc;
 	}
 </style>

@@ -1,7 +1,7 @@
 <script>
 	import { getContext } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import { cookie } from '$lib/store/cookie';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 	import Badwords from '$lib/helpers/chat/badwords';
 	import ModalTpl from '../ModalTpl.svelte';
 

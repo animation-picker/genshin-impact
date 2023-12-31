@@ -9,6 +9,8 @@
 	export let standalone = false;
 	export let list = [];
 	let clientHeight;
+	let clientWidth;
+	let container;
 
 	const sortByType = (a, b) => {
 		if (a.type > b.type) return 1;
@@ -36,9 +38,9 @@
 
 	$: sortList(list);
 
-	let container;
-
 	onMount(async () => {
+		clientWidth = (clientHeight * 7) / 30;
+
 		OverlayScrollbars(container, {
 			sizeAutoCapable: false,
 			className: 'os-theme-light',
@@ -81,12 +83,12 @@
 					style="animation-delay: {0.5 + i * 0.1}s"
 					use:removeAnimClass
 				>
-					<ResultListItem {data} index={i} />
+					<ResultListItem {data} index={i} {clientHeight} {clientWidth} />
 				</div>
 			{/each}
 		</div>
 		<div class="shadows" style="--card-height: {clientHeight}px">
-			{#each sortedWish as { rarity, type, bonusType, isNew }, i}
+			{#each sortedWish as { rarity, type, isNew }, i}
 				<div
 					class="shadow shadow{rarity}"
 					class:animate={!standalone}

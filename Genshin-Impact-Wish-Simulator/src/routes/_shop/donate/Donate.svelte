@@ -7,6 +7,7 @@
 	import Modal from '$lib/components/ModalTpl.svelte';
 	import ShopGroup from '../_shop-group.svelte';
 	import ShopGroupItem from '../_shop-group-item.svelte';
+	import { assets } from '$lib/store/app-stores';
 
 	let showCryptoModal = false;
 	let showToast = false;
@@ -32,63 +33,15 @@
 </script>
 
 <!-- Crypto Donate -->
-{#if showCryptoModal}
-	<Modal title="Support With Crypto" on:confirm={dimiss} on:cancel={dimiss}>
-		<div class="modal-donate">
-			<div class="pop-item">
-				<div class="icon">
-					<img src="/images/utility/donate-ethereum.png" alt="Ethereum" />
-				</div>
-				<div class="address">
-					<span> Ethereum ( erc20 ) </span>
-					<input type="text" value="0x4320025BAD621c03b906A84c531B10480A465184" disabled />
-				</div>
-				<div class="copy">
-					<button on:click={() => copyHandle('0x4320025BAD621c03b906A84c531B10480A465184')}>
-						<i class="gi-copy" />
-					</button>
-				</div>
-			</div>
+<div>
+	<img class='qr' src={$assets[`alipay.jpg`]} alt="alipay" />
 
-			<div class="pop-item">
-				<div class="icon">
-					<img src="/images/utility/donate-bnb.png" alt="Binance Coin" />
-				</div>
-				<div class="address">
-					<span> Binance Coin ( bep20 )</span>
-					<input type="text" value="0x4320025BAD621c03b906A84c531B10480A465184" disabled />
-				</div>
-				<div class="copy">
-					<button on:click={() => copyHandle('0x4320025BAD621c03b906A84c531B10480A465184')}>
-						<i class="gi-copy" />
-					</button>
-				</div>
-			</div>
-
-			<div class="pop-item">
-				<div class="icon">
-					<img src="/images/utility/donate-solana.png" alt="Solana" />
-				</div>
-				<div class="address">
-					<span> Solana </span>
-					<input type="text" value="4nFhLoPqpx71xPqgN2zhvoWtmgogzoDkEBzNKqjnpm2a" disabled />
-				</div>
-				<div class="copy">
-					<button on:click={() => copyHandle('4nFhLoPqpx71xPqgN2zhvoWtmgogzoDkEBzNKqjnpm2a')}>
-						<i class="gi-copy" />
-					</button>
-				</div>
-			</div>
-
-			{#if showToast}
-				<div class="toast" transition:fly={{ y: 10 }}>Address Copied</div>
-			{/if}
-		</div>
-	</Modal>
-{/if}
+	<img class='qr2' src={$assets[`wechatpay.jpg`]} alt="wechatpay" />
+</div>
 
 <!-- Crypto Donate -->
 <div class="container">
+
 	<ShopGroup>
 		<ShopGroupItem>
 			<a
@@ -101,8 +54,8 @@
 					style="display: flex;justify-content: center; align-items: center; width: 100%; height: 100%"
 				>
 					<div class="donate-icon">
-						<img src="/images/utility/donate-kofi.png" alt="Ko-fi Icon" />
-						<img src="/images/utility/paypal.png" alt="paypal" />
+						<img src={$assets['donate-kofi.png']} alt="Ko-fi Icon" />
+						<img src={$assets['paypal.png']} alt="paypal" />
 					</div>
 				</div>
 				<span> Support me on Ko-fi </span>
@@ -122,7 +75,7 @@
 				>
 					<div class="donate-icon">
 						{#each ['ovo', 'dana', 'linkaja'] as im}
-							<img src="/images/utility/donate-{im}.png" alt="{im} icon" />
+							<img src={$assets[`donate-${im}.png`]} alt="{im} icon" />
 						{/each}
 					</div>
 				</div>
@@ -142,7 +95,7 @@
 				>
 					<div class="donate-icon">
 						{#each ['btc', 'ethereum', 'bnb', 'solana'] as im}
-							<img src="/images/utility/donate-{im}.png" alt="{im} icon" />
+							<img src={$assets[`donate-${im}.png`]} alt="{im} icon" />
 						{/each}
 					</div>
 				</div>
@@ -150,29 +103,7 @@
 			</button>
 		</ShopGroupItem>
 	</ShopGroup>
-
 	<!-- List Of Supporters -->
-	<div class="recent">
-		{#await supporterList() then listOfSupporters}
-			{#if listOfSupporters.length > 0}
-				{#each listOfSupporters as { name, message, amount, date, platform }}
-					<div class="donation-item {platform}" in:fade={{ duration: 300 }}>
-						<div class="supporter">
-							<div class="info">
-								<div class="name">New support from <span> {name} </span></div>
-								<span class="message">{message ? `"${message}"` : ''}</span>
-								<span class="platform">✧ &nbsp; via {platform}</span>
-								<span class="time"> ✧ &nbsp; {date}</span>
-							</div>
-							<div class="amount">
-								<span>{amount}</span>
-							</div>
-						</div>
-					</div>
-				{/each}
-			{/if}
-		{/await}
-	</div>
 </div>
 
 <style>
@@ -265,6 +196,16 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.qr {
+		width: 14.5%;
+		height: 14.5%;
+	}
+
+	.qr2 {
+		width: 16%;
+		height: 16%;
+	}
+
 	img {
 		height: 1.5rem;
 		margin: 0.2rem 0.5rem;

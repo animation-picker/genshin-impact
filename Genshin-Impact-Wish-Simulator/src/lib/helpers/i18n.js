@@ -1,6 +1,6 @@
 import { browser } from '$app/environment';
 import { init, register, getLocaleFromNavigator } from 'svelte-i18n';
-import { localConfig } from '$lib/store/localstore-manager';
+import { localConfig } from './dataAPI/api-localstore';
 
 const supportedLocales = [
 	'zh-CN',

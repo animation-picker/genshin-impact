@@ -1,19 +1,18 @@
 import { outfits } from '$lib/data/outfits.json';
-import { ownedOutfits } from '$lib/store/localstore-manager';
+import { ownedOutfits } from './dataAPI/api-localstore';
 
 export const setActiveOutfit = (obj = {}) => {
 	if (!obj.name) return obj;
 	const { name: outfitName } = ownedOutfits.getByChar(obj.name)?.find(({ isSet }) => isSet) || {};
 	if (!outfitName) return obj;
-	const { wishBoxPosition } = getSplashArtData(outfitName);
-	if (wishBoxPosition) obj.wishBoxPosition = wishBoxPosition;
-	return { ...obj, useOutfit: true, outfitName };
+	const { offset = {} } = getSplashArtData(outfitName);
+	return { ...obj, offset, outfitName, useOutfit: true };
 };
 
 export const getSplashArtData = (outfitName) => {
 	const findOutfit = outfits.find(({ name }) => name === outfitName);
-	const { characterName, rarity, wishBoxPosition } = findOutfit || {};
-	const data = { name: characterName, rarity, outfitName, wishBoxPosition, type: 'outfit' };
+	const { characterName, rarity, offset } = findOutfit || {};
+	const data = { name: characterName, rarity, outfitName, offset, type: 'outfit' };
 	return data;
 };
 

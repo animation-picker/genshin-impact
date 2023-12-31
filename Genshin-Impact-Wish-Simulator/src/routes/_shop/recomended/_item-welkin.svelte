@@ -4,7 +4,7 @@
 	import { t } from 'svelte-i18n';
 	import { welkinReward } from '$lib/data/wish-setup.json';
 	import { assets, genesis, pricelist, primogem } from '$lib/store/app-stores';
-	import { dailyWelkin, localBalance } from '$lib/store/localstore-manager';
+	import { dailyWelkin, localBalance } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	import ButtonModal from '$lib/components/ButtonModal.svelte';

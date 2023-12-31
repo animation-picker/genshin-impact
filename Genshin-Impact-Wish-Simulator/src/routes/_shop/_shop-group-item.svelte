@@ -7,8 +7,8 @@
 		flex-basis: var(--column-basis);
 		width: var(--column-basis);
 		aspect-ratio: 1/1;
+		overflow: auto;
 		padding: calc(0.06 * var(--column-width));
-		/* margin: 0.4rem; */
 		display: block;
 	}
 

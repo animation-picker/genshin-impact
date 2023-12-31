@@ -2,6 +2,7 @@
 	import { getContext } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
+	import hotkeys from 'hotkeys-js';
 
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import {
@@ -17,15 +18,17 @@
 		isMobile,
 		wishAmount,
 		bannerList,
-		activeBanner
+		activeBanner,
+		editorMode,
+		isCustomBanner
 	} from '$lib/store/app-stores';
 
 	import MyFund from '$lib/components/MyFund.svelte';
 	import EpitomizedButton from './epitomized-path/_button.svelte';
 	import BannerButton from './_banner-button.svelte';
-	import hotkeys from 'hotkeys-js';
 
 	export let bannerType = '';
+
 	$: event = bannerType.match('event');
 	$: balance = event ? $intertwined : $acquaint;
 	$: unlimitedWish = $wishAmount === 'unlimited';
@@ -46,14 +49,14 @@
 	const navigate = getContext('navigate');
 
 	const previousClick = () => {
-		navigate('allbanners');
-		playSfx();
+		// navigate('allbanners');
+		// playSfx();
 	};
 
 	const handleMenu = getContext('handleMenu');
-
 	$: headerHeightstyle = $mobileMode ? `height: ${$viewportHeight}px` : '';
 	$: fullscreen = $viewportHeight === window.screen.height;
+
 	const handleFullscreen = () => {
 		if (!fullscreen) {
 			const body = document.body;
@@ -86,14 +89,19 @@
 	<div class="top" in:fly={{ y: -20, duration: 800 }}>
 		<h1 class="wish-title">
 			<img src={$assets['brand.png']} alt="Brand" crossorigin="anonymous" />
-			<span> {$t('wish.wishTitle')} </span>
+
+			{#if !$editorMode}
+				<span> {$t('wish.wishTitle')} </span>
+			{:else}
+				<span> {$t('customBanner.title')} </span>
+			{/if}
+
 			<button class="help" on:click={handleMenu} title="Setting" aria-label="Setting">
 				<i class="gi-help" />
 			</button>
-
-			<button class="chat" on:click={chatToggle} title="Chats" aria-label="Chats">
+			<!-- <button class="chat" on:click={chatToggle} title="Chats" aria-label="Chats">
 				<i class="gi-chat" />
-			</button>
+			</button> -->
 
 			{#if !$isPWA || !$isMobile}
 				<button
@@ -107,50 +115,67 @@
 			{/if}
 		</h1>
 		<div class="budget">
-			<div class="fates">
-				{#if $mobileMode}
-					<MyFund type="starglitter">
-						{$starglitter}
-					</MyFund>
-					<MyFund type="stardust">
-						{$stardust}
-					</MyFund>
-				{/if}
+			{#if !$editorMode}
+				<div class="fates">
+					{#if $mobileMode}
+						<MyFund type="starglitter">
+							{$starglitter}
+						</MyFund>
+						<MyFund type="stardust">
+							{$stardust}
+						</MyFund>
+					{/if}
 
-				<MyFund type="primogem" plusbutton>
-					{unlimitedWish ? '∞' : $primogem}
-				</MyFund>
-				<MyFund type={event ? 'intertwined' : 'acquaint'}>
-					{unlimitedWish ? '∞' : balance}
-				</MyFund>
+					<MyFund type="primogem" plusbutton>
+						{unlimitedWish ? '∞' : $primogem}
+					</MyFund>
+					<MyFund type={event ? 'intertwined' : 'acquaint'}>
+						{unlimitedWish ? '∞' : balance}
+					</MyFund>
+				</div>
+
+				<button class="close" on:click={previousClick} title="Change Banner">
+					<i class="gi-close" />
+				</button>
+			{:else}
+				<button
+					class="close"
+					title="Cancel Edit"
+					on:click={() => {
+						editorMode.set(false);
+						playSfx('close');
+					}}
+				>
+					<i class="gi-close" />
+				</button>
+			{/if}
+		</div>
+	</div>
+
+	{#if !$editorMode && !$isCustomBanner}
+		<div class="banner-button" in:inTransition={{ mobile: $mobileMode }}>
+			<div class="bg" style={headerHeightstyle}>
+				<img src={$assets['brand.png']} alt="Brand" crossorigin="anonymous" />
 			</div>
 
-			<button class="close" on:click={previousClick} title="Change Banner">
-				<i class="gi-close" />
-			</button>
+			{#each $bannerList as { type, featured, character }, i}
+				<BannerButton
+					{type}
+					{featured}
+					{character}
+					index={i}
+					active={$activeBanner === i}
+					on:click={() => selectBanner(i)}
+				/>
+			{/each}
+
+			{#if $mobileMode && bannerType === 'weapon-event'}
+				<EpitomizedButton />
+			{/if}
 		</div>
-	</div>
-
-	<div class="banner-button" in:inTransition={{ mobile: $mobileMode }}>
-		<div class="bg" style={headerHeightstyle}>
-			<img src={$assets['brand.png']} alt="Brand" crossorigin="anonymous" />
-		</div>
-
-		{#each $bannerList as { type, featured, character }, i}
-			<BannerButton
-				{type}
-				{featured}
-				{character}
-				index={i}
-				active={$activeBanner === i}
-				on:click={() => selectBanner(i)}
-			/>
-		{/each}
-
-		{#if $mobileMode && bannerType === 'weapon-event'}
-			<EpitomizedButton />
-		{/if}
-	</div>
+	{:else}
+		<div class="banner-button" in:inTransition={{ mobile: $mobileMode }} />
+	{/if}
 </div>
 
 <style>

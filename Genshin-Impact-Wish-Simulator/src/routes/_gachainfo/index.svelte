@@ -5,8 +5,8 @@
 	import hotkeys from 'hotkeys-js';
 
 	import { assets } from '$lib/store/app-stores';
-	import { cookie } from '$lib/store/cookie';
-	import { localConfig } from '$lib/store/localstore-manager';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
+	import { localConfig } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	import Book from './_book-bg.svelte';

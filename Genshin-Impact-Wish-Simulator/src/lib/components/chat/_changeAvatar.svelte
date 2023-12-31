@@ -2,8 +2,8 @@
 	import { getContext, onMount } from 'svelte';
 	import { t } from 'svelte-i18n';
 	import OverlayScrollbars from 'overlayscrollbars';
-	import { cookie } from '$lib/store/cookie';
-	import { HistoryManager } from '$lib/store/IDB-manager';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
+	import { HistoryManager } from '$lib/helpers/dataAPI/api-indexeddb';
 	import { assets } from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { checkActiveOutfit } from '$lib/helpers/outfit';

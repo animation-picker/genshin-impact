@@ -81,6 +81,7 @@
 	"thundering-pulse": "飛雷の鳴弦",
 	"tome-of-the-eternal-flow": "久遠流転の大典",
 	"tulaytullah_s-remembrance": "トゥライトゥーラの記憶",
+	"verdict": "裁断",
 	"vortex-vanquisher": "破天の槍",
 	"wavebreaker_s-fin": "斬波のひれ長",
 	"wine-and-song": "ダークアレイの酒と詩",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "ナヒーダ",
 		"title": "白草浄華"
+	},
+	"navia": {
+		"name": "ナヴィア",
+		"title": "舵を這うラディアントローズ"
 	},
 	"neuvillette": {
 		"name": "ヌヴィレット",

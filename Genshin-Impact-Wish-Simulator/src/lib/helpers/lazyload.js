@@ -6,14 +6,18 @@ const options = {
 
 export const lazyLoad = (image, src) => {
 	image.style.opacity = '0';
-	if (!src) return;
+	const placeholder = image.getAttribute('data-placeholder');
+	const imageSrc = src || placeholder;
+
+	if (!imageSrc) return;
+
 	const loaded = () => {
 		image.style.opacity = '1';
 	};
 	const observer = new IntersectionObserver((entries) => {
 		if (entries[0].isIntersecting) {
 			// image Loaded
-			image.src = src;
+			image.src = imageSrc;
 			if (image.complete) {
 				image.style.transition = 'unset';
 				loaded();

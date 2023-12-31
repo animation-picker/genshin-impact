@@ -81,6 +81,7 @@
 	"thundering-pulse": "Sấm Sét Rung Động",
 	"tome-of-the-eternal-flow": "Nghi Thức Dòng Chảy Vĩnh Hằng",
 	"tulaytullah_s-remembrance": "Hồi Ức Tulaytullah",
+	"verdict": "Phán Quyết",
 	"vortex-vanquisher": "Giáo Nịnh Thần",
 	"wavebreaker_s-fin": "Vây Cá Chẻ Sóng",
 	"wine-and-song": "Rượu Và Thơ Nơi Hẻm Tối",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "Nahida",
 		"title": "Kết Tinh Bạch Thảo"
+	},
+	"navia": {
+		"name": "Navia",
+		"title": "Bánh Lái Hoa Lệ"
 	},
 	"neuvillette": {
 		"name": "Neuvillette",

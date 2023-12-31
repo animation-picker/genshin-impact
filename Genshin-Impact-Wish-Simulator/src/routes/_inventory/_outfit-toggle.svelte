@@ -3,30 +3,32 @@
 	import { fade } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
 	import { assets } from '$lib/store/app-stores';
-	import { ownedOutfits } from '$lib/store/localstore-manager';
+	import { ownedOutfits } from '$lib/helpers/dataAPI/api-localstore';
 	import { outfitListForChar } from '$lib/helpers/outfit';
 	import { getName } from '$lib/helpers/nameText';
 	import { lazyLoad } from '$lib/helpers/lazyload';
 	import { playSfx } from '$lib/helpers/audio/audio';
+	import { getCharDetails } from '$lib/helpers/gacha/itemdrop-base';
 	import ButtonGeneral from '$lib/components/ButtonGeneral.svelte';
 
 	export let charName = '';
 	let columnWidth;
+	let offset = {};
 
 	const outfitList = outfitListForChar(charName);
+	const { offset: defaultOffset = {} } = getCharDetails(charName);
 	let { name: selectedOutfit = 'default' } = outfitList.find(({ isSet }) => isSet) || {};
 	let activeOutfit = selectedOutfit;
 
 	const previewOutfit = getContext('previewOutfit');
-	const preview = (outfitName) => {
+	const preview = (outfitName, position) => {
 		if (selectedOutfit === outfitName) return;
-
-		playSfx();
+		playSfx('click2');
 		selectedOutfit = outfitName;
-		previewOutfit(selectedOutfit);
+		offset = position || defaultOffset;
+		previewOutfit(selectedOutfit, offset);
 	};
 
-	const applyOutfit = getContext('applyOutfit');
 	const apply = () => {
 		if (activeOutfit !== 'default') {
 			ownedOutfits.set({ outfitName: activeOutfit, isSet: false, characterName: charName });
@@ -37,7 +39,21 @@
 
 		activeOutfit = selectedOutfit;
 		playSfx();
-		applyOutfit(charName, activeOutfit);
+		applyOutfit();
+	};
+
+	const loadedList = getContext('loadedList');
+	const itemList = getContext('itemList');
+	const updateList = (list) => {
+		const index = list.findIndex(({ name }) => name === charName);
+		list[index].outfitName = activeOutfit;
+		list[index].offset = offset;
+		list[index].useOutfit = activeOutfit && activeOutfit !== 'default';
+		return list;
+	};
+	const applyOutfit = () => {
+		const toUpdate = [itemList, loadedList];
+		toUpdate.forEach((list) => list.update(updateList));
 	};
 </script>
 
@@ -52,7 +68,6 @@
 					<img
 						use:lazyLoad={$assets[`face/${charName}`]}
 						alt={getName(charName)}
-						on:error={(e) => e.target.remove()}
 						crossorigin="anonymous"
 					/>
 				</picture>
@@ -62,9 +77,9 @@
 			</button>
 		</div>
 
-		{#each outfitList as { name, rarity, owned }}
+		{#each outfitList as { name, rarity, owned, offset }}
 			<div class="column" class:disabled={!owned} data-text={$t('inventory.notOwned')}>
-				<button class:selected={selectedOutfit === name} on:click={() => preview(name)}>
+				<button class:selected={selectedOutfit === name} on:click={() => preview(name, offset)}>
 					<picture
 						class="star{rarity}"
 						style="background-image:url('{$assets[`${rarity}star-bg.webp`]}');"

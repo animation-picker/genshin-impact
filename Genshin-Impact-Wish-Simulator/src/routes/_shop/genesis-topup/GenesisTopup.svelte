@@ -5,17 +5,19 @@
 
 	import { genesisBonus } from '$lib/data/pricelist.json';
 	import { activeVersion, assets, pricelist } from '$lib/store/app-stores';
-	import { localConfig } from '$lib/store/localstore-manager';
-	import { cookie } from '$lib/store/cookie';
+	import { localConfig } from '$lib/helpers/dataAPI/api-localstore';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	import Icon from '$lib/components/Icon.svelte';
 	import ShopGroup from '../_shop-group.svelte';
 	import ShopGroupItem from '../_shop-group-item.svelte';
 	import ModalTopup from './_modal-topup.svelte';
+	import CheckBox from '$lib/components/CheckBox.svelte';
 
 	const checkCookie = cookie.get('initialTopup');
 	let initialTopup = checkCookie === undefined ? true : checkCookie;
+	const initialCheck = ({ detail }) => (initialTopup = !!detail?.checked);
 	$: cookie.set('initialTopup', initialTopup);
 
 	const { versionReset, topupBonus } = genesisBonus;
@@ -112,19 +114,11 @@
 	{/each}
 </ShopGroup>
 
-<div class="toggle">
-	<input
-		type="checkbox"
-		name="showAll"
-		id="showAll"
-		bind:checked={initialTopup}
-		on:change={() => playSfx()}
-	/>
-	<label for="showAll">
-		<i>✔</i>
+<CheckBox checked={initialTopup} on:change={initialCheck}>
+	<span style="color: var(--tertiary-color);">
 		{$t('shop.initialBonus')}
-	</label>
-</div>
+	</span>
+</CheckBox>
 
 <style>
 	button {
@@ -255,35 +249,5 @@
 		height: calc(16 / 100 * var(--column-width));
 		line-height: calc(16 / 100 * var(--column-width));
 		font-size: calc(9 / 100 * var(--column-width));
-	}
-
-	.toggle {
-		margin: 1%;
-		color: var(--tertiary-color);
-		text-transform: capitalize;
-	}
-	label {
-		cursor: inherit;
-	}
-	.toggle input + label i {
-		color: white;
-		display: inline-block;
-		padding: 0.1rem 0.2rem 0.1rem 0.1rem;
-		line-height: 1rem;
-		background-color: #fff;
-		border: 1px solid transparent;
-		transition: all 0.2s;
-	}
-	.toggle input:checked + label i {
-		background-color: #06bbff;
-	}
-
-	.toggle:hover input + label i {
-		border: 1px solid #06bbff;
-		box-shadow: rgba(106, 168, 230, 0.6) 0px 0px 7px 5px;
-	}
-
-	.toggle input {
-		display: none;
 	}
 </style>

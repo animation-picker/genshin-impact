@@ -1,7 +1,8 @@
 <script>
 	import { t } from 'svelte-i18n';
 	import { getName } from '$lib/helpers/nameText';
-	import { assets } from '$lib/store/app-stores';
+	import { assets, customData, isCustomBanner } from '$lib/store/app-stores';
+	import { lazyLoad } from '$lib/helpers/lazyload';
 
 	export let data = {};
 	let { weapons = [], character = {}, bannerType = null, rateup = [] } = data;
@@ -26,11 +27,16 @@
 		<div class="character-card star5">
 			<picture style="background-image:url('{$assets['5star-bg.webp']}')">
 				<i class="gi-{character.vision} {character.vision} icon-gradient filter-drop" />
-				<img
-					src={$assets[`face/${character.name}`]}
-					alt={getName(character.name)}
-					crossorigin="anonymous"
-				/>
+				{#if $isCustomBanner}
+					{@const { images = {}, character = '' } = $customData || {}}
+					<img use:lazyLoad={images?.faceURL} alt={character} crossorigin="anonymous" />
+				{:else}
+					<img
+						use:lazyLoad={$assets[`face/${character.name}`]}
+						alt={getName(character.name)}
+						crossorigin="anonymous"
+					/>
+				{/if}
 			</picture>
 			<caption class="name">{$t(`${character.name}.name`)}</caption>
 			<i class="gi-{character.vision} element" />

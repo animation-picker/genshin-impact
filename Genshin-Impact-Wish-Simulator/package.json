@@ -26,7 +26,7 @@
 		"@sveltejs/adapter-vercel": "^1.0.0-next.66",
 		"@sveltejs/kit": "^1.0.0-next.551",
 		"autoprefixer": "^10.4.8",
-		"dotenv": "^16.0.0",
+		"dotenv": "^16.3.1",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -40,6 +40,7 @@
 		"svelte-preprocess": "^4.10.6",
 		"uuid": "^9.0.0",
 		"vite": "^3.1.8",
+		"vite-imagetools": "^6.2.3",
 		"vite-plugin-markdown": "^2.1.0",
 		"vite-plugin-pwa": "^0.13.1",
 		"workbox-cacheable-response": "^6.5.4",
@@ -55,6 +56,7 @@
 		"html-to-image": "^1.8.5",
 		"idb": "^6.1.2",
 		"overlayscrollbars": "^1.13.1",
-		"svelte-i18n": "^3.4.0"
+		"svelte-i18n": "^3.4.0",
+		"zoomist": "^2.0.10"
 	}
 }

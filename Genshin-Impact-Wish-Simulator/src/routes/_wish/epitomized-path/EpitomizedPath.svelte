@@ -12,7 +12,7 @@
 		assets,
 		course
 	} from '$lib/store/app-stores';
-	import { fatepointManager } from '$lib/store/localstore-manager';
+	import { fatepointManager } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	import Modal from '$lib/components/ModalTpl.svelte';
@@ -20,9 +20,10 @@
 	import FatepointSVG from './_svg-background.svelte';
 	import InventoryItem from '../../_inventory/_inventory-item.svelte';
 	import hotkeys from 'hotkeys-js';
+	import { getWpDetails } from '$lib/helpers/gacha/itemdrop-base';
 
 	$: half = $viewportWidth < 500;
-	const weapons = $bannerList[$activeBanner].featured;
+	const weapons = $bannerList[$activeBanner].featured.map(({ name }) => getWpDetails(name));
 
 	let itemWidth;
 	$: defaultItemWidth = (16.5 / 100) * $viewportHeight;
@@ -182,22 +183,24 @@
 							<div class="weapon-content">
 								<button>
 									<InventoryItem
-										name={weaponName}
-										weaponType={weapons[selectedCourse].type}
-										type="weapon"
-										rarity={5}
+										itemdata={{
+											name: weaponName,
+											weaponType: weapons[selectedCourse].weaponType,
+											type: 'weapon',
+											rarity: 5
+										}}
 									/>
 								</button>
 							</div>
 						{:else}
-							{#each weapons as { name, type }, i}
+							{#each weapons as { name, weaponType }, i}
 								<div
 									class="weapon-content"
 									class:active={targetActive === i}
 									on:click={() => select(i)}
 								>
 									<button>
-										<InventoryItem {name} weaponType={type} type="weapon" rarity={5} />
+										<InventoryItem itemdata={{ name, weaponType, type: 'weapon', rarity: 5 }} />
 									</button>
 								</div>
 							{/each}

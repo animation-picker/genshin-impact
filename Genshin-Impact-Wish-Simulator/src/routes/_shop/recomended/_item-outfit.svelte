@@ -2,18 +2,20 @@
 	import { getContext, setContext } from 'svelte';
 	import { t } from 'svelte-i18n';
 	import { assets } from '$lib/store/app-stores';
+	import { getCharDetails } from '$lib/helpers/gacha/itemdrop-base';
+	import { owneditem } from '$lib/helpers/dataAPI/api-localstore';
+	import { positionToStyle } from '$lib/helpers/cssPosition';
 	import { getName } from '$lib/helpers/nameText';
-	import { owneditem } from '$lib/store/localstore-manager';
 	import { playSfx } from '$lib/helpers/audio/audio';
-	import positionToStyle from '$lib/helpers/cssPosition';
 
 	import Icon from '$lib/components/Icon.svelte';
 	import ButtonModal from '$lib/components/ButtonModal.svelte';
 	import ModalConfirm from '../character-outfit/_modal-confirm.svelte';
 
 	export let data = {};
-	let name, cardBoxPosition, promoPrice, price, isOwned, characterName, rarity;
-	$: ({ name, cardBoxPosition, promoPrice, price, isOwned, characterName, rarity } = data);
+	let name, offset, promoPrice, price, isOwned, characterName, rarity, itemID;
+	$: ({ name, offset, promoPrice, price, isOwned, characterName, rarity } = data);
+	$: ({ itemID } = getCharDetails(characterName));
 
 	let showConfirmModal = false;
 	const cancelConfirm = () => {
@@ -39,7 +41,7 @@
 	setContext('showDetailModal', showDetailModal);
 
 	const prepareToBuy = () => {
-		const { qty } = owneditem.get(characterName);
+		const { qty } = owneditem.get(itemID);
 		if (qty > 0) return showDetailModal();
 
 		playSfx();
@@ -56,7 +58,7 @@
 	class="outfit-art"
 	src={$assets[`splash-art/${name}`]}
 	alt={getName(name)}
-	style={positionToStyle(cardBoxPosition)}
+	style={positionToStyle(offset?.storeCard || {})}
 />
 
 <div class="remaining card-stroke">{$t('shop.limitedOffer')}</div>

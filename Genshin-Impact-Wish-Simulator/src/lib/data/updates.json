@@ -373,12 +373,37 @@
 		},
 		{
 			"date": "06-Nov-2023",
-			"featured": true,
 			"description": [
 				"New Character: <b>Furina ( 5★ )</b>",
 				"New Character: <b>Charlotte ( 4★ )</b>",
 				"New Weapon: <b>Splendor of Tranquil Waters (Sword 5★)</b>",
 				"Add <b>Baizhu 1st Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "23-Nov-2023",
+			"description": [
+				"Add <b>Cyno 3th Rerun</b> Banner",
+				"Add <b>Ayato 3th Rerun</b> Banner",
+				"Update Weapon Banner: <b> Haran Geppaku Futsu </b> and <b>Staff of The Scarlet Sands</b>"
+			]
+		},
+		{
+			"featured": true,
+			"date": "02-Dec-2023",
+			"description": [
+				"<b>New Features:</b>",
+				"- Custom Banner Editor, Share your Own Banner!",
+				"- Backup & Restore, Cloud Sync will be available soon"
+			]
+		},
+		{
+			"featured": true,
+			"date": "18-Dec-2023",
+			"description": [
+				"New Character: <b>Navia ( 5★ )</b>",
+				"New Weapon: <b>Verdict (Claymore 5★)</b>",
+				"Add <b>Ayaka's 4th Rerun</b> Banner"
 			]
 		}
 	]

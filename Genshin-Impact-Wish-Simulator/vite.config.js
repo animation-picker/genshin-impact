@@ -1,5 +1,7 @@
+import path from 'path';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { imagetools } from 'vite-imagetools';
 import { plugin as MdPlugin } from 'vite-plugin-markdown';
 import { config as envConfig } from 'dotenv';
 
@@ -91,6 +93,7 @@ const manifest = {
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
+		imagetools(),
 		sveltekit(),
 		MdPlugin({ mode: 'html' }),
 		VitePWA({
@@ -103,6 +106,12 @@ const config = {
 			manifest
 		})
 	],
+	resolve: {
+		alias: {
+			$post: path.resolve(__dirname, './src/post'),
+			'@images': path.resolve(__dirname, './src/images')
+		}
+	},
 	build: {
 		chunkSizeWarningLimit: 350,
 		target: ['es2020']

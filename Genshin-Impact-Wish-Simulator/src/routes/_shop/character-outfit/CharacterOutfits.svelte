@@ -4,7 +4,8 @@
 	import { t } from 'svelte-i18n';
 
 	import { assets, activeVersion } from '$lib/store/app-stores';
-	import { owneditem } from '$lib/store/localstore-manager';
+	import { owneditem } from '$lib/helpers/dataAPI/api-localstore';
+	import { getCharDetails } from '$lib/helpers/gacha/itemdrop-base';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { getName } from '$lib/helpers/nameText';
 
@@ -52,7 +53,8 @@
 
 	const prepareToBuy = (data) => {
 		outfitToBuy = data;
-		const { qty } = owneditem.get(data.characterName);
+		const { itemID } = getCharDetails(data.characterName);
+		const { qty } = owneditem.get(itemID);
 		if (qty > 0 || outfitToBuy.isOwned) return showDetailModal();
 
 		playSfx();

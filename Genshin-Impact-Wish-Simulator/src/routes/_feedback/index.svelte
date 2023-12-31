@@ -1,11 +1,16 @@
 <script>
 	import { getContext } from 'svelte';
 	import { mobileMode, viewportWidth } from '$lib/store/app-stores';
+	import { HOST } from '$lib/env';
 	import Sidebar from './_sidebar.svelte';
 
 	export let show = false;
 	let clientHeight;
 	const close = getContext('chatToggle');
+
+	window.disqus_config = function () {
+		this.page.url = HOST;
+	};
 </script>
 
 <svelte:head>

@@ -2,5 +2,6 @@
 User-agent: *
 Allow: /install
 Allow: /privacy-policy
+Allow: /ads.txt
 Allow: /$
 Disallow: /

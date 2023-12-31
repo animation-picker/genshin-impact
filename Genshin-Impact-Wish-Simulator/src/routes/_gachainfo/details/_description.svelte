@@ -1,7 +1,8 @@
 <script>
 	import { t, json } from 'svelte-i18n';
 	import { APP_TITLE } from '$lib/env';
-	import Ads from '$lib/components/Iklan.svelte';
+	import { customData, isCustomBanner } from '$lib/store/app-stores';
+	import { highlightBannerName } from '$lib/helpers/nameText';
 
 	export let tplVersion = 'v1';
 	export let bannerType;
@@ -15,16 +16,16 @@
 		return `"${$t(`${name}.title`)}" ${$t(`${name}.name`)} ${$t(element)}`;
 	};
 
-	const highlightBannerName = (bannerName, vision = null) => {
-		const splited = bannerName.split(' ');
-		const divClass = vision || 'epitome';
-		return `<span class="custom ${divClass}-flat"> ${splited[0]} </span>
-          ${splited.slice(1).join(' ')}`;
-	};
-
 	const getFeaturedChars = ({ name, vision }) => {
+		if (!$isCustomBanner) {
+			return `<span class="custom ${vision}-flat">
+			"${$t(`${name}.title`)}" ${$t(`${name}.name`)} (${$t(vision)})
+		</span>`;
+		}
+
+		const { charTitle } = $customData;
 		return `<span class="custom ${vision}-flat">
-			"${$t(`${name}.title`)}" ${$t(`${name}.name`)} (${$t(character.vision)})
+			"${charTitle}" ${name} (${$t(vision)})
 		</span>`;
 	};
 
@@ -89,8 +90,6 @@
 		<h2><span>{$t('details.wishDetails')} </span> <span class="line" /></h2>
 	{/if}
 
-	<Ads type="banner" />
-
 	{#if bannerType === 'beginner'}
 		<h3>{$t('details.beginnerInfo')}</h3>
 	{:else if bannerType.match('event')}
@@ -117,7 +116,7 @@
 		{#each $json('details.standard') as text}
 			<p>
 				{@html $t(text, {
-					values: { bannerName: highlightBannerName(bannerName, { vision: 'std' }) }
+					values: { bannerName: highlightBannerName(bannerName, 'standard') }
 				})}
 			</p>
 		{/each}
@@ -138,7 +137,7 @@
 			<p>
 				{@html $t(text, {
 					values: {
-						bannerName: highlightBannerName(bannerName),
+						bannerName: highlightBannerName(bannerName, 'epitome'),
 						featuredWeapon1: getFeaturedWeapon(weapons[0]),
 						featuredWeapon2: getFeaturedWeapon(weapons[1]),
 						rateupWeapons: getRateupWeapons(rateup)
@@ -163,11 +162,10 @@
 	{#if bannerType.match('event')}
 		<p>{$t('details.alert', { values: { wishName: $t(`wish.banner.${bannerType}`) } })}</p>
 	{/if}
-	<Ads type="banner" />
 </div>
 
 <style>
-	p :global(span):not(.custom) {
+	p :global(span):not([class*='-flat']) {
 		color: #cf5e47;
 	}
 

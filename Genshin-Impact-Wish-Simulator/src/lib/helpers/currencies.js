@@ -1,6 +1,6 @@
-import { pricelist } from '$lib/store/app-stores';
-import { cookie } from '$lib/store/cookie';
 import { currencies } from '$lib/data/pricelist.json';
+import { pricelist } from '$lib/store/app-stores';
+import { cookie } from './dataAPI/api-cookie';
 import { checkLocale } from './i18n';
 
 export const availableCurrencies = currencies.map(({ symbol, currency }) => ({ symbol, currency }));

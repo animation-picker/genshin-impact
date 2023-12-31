@@ -1,5 +1,5 @@
 import { probabilityRates } from '$lib/data/wish-setup.json';
-import { localrate } from '$lib/store/localstore-manager';
+import { localrate } from '../dataAPI/api-localstore';
 
 export const rates = ({
 	currentPity = 0,

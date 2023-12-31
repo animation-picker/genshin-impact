@@ -1,4 +1,5 @@
-import { localConfig } from '$lib/store/localstore-manager';
+import { proUser, showAd } from '$lib/store/app-stores';
+import { cookie } from './dataAPI/api-cookie';
 
 const digestMessage = async (message) => {
 	const msgUint8 = new TextEncoder().encode(message); // encode as (utf-8) Uint8Array
@@ -28,15 +29,15 @@ const checkKey = async (key) => {
 const adKey = {
 	_set(key) {
 		const reversed = key.trim().split('').reverse().join('');
-		localConfig.set('adKey', reversed);
+		cookie.set('accessKey', reversed);
 	},
 
 	clear() {
-		return localConfig.set('adKey', null);
+		return cookie.set('accessKey', null);
 	},
 
-	async checkLocal() {
-		const storedKey = localConfig.get('adKey');
+	async initialLoad() {
+		const storedKey = cookie.get('accessKey');
 		const reversedKey = storedKey?.split('').reverse().join('');
 		try {
 			if (!storedKey) return { validity: false, storedKey: reversedKey, status: 'ok' };
@@ -61,4 +62,19 @@ const adKey = {
 	}
 };
 
-export { adKey };
+const retry = () => {
+	console.log('reconecting...');
+	const timer = setTimeout(() => {
+		clearTimeout(timer);
+		verifyKey();
+	}, 10000);
+};
+
+const verifyKey = async () => {
+	const { validity, status } = await adKey.initialLoad();
+	if (status === 'offline') return retry();
+	proUser.set(!!validity);
+	showAd.set(!validity);
+};
+
+export { adKey, verifyKey };

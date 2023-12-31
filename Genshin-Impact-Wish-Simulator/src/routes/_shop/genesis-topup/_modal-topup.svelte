@@ -1,9 +1,9 @@
 <script>
 	import { getContext } from 'svelte';
 	import { t } from 'svelte-i18n';
-	import { cookie } from '$lib/store/cookie';
+	import { cookie } from '$lib/helpers/dataAPI/api-cookie';
 	import { assets, genesis, primogem } from '$lib/store/app-stores';
-	import { localBalance } from '$lib/store/localstore-manager';
+	import { localBalance } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 
 	import Modal from '$lib/components/ModalTpl.svelte';

@@ -43,4 +43,18 @@ export const randomLetter = (length) => {
 	return result;
 };
 
+export const highlightBannerName = (bannerName, vision) => {
+	const name = bannerName;
+	const splited = name.trim().split(' ');
+	const wordCount = splited.length - 1;
+	if (wordCount < 1) return `<span class="${vision}-flat">${bannerName}</span>`;
+
+	const modulo = wordCount % 2;
+	const halfOfTextIndex = (wordCount - modulo) / 2;
+	const frontText = splited.filter((w, i) => i <= halfOfTextIndex).join(' ');
+	const endText = splited.filter((w, i) => i > halfOfTextIndex).join(' ');
+
+	return `<span class="${vision}-flat">${frontText}</span> ${endText}`;
+};
+
 export { getName, getSlug, copy, getBannerName };

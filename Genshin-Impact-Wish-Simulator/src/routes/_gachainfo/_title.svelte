@@ -1,4 +1,5 @@
 <script>
+	import { highlightBannerName } from '$lib/helpers/nameText';
 	import { assets } from '$lib/store/app-stores';
 	import { t } from 'svelte-i18n';
 
@@ -6,13 +7,6 @@
 	export let type = '';
 	export let vision = '';
 	export let tplVersion = '';
-
-	const highlightBannerName = () => {
-		const splited = bannerName.split(' ');
-		const joined = splited.slice(1).join(' ');
-		const divclass = type === 'standard' ? 'wanderlust' : vision;
-		return `<span class="${divclass || 'epitome'}-flat">${splited[0]}</span> ${joined}`;
-	};
 </script>
 
 {#if type === 'history'}
@@ -23,6 +17,7 @@
 
 	<!-- Details Page -->
 {:else}
+	{@const divclass = type === 'standard' ? 'wanderlust' : vision}
 	<h1 class={type} class:v2={tplVersion === 'v2'}>
 		{#if tplVersion === 'v2'}
 			<img src={$assets['brand.png']} alt="Icon" crossorigin="anonymous" />
@@ -32,7 +27,7 @@
 				{$t(`wish.banner.${type}`)}
 			{/if}
 
-			"{@html highlightBannerName()}"
+			"{@html highlightBannerName(bannerName, divclass || 'epitome')}"
 		</span>
 	</h1>
 {/if}

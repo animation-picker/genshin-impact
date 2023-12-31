@@ -2,20 +2,15 @@
 	import Icon from '$lib/components/Icon.svelte';
 	import { t } from 'svelte-i18n';
 	import { isMobile } from '$lib/store/app-stores';
+	import { removeAnimClass } from '$lib/helpers/transition';
 
 	export let bonusQty = 0;
 	export let bonusType = 'stardust';
 	export let type;
-
-	const removeClass = (el) => {
-		el.addEventListener('animationend', () => {
-			el.classList.remove('anim');
-		});
-	};
 </script>
 
 {#if type === 'weapon' && bonusQty > 1}
-	<div class="starfate anim {bonusType}" use:removeClass>
+	<div class="starfate anim {bonusType}" use:removeAnimClass>
 		<div class="icon">
 			<Icon type={bonusType} width={$isMobile ? '50px' : '60px'} />
 		</div>
@@ -91,6 +86,7 @@
 		align-items: center;
 		width: 1200px;
 		max-width: 95%;
+		z-index: +1;
 	}
 
 	@keyframes starfateIcon {

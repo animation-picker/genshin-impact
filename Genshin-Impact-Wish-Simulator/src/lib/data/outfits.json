@@ -3,23 +3,49 @@
 		{
 			"name": "5-star-outrider",
 			"characterName": "amber",
-			"rarity": 4
+			"rarity": 4,
+			"offset": {
+				"splashArt": { "x": 1.62, "y": -5.56, "scale": 1.46 },
+				"wishCard": { "x": 66, "y": 37.80674157303371, "scale": 7.71 }
+			}
 		},
 		{
 			"name": "favonian-fevotion",
 			"characterName": "jean",
-			"rarity": 4
+			"rarity": 4,
+			"offset": {
+				"splashArt": { "x": 2.7412280701754383, "y": -3.0804093567251463, "scale": 1.36 },
+				"wishCard": { "x": 32.412623006447234, "y": 61.74109263657957, "scale": 9.17 }
+			}
 		},
 		{
 			"name": "executor_s-thorns",
 			"characterName": "rosaria",
-			"rarity": 4
+			"rarity": 4,
+			"offset": {
+				"splashArt": { "x": -0.608187134502924, "y": -5.552631578947368, "scale": 1.24 },
+				"wishCard": { "x": 11.309806582965727, "y": 64.11163895486936, "scale": 8.95 }
+			}
 		},
 		{
 			"name": "flowing-fate",
 			"characterName": "mona",
 			"rarity": 4,
-			"wishBoxPosition": { "l": 35, "h": 190 }
+			"offset": {
+				"splashArt": { "x": -1.1023391812865497, "y": -0.4473684210526315, "scale": 1.6 },
+				"wishCard": { "x": 10.902612826603326, "y": 52.65320665083135, "scale": 10.88 }
+			}
+		},
+		{
+			"release": 1.6,
+			"name": "summertime-sparkle",
+			"characterName": "barbara",
+			"rarity": 4,
+			"price": 1680,
+			"offset": {
+				"splashArt": { "x": -0.7410714285714286, "y": 3.386904761904762, "scale": 1.16 },
+				"wishCard": { "x": 39.886128364389236, "y": 70.09178743961353, "scale": 8.85 }
+			}
 		},
 		{
 			"release": 1.6,
@@ -28,15 +54,22 @@
 			"rarity": 4,
 			"price": 1680,
 			"promoPrice": 1350,
-			"wishBoxPosition": { "t": 90, "h": 200, "l": 20 }
+			"offset": {
+				"splashArt": { "x": 0.37351190476190477, "y": 3.2901785714285716, "scale": 1.18 },
+				"wishCard": { "x": -25.54865424430642, "y": 92.17874396135267, "scale": 9.93 },
+				"storeCard": { "t": -15, "l": -30, "w": 125 }
+			}
 		},
 		{
-			"release": 1.6,
-			"name": "summertime-sparkle",
-			"characterName": "barbara",
+			"release": 2.4,
+			"name": "orchid_s-evening-gown",
+			"characterName": "ningguang",
 			"rarity": 4,
 			"price": 1680,
-			"wishBoxPosition": { "t": 72, "l": 140, "h": 185 }
+			"offset": {
+				"splashArt": { "x": -2.604166666666667, "y": 2.2738095238095237, "scale": 1.04 },
+				"wishCard": { "x": -18.871635610766045, "y": 74.78985507246377, "scale": 7.08 }
+			}
 		},
 		{
 			"release": 2.4,
@@ -45,15 +78,11 @@
 			"rarity": 4,
 			"price": 1680,
 			"promoPrice": 1350,
-			"wishBoxPosition": { "t": 83 }
-		},
-		{
-			"release": 2.4,
-			"name": "orchid_s-evening-gown",
-			"characterName": "ningguang",
-			"rarity": 4,
-			"price": 1680,
-			"wishBoxPosition": { "h": 200, "t": 90, "l": 23 }
+			"offset": {
+				"splashArt": { "x": 1.638392857142857, "y": 6.901785714285714, "scale": 1.1 },
+				"wishCard": { "x": 39.34782608695652, "y": 86.33574879227052, "scale": 7.46 },
+				"storeCard": { "t": 0, "l": -20, "w": 110 }
+			}
 		},
 		{
 			"release": 2.8,
@@ -61,7 +90,10 @@
 			"characterName": "fischl",
 			"rarity": 4,
 			"price": 1680,
-			"wishBoxPosition": { "l": 15 }
+			"offset": {
+				"splashArt": { "x": -2.5580357142857144, "y": 2.915178571428571, "scale": 1.04 },
+				"wishCard": { "x": -34.648033126293996, "y": 74.1352657004831, "scale": 7.46 }
+			}
 		},
 		{
 			"release": 2.8,
@@ -70,8 +102,11 @@
 			"rarity": 5,
 			"price": 2480,
 			"promoPrice": 1980,
-			"wishBoxPosition": { "l": -54, "h": 200, "t": 85 },
-			"cardBoxPosition": { "l": -45 }
+			"offset": {
+				"splashArt": { "x": -12.322916666666666, "y": -7.5773809523809526, "scale": 1.52 },
+				"wishCard": { "x": -92.41200828157349, "y": 61.80434782608696, "scale": 11.77 },
+				"storeCard": { "l": -45, "t": -50, "w": 130 }
+			}
 		},
 		{
 			"release": 3.4,
@@ -79,7 +114,10 @@
 			"characterName": "lisa",
 			"rarity": 4,
 			"price": 1680,
-			"wishBoxPosition": { "l": -45, "t": 70 }
+			"offset": {
+				"splashArt": { "x": 1.1770833333333333, "y": -0.9925595238095238, "scale": 1.2 },
+				"wishCard": { "x": -80.76604554865425, "y": 63.37198067632851, "scale": 8.67 }
+			}
 		},
 		{
 			"release": 3.4,
@@ -88,8 +126,11 @@
 			"rarity": 4,
 			"price": 1680,
 			"promoPrice": 1350,
-			"wishBoxPosition": { "l": 60, "h": 190, "t": 70 },
-			"cardBoxPosition": { "l": -10, "w": 90, "t": -35 }
+			"offset": {
+				"splashArt": { "x": -2.3333333333333335, "y": -4.5773809523809526, "scale": 1.24 },
+				"wishCard": { "x": 29.668737060041412, "y": 58.376811594202906, "scale": 8.98 },
+				"storeCard": { "l": -20, "w": 120, "t": -35 }
+			}
 		},
 		{
 			"release": 3.8,
@@ -97,7 +138,10 @@
 			"characterName": "kaeya",
 			"rarity": 4,
 			"price": 1680,
-			"wishBoxPosition": { "l": 23, "t": 70, "h": 210 }
+			"offset": {
+				"splashArt": { "x": -0.9940476190476191, "y": -3.9821428571428577, "scale": 1.24 },
+				"wishCard": { "x": -22.836438923395445, "y": 69.80193236714976, "scale": 9.88 }
+			}
 		},
 		{
 			"release": 3.8,
@@ -106,8 +150,11 @@
 			"rarity": 4,
 			"price": 1680,
 			"promoPrice": 1350,
-			"wishBoxPosition": { "l": 80, "h": 185, "t": 50 },
-			"cardBoxPosition": { "l": -20, "w": 120, "t": -42 }
+			"offset": {
+				"splashArt": { "x": 2.9925595238095237, "y": 10.900297619047619, "scale": 1.36 },
+				"wishCard": { "x": 35.13457556935818, "y": 69.07729468599034, "scale": 9.88 },
+				"storeCard": { "l": -20, "w": 120, "t": -25 }
+			}
 		}
 	]
 }

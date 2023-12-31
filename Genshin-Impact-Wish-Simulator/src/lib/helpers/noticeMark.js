@@ -1,5 +1,5 @@
-import { cookie } from '$lib/store/cookie';
 import { notice } from '$lib/store/app-stores';
+import { cookie } from './dataAPI/api-cookie';
 
 const getNotices = () => cookie.get('notice') || [];
 const setNotices = (data = []) => cookie.set('notice', data);

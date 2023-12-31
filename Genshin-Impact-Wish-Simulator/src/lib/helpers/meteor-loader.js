@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 import { assets } from '$lib/store/app-stores';
-import { AssetManager } from '$lib/store/IDB-manager';
+import { AssetManager } from './dataAPI/api-indexeddb';
 import { isSafari } from './mobileDetect';
 
 const itemRarity = [3, 3, 4, 4, 5, 5];

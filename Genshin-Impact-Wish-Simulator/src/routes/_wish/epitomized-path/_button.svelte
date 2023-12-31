@@ -5,7 +5,7 @@
 	import hotkeys from 'hotkeys-js';
 
 	import { activeBanner, activeVersion, bannerList, course } from '$lib/store/app-stores';
-	import { fatepointManager } from '$lib/store/localstore-manager';
+	import { fatepointManager } from '$lib/helpers/dataAPI/api-localstore';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { noticeMark } from '$lib/helpers/noticeMark';
 

@@ -81,6 +81,7 @@
 	"thundering-pulse": "Thundering Pulse",
 	"tome-of-the-eternal-flow": "Tome of the Eternal Flow",
 	"tulaytullah_s-remembrance": "Tulaytullah's Remembrance",
+	"verdict": "Verdict",
 	"vortex-vanquisher": "Vortex Vanquisher",
 	"wavebreaker_s-fin": "Wavebreaker's Fin",
 	"wine-and-song": "Wine and Song",
@@ -258,6 +259,10 @@
 	"nahida": {
 		"name": "Nahida",
 		"title": "Physic of Purity"
+	},
+	"navia": {
+		"name": "Navia",
+		"title": "Helm of the Radiant Rose"
 	},
 	"neuvillette": {
 		"name": "Neuvillette",

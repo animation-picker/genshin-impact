@@ -4,7 +4,7 @@
 
 	import { welkinReward } from '$lib/data/wish-setup.json';
 	import { assets, primogem } from '$lib/store/app-stores';
-	import { localBalance, dailyWelkin } from '$lib/store/localstore-manager';
+	import { localBalance, dailyWelkin } from '$lib/helpers/dataAPI/api-localstore';
 
 	const { primogem: dailyPrimo } = welkinReward;
 	const closeWelkin = getContext('closeWelkin');
