@@ -1,0 +1,37 @@
+name: Build app
+
+on:
+ workflow_dispatch:
+ push:
+    branches:
+      - main # default branch
+
+jobs:
+  frontend:
+    uses: ./.github/workflows/page.yml
+  app:
+    needs: frontend
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ./electron-static/node_modules
+          key: ${{ runner.OS }}-npm-app-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-app-cache
+      - name: Install Dependencies
+        run: |
+         cd electron-static
+         yarn install
+      - name: Build
+        run: |
+         cd electron-static
+         yarn run build
+         ls
