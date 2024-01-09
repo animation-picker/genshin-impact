@@ -1,0 +1,55 @@
+name: Build app
+
+on:
+ workflow_dispatch:
+ workflow_call:
+ push:
+    branches:
+      - main # default branch
+    paths:
+      - ./electron-static/*
+
+jobs:
+  frontend:
+    uses: ./.github/workflows/page.yml
+  app-windows:
+    needs: frontend
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ./electron-static/node_modules
+          key: ${{ runner.OS }}-npm-app-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-app-cache
+      - name: Install Dependencies
+        run: |
+         cd electron-static
+         yarn install
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+      - name: extract new
+        run: |          
+         7z x .\frontend -oelectron-static/ -y
+
+      - name: Build
+        run: |
+         cd electron-static
+         yarn run build
+      - name: Package all
+        run: |
+         cd electron-static
+         7z a -tzip genish-impact-win-x64.zip ./genish-impact-Win32-x64
+      - name: Upload (Windows)
+        uses: actions/upload-artifact@v3
+        with:
+          name: genish-impact-win
+          path: electron-static/genish-impact-win-x64.zip
