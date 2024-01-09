@@ -6,7 +6,7 @@ on:
  push:
     branches:
       - main # default branch
-    path:
+    paths:
       - ./Genshin-Impact-Wish-Simulator/
 
 jobs:
