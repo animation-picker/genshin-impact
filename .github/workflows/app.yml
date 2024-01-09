@@ -38,7 +38,6 @@ jobs:
         uses: actions/download-artifact@v3
       - name: extract new
         run: |          
-         dir
          7z x .\frontend -oelectron-static/ -y
 
       - name: Build
