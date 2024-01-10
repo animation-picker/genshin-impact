@@ -28,9 +28,9 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./electron-static/node_modules
-          key: ${{ matrix.os }}-npm-app-cache
+          key: ${{ runner.os }}-npm-app-cache
           restore-keys: |
-            ${{ matrix.os }}-npm-app-cache
+            ${{ runner.os }}-npm-app-cache
       - name: Install Dependencies
         run: |
          cd electron-static
