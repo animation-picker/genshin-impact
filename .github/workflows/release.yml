@@ -3,10 +3,10 @@ name: Release
 on:
  workflow_dispatch:
 jobs:
-  app:
+  Build:
     uses: ./.github/workflows/app.yml
   release:
-    needs: app
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifact
