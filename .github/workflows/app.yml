@@ -41,7 +41,7 @@ jobs:
         if: runner.os == 'Linux' || runner.os == 'macOS'
         run: |          
          7z x ./frontend -oelectron-static/ -y
-      - name: extract new(Windows)
+      - name: extract new(For Windows)
         if: runner.os == 'windows'
         run: |          
          7z x .\frontend -oelectron-static/ -y
@@ -49,12 +49,12 @@ jobs:
         run: |
          cd electron-static
          yarn run build
-      - name: Package (${{ matrix.os }})
+      - name: Package (${{ runner.os }})
         run: |
          cd electron-static
          7z a -tzip genish-impact-${{ matrix.os }}-x64.zip ./genish-impact-*
-      - name: Upload (${{ matrix.os }})
+      - name: Upload (${{ runner.os }})
         uses: actions/upload-artifact@v3
         with:
-          name: genish-impact-${{ matrix.os }}
-          path: electron-static/genish-impact-${{ matrix.os }}-x64.zip
+          name: genish-impact-${{ runner.os }}
+          path: electron-static/genish-impact-${{ runner.os }}-x64.zip
