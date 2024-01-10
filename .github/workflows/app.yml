@@ -52,7 +52,7 @@ jobs:
       - name: Package (${{ runner.os }})
         run: |
          cd electron-static
-         7z a -tzip genish-impact-${{ matrix.os }}-x64.zip ./genish-impact-*
+         7z a -tzip genish-impact-${{ runner.os }}-x64.zip ./genish-impact-*
       - name: Upload (${{ runner.os }})
         uses: actions/upload-artifact@v3
         with:
