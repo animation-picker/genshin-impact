@@ -10,26 +10,27 @@ on:
       - ./electron-static/*
 
 jobs:
-  frontend:
+  Page:
     uses: ./.github/workflows/page.yml
-  app-windows:
-    needs: frontend
-    runs-on: windows-latest
-    permissions:
-      contents: write
+  Build-app:
+    needs: Page
+    strategy:
+      matrix:
+        os: [windows,ubuntu,macos]
+    runs-on: ${{ matrix.os }}-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "16"
       - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./electron-static/node_modules
-          key: ${{ runner.OS }}-npm-app-cache
+          key: ${{ matrix.os }}-npm-app-cache
           restore-keys: |
-            ${{ runner.OS }}-npm-app-cache
+            ${{ matrix.os }}-npm-app-cache
       - name: Install Dependencies
         run: |
          cd electron-static
@@ -37,19 +38,23 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v3
       - name: extract new
+        if: runner.os == 'Linux' || runner.os == 'macOS'
+        run: |          
+         7z x ./frontend -oelectron-static/ -y
+      - name: extract new(Windows)
+        if: runner.os == 'windows'
         run: |          
          7z x .\frontend -oelectron-static/ -y
-
       - name: Build
         run: |
          cd electron-static
          yarn run build
-      - name: Package all
+      - name: Package (${{ matrix.os }})
         run: |
          cd electron-static
-         7z a -tzip genish-impact-win-x64.zip ./genish-impact-Win32-x64
-      - name: Upload (Windows)
+         7z a -tzip genish-impact-${{ matrix.os }}-x64.zip ./genish-impact-*
+      - name: Upload (${{ matrix.os }})
         uses: actions/upload-artifact@v3
         with:
-          name: genish-impact-win
-          path: electron-static/genish-impact-win-x64.zip
+          name: genish-impact-${{ matrix.os }}
+          path: electron-static/genish-impact-${{ matrix.os }}-x64.zip

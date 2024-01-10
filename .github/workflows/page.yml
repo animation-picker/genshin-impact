@@ -10,18 +10,16 @@ on:
       - ./Genshin-Impact-Wish-Simulator/*
 
 jobs:
-  pages:
+  Build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "16"
       - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ./Genshin-Impact-Wish-Simulator/node_modules
           key: ${{ runner.OS }}-npm-frontend-cache
