@@ -15,7 +15,7 @@ var win;
 function createWindow () {
     // Create the browser window.
     win = new BrowserWindow({width: 1080, height: 1920,frame:false});
-    win.setFullScreen(true);
+    win.setFullScreen(false);
  
     // and load the index.html of the app.
     const port = s.address().port;
