@@ -28,10 +28,10 @@
 	const renewItemQty = async (banner) => {
 		const tmp = {};
 		const listFromBanner = await getListByBanner(banner);
-		listFromBanner.forEach(({ name }) => {
-			tmp[name] = (tmp[name] || 0) + 1;
+		listFromBanner.forEach(({ itemID }) => {
+			tmp[itemID] = (tmp[itemID] || 0) + 1;
 		});
-		Object.keys(tmp).forEach((key) => owneditem.put({ name: key, qty: -1 * tmp[key] }));
+		Object.keys(tmp).forEach((key) => owneditem.put({ itemID: key, qty: -1 * tmp[key] }));
 	};
 
 	const clear = getContext('clearHistory');

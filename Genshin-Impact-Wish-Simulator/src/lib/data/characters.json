@@ -2,6 +2,17 @@
 	"onlyStandard": ["amber", "kaeya", "lisa"],
 	"data": [
 		{
+			"itemID": 164,
+			"name": "chevreuse",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "4.3-2",
+			"offset": {
+				"splashArt": { "x": -0.49195710455764075, "y": -10.837801608579088, "scale": 1.09 },
+				"wishCard": { "x": 7.69894534995206, "y": 21.16331096196868, "scale": 7.91 }
+			}
+		},
+		{
 			"itemID": 162,
 			"name": "navia",
 			"vision": "geo",

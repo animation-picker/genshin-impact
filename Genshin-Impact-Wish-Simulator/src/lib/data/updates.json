@@ -398,12 +398,20 @@
 			]
 		},
 		{
-			"featured": true,
 			"date": "18-Dec-2023",
 			"description": [
 				"New Character: <b>Navia ( 5★ )</b>",
 				"New Weapon: <b>Verdict (Claymore 5★)</b>",
 				"Add <b>Ayaka's 4th Rerun</b> Banner"
+			]
+		},
+		{
+			"featured": true,
+			"date": "5-Jan-2024",
+			"description": [
+				"New Character: <b>Chevreuse ( 4★ )</b>",
+				"Add <b>Raiden Shogun's 4th Rerun</b> Banner",
+				"Add <b>Yoimiya's 5th Rerun</b> Banner"
 			]
 		}
 	]
