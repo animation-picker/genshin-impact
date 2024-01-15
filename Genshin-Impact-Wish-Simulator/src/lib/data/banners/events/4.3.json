@@ -34,6 +34,46 @@
 					}
 				}
 			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "reign-of-serenity-4",
+							"character": "raiden-shogun",
+							"textOffset": { "l": 50, "b": 11 }
+						},
+						{
+							"bannerName": "tapestry-of-golden-flames-5",
+							"character": "yoimiya",
+							"textOffset": { "l": 50, "b": 10.75 }
+						}
+					],
+					"rateup": ["chevreuse", "kujou-sara", "bennett"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-58",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "engulfing-lightning", "buttonPosition": { "l": 60 } },
+						{ "name": "thundering-pulse", "buttonPosition": { "l": 40 } }
+					],
+					"rateup": [
+						"wavebreaker_s-fin",
+						"rust",
+						"favonius-sword",
+						"rainslasher",
+						"eye-of-perception"
+					],
+					"textOffset": {
+						"featured": { "l": 46, "t": 72 },
+						"rateup": { "l": 75, "b": 20 }
+					}
+				}
+			}
 		}
 	]
 }

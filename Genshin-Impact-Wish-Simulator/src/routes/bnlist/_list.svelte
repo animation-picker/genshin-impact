@@ -30,18 +30,27 @@
 		return result;
 	};
 
-	onMount(async () => {
+	const loadBanners = async () => {
 		try {
 			const request = await fetch(API_HOST + '/storage');
 			const { success, data = [] } = await request.json();
 			if (!success) return;
-			customList = data.sort(({ lastModified: a }, { lastModified: b }) => {
-				return new Date(b) - new Date(a);
-			});
+			// customList = data.sort(({ lastModified: a }, { lastModified: b }) => {
+			// 	return new Date(b) - new Date(a);
+			// });
+			customList = window._.orderBy(data, ['lastModified'], ['desc']);
 		} catch (e) {
 			console.error(e);
 			customList = [];
 		}
+	};
+
+	onMount(() => {
+		const lodash = document.createElement('script');
+		lodash.src = 'https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js';
+		document.head.append(lodash);
+
+		lodash.onload = loadBanners;
 	});
 </script>
 

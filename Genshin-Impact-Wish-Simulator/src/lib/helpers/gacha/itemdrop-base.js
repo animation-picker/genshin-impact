@@ -54,7 +54,7 @@ export const getMemberItem = () => {
 		.map((arr) => {
 			arr.type = 'member';
 			arr.weaponType = "catalyst";
-			arr.rarity = 3;
+			// arr.rarity = 3;
 			return arr;
 		}); 
 }
