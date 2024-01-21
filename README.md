@@ -16,7 +16,7 @@
    docker run -d --name ysdm \
       -p 8000:80 \
       maizig/ysdm:1.0.0
-    ```
+```
 
 ### 前端开发
 
