@@ -11,6 +11,13 @@
 >
 >提交名单在页面左上角问号里提交
 
+### Docker部署
+```shell
+   docker run -d --name ysdm \
+      -p 8000:80 \
+      maizig/ysdm:1.0.0
+    ```
+
 ### 前端开发
 
 前端代码在目录 `Genshin-Impact-Wish-Simulator` . 基于 `Svelte` 框架.
