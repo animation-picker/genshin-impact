@@ -1,5 +1,5 @@
 # 原神抽卡点名器
-![原神点名器](https://stats.deeptrain.net/repo/Maizi-G/genshin-impact-picker/?theme=light)
+![原神点名器](https://stats.deeptrain.net/repo/cyanial/genshin-impact-picker/?theme=light)
 
 ## Note
 
