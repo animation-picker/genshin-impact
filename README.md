@@ -1,8 +1,23 @@
-# Genshin-impact-picker
+# 原神抽卡点名器
+![原神点名器](https://stats.deeptrain.net/repo/cyanial/genshin-impact-picker/?theme=light)
 
 ## Note
 
 > Thanks for [approve](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95) from author of [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator).
+### 使用
+>将网站运行目录设置为genshin-impact-picker-main/electron-static/static文件夹
+>
+>支持自定义明星，格式为明星+空格+姓名（如5张三，每行一个）
+>
+>提交名单在页面左上角问号里提交
+
+### Docker部署
+```shell
+   docker run -d --name ysdm \
+      -p 8000:80 \
+      maizig/ysdm:1.0.0
+```
+ > 运行成功后，宿主机映射地址为 `http://localhost:8000`，使用 Nginx / Apache 进行反代是一个不错的选择（以及 SSL 配置）
 
 ### 前端开发
 
