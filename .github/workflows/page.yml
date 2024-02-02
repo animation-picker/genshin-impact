@@ -7,7 +7,7 @@ on:
     branches:
       - main # default branch
     paths:
-      - ./Genshin-Impact-Wish-Simulator/*
+      - Genshin-Impact-Wish-Simulator/*
 
 jobs:
   Build:
