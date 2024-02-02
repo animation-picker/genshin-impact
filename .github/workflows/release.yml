@@ -2,6 +2,9 @@ name: Release
 
 on:
  workflow_dispatch:
+ push:
+   tags:
+     - "v*"
 jobs:
   Build:
     uses: ./.github/workflows/app.yml
