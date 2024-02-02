@@ -2,6 +2,9 @@ name: Release
 
 on:
  workflow_dispatch:
+ push:
+   tags:
+     - "v*"
 jobs:
   Build:
     uses: ./.github/workflows/app.yml
@@ -14,5 +17,4 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-            tag_name: release
             files: ./**/genish-impact*.zip

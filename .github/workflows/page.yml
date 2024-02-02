@@ -3,11 +3,11 @@ name: Pages
 on:
  workflow_dispatch:
  workflow_call:
- push:
+ pull_request:
     branches:
       - main # default branch
     paths:
-      - ./Genshin-Impact-Wish-Simulator/*
+      - Genshin-Impact-Wish-Simulator/*
 
 jobs:
   Build:
