@@ -122,7 +122,7 @@
 				wrapperClass="card-image {imageError ? 'skeleton' : ''}"
 			/>
 			<div class="frame">
-				<FrameCharacter {bannerName} {bannerName} {textOffset} />
+				<FrameCharacter {bannerName} {character} {textOffset} />
 			</div>
 		{/if}
 
