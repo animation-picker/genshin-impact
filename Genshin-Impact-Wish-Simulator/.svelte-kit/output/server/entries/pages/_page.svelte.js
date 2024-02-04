@@ -4353,7 +4353,7 @@ const BannerCard = create_ssr_component(($$result, $$props, $$bindings, slots) =
     {},
     {}
   )}
-			<div class="${"frame svelte-xg8c82"}">${validate_component(Frame_standard, "FrameStandard").$$render($$result, { bannerName }, {}, {})}</div>` : ``}`}`}`}`}`}
+			<div class="${"frame svelte-xg8c82"}">${validate_component(Frame_character, "FrameCharacter").$$render($$result, { bannerName, character, textOffset }, {}, {})}</div>` : ``}`}`}`}`}`}
 
 		<div class="${"info svelte-xg8c82"}"><button class="${"detail svelte-xg8c82"}">${escape($t("details.text"))}</button>
 			${type !== "beginner" ? `<button class="${"gear svelte-xg8c82"}"><i class="${"gi-gear"}"></i></button>` : ``}</div></div>
