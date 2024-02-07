@@ -12,7 +12,17 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "window": {
+        "setFullscreen": true
+      }
     },
     "bundle": {
       "active": true,
@@ -57,6 +67,7 @@
       {
         "fullscreen": false,
         "height": 1000,
+        "decorations": true,
         "resizable": true,
         "title": "WishSimulator",
         "width": 1600
