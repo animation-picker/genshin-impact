@@ -1629,6 +1629,27 @@
     svelte-hmr "^0.15.1"
     vitefu "^0.2.1"
 
+"@tauri-apps/cli-win32-x64-msvc@1.5.9":
+  version "1.5.9"
+  resolved "https://registry.npmjs.org/@tauri-apps/cli-win32-x64-msvc/-/cli-win32-x64-msvc-1.5.9.tgz"
+  integrity sha512-EeI1+L518cIBLKw0qUFwnLIySBeSmPQjPLIlNwSukHSro4tAQPHycEVGgKrdToiCWgaZJBA0e5aRSds0Du2TWg==
+
+"@tauri-apps/cli@^1.5.9":
+  version "1.5.9"
+  resolved "https://registry.npmjs.org/@tauri-apps/cli/-/cli-1.5.9.tgz"
+  integrity sha512-knSt/9AvCTeyfC6wkyeouF9hBW/0Mzuw+5vBKEvzaGPQsfFJo1ZCp5FkdiZpGBBfnm09BhugasGRTGofzatfqQ==
+  optionalDependencies:
+    "@tauri-apps/cli-darwin-arm64" "1.5.9"
+    "@tauri-apps/cli-darwin-x64" "1.5.9"
+    "@tauri-apps/cli-linux-arm-gnueabihf" "1.5.9"
+    "@tauri-apps/cli-linux-arm64-gnu" "1.5.9"
+    "@tauri-apps/cli-linux-arm64-musl" "1.5.9"
+    "@tauri-apps/cli-linux-x64-gnu" "1.5.9"
+    "@tauri-apps/cli-linux-x64-musl" "1.5.9"
+    "@tauri-apps/cli-win32-arm64-msvc" "1.5.9"
+    "@tauri-apps/cli-win32-ia32-msvc" "1.5.9"
+    "@tauri-apps/cli-win32-x64-msvc" "1.5.9"
+
 "@types/cookie@^0.5.1":
   version "0.5.1"
   resolved "https://registry.npmjs.org/@types/cookie/-/cookie-0.5.1.tgz"
@@ -2297,15 +2318,15 @@ es6-promise@^3.1.2:
   resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-3.3.1.tgz"
   integrity sha512-SOp9Phqvqn7jtEUxPWdWfWoLmyt2VaJ6MpvP9Comy1MceMXqE6bxvaTu4iaxpYYPzhny28Lc+M87/c2cPK6lDg==
 
-esbuild-linux-64@0.14.54:
+esbuild-windows-64@0.14.54:
   version "0.14.54"
-  resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.14.54.tgz"
-  integrity sha512-EgjAgH5HwTbtNsTqQOXWApBaPVdDn7XcK+/PtJwZLT1UmpLoznPd8c5CxqsH2dQK3j05YsB3L17T8vE7cp4cCg==
+  resolved "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.14.54.tgz"
+  integrity sha512-AoHTRBUuYwXtZhjXZbA1pGfTo8cJo3vZIcWGLiUcTNgHpJJMC1rVA44ZereBHMJtotyN71S8Qw0npiCIkW96cQ==
 
-esbuild-linux-64@0.15.12:
+esbuild-windows-64@0.15.12:
   version "0.15.12"
-  resolved "https://registry.npmjs.org/esbuild-linux-64/-/esbuild-linux-64-0.15.12.tgz"
-  integrity sha512-QcgCKb7zfJxqT9o5z9ZUeGH1k8N6iX1Y7VNsEi5F9+HzN1OIx7ESxtQXDN9jbeUSPiRH1n9cw6gFT3H4qbdvcA==
+  resolved "https://registry.npmjs.org/esbuild-windows-64/-/esbuild-windows-64-0.15.12.tgz"
+  integrity sha512-VActO3WnWZSN//xjSfbiGOSyC+wkZtI8I4KlgrTo5oHJM6z3MZZBCuFaZHd8hzf/W9KPhF0lY8OqlmWC9HO5AA==
 
 esbuild@^0.14.48:
   version "0.14.54"

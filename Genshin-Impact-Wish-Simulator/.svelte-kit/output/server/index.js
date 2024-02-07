@@ -2267,20 +2267,20 @@ function set_paths(paths) {
   base = paths.base;
   assets = paths.assets || base;
 }
-const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta\n			name="viewport"\n			content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no"\n		/>\n		<meta name="a.validate.02" content="gc8Hcbkq-w-3WEWF_q38cMwWsDdHhE5icT8F" />\n		<meta name="google-site-verification" content="zn73VlG6JLf_oG3P8jQVbKGlDkQ9s6JcR6qZLzT2tVI" />\n		<meta name="google-adsense-account" content="ca-pub-1874822310102113" />\n\n		<meta property="og:type" content="profile" />\n		<meta property="profile:username" content="AguzzTN54" />\n		<meta property="twitter:card" content="summary_large_image" />\n		<meta name="author" content="AguzzTN54" />\n		<meta name="robots" content="index, follow" />\n\n		<meta name="language" content="English" />\n		<meta property="og:locale" content="en_US" />\n		<meta property="og:locale:alternate" content="id_ID" />\n		<meta property="og:locale:alternate" content="it_IT" />\n		<meta property="og:locale:alternate" content="ja_JP" />\n		<meta property="og:locale:alternate" content="pt_BR" />\n		<meta property="og:locale:alternate" content="ru_RU" />\n		<meta property="og:locale:alternate" content="th_TH" />\n		<meta property="og:locale:alternate" content="vi_VN" />\n		<meta property="og:locale:alternate" content="zh_CN" />\n		<title>Genshin Impact Wish Simulator</title>\n\n		<link rel="stylesheet" href="/icons.css" />\n		<link rel="icon" href="/favicon.ico" />\n		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />\n		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />\n		<meta name="msapplication-TileColor" content="#2d89ef" />\n		<meta name="theme-color" content="#ffffff" />\n\n		' + head + `
-
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211756322-1"><\/script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'UA-211756322-1');
-		<\/script>
-	</head>
-	<body>
-		<div id="svelte" class="svelte">` + body + "</div>\n	</body>\n</html>\n";
+const app_template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<meta\r\n			name="viewport"\r\n			content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no"\r\n		/>\r\n		<meta name="a.validate.02" content="gc8Hcbkq-w-3WEWF_q38cMwWsDdHhE5icT8F" />\r\n		<meta name="google-site-verification" content="zn73VlG6JLf_oG3P8jQVbKGlDkQ9s6JcR6qZLzT2tVI" />\r\n		<meta name="google-adsense-account" content="ca-pub-1874822310102113" />\r\n\r\n		<meta property="og:type" content="profile" />\r\n		<meta property="profile:username" content="AguzzTN54" />\r\n		<meta property="twitter:card" content="summary_large_image" />\r\n		<meta name="author" content="AguzzTN54" />\r\n		<meta name="robots" content="index, follow" />\r\n\r\n		<meta name="language" content="English" />\r\n		<meta property="og:locale" content="en_US" />\r\n		<meta property="og:locale:alternate" content="id_ID" />\r\n		<meta property="og:locale:alternate" content="it_IT" />\r\n		<meta property="og:locale:alternate" content="ja_JP" />\r\n		<meta property="og:locale:alternate" content="pt_BR" />\r\n		<meta property="og:locale:alternate" content="ru_RU" />\r\n		<meta property="og:locale:alternate" content="th_TH" />\r\n		<meta property="og:locale:alternate" content="vi_VN" />\r\n		<meta property="og:locale:alternate" content="zh_CN" />\r\n		<title>Genshin Impact Wish Simulator</title>\r\n\r\n		<link rel="stylesheet" href="/icons.css" />\r\n		<link rel="icon" href="/favicon.ico" />\r\n		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />\r\n		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />\r\n		<meta name="msapplication-TileColor" content="#2d89ef" />\r\n		<meta name="theme-color" content="#ffffff" />\r\n\r\n		' + head + `\r
+\r
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-211756322-1"><\/script>\r
+		<script>\r
+			window.dataLayer = window.dataLayer || [];\r
+			function gtag() {\r
+				dataLayer.push(arguments);\r
+			}\r
+			gtag('js', new Date());\r
+			gtag('config', 'UA-211756322-1');\r
+		<\/script>\r
+	</head>\r
+	<body>\r
+		<div id="svelte" class="svelte">` + body + "</div>\r\n	</body>\r\n</html>\r\n";
 const error_template = ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>

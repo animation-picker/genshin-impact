@@ -33,6 +33,7 @@ $ npm run dev
 
 ### 打包exe
 
+#### 使用Electron打包
 在 `Genshin-Impact-Wish-Simulator` 中执行
 
 ```bash
@@ -48,6 +49,15 @@ $ npm install
 $ npm run build (生成当前系统可执行文件)
 $ npm run build-win (生成win32-x64)
 ```
+
+#### 使用Tauri打包
+使用Tauri打包的体积较小，因为其调用系统webview，打包体积可减少200-300M  127M(tauri打包)  418M(electron打包)
+在 `Genshin-Impact-Wish-Simulator` 中执行
+
+```bash
+$ npm run tauri build
+```
+
 
 ### Deploy with Vercel
 
