@@ -52,6 +52,9 @@ $ npm run build-win (生成win32-x64)
 
 #### 使用Tauri打包
 使用Tauri打包的体积较小，因为其调用系统webview，打包体积可减少200-300M  127M(tauri打包)  418M(electron打包)
+
+ps: tauri由于调用系统webview，因此不支持win10以下的系统，但可通过配置文件内置webview解决，具体见：https://tauri.app/zh-cn/v1/guides/building/windows 的`Supporting Windows 7`这一部分
+
 在 `Genshin-Impact-Wish-Simulator` 中执行
 
 ```bash
