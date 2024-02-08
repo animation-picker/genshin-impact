@@ -62,6 +62,7 @@
 		"sparkling-steps": "闪焰的驻足",
 		"tapestry-of-golden-flames": "焰色天河",
 		"tempestuous-destiny": "劫中泛滥",
+		"the-crane-soars-skyward": "云府鹤行",
 		"the-heron_s-court": "白鹭之庭",
 		"the-moongrass-enlightenment": "月草的赐慧",
 		"the-transcendent-one-returns": "出尘入世",
@@ -136,7 +137,11 @@
 		"limitation": "You are not a member, please delete some banners to activate the editor",
 		"memberToUnlock": "Become a Member to Add More Banner",
 		"incomplete": "Incomplete",
-		"inappropriate": "Inappropriate Content!"
+		"inappropriate": "Inappropriate Content!",
+		"lastSync": "Last Sync: {time}",
+		"inactive": "Inactive",
+		"unshared": "Not shared yet",
+		"create": "Create Banner"
 	},
 	"backupRestore": {
 		"cloudSync": "Cloud Sync",
@@ -150,6 +155,7 @@
 		"autoExport": "Auto Export",
 		"destination": "Destination",
 		"lastExport": "Last Export",
+		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
 	"wish": {
@@ -215,7 +221,7 @@
 	},
 	"outfit": {
 		"heading": "角色装扮",
-		"default": "默认",
+		"default": "Default",
 		"setOutfit": "设置装扮",
 		"owned": "已拥有",
 		"purchasePrompt": "您还没有此装扮对应的角色，您确定要购买此装扮吗？",
@@ -274,6 +280,18 @@
 			"sailwind-shadow": {
 				"name": "帆影游风",
 				"description": "凯亚在舞台上饰演「短刀大盗」时的装扮，以「吸睛」为设计原则的华丽服装。不过衣服穿起来并不麻烦，最花时间打理的是饰品与短刀。"
+			},
+			"frostflower-dew": {
+				"name": "冷花幽露",
+				"description": "申鹤收到的海灯节贺礼。由其师留云借风真君请人缝制的优雅礼服，双臂上红绳依旧，但申鹤心中的苦寒之意已淡。"
+			},
+			"twilight-blossom": {
+				"name": "玄玉瑶芳",
+				"description": "角色天赋素材"
+			},
+			"bamboo-rain": {
+				"name": "雨化竹身",
+				"description": "飞云商会为行秋准备的宴会衣装。竹纹清雅、剪裁服帖，但最令行秋满意的还是其内层的口袋，足够塞下一册较薄的小说了。"
 			}
 		}
 	},
@@ -443,7 +461,6 @@
 		"showAllOption": "显示所有{item}"
 	},
 	"menu": {
-		"upload": "上传",
 		"no": "否",
 		"yes": "是",
 		"text": "菜单",
@@ -454,15 +471,15 @@
 		"backupRestore": "Backup & Restore",
 		"language": "语言",
 		"currency": "货币",
-		"fates": "抽卡次数",
-		"unlimited": "无限",
-		"manual": "手动输入",
+		"fates": "Number of Wishes",
+		"unlimited": "Unlimited",
+		"manual": "Manual Input",
 		"mute": "禁用音频音效",
 		"switchBanner": "切换卡池",
 		"showAllitems": "在库存中显示所有物品",
 		"animatedbg": "动画背景",
 		"autoskip": "自动跳过祈愿动画",
-		"multiRoll": "多抽次数",
+		"multiRoll": "Number per multi-roll",
 		"factoryReset": "清除数据并恢复默认",
 		"resetTitle": "恢复默认",
 		"rotate": "旋转设备以获得更好体验",
@@ -472,7 +489,7 @@
 		"resetPrompt": "您确定清除<strong>所有数据</strong>并恢复默认吗？",
 		"resetSuccess": "已成功重置",
 		"proAccess": "Pro Access",
-		"getpro": "Get Pro Access",
+		"getpro": "Unlock Pro Access",
 		"removeKey": "Remove Key",
 		"removeKeyConfirm": "Are you sure to delete the current Key? You will lose all of these benefits until you re-enter the new key!",
 		"getNewKey": "在这里搞一个新的！",
@@ -485,6 +502,11 @@
 		"inputKeyPlaceholder": "输入赞助码",
 		"inputKeyTxt": "Input a Key to get more Benefits !",
 		"checkingKey": "Verifying Stored Access Key",
-		"authorNotes": "* 我需要对植入广告行为表示歉意。实际上我也不想破坏您的操作体验，但我没有任何团队或赞助商来维持这个应用的运营。如果你不想花钱的话，你仍旧可以通过启用广告拦截插件或者自定义DNS，我不会对其进行限制。"
+		"benefit": "Benefits",
+		"authorNotes": [
+			"Ads Removed",
+			"Unlimited Custom Banners",
+			"You can use the same key for {HSRWishSim} to get the same benefits"
+		]
 	}
 }

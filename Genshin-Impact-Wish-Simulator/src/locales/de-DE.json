@@ -62,6 +62,7 @@
 		"sparkling-steps": "Flammende Schritte",
 		"tapestry-of-golden-flames": "Flammengalaxie",
 		"tempestuous-destiny": "Stürmisches Schicksal",
+		"the-crane-soars-skyward": "Kranichsilhouette inmitten der Wolken",
 		"the-heron_s-court": "Kranichhof",
 		"the-moongrass-enlightenment": "Erleuchtung des Mondgrases",
 		"the-transcendent-one-returns": "Rückkehr aus der Abgeschiedenheit",
@@ -136,7 +137,11 @@
 		"limitation": "You are not a member, please delete some banners to activate the editor",
 		"memberToUnlock": "Become a Member to Add More Banner",
 		"incomplete": "Incomplete",
-		"inappropriate": "Inappropriate Content!"
+		"inappropriate": "Inappropriate Content!",
+		"lastSync": "Last Sync: {time}",
+		"inactive": "Inactive",
+		"unshared": "Not shared yet",
+		"create": "Create Banner"
 	},
 	"backupRestore": {
 		"cloudSync": "Cloud Sync",
@@ -150,6 +155,7 @@
 		"autoExport": "Auto Export",
 		"destination": "Destination",
 		"lastExport": "Last Export",
+		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
 	"wish": {
@@ -274,6 +280,18 @@
 			"sailwind-shadow": {
 				"name": "Schatten flatternder Segel",
 				"description": "Kaeyas Kostüm aus seiner Darbietung als „Großer Räuber Kurzklinge“. Ein prächtiges Kleidungsstück, das als absoluter „Hingucker“ entworfen wurde. Das Kostüm selbst ist nicht aufwendig anzuziehen; ganz anders sieht es da allerdings mit den Accessoires und dem Messer aus."
+			},
+			"frostflower-dew": {
+				"name": "Cencellada rociofloral",
+				"description": "Dieses Geschenk vom Laternenritual, das Shenhe erhalten hat, ist eine elegante Festkleidung, die ihre Meisterin, die Fürstin der stehenden Wolken und des stillen Windes, für sie in Auftrag gegeben hatte. Rote Seile zieren noch immer ihre Arme, doch die Kälte in Shenhes Herzen wurde gelindert."
+			},
+			"twilight-blossom": {
+				"name": "Zwielichtblüte",
+				"description": "Ein leichtes und anmutiges Festtagsgewand, bei dem vor allem in dunklem Violett und Himmelblau Akzente gesetzt worden sind. Der Haarschmuck ist ebenso strahlend wie eine Qingxin, eine Kombination, die Ganyu am liebsten hat."
+			},
+			"bamboo-rain": {
+				"name": "Bambusregen",
+				"description": "Eine formelle Kleidung, die die Händlergilde Feiyun für Xingqiu hat anfertigen lassen. Die Bambusdrucke sind raffiniert und der Schnitt ist sehr schmeichelhaft, aber Xingqius Lieblingsaspekt dieser Kleidung sind die Innentaschen, in die man einen dünnen Roman stecken kann."
 			}
 		}
 	},
@@ -471,7 +489,7 @@
 		"resetPrompt": "Bist du dir sicher dass du <strong> alle Daten </strong> löschen willst and zu den Standarteinstellungen zurückkehren möchtest?",
 		"resetSuccess": "Erfolgreich zurückgesetzt!",
 		"proAccess": "Pro Access",
-		"getpro": "Get Pro Access",
+		"getpro": "Unlock Pro Access",
 		"removeKey": "Remove Key",
 		"removeKeyConfirm": "Are you sure to delete the current Key? You will lose all of these benefits until you re-enter the new key!",
 		"getNewKey": "Neuen Schlüssel hier erhalten!",
@@ -484,6 +502,11 @@
 		"inputKeyPlaceholder": "Schlüssel eingeben",
 		"inputKeyTxt": "Input a Key to get more Benefits !",
 		"checkingKey": "Verifying Stored Access Key",
-		"authorNotes": "* Ich entschuldige mich für die Werbung. Eigentlich möchte ich dir dein Wunscherlebnis nicht verderben, aber ich habe kein Team oder Sponsor, um diese App am Leben zu erhalten. Wenn ihr nichts ausgeben wollt, könnt ihr immer noch den Werbeblocker einschalten oder einfach eine benutzerdefinierte DNS verwenden, ich werde es euch nicht verbieten."
+		"benefit": "Benefits",
+		"authorNotes": [
+			"Ads Removed",
+			"Unlimited Custom Banners",
+			"You can use the same key for {HSRWishSim} to get the same benefits"
+		]
 	}
 }

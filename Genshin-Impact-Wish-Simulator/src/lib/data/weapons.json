@@ -1,6 +1,16 @@
 {
 	"data": [
 		{
+			"itemID": 167,
+			"name": "cranes-echoing-call",
+			"rarity": 5,
+			"weaponType": "catalyst",
+			"limited": true,
+			"offset": {
+				"button": { "t": 1, "w": 70, "l": 38 }
+			}
+		},
+		{
 			"itemID": 163,
 			"name": "verdict",
 			"rarity": 5,
