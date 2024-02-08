@@ -11,6 +11,7 @@
 	"calamity-queller": "息災",
 	"cashflow-supervision": "金流監督",
 	"cool-steel": "冷刃",
+	"cranes-echoing-call": "鶴鳴餘音",
 	"debate-club": "以理服人",
 	"dragon_s-bane": "匣裡滅辰",
 	"elegy-for-the-end": "終末嗟嘆之詩",
@@ -180,6 +181,10 @@
 		"name": "芙寧娜",
 		"title": "不休獨舞"
 	},
+	"gaming": {
+		"name": "嘉明",
+		"title": "駿猊頕首"
+	},
 	"ganyu": {
 		"name": "甘雨",
 		"title": "循循守月"
@@ -347,6 +352,10 @@
 	"xiangling": {
 		"name": "香菱",
 		"title": "萬民百味"
+	},
+	"xianyun": {
+		"name": "閒雲",
+		"title": "鸞音鶴信"
 	},
 	"xiao": {
 		"name": "魈",

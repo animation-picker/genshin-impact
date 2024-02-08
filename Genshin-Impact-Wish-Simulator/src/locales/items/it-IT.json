@@ -11,6 +11,7 @@
 	"calamity-queller": "Flagello delle calamità",
 	"cashflow-supervision": "Supervisione pecuniaria",
 	"cool-steel": "Lama fredda",
+	"cranes-echoing-call": "Canto della gru echeggiante",
 	"debate-club": "Mazza della persuasione",
 	"dragon_s-bane": "Scacciadraghi",
 	"elegy-for-the-end": "Elegia finale",
@@ -180,6 +181,10 @@
 		"name": "Furina",
 		"title": "Assolo solitario e sempiterno"
 	},
+	"gaming": {
+		"name": "Gaming",
+		"title": "Avanguardia leonina"
+	},
 	"ganyu": {
 		"name": "Ganyu",
 		"title": "Sguardo del plenilunio"
@@ -347,6 +352,10 @@
 	"xiangling": {
 		"name": "Xiangling",
 		"title": "Maestra culinaria di Liyue"
+	},
+	"xianyun": {
+		"name": "Xianyun",
+		"title": "Messaggera gruiforme"
 	},
 	"xiao": {
 		"name": "Xiao",

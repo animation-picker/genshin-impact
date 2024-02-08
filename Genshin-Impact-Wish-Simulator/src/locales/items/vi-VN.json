@@ -11,6 +11,7 @@
 	"calamity-queller": "Hủy Diệt",
 	"cashflow-supervision": "Quản Đốc Vàng Ròng",
 	"cool-steel": "Lãnh Nhẫn",
+	"cranes-echoing-call": "Dư Âm Tiếng Hạc",
 	"debate-club": "Gậy Thu Phục",
 	"dragon_s-bane": "Tai Ương Của Rồng",
 	"elegy-for-the-end": "Tiếng Thở Dài Vô Tận",
@@ -180,6 +181,10 @@
 		"name": "Furina",
 		"title": "Độc Diễn Vô Tận"
 	},
+	"gaming": {
+		"name": "Gaming",
+		"title": "Tuấn Nghê Ngẩng Đầu"
+	},
 	"ganyu": {
 		"name": "Ganyu",
 		"title": "Người Bảo Vệ Tận Tâm"
@@ -347,6 +352,10 @@
 	"xiangling": {
 		"name": "Xiangling",
 		"title": "Vạn Dân Bách Vị"
+	},
+	"xianyun": {
+		"name": "Xianyun",
+		"title": "Hạc Sứ Cõi Tiên"
 	},
 	"xiao": {
 		"name": "Xiao",

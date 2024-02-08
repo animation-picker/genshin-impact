@@ -11,6 +11,7 @@
 	"calamity-queller": "息災",
 	"cashflow-supervision": "凛流の監視者",
 	"cool-steel": "冷刃",
+	"cranes-echoing-call": "鶴鳴の余韻",
 	"debate-club": "理屈責め",
 	"dragon_s-bane": "匣中滅龍",
 	"elegy-for-the-end": "終焉を嘆く詩",
@@ -180,6 +181,10 @@
 		"name": "フリーナ",
 		"title": "不休のソリスト"
 	},
+	"gaming": {
+		"name": "嘉明",
+		"title": "頭角を現す駿猊"
+	},
 	"ganyu": {
 		"name": "甘雨",
 		"title": "循々守月"
@@ -347,6 +352,10 @@
 	"xiangling": {
 		"name": "香菱",
 		"title": "万民百味"
+	},
+	"xianyun": {
+		"name": "閑雲",
+		"title": "仙鶴の告げる佳音"
 	},
 	"xiao": {
 		"name": "魈",
