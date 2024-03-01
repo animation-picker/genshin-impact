@@ -11,6 +11,7 @@
 	"calamity-queller": "Subjugadora de Calamidades",
 	"cashflow-supervision": "Supervisão de Caixa",
 	"cool-steel": "Lâmina Fria",
+	"cranes-echoing-call": "Chamado Ecoante da Garça",
 	"debate-club": "Pacifista",
 	"dragon_s-bane": "Perdição do Dragão",
 	"elegy-for-the-end": "Elegia do Suspiro Final",
@@ -180,6 +181,10 @@
 		"name": "Furina",
 		"title": "Dançarina Solitária Eterna"
 	},
+	"gaming": {
+		"name": "Gaming",
+		"title": "Olhar Leonino"
+	},
 	"ganyu": {
 		"name": "Ganyu",
 		"title": "Defensora Devota"
@@ -347,6 +352,10 @@
 	"xiangling": {
 		"name": "Xiangling",
 		"title": "Mestre de Culinária de Liyue"
+	},
+	"xianyun": {
+		"name": "Xianyun",
+		"title": "Mensageira Celestial"
 	},
 	"xiao": {
 		"name": "Xiao",

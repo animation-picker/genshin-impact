@@ -1,0 +1,45 @@
+{
+	"patch": 4.4,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "the-crane-soars-skyward-1",
+							"character": "xianyun",
+							"textOffset": { "l": 50, "b": 10.75 }
+						},
+						{
+							"bannerName": "the-moongrass-enlightenment-3",
+							"character": "nahida",
+							"textOffset": { "l": 51, "b": 10 }
+						}
+					],
+					"rateup": ["gaming", "faruzan", "noelle"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-59",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "cranes-echoing-call" },
+						{ "name": "a-thousand-floating-dreams", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"lithic-spear",
+						"sacrificial-fragments",
+						"sacrificial-sword",
+						"sacrificial-greatsword",
+						"sacrificial-bow"
+					],
+					"textOffset": {
+						"featured": { "l": 47, "t": 68, "w": 28 },
+						"rateup": { "l": 77, "b": 23 }
+					}
+				}
+			}
+		}
+	]
+}

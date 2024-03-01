@@ -11,6 +11,7 @@
 	"calamity-queller": "Calamity Queller",
 	"cashflow-supervision": "Cashflow Supervision",
 	"cool-steel": "Cool Steel",
+	"cranes-echoing-call": "Crane's Echoing Call",
 	"debate-club": "Debate Club",
 	"dragon_s-bane": "Dragon's Bane",
 	"elegy-for-the-end": "Elegy for the End",
@@ -180,6 +181,10 @@
 		"name": "Furina",
 		"title": "Endless Solo of Solitude"
 	},
+	"gaming": {
+		"name": "Gaming",
+		"title": "Leonine Vanguard"
+	},
 	"ganyu": {
 		"name": "Ganyu",
 		"title": "Plenilune Gaze"
@@ -347,6 +352,10 @@
 	"xiangling": {
 		"name": "Xiangling",
 		"title": "Exquisite Delicacy"
+	},
+	"xianyun": {
+		"name": "Xianyun",
+		"title": "Passerine Herald"
 	},
 	"xiao": {
 		"name": "Xiao",

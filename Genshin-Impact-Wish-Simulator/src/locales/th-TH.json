@@ -62,6 +62,7 @@
 		"sparkling-steps": "ก้าวย่างพร่างพราย",
 		"tapestry-of-golden-flames": "ทะเลดาวแห่ งเปลวเพลิง",
 		"tempestuous-destiny": "ชะตา อันทุกข์เข็ญ",
+		"the-crane-soars-skyward": "กระเรียนท่อง ล่องเมฆา",
 		"the-heron_s-court": "ตำหนักกระเ รียนขาว",
 		"the-moongrass-enlightenment": "หญ้าแสงจันทร์ ประทานปัญญา",
 		"the-transcendent-one-returns": "จากพันธนาการสู่ แดนมนุษย์",
@@ -136,7 +137,11 @@
 		"limitation": "You are not a member, please delete some banners to activate the editor",
 		"memberToUnlock": "Become a Member to Add More Banner",
 		"incomplete": "Incomplete",
-		"inappropriate": "Inappropriate Content!"
+		"inappropriate": "Inappropriate Content!",
+		"lastSync": "Last Sync: {time}",
+		"inactive": "Inactive",
+		"unshared": "Not shared yet",
+		"create": "Create Banner"
 	},
 	"backupRestore": {
 		"cloudSync": "Cloud Sync",
@@ -150,6 +155,7 @@
 		"autoExport": "Auto Export",
 		"destination": "Destination",
 		"lastExport": "Last Export",
+		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
 	"wish": {
@@ -274,6 +280,18 @@
 			"sailwind-shadow": {
 				"name": "เงานาวาล่องลม",
 				"description": "ชุดที่ Kaeya สวมใส่ตอนขึ้นแสดง \"จอมโจรดาบสั้น\" บนเวที ชุดอันแสนตระการตานี้ ถูกออกแบบโดยใช้หลักการว่า \"ต้องดึงดูดสายตา\" แต่ถึงอย่างนั้น วิธีสวมใส่ก็ไม่ได้ยุ่งยากอะไรนัก ส่วนที่ต้องเสียเวลาจัดการมากสุด เห็นคงจะมีแค่ส่วนของเครื่องประดับกับดาบสั้นเท่านั้น"
+			},
+			"frostflower-dew": {
+				"name": "หยาดน้ำค้างเยือกแข็ง",
+				"description": "ของขวัญเทศกาล Lantern Rite ที่ Shenhe ได้รับ ชุดพิธีการแสนสง่างาม ที่จ้าววังวนเมฆาเชิญให้คนมาตัดเย็บให้ แม้เชือกสีแดงบนแขนทั้งสองข้างจะยังคงอยู่ แต่ความหนาวเย็นในใจของ Shenhe ได้จางหายไปแล้ว"
+			},
+			"twilight-blossom": {
+				"name": "บุปผาสนธยา",
+				"description": "ชุดงานเทศกาลที่ทั้งเบาสบายและสง่างาม สีโทนหลักคือสีม่วงดำมะแว้งนกและสีฟ้าหยก ส่วนเครื่องประดับผมนั้นสดใสราวกับดอก Qingxin เป็นการจับคู่ที่ Ganyu ชื่นชอบมากที่สุด"
+			},
+			"bamboo-rain": {
+				"name": "ไผ่พิรุณ",
+				"description": "ชุดงานเลี้ยงที่ทางสมาคมการค้า Feiyun จัดเตรียมไว้ให้แก่ Xingqiu ลวดลายไม้ไผ่ที่ดูหรูหรา และเสื้อผ้าที่ตัดเย็บอย่างดี แต่สิ่งที่ Xingqiu พอใจมากที่สุดก็คือกระเป๋าด้านในของมัน ที่เพียงพอให้ใส่นิยายเล่มบาง ๆ ได้"
 			}
 		}
 	},
@@ -471,7 +489,7 @@
 		"resetPrompt": "คุณแน่ใจหรือไม่ว่า <strong> ข้อมูลทั้งหมด </strong> และกู้คืนเป็นค่าเริ่มต้น?",
 		"resetSuccess": "รีเซ็ตประสบความสำเร็จ",
 		"proAccess": "Pro Access",
-		"getpro": "Get Pro Access",
+		"getpro": "Unlock Pro Access",
 		"removeKey": "Remove Key",
 		"removeKeyConfirm": "Are you sure to delete the current Key? You will lose all of these benefits until you re-enter the new key!",
 		"getNewKey": "Get a new one Here!",
@@ -484,6 +502,11 @@
 		"inputKeyPlaceholder": "Enter Key",
 		"inputKeyTxt": "Input a Key to get more Benefits !",
 		"checkingKey": "Verifying Stored Access Key",
-		"authorNotes": "* I need to say sorry about the ads. Actually I don't want to ruin your wishing experience, but I don't have any Team or Sponsor to keep this app alive. If you don't want to spend anythings, You can still turn on the Ad Blocker or just use custom DNS, I will not forbid you."
+		"benefit": "Benefits",
+		"authorNotes": [
+			"Ads Removed",
+			"Unlimited Custom Banners",
+			"You can use the same key for {HSRWishSim} to get the same benefits"
+		]
 	}
 }

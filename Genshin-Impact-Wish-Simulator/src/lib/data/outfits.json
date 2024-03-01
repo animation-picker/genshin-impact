@@ -42,6 +42,7 @@
 			"characterName": "barbara",
 			"rarity": 4,
 			"price": 1680,
+			"promoPrice": 1350,
 			"offset": {
 				"splashArt": { "x": -0.7410714285714286, "y": 3.386904761904762, "scale": 1.16 },
 				"wishCard": { "x": 39.886128364389236, "y": 70.09178743961353, "scale": 8.85 }
@@ -154,6 +155,44 @@
 				"splashArt": { "x": 2.9925595238095237, "y": 10.900297619047619, "scale": 1.36 },
 				"wishCard": { "x": 35.13457556935818, "y": 69.07729468599034, "scale": 9.88 },
 				"storeCard": { "l": -20, "w": 120, "t": -25 }
+			}
+		},
+		{
+			"release": 4.4,
+			"name": "frostflower-dew",
+			"characterName": "shenhe",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"offset": {
+				"splashArt": { "x": 0.683288409703504, "y": 2.6132075471698113, "scale": 1.24 },
+				"wishCard": { "x": -12.568218298555378, "y": 88.33483146067415, "scale": 10.88 },
+				"storeCard": { "l": -30, "w": 130, "t": -13 }
+			}
+		},
+		{
+			"release": 4.4,
+			"name": "twilight-blossom",
+			"characterName": "ganyu",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"offset": {
+				"splashArt": { "x": -2.2911051212938007, "y": -2.9191374663072778, "scale": 1.29 },
+				"wishCard": { "x": -28.131621187800963, "y": 60.35505617977528, "scale": 10.12 },
+				"storeCard": { "l": -30, "w": 125, "t": -30 }
+			}
+		},
+		{
+			"release": 4.4,
+			"name": "bamboo-rain",
+			"characterName": "xingqiu",
+			"rarity": 4,
+			"price": 1680,
+			"promoPrice": 1350,
+			"offset": {
+				"splashArt": { "x": 1.9204851752021566, "y": 1.6388140161725067, "scale": 1.14 },
+				"wishCard": { "x": 42.722311396468704, "y": 66.40449438202248, "scale": 7.65 }
 			}
 		}
 	]

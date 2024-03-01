@@ -2,6 +2,28 @@
 	"onlyStandard": ["amber", "kaeya", "lisa"],
 	"data": [
 		{
+			"itemID": 166,
+			"name": "gaming",
+			"vision": "pyro",
+			"rarity": 4,
+			"release": "4.4-1",
+			"offset": {
+				"splashArt": { "x": 3.1118598382749325, "y": 2.095687331536388, "scale": 1.32 },
+				"wishCard": { "x": 53.730337078651694, "y": 56.310112359550565, "scale": 10.12 }
+			}
+		},
+		{
+			"itemID": 165,
+			"name": "xianyun",
+			"vision": "anemo",
+			"rarity": 5,
+			"offset": {
+				"splashArt": { "x": -1.4959568733153639, "y": 3.261455525606469, "scale": 1.48 },
+				"wishCard": { "x": -23.36436597110755, "y": 76.9258426966292, "scale": 12.49 },
+				"button": { "l": 50, "w": 125, "t": 25 }
+			}
+		},
+		{
 			"itemID": 164,
 			"name": "chevreuse",
 			"vision": "pyro",

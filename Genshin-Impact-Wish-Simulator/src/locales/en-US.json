@@ -62,6 +62,7 @@
 		"sparkling-steps": "Sparkling Steps",
 		"tapestry-of-golden-flames": "Tapestry of Golden Flames",
 		"tempestuous-destiny": "Tempestuous Destiny",
+		"the-crane-soars-skyward": "The Crane Soars Skyward",
 		"the-heron_s-court": "The Heron's Court",
 		"the-moongrass-enlightenment": "The Moongrass' Enlightenment",
 		"the-transcendent-one-returns": "The Transcendent One Returns",
@@ -136,7 +137,11 @@
 		"limitation": "You are not a member, please delete some banners to activate the editor",
 		"memberToUnlock": "Become a Member to Add More Banner",
 		"incomplete": "Incomplete",
-		"inappropriate": "Inappropriate Content!"
+		"inappropriate": "Inappropriate Content!",
+		"lastSync": "Last Sync: {time}",
+		"inactive": "Inactive",
+		"unshared": "Not shared yet",
+		"create": "Create Banner"
 	},
 	"backupRestore": {
 		"cloudSync": "Cloud Sync",
@@ -150,6 +155,7 @@
 		"autoExport": "Auto Export",
 		"destination": "Destination",
 		"lastExport": "Last Export",
+		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
 	"wish": {
@@ -274,6 +280,18 @@
 			"sailwind-shadow": {
 				"name": "Sailwind Shadow",
 				"description": "Kaeya's outfit from his role as the \"Dagger Bandit\" in the play. Though flamboyant and designed to be as eye-catching as possible, it isn't difficult to put on, though it does take some time to get all the accessories and daggers sorted."
+			},
+			"frostflower-dew": {
+				"name": "Frostflower Dew",
+				"description": "This Lantern Rite gift that Shenhe received is a set of elegant formal attire that her master, Cloud Retainer had commissioned for her. Red ropes still adorn her arms, but the bitter cold in Shenhe's heart has faded"
+			},
+			"twilight-blossom": {
+				"name": "Twilight Blossom",
+				"description": "A light and graceful festive outfit accented mainly in black nightshade and cerulean blue. Its hair accessory is as radiant as the Qingxin — a pairing that Ganyu is most fond of."
+			},
+			"bamboo-rain": {
+				"name": "Bamboo Rain",
+				"description": "Formal wear prepared by the Feiyun Commerce Guild for Xingqiu. The bamboo prints are refined and the cut is most flattering, but Xingqiu's favorite aspect of the outfit is its inner pockets, into which a thinner novel might be stuffed."
 			}
 		}
 	},
@@ -471,7 +489,7 @@
 		"resetPrompt": "Are You sure to clear <strong> All Data </strong> and restore to default ?",
 		"resetSuccess": "Reset Successful",
 		"proAccess": "Pro Access",
-		"getpro": "Get Pro Access",
+		"getpro": "Unlock Pro Access",
 		"removeKey": "Remove Key",
 		"removeKeyConfirm": "Are you sure to delete the current Key? You will lose all of these benefits until you re-enter the new key!",
 		"getNewKey": "Get a new one Here!",
@@ -484,6 +502,11 @@
 		"inputKeyPlaceholder": "Enter Key",
 		"inputKeyTxt": "Input a Key to get more Benefits !",
 		"checkingKey": "Verifying Stored Access Key",
-		"authorNotes": "* I need to say sorry about the ads. Actually I don't want to ruin your wishing experience, but I don't have any Team or Sponsor to keep this app alive. If you don't want to spend anythings, You can still turn on the Ad Blocker or just use custom DNS, I will not forbid you."
+		"benefit": "Benefits",
+		"authorNotes": [
+			"Ads Removed",
+			"Unlimited Custom Banners",
+			"You can use the same key for {HSRWishSim} to get the same benefits"
+		]
 	}
 }

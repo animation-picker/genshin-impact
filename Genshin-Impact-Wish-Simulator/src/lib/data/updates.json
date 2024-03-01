@@ -389,7 +389,6 @@
 			]
 		},
 		{
-			"featured": true,
 			"date": "02-Dec-2023",
 			"description": [
 				"<b>New Features:</b>",
@@ -406,12 +405,25 @@
 			]
 		},
 		{
-			"featured": true,
 			"date": "5-Jan-2024",
 			"description": [
 				"New Character: <b>Chevreuse ( 4★ )</b>",
 				"Add <b>Raiden Shogun's 4th Rerun</b> Banner",
 				"Add <b>Yoimiya's 5th Rerun</b> Banner"
+			]
+		},
+		{
+			"featured": true,
+			"date": "29-Jan-2024",
+			"description": [
+				"Add New Character: <strong> Xianyun ( 5★ )</strong>",
+				"Add New Character: <strong> Gaming ( 4★ )</strong>",
+				"Add <strong> Nahida 3rd Rerun </strong> Banner",
+				"Update Weapon Banner: <b>Cranes Echoing Call </b> and <b>A Thousand Floating Dreams</b>",
+				"Add New Character Outfits:",
+				"- <b>Springbloom Missive</b> (Shenhe)",
+				"- <b>A Sobriquet Under Shade </b> (Ganyu)",
+				"- <b>Bamboo Rain</b> (Xingqiu)"
 			]
 		}
 	]

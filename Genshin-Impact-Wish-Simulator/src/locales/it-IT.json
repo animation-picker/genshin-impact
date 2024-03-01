@@ -62,6 +62,7 @@
 		"sparkling-steps": "Sparkling Steps",
 		"tapestry-of-golden-flames": "Tapestry of Golden Flames",
 		"tempestuous-destiny": "Destino tempestoso",
+		"the-crane-soars-skyward": "La gru solca i cieli",
 		"the-heron_s-court": "La corte dell'airone",
 		"the-moongrass-enlightenment": "L'illuminazione dell'Erba lunare",
 		"the-transcendent-one-returns": "Evento trascendentale",
@@ -136,7 +137,11 @@
 		"limitation": "You are not a member, please delete some banners to activate the editor",
 		"memberToUnlock": "Become a Member to Add More Banner",
 		"incomplete": "Incomplete",
-		"inappropriate": "Inappropriate Content!"
+		"inappropriate": "Inappropriate Content!",
+		"lastSync": "Last Sync: {time}",
+		"inactive": "Inactive",
+		"unshared": "Not shared yet",
+		"create": "Create Banner"
 	},
 	"backupRestore": {
 		"cloudSync": "Cloud Sync",
@@ -150,6 +155,7 @@
 		"autoExport": "Auto Export",
 		"destination": "Destination",
 		"lastExport": "Last Export",
+		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
 	"wish": {
@@ -274,6 +280,18 @@
 			"sailwind-shadow": {
 				"name": "Ombra Navigavento",
 				"description": "Il completo che Kaeya indossa quando interpreta il \"Bandito della Daga\". Sebbene sia alquanto appariscente, non è difficile da indossare, anche se ci vuole del tempo per sistemare tutti quegli accessori e tutte quelle daghe."
+			},
+			"frostflower-dew": {
+				"name": "Rugiada fiorigente",
+				"description": "Questo regalo che Shenhe ha ricevuto per il Festival delle lanterne è un completo elegante e formale commissionato dalla sua maestra, Vestale delle nuvole. Nonostante le braccia siano ancora adornate da corde rosse, il freddo pungente nel cuore di Shenhe è svanito."
+			},
+			"twilight-blossom": {
+				"name": "Bocciolo crepuscolare",
+				"description": "Un completo da festa leggero ed elegante, dalla tonalità nero notte e con accenti blu cerulei. I suoi accessori per capelli brillano come i Qingxin, un abbinamento molto gradito a Ganyu."
+			},
+			"bamboo-rain": {
+				"name": "Pioggia di bambù",
+				"description": "Un abito formale preparato dalla Gilda dei commercianti di Feiyun per Xingqiu. Il bambù è disegnato in modo raffinato e il taglio è lusinghiero, ma la parte preferita di Xingqiu sono le tasche interne, dentro le quali entrerebbe un libro non troppo spesso."
 			}
 		}
 	},
@@ -471,7 +489,7 @@
 		"resetPrompt": "Sei sicuro di voler cancellare <strong>Tutti i Dati</strong> e ripristinare le impostazioni predefinite ?",
 		"resetSuccess": "Ripristino effettuato con successo",
 		"proAccess": "Pro Access",
-		"getpro": "Get Pro Access",
+		"getpro": "Unlock Pro Access",
 		"removeKey": "Remove Key",
 		"removeKeyConfirm": "Are you sure to delete the current Key? You will lose all of these benefits until you re-enter the new key!",
 		"getNewKey": "Get a new one Here!",
@@ -484,6 +502,11 @@
 		"inputKeyPlaceholder": "Enter Key",
 		"inputKeyTxt": "Input a Key to get more Benefits !",
 		"checkingKey": "Verifying Stored Access Key",
-		"authorNotes": "* I need to say sorry about the ads. Actually I don't want to ruin your wishing experience, but I don't have any Team or Sponsor to keep this app alive. If you don't want to spend anythings, You can still turn on the Ad Blocker or just use custom DNS, I will not forbid you."
+		"benefit": "Benefits",
+		"authorNotes": [
+			"Ads Removed",
+			"Unlimited Custom Banners",
+			"You can use the same key for {HSRWishSim} to get the same benefits"
+		]
 	}
 }
