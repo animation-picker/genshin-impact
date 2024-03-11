@@ -82,6 +82,7 @@
 	"thundering-pulse": "Громовой пульс",
 	"tome-of-the-eternal-flow": "Обряд вечного течения",
 	"tulaytullah_s-remembrance": "Воспоминания Тулайтуллы",
+	"uraku-misugiri": "Ураку мисугири",
 	"verdict": "Вердикт",
 	"vortex-vanquisher": "Покоритель вихря",
 	"wavebreaker_s-fin": "Режущий волны плавник",
@@ -130,8 +131,12 @@
 		"title": "Объективная реальность"
 	},
 	"chevreuse": {
-		"name": "Chevreuse",
-		"title": "Executor of Justice"
+		"name": "Шеврёз",
+		"title": "Вершитель правосудия"
+	},
+	"chiori": {
+		"name": "Тиори",
+		"title": "Громоподобная закройщица"
 	},
 	"chongyun": {
 		"name": "Чун Юнь",

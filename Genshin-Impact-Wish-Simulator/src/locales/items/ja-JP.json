@@ -82,6 +82,7 @@
 	"thundering-pulse": "飛雷の鳴弦",
 	"tome-of-the-eternal-flow": "久遠流転の大典",
 	"tulaytullah_s-remembrance": "トゥライトゥーラの記憶",
+	"uraku-misugiri": "有楽御簾切",
 	"verdict": "裁断",
 	"vortex-vanquisher": "破天の槍",
 	"wavebreaker_s-fin": "斬波のひれ長",
@@ -132,6 +133,10 @@
 	"chevreuse": {
 		"name": "シュヴルーズ",
 		"title": "厳罰を与える法の通暁者"
+	},
+	"chiori": {
+		"name": "千織",
+		"title": "雷鳴の裁錦師"
 	},
 	"chongyun": {
 		"name": "重雲",

@@ -82,6 +82,7 @@
 	"thundering-pulse": "Sấm Sét Rung Động",
 	"tome-of-the-eternal-flow": "Nghi Thức Dòng Chảy Vĩnh Hằng",
 	"tulaytullah_s-remembrance": "Hồi Ức Tulaytullah",
+	"uraku-misugiri": "Uraku Misugiri",
 	"verdict": "Phán Quyết",
 	"vortex-vanquisher": "Giáo Nịnh Thần",
 	"wavebreaker_s-fin": "Vây Cá Chẻ Sóng",
@@ -132,6 +133,10 @@
 	"chevreuse": {
 		"name": "Chevreuse",
 		"title": "Người Thực Thi Công Lý"
+	},
+	"chiori": {
+		"name": "Chiori",
+		"title": "Nhà Thiết Kế Sấm Chớp"
 	},
 	"chongyun": {
 		"name": "Chongyun",

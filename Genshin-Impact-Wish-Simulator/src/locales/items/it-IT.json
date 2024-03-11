@@ -82,6 +82,7 @@
 	"thundering-pulse": "Battito tonante",
 	"tome-of-the-eternal-flow": "Tomo del flusso perenne",
 	"tulaytullah_s-remembrance": "Rimembranza di Tulaytullah",
+	"uraku-misugiri": "Uraku Misugiri",
 	"verdict": "Verdetto",
 	"vortex-vanquisher": "Squarciavortice",
 	"wavebreaker_s-fin": "Pinna del Frangionde",
@@ -132,6 +133,10 @@
 	"chevreuse": {
 		"name": "Chevreuse",
 		"title": "Braccio armato della legge"
+	},
+	"chiori": {
+		"name": "Chiori",
+		"title": "Sarta tonante"
 	},
 	"chongyun": {
 		"name": "Chongyun",

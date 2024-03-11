@@ -82,6 +82,7 @@
 	"thundering-pulse": "Agitação Trovejante",
 	"tome-of-the-eternal-flow": "Rito do Fluxo Eterno",
 	"tulaytullah_s-remembrance": "Reminiscências de Tulaytullah",
+	"uraku-misugiri": "Urakugo Rensai",
 	"verdict": "Veredito",
 	"vortex-vanquisher": "Perfuradora Prismática",
 	"wavebreaker_s-fin": "Barbatana do Quebra Ondas",
@@ -132,6 +133,10 @@
 	"chevreuse": {
 		"name": "Chevreuse",
 		"title": "Executora da Justiça"
+	},
+	"chiori": {
+		"name": "Chiori",
+		"title": "Costureira Trovejante"
 	},
 	"chongyun": {
 		"name": "Chongyun",
