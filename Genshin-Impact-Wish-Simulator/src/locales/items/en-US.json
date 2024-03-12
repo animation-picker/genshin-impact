@@ -82,6 +82,7 @@
 	"thundering-pulse": "Thundering Pulse",
 	"tome-of-the-eternal-flow": "Tome of the Eternal Flow",
 	"tulaytullah_s-remembrance": "Tulaytullah's Remembrance",
+	"uraku-misugiri": "Uraku Misugiri",
 	"verdict": "Verdict",
 	"vortex-vanquisher": "Vortex Vanquisher",
 	"wavebreaker_s-fin": "Wavebreaker's Fin",
@@ -136,6 +137,10 @@
 	"chongyun": {
 		"name": "Chongyun",
 		"title": "Frozen Ardor"
+	},
+	"chiori": {
+		"name": "Chiori",
+		"title": "The Thundering Seamstress"
 	},
 	"collei": {
 		"name": "Collei",

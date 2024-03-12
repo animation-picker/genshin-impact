@@ -1,0 +1,43 @@
+{
+	"patch": 4.5,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "of-silken-clouds-woven-1",
+							"character": "chiori",
+							"textOffset": { "l": 50, "b": 10.75 }
+						},
+						{
+							"bannerName": "oni_s-royale-4",
+							"character": "arataki-itto",
+							"textOffset": { "l": 51, "b": 10.75 }
+						}
+					],
+					"rateup": ["yun-jin", "gorou", "dori"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-61",
+					"fatepointsystem": true,
+					"featured": [{ "name": "uraku-misugiri" }, { "name": "redhorn-stonethresher" }],
+					"rateup": [
+						"the-alley-flash",
+						"alley-hunter",
+						"favonius-codex",
+						"dragon_s-bane",
+						"the-bell"
+					],
+					"textOffset": {
+						"featured": { "l": 47, "t": 73, "w": 28 },
+						"rateup": { "l": 77, "b": 19 }
+					}
+				}
+			}
+		}
+	]
+}
+

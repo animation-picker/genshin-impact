@@ -40,6 +40,46 @@
 					}
 				}
 			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "invitation-to-mundane-life-5",
+							"character": "xiao",
+							"textOffset": { "l": 50, "b": 10.75 }
+						},
+						{
+							"bannerName": "everbloom-violet-4",
+							"character": "yae-miko",
+							"textOffset": { "l": 48, "b": 10.5 }
+						}
+					],
+					"rateup": ["xinyan", "ningguang", "yaoyao"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-60",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "kagura_s-verity", "buttonPosition": { "l": 35 } },
+						{ "name": "primordial-jade-winged-spear", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"lithic-blade",
+						"favonius-lance",
+						"the-stringless",
+						"lion_s-roar",
+						"the-widsith"
+					],
+					"textOffset": {
+						"featured": { "l": 48, "t": 70, "w": 18 },
+						"rateup": { "l": 78.5, "b": 23 }
+					}
+				}
+			}
 		}
 	]
 }
