@@ -33,6 +33,8 @@ $ npm run dev
 
 ### 打包exe
 
+#### Electron
+
 在 `Genshin-Impact-Wish-Simulator` 中执行
 
 ```bash
@@ -49,10 +51,29 @@ $ npm run build (生成当前系统可执行文件)
 $ npm run build-win (生成win32-x64)
 ```
 
+#### Tauri
+
+使用Tauri打包的体积较小，因为其调用系统webview，打包体积可减少200-300M  127M(tauri打包)  418M(electron打包)
+
+> ps: tauri由于调用系统webview，因此不支持win10以下的系统，但可通过配置文件内置webview解决，具体见：https://tauri.app/zh-cn/v1/guides/building/windows 的`Supporting Windows 7`这一部分
+
+在 `Genshin-Impact-Wish-Simulator` 中执行
+
+```bash
+$ npm run tauri build
+```
+
+### Deploy with Netlify
+
+通过本按钮可直接一键部署至Netlify（本仓库已内置配置文件，**懒人专用**)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cyanial/genshin-impact-picker&base=Genshin-Impact-Wish-Simulator)
+
+
 ### Deploy with Vercel
 
 **暂未测试效果**
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/cyanial/genshin-impact-picker)
 
-部署成功后，点击 `Settings-General` , 将 `Build & Development Settings` 下的 `Output Directory` 设置为 `.vercel/static`，将 `Root Directory` 设置为 `Genshin-Impact-Wish-Simulator`。回到 `Deployments` 下，点击当前部署最右侧的三个点，选择 `Redeploy`，等待部署完成后访问 Vercel 提供的域名即可使用。
+部署成功后，点击 `Settings-General` , 将 `Build & Development Settings` 下的 ~~`Output Directory` 设置为 `.vercel/static`，(Vercel自己会设置的)~~ 将 `Root Directory` 设置为 `Genshin-Impact-Wish-Simulator`。回到 `Deployments` 下，点击当前部署最右侧的三个点，选择 `Redeploy`，等待部署完成后访问 Vercel 提供的域名即可使用。
