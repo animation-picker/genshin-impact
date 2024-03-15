@@ -7,7 +7,7 @@
     "distDir": "../.vercel/output/static"
   },
   "package": {
-    "productName": "genshin-impact",
+    "productName": "genish-impact",
     "version": "0.1.0"
   },
   "tauri": {
@@ -69,7 +69,7 @@
         "height": 1000,
         "decorations": true,
         "resizable": true,
-        "title": "WishSimulator",
+        "title": "Genshin-picker",
         "width": 1600
       }
     ]
