@@ -19,7 +19,8 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"tauri": "tauri"
 	},
 	"type": "module",
 	"devDependencies": {
@@ -46,7 +47,8 @@
 		"workbox-cacheable-response": "^6.5.4",
 		"workbox-core": "^6.5.4",
 		"workbox-precaching": "^6.5.4",
-		"workbox-routing": "^6.5.4"
+		"workbox-routing": "^6.5.4",
+		"@tauri-apps/cli": "^1"
 	},
 	"dependencies": {
 		"file-saver": "^2.0.5",
@@ -57,6 +59,7 @@
 		"idb": "^6.1.2",
 		"overlayscrollbars": "^1.13.1",
 		"svelte-i18n": "^3.4.0",
-		"zoomist": "^2.0.10"
+		"zoomist": "^2.0.10",
+		"@tauri-apps/api": "^1"
 	}
 }
