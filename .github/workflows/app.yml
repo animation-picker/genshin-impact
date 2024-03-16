@@ -8,7 +8,15 @@ on:
       - main # default branch
     paths:
       - electron-static/**/**
-      - Genshin-Impact-Wish-Simulator/**/**
+      - Genshin-Impact-Wish-Simulator/src/**/**
+      - Genshin-Impact-Wish-Simulator/src-tauri/**/**
+ pull_request:
+    branches:
+      - main # default branch
+    paths:
+      - electron-static/**/**
+      - Genshin-Impact-Wish-Simulator/src-tauri/**/**
+
 
 jobs:
   Page:
