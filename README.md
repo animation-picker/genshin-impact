@@ -16,7 +16,7 @@
 ```shell
    docker run -d --name ysdm \
       -p 8000:80 \
-      maizig/ysdm:1.0.0
+      maizig/ysdm:1.1.0
 ```
  > 运行成功后，宿主机映射地址为 `http://localhost:8000`，使用 Nginx / Apache 进行反代是一个不错的选择（以及 SSL 配置）
 
