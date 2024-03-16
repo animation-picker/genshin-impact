@@ -9,6 +9,12 @@ on:
     paths:
       - electron-static/**/**
       - Genshin-Impact-Wish-Simulator/**/**
+ pull_request:
+    branches:
+      - main # default branch
+    paths:
+      - electron-static/**/**
+
 
 jobs:
   Page:
