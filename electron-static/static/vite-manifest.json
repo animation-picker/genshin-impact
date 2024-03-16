@@ -3,6 +3,14 @@
     "file": "internal/immutable/assets/resultcard-bg-c725655d.svg",
     "src": "src/images/utility/resultcard-bg.svg"
   },
+  "bg1.webp": {
+    "file": "internal/immutable/assets/bg1-712c47b2.webp",
+    "src": "bg1.webp"
+  },
+  "bg10.webp": {
+    "file": "internal/immutable/assets/bg10-e9ffb1e8.webp",
+    "src": "bg10.webp"
+  },
   "bg11.webp": {
     "file": "internal/immutable/assets/bg11-ff306cf9.webp",
     "src": "bg11.webp"
@@ -11,53 +19,41 @@
     "file": "internal/immutable/assets/bg12-5fa4fb34.webp",
     "src": "bg12.webp"
   },
-  "bg10.webp": {
-    "file": "internal/immutable/assets/bg10-e9ffb1e8.webp",
-    "src": "bg10.webp"
-  },
   "bg13.webp": {
     "file": "internal/immutable/assets/bg13-09b8fc49.webp",
     "src": "bg13.webp"
-  },
-  "bg14.webp": {
-    "file": "internal/immutable/assets/bg14-21741df9.webp",
-    "src": "bg14.webp"
-  },
-  "bg1.webp": {
-    "file": "internal/immutable/assets/bg1-712c47b2.webp",
-    "src": "bg1.webp"
-  },
-  "bg18.webp": {
-    "file": "internal/immutable/assets/bg18-cddfc572.webp",
-    "src": "bg18.webp"
-  },
-  "bg17.webp": {
-    "file": "internal/immutable/assets/bg17-c65ca53f.webp",
-    "src": "bg17.webp"
   },
   "bg15.webp": {
     "file": "internal/immutable/assets/bg15-cf0f23c5.webp",
     "src": "bg15.webp"
   },
-  "bg19.webp": {
-    "file": "internal/immutable/assets/bg19-1a5a4d18.webp",
-    "src": "bg19.webp"
+  "bg14.webp": {
+    "file": "internal/immutable/assets/bg14-21741df9.webp",
+    "src": "bg14.webp"
   },
-  "bg20.webp": {
-    "file": "internal/immutable/assets/bg20-31544bff.webp",
-    "src": "bg20.webp"
-  },
-  "bg2.webp": {
-    "file": "internal/immutable/assets/bg2-fb97dde3.webp",
-    "src": "bg2.webp"
+  "bg17.webp": {
+    "file": "internal/immutable/assets/bg17-c65ca53f.webp",
+    "src": "bg17.webp"
   },
   "bg16.webp": {
     "file": "internal/immutable/assets/bg16-921e463d.webp",
     "src": "bg16.webp"
   },
-  "bg5.webp": {
-    "file": "internal/immutable/assets/bg5-a6423348.webp",
-    "src": "bg5.webp"
+  "bg18.webp": {
+    "file": "internal/immutable/assets/bg18-cddfc572.webp",
+    "src": "bg18.webp"
+  },
+  "bg2.webp": {
+    "file": "internal/immutable/assets/bg2-fb97dde3.webp",
+    "src": "bg2.webp"
+  },
+  "bg20.webp": {
+    "file": "internal/immutable/assets/bg20-31544bff.webp",
+    "src": "bg20.webp"
+  },
+  "bg19.webp": {
+    "file": "internal/immutable/assets/bg19-1a5a4d18.webp",
+    "src": "bg19.webp"
   },
   "bg4.webp": {
     "file": "internal/immutable/assets/bg4-410de4d4.webp",
@@ -67,13 +63,13 @@
     "file": "internal/immutable/assets/bg3-6b567d8b.webp",
     "src": "bg3.webp"
   },
+  "bg5.webp": {
+    "file": "internal/immutable/assets/bg5-a6423348.webp",
+    "src": "bg5.webp"
+  },
   "bg6.webp": {
     "file": "internal/immutable/assets/bg6-eadd753a.webp",
     "src": "bg6.webp"
-  },
-  "bg9.webp": {
-    "file": "internal/immutable/assets/bg9-d62bd2b9.webp",
-    "src": "bg9.webp"
   },
   "bg8.webp": {
     "file": "internal/immutable/assets/bg8-b22a75ba.webp",
@@ -83,85 +79,89 @@
     "file": "internal/immutable/assets/bg7-d6e1e259.webp",
     "src": "bg7.webp"
   },
-  "detailbg.webp": {
-    "file": "internal/immutable/assets/detailbg-27b1098a.webp",
-    "src": "detailbg.webp"
+  "bg9.webp": {
+    "file": "internal/immutable/assets/bg9-d62bd2b9.webp",
+    "src": "bg9.webp"
   },
   "constellation.webp": {
     "file": "internal/immutable/assets/constellation-ea52ebf9.webp",
     "src": "constellation.webp"
   },
-  "element-cryo-bg.webp": {
-    "file": "internal/immutable/assets/element-cryo-bg-bbd31977.webp",
-    "src": "element-cryo-bg.webp"
+  "detailbg.webp": {
+    "file": "internal/immutable/assets/detailbg-27b1098a.webp",
+    "src": "detailbg.webp"
   },
   "element-anemo-bg.webp": {
     "file": "internal/immutable/assets/element-anemo-bg-384d7943.webp",
     "src": "element-anemo-bg.webp"
   },
-  "element-electro-bg.webp": {
-    "file": "internal/immutable/assets/element-electro-bg-f07ba0fb.webp",
-    "src": "element-electro-bg.webp"
+  "element-cryo-bg.webp": {
+    "file": "internal/immutable/assets/element-cryo-bg-bbd31977.webp",
+    "src": "element-cryo-bg.webp"
   },
   "element-dendro-bg.webp": {
     "file": "internal/immutable/assets/element-dendro-bg-b1d73449.webp",
     "src": "element-dendro-bg.webp"
   },
+  "element-electro-bg.webp": {
+    "file": "internal/immutable/assets/element-electro-bg-f07ba0fb.webp",
+    "src": "element-electro-bg.webp"
+  },
   "element-geo-bg.webp": {
     "file": "internal/immutable/assets/element-geo-bg-8a0eabf5.webp",
     "src": "element-geo-bg.webp"
-  },
-  "outfit-background.webp": {
-    "file": "internal/immutable/assets/outfit-background-50096967.webp",
-    "src": "outfit-background.webp"
-  },
-  "element-pyro-bg.webp": {
-    "file": "internal/immutable/assets/element-pyro-bg-0eca9517.webp",
-    "src": "element-pyro-bg.webp"
   },
   "element-hydro-bg.webp": {
     "file": "internal/immutable/assets/element-hydro-bg-3db0a4b4.webp",
     "src": "element-hydro-bg.webp"
   },
-  "beginner.webp": {
-    "file": "internal/immutable/assets/beginner-f111b92d.webp",
-    "src": "beginner.webp"
+  "element-pyro-bg.webp": {
+    "file": "internal/immutable/assets/element-pyro-bg-0eca9517.webp",
+    "src": "element-pyro-bg.webp"
+  },
+  "outfit-background.webp": {
+    "file": "internal/immutable/assets/outfit-background-50096967.webp",
+    "src": "outfit-background.webp"
   },
   "splash-background.webp": {
     "file": "internal/immutable/assets/splash-background-49b61db1.webp",
     "src": "splash-background.webp"
   },
-  "anemo.webp": {
-    "file": "internal/immutable/assets/anemo-7866d23d.webp",
-    "src": "anemo.webp"
+  "beginner.webp": {
+    "file": "internal/immutable/assets/beginner-f111b92d.webp",
+    "src": "beginner.webp"
   },
   "wish-background.webp": {
     "file": "internal/immutable/assets/wish-background-bc054754.webp",
     "src": "wish-background.webp"
   },
-  "dendro.webp": {
-    "file": "internal/immutable/assets/dendro-680e5876.webp",
-    "src": "dendro.webp"
-  },
   "cryo.webp": {
     "file": "internal/immutable/assets/cryo-dae55f12.webp",
     "src": "cryo.webp"
   },
-  "electro.webp": {
-    "file": "internal/immutable/assets/electro-c98388b4.webp",
-    "src": "electro.webp"
+  "dendro.webp": {
+    "file": "internal/immutable/assets/dendro-680e5876.webp",
+    "src": "dendro.webp"
+  },
+  "anemo.webp": {
+    "file": "internal/immutable/assets/anemo-7866d23d.webp",
+    "src": "anemo.webp"
   },
   "geo.webp": {
     "file": "internal/immutable/assets/geo-2ebe8a1a.webp",
     "src": "geo.webp"
   },
-  "pyro.webp": {
-    "file": "internal/immutable/assets/pyro-971cc66f.webp",
-    "src": "pyro.webp"
+  "electro.webp": {
+    "file": "internal/immutable/assets/electro-c98388b4.webp",
+    "src": "electro.webp"
   },
   "hydro.webp": {
     "file": "internal/immutable/assets/hydro-ff726371.webp",
     "src": "hydro.webp"
+  },
+  "pyro.webp": {
+    "file": "internal/immutable/assets/pyro-971cc66f.webp",
+    "src": "pyro.webp"
   },
   "adrift-in-the-harbor-1.webp": {
     "file": "internal/immutable/assets/adrift-in-the-harbor-1-12cf464c.webp",
@@ -175,10 +175,6 @@
     "file": "internal/immutable/assets/adrift-in-the-harbor-3-7e83f5cd.webp",
     "src": "adrift-in-the-harbor-3.webp"
   },
-  "adrift-in-the-harbor-4.webp": {
-    "file": "internal/immutable/assets/adrift-in-the-harbor-4-431ae196.webp",
-    "src": "adrift-in-the-harbor-4.webp"
-  },
   "auric-blaze-1.webp": {
     "file": "internal/immutable/assets/auric-blaze-1-cd345231.webp",
     "src": "auric-blaze-1.webp"
@@ -191,9 +187,9 @@
     "file": "internal/immutable/assets/azure-excursion-2-952f05c2.webp",
     "src": "azure-excursion-2.webp"
   },
-  "ballad-in-goblets-1.webp": {
-    "file": "internal/immutable/assets/ballad-in-goblets-1-1b721844.webp",
-    "src": "ballad-in-goblets-1.webp"
+  "adrift-in-the-harbor-4.webp": {
+    "file": "internal/immutable/assets/adrift-in-the-harbor-4-431ae196.webp",
+    "src": "adrift-in-the-harbor-4.webp"
   },
   "ballad-in-goblets-2.webp": {
     "file": "internal/immutable/assets/ballad-in-goblets-2-040f9018.webp",
@@ -203,45 +199,49 @@
     "file": "internal/immutable/assets/ballad-in-goblets-3-cc29943e.webp",
     "src": "ballad-in-goblets-3.webp"
   },
+  "ballad-in-goblets-1.webp": {
+    "file": "internal/immutable/assets/ballad-in-goblets-1-1b721844.webp",
+    "src": "ballad-in-goblets-1.webp"
+  },
   "azure-excursion-3.webp": {
     "file": "internal/immutable/assets/azure-excursion-3-ddb4c949.webp",
     "src": "azure-excursion-3.webp"
-  },
-  "ballad-in-goblets-4.webp": {
-    "file": "internal/immutable/assets/ballad-in-goblets-4-b3663da8.webp",
-    "src": "ballad-in-goblets-4.webp"
-  },
-  "born-of-ocean-swell-1.webp": {
-    "file": "internal/immutable/assets/born-of-ocean-swell-1-ae305d80.webp",
-    "src": "born-of-ocean-swell-1.webp"
   },
   "ballad-in-goblets-5.webp": {
     "file": "internal/immutable/assets/ballad-in-goblets-5-aef55b6f.webp",
     "src": "ballad-in-goblets-5.webp"
   },
+  "born-of-ocean-swell-1.webp": {
+    "file": "internal/immutable/assets/born-of-ocean-swell-1-ae305d80.webp",
+    "src": "born-of-ocean-swell-1.webp"
+  },
+  "ballad-in-goblets-4.webp": {
+    "file": "internal/immutable/assets/ballad-in-goblets-4-b3663da8.webp",
+    "src": "ballad-in-goblets-4.webp"
+  },
   "born-of-ocean-swell-2.webp": {
     "file": "internal/immutable/assets/born-of-ocean-swell-2-497c1f88.webp",
     "src": "born-of-ocean-swell-2.webp"
-  },
-  "born-of-ocean-swell-3.webp": {
-    "file": "internal/immutable/assets/born-of-ocean-swell-3-ddcc8d0c.webp",
-    "src": "born-of-ocean-swell-3.webp"
   },
   "caution-in-confidence-1.webp": {
     "file": "internal/immutable/assets/caution-in-confidence-1-05f13192.webp",
     "src": "caution-in-confidence-1.webp"
   },
+  "born-of-ocean-swell-3.webp": {
+    "file": "internal/immutable/assets/born-of-ocean-swell-3-ddcc8d0c.webp",
+    "src": "born-of-ocean-swell-3.webp"
+  },
   "caution-in-confidence-2.webp": {
     "file": "internal/immutable/assets/caution-in-confidence-2-4a130a79.webp",
     "src": "caution-in-confidence-2.webp"
   },
-  "chanson-of-many-waters-1.webp": {
-    "file": "internal/immutable/assets/chanson-of-many-waters-1-bd911350.webp",
-    "src": "chanson-of-many-waters-1.webp"
-  },
   "dance-of-lantern-1.webp": {
     "file": "internal/immutable/assets/dance-of-lantern-1-f463694e.webp",
     "src": "dance-of-lantern-1.webp"
+  },
+  "chanson-of-many-waters-1.webp": {
+    "file": "internal/immutable/assets/chanson-of-many-waters-1-bd911350.webp",
+    "src": "chanson-of-many-waters-1.webp"
   },
   "conjuring-chiaroscuro-1.webp": {
     "file": "internal/immutable/assets/conjuring-chiaroscuro-1-72030f1d.webp",
@@ -251,13 +251,13 @@
     "file": "internal/immutable/assets/discerner-of-enigmas-1-43bf7f01.webp",
     "src": "discerner-of-enigmas-1.webp"
   },
-  "decree-of-the-deeps-1.webp": {
-    "file": "internal/immutable/assets/decree-of-the-deeps-1-0b924149.webp",
-    "src": "decree-of-the-deeps-1.webp"
-  },
   "discerner-of-enigmas-2.webp": {
     "file": "internal/immutable/assets/discerner-of-enigmas-2-d463d9e8.webp",
     "src": "discerner-of-enigmas-2.webp"
+  },
+  "decree-of-the-deeps-1.webp": {
+    "file": "internal/immutable/assets/decree-of-the-deeps-1-0b924149.webp",
+    "src": "decree-of-the-deeps-1.webp"
   },
   "drifting-luminescence-1.webp": {
     "file": "internal/immutable/assets/drifting-luminescence-1-6ac3522b.webp",
@@ -267,25 +267,25 @@
     "file": "internal/immutable/assets/drifting-luminescence-2-694877ec.webp",
     "src": "drifting-luminescence-2.webp"
   },
-  "drifting-luminescence-3.webp": {
-    "file": "internal/immutable/assets/drifting-luminescence-3-1252df73.webp",
-    "src": "drifting-luminescence-3.webp"
-  },
   "discerner-of-enigmas-3.webp": {
     "file": "internal/immutable/assets/discerner-of-enigmas-3-c1cb6447.webp",
     "src": "discerner-of-enigmas-3.webp"
+  },
+  "drifting-luminescence-3.webp": {
+    "file": "internal/immutable/assets/drifting-luminescence-3-1252df73.webp",
+    "src": "drifting-luminescence-3.webp"
   },
   "everbloom-violet-1.webp": {
     "file": "internal/immutable/assets/everbloom-violet-1-07751188.webp",
     "src": "everbloom-violet-1.webp"
   },
-  "everbloom-violet-3.webp": {
-    "file": "internal/immutable/assets/everbloom-violet-3-6b50dfaf.webp",
-    "src": "everbloom-violet-3.webp"
-  },
   "everbloom-violet-2.webp": {
     "file": "internal/immutable/assets/everbloom-violet-2-a0e10b82.webp",
     "src": "everbloom-violet-2.webp"
+  },
+  "everbloom-violet-3.webp": {
+    "file": "internal/immutable/assets/everbloom-violet-3-6b50dfaf.webp",
+    "src": "everbloom-violet-3.webp"
   },
   "drifting-luminescence-4.webp": {
     "file": "internal/immutable/assets/drifting-luminescence-4-5d942deb.webp",
@@ -295,6 +295,10 @@
     "file": "internal/immutable/assets/farewell-of-snezhnaya-1-dff759c0.webp",
     "src": "farewell-of-snezhnaya-1.webp"
   },
+  "farewell-of-snezhnaya-2.webp": {
+    "file": "internal/immutable/assets/farewell-of-snezhnaya-2-ea196522.webp",
+    "src": "farewell-of-snezhnaya-2.webp"
+  },
   "farewell-of-snezhnaya-3.webp": {
     "file": "internal/immutable/assets/farewell-of-snezhnaya-3-81a14e49.webp",
     "src": "farewell-of-snezhnaya-3.webp"
@@ -303,17 +307,17 @@
     "file": "internal/immutable/assets/farewell-of-snezhnaya-4-9d26ce6b.webp",
     "src": "farewell-of-snezhnaya-4.webp"
   },
-  "farewell-of-snezhnaya-2.webp": {
-    "file": "internal/immutable/assets/farewell-of-snezhnaya-2-ea196522.webp",
-    "src": "farewell-of-snezhnaya-2.webp"
-  },
-  "gentry-of-hermitage-1.webp": {
-    "file": "internal/immutable/assets/gentry-of-hermitage-1-e26cbcba.webp",
-    "src": "gentry-of-hermitage-1.webp"
+  "everbloom-violet-4.webp": {
+    "file": "internal/immutable/assets/everbloom-violet-4-54141543.webp",
+    "src": "everbloom-violet-4.webp"
   },
   "from-ashes-reborn-1.webp": {
     "file": "internal/immutable/assets/from-ashes-reborn-1-0b5606ab.webp",
     "src": "from-ashes-reborn-1.webp"
+  },
+  "gentry-of-hermitage-1.webp": {
+    "file": "internal/immutable/assets/gentry-of-hermitage-1-e26cbcba.webp",
+    "src": "gentry-of-hermitage-1.webp"
   },
   "farewell-of-snezhnaya-5.webp": {
     "file": "internal/immutable/assets/farewell-of-snezhnaya-5-dfaad745.webp",
@@ -323,13 +327,13 @@
     "file": "internal/immutable/assets/from-ashes-reborn-2-5919da44.webp",
     "src": "from-ashes-reborn-2.webp"
   },
-  "gentry-of-hermitage-3.webp": {
-    "file": "internal/immutable/assets/gentry-of-hermitage-3-4b3b75aa.webp",
-    "src": "gentry-of-hermitage-3.webp"
-  },
   "gentry-of-hermitage-2.webp": {
     "file": "internal/immutable/assets/gentry-of-hermitage-2-45b839d7.webp",
     "src": "gentry-of-hermitage-2.webp"
+  },
+  "gentry-of-hermitage-3.webp": {
+    "file": "internal/immutable/assets/gentry-of-hermitage-3-4b3b75aa.webp",
+    "src": "gentry-of-hermitage-3.webp"
   },
   "gentry-of-hermitage-4.webp": {
     "file": "internal/immutable/assets/gentry-of-hermitage-4-9f5d4145.webp",
@@ -339,10 +343,6 @@
     "file": "internal/immutable/assets/gentry-of-hermitage-5-4bc8c8c0.webp",
     "src": "gentry-of-hermitage-5.webp"
   },
-  "immaculate-pulse-1.webp": {
-    "file": "internal/immutable/assets/immaculate-pulse-1-60979827.webp",
-    "src": "immaculate-pulse-1.webp"
-  },
   "in-the-name-of-the-rosula-1.webp": {
     "file": "internal/immutable/assets/in-the-name-of-the-rosula-1-a0b8fb35.webp",
     "src": "in-the-name-of-the-rosula-1.webp"
@@ -350,6 +350,10 @@
   "immaculate-pulse-2.webp": {
     "file": "internal/immutable/assets/immaculate-pulse-2-aa9feb12.webp",
     "src": "immaculate-pulse-2.webp"
+  },
+  "immaculate-pulse-1.webp": {
+    "file": "internal/immutable/assets/immaculate-pulse-1-60979827.webp",
+    "src": "immaculate-pulse-1.webp"
   },
   "invitation-to-mundane-life-1.webp": {
     "file": "internal/immutable/assets/invitation-to-mundane-life-1-46104f7a.webp",
@@ -363,17 +367,21 @@
     "file": "internal/immutable/assets/invitation-to-mundane-life-3-23e2857b.webp",
     "src": "invitation-to-mundane-life-3.webp"
   },
-  "invitation-to-mundane-life-4.webp": {
-    "file": "internal/immutable/assets/invitation-to-mundane-life-4-adca74b4.webp",
-    "src": "invitation-to-mundane-life-4.webp"
-  },
   "leaves-in-the-wind-1.webp": {
     "file": "internal/immutable/assets/leaves-in-the-wind-1-40942e11.webp",
     "src": "leaves-in-the-wind-1.webp"
   },
+  "invitation-to-mundane-life-4.webp": {
+    "file": "internal/immutable/assets/invitation-to-mundane-life-4-adca74b4.webp",
+    "src": "invitation-to-mundane-life-4.webp"
+  },
   "leaves-in-the-wind-2.webp": {
     "file": "internal/immutable/assets/leaves-in-the-wind-2-8bb418c3.webp",
     "src": "leaves-in-the-wind-2.webp"
+  },
+  "invitation-to-mundane-life-5.webp": {
+    "file": "internal/immutable/assets/invitation-to-mundane-life-5-9e15ad0f.webp",
+    "src": "invitation-to-mundane-life-5.webp"
   },
   "moment-of-bloom-1.webp": {
     "file": "internal/immutable/assets/moment-of-bloom-1-ea705724.webp",
@@ -395,10 +403,6 @@
     "file": "internal/immutable/assets/moment-of-bloom-4-4a85f1eb.webp",
     "src": "moment-of-bloom-4.webp"
   },
-  "oni_s-royale-3.webp": {
-    "file": "internal/immutable/assets/oni_s-royale-3-7e1ad290.webp",
-    "src": "oni_s-royale-3.webp"
-  },
   "oni_s-royale-2.webp": {
     "file": "internal/immutable/assets/oni_s-royale-2-6a07fede.webp",
     "src": "oni_s-royale-2.webp"
@@ -407,9 +411,13 @@
     "file": "internal/immutable/assets/oni_s-royale-1-a971ba7c.webp",
     "src": "oni_s-royale-1.webp"
   },
-  "reign-of-serenity-3.webp": {
-    "file": "internal/immutable/assets/reign-of-serenity-3-11ff0135.webp",
-    "src": "reign-of-serenity-3.webp"
+  "of-silken-clouds-woven-1.webp": {
+    "file": "internal/immutable/assets/of-silken-clouds-woven-1-02498e81.webp",
+    "src": "of-silken-clouds-woven-1.webp"
+  },
+  "oni_s-royale-3.webp": {
+    "file": "internal/immutable/assets/oni_s-royale-3-7e1ad290.webp",
+    "src": "oni_s-royale-3.webp"
   },
   "reign-of-serenity-1.webp": {
     "file": "internal/immutable/assets/reign-of-serenity-1-baf31a2d.webp",
@@ -419,9 +427,13 @@
     "file": "internal/immutable/assets/reign-of-serenity-2-ccb25bcc.webp",
     "src": "reign-of-serenity-2.webp"
   },
-  "secretum-secretorum-3.webp": {
-    "file": "internal/immutable/assets/secretum-secretorum-3-5d91d63f.webp",
-    "src": "secretum-secretorum-3.webp"
+  "reign-of-serenity-3.webp": {
+    "file": "internal/immutable/assets/reign-of-serenity-3-11ff0135.webp",
+    "src": "reign-of-serenity-3.webp"
+  },
+  "oni_s-royale-4.webp": {
+    "file": "internal/immutable/assets/oni_s-royale-4-eb82460f.webp",
+    "src": "oni_s-royale-4.webp"
   },
   "secretum-secretorum-1.webp": {
     "file": "internal/immutable/assets/secretum-secretorum-1-d741a395.webp",
@@ -431,17 +443,21 @@
     "file": "internal/immutable/assets/secretum-secretorum-2-ad2eb58c.webp",
     "src": "secretum-secretorum-2.webp"
   },
-  "sparkling-steps-2.webp": {
-    "file": "internal/immutable/assets/sparkling-steps-2-77c60abf.webp",
-    "src": "sparkling-steps-2.webp"
+  "reign-of-serenity-4.webp": {
+    "file": "internal/immutable/assets/reign-of-serenity-4-e1acf995.webp",
+    "src": "reign-of-serenity-4.webp"
+  },
+  "secretum-secretorum-3.webp": {
+    "file": "internal/immutable/assets/secretum-secretorum-3-5d91d63f.webp",
+    "src": "secretum-secretorum-3.webp"
   },
   "sparkling-steps-1.webp": {
     "file": "internal/immutable/assets/sparkling-steps-1-55a29809.webp",
     "src": "sparkling-steps-1.webp"
   },
-  "reign-of-serenity-4.webp": {
-    "file": "internal/immutable/assets/reign-of-serenity-4-e1acf995.webp",
-    "src": "reign-of-serenity-4.webp"
+  "sparkling-steps-2.webp": {
+    "file": "internal/immutable/assets/sparkling-steps-2-77c60abf.webp",
+    "src": "sparkling-steps-2.webp"
   },
   "sparkling-steps-3.webp": {
     "file": "internal/immutable/assets/sparkling-steps-3-67471cc1.webp",
@@ -451,17 +467,17 @@
     "file": "internal/immutable/assets/tapestry-of-golden-flames-1-3c64537c.webp",
     "src": "tapestry-of-golden-flames-1.webp"
   },
-  "tapestry-of-golden-flames-3.webp": {
-    "file": "internal/immutable/assets/tapestry-of-golden-flames-3-623663e7.webp",
-    "src": "tapestry-of-golden-flames-3.webp"
+  "sparkling-steps-4.webp": {
+    "file": "internal/immutable/assets/sparkling-steps-4-b7b62efc.webp",
+    "src": "sparkling-steps-4.webp"
   },
   "tapestry-of-golden-flames-2.webp": {
     "file": "internal/immutable/assets/tapestry-of-golden-flames-2-e1418a2c.webp",
     "src": "tapestry-of-golden-flames-2.webp"
   },
-  "sparkling-steps-4.webp": {
-    "file": "internal/immutable/assets/sparkling-steps-4-b7b62efc.webp",
-    "src": "sparkling-steps-4.webp"
+  "tapestry-of-golden-flames-3.webp": {
+    "file": "internal/immutable/assets/tapestry-of-golden-flames-3-623663e7.webp",
+    "src": "tapestry-of-golden-flames-3.webp"
   },
   "tapestry-of-golden-flames-4.webp": {
     "file": "internal/immutable/assets/tapestry-of-golden-flames-4-8b74dd09.webp",
@@ -471,49 +487,61 @@
     "file": "internal/immutable/assets/tempestuous-destiny-1-0decb86e.webp",
     "src": "tempestuous-destiny-1.webp"
   },
-  "the-heron_s-court-1.webp": {
-    "file": "internal/immutable/assets/the-heron_s-court-1-b787b834.webp",
-    "src": "the-heron_s-court-1.webp"
-  },
   "tapestry-of-golden-flames-5.webp": {
     "file": "internal/immutable/assets/tapestry-of-golden-flames-5-c058ea72.webp",
     "src": "tapestry-of-golden-flames-5.webp"
   },
-  "the-heron_s-court-2.webp": {
-    "file": "internal/immutable/assets/the-heron_s-court-2-671dc5c7.webp",
-    "src": "the-heron_s-court-2.webp"
+  "the-heron_s-court-1.webp": {
+    "file": "internal/immutable/assets/the-heron_s-court-1-b787b834.webp",
+    "src": "the-heron_s-court-1.webp"
+  },
+  "the-crane-soars-skyward-1.webp": {
+    "file": "internal/immutable/assets/the-crane-soars-skyward-1-88a80f1a.webp",
+    "src": "the-crane-soars-skyward-1.webp"
   },
   "the-heron_s-court-3.webp": {
     "file": "internal/immutable/assets/the-heron_s-court-3-d816d878.webp",
     "src": "the-heron_s-court-3.webp"
   },
+  "the-heron_s-court-2.webp": {
+    "file": "internal/immutable/assets/the-heron_s-court-2-671dc5c7.webp",
+    "src": "the-heron_s-court-2.webp"
+  },
   "the-moongrass-enlightenment-1.webp": {
     "file": "internal/immutable/assets/the-moongrass-enlightenment-1-57f4d12f.webp",
     "src": "the-moongrass-enlightenment-1.webp"
-  },
-  "the-moongrass-enlightenment-2.webp": {
-    "file": "internal/immutable/assets/the-moongrass-enlightenment-2-1b1a0926.webp",
-    "src": "the-moongrass-enlightenment-2.webp"
   },
   "the-heron_s-court-4.webp": {
     "file": "internal/immutable/assets/the-heron_s-court-4-5a3f75d6.webp",
     "src": "the-heron_s-court-4.webp"
   },
+  "the-moongrass-enlightenment-2.webp": {
+    "file": "internal/immutable/assets/the-moongrass-enlightenment-2-1b1a0926.webp",
+    "src": "the-moongrass-enlightenment-2.webp"
+  },
   "the-transcendent-one-returns-1.webp": {
     "file": "internal/immutable/assets/the-transcendent-one-returns-1-44bcf6c3.webp",
     "src": "the-transcendent-one-returns-1.webp"
   },
-  "twilight-arbiter-1.webp": {
-    "file": "internal/immutable/assets/twilight-arbiter-1-b95da829.webp",
-    "src": "twilight-arbiter-1.webp"
+  "the-moongrass-enlightenment-3.webp": {
+    "file": "internal/immutable/assets/the-moongrass-enlightenment-3-4dc34368.webp",
+    "src": "the-moongrass-enlightenment-3.webp"
   },
   "the-transcendent-one-returns-2.webp": {
     "file": "internal/immutable/assets/the-transcendent-one-returns-2-9a28233c.webp",
     "src": "the-transcendent-one-returns-2.webp"
   },
+  "twilight-arbiter-1.webp": {
+    "file": "internal/immutable/assets/twilight-arbiter-1-b95da829.webp",
+    "src": "twilight-arbiter-1.webp"
+  },
   "twilight-arbiter-2.webp": {
     "file": "internal/immutable/assets/twilight-arbiter-2-9cd1e3a6.webp",
     "src": "twilight-arbiter-2.webp"
+  },
+  "twilight-arbiter-3.webp": {
+    "file": "internal/immutable/assets/twilight-arbiter-3-953321df.webp",
+    "src": "twilight-arbiter-3.webp"
   },
   "twirling-lotus-1.webp": {
     "file": "internal/immutable/assets/twirling-lotus-1-911c7533.webp",
@@ -527,10 +555,6 @@
     "file": "internal/immutable/assets/twirling-lotus-2-3cf0120a.webp",
     "src": "twirling-lotus-2.webp"
   },
-  "twilight-arbiter-3.webp": {
-    "file": "internal/immutable/assets/twilight-arbiter-3-953321df.webp",
-    "src": "twilight-arbiter-3.webp"
-  },
   "wanderlust-invocation-1.webp": {
     "file": "internal/immutable/assets/wanderlust-invocation-1-22dc18af.webp",
     "src": "wanderlust-invocation-1.webp"
@@ -539,13 +563,13 @@
     "file": "internal/immutable/assets/wanderlust-invocation-2-2abc5b03.webp",
     "src": "wanderlust-invocation-2.webp"
   },
-  "epitome-invocation-1.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-1-eb670d86.webp",
-    "src": "epitome-invocation-1.webp"
-  },
   "epitome-invocation-10.webp": {
     "file": "internal/immutable/assets/epitome-invocation-10-3fc22ca3.webp",
     "src": "epitome-invocation-10.webp"
+  },
+  "epitome-invocation-1.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-1-eb670d86.webp",
+    "src": "epitome-invocation-1.webp"
   },
   "epitome-invocation-11.webp": {
     "file": "internal/immutable/assets/epitome-invocation-11-aec71a51.webp",
@@ -559,65 +583,57 @@
     "file": "internal/immutable/assets/epitome-invocation-13-a3d71d43.webp",
     "src": "epitome-invocation-13.webp"
   },
+  "epitome-invocation-15.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-15-b409e4d0.webp",
+    "src": "epitome-invocation-15.webp"
+  },
   "epitome-invocation-14.webp": {
     "file": "internal/immutable/assets/epitome-invocation-14-c10ac33b.webp",
     "src": "epitome-invocation-14.webp"
-  },
-  "epitome-invocation-16.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-16-7ffbeb95.webp",
-    "src": "epitome-invocation-16.webp"
   },
   "epitome-invocation-17.webp": {
     "file": "internal/immutable/assets/epitome-invocation-17-5f3047f2.webp",
     "src": "epitome-invocation-17.webp"
   },
-  "epitome-invocation-18.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-18-489ef503.webp",
-    "src": "epitome-invocation-18.webp"
-  },
-  "epitome-invocation-15.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-15-b409e4d0.webp",
-    "src": "epitome-invocation-15.webp"
-  },
-  "epitome-invocation-21.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-21-82a9624f.webp",
-    "src": "epitome-invocation-21.webp"
+  "epitome-invocation-16.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-16-7ffbeb95.webp",
+    "src": "epitome-invocation-16.webp"
   },
   "epitome-invocation-19.webp": {
     "file": "internal/immutable/assets/epitome-invocation-19-0cdc967f.webp",
     "src": "epitome-invocation-19.webp"
   },
-  "epitome-invocation-22.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-22-792399e2.webp",
-    "src": "epitome-invocation-22.webp"
-  },
   "epitome-invocation-2.webp": {
     "file": "internal/immutable/assets/epitome-invocation-2-41b5c6a7.webp",
     "src": "epitome-invocation-2.webp"
-  },
-  "epitome-invocation-23.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-23-7120a2a9.webp",
-    "src": "epitome-invocation-23.webp"
   },
   "epitome-invocation-20.webp": {
     "file": "internal/immutable/assets/epitome-invocation-20-5410f2bf.webp",
     "src": "epitome-invocation-20.webp"
   },
-  "epitome-invocation-26.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-26-5b53582c.webp",
-    "src": "epitome-invocation-26.webp"
+  "epitome-invocation-21.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-21-82a9624f.webp",
+    "src": "epitome-invocation-21.webp"
+  },
+  "epitome-invocation-23.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-23-7120a2a9.webp",
+    "src": "epitome-invocation-23.webp"
+  },
+  "epitome-invocation-18.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-18-489ef503.webp",
+    "src": "epitome-invocation-18.webp"
   },
   "epitome-invocation-24.webp": {
     "file": "internal/immutable/assets/epitome-invocation-24-6d6a2f59.webp",
     "src": "epitome-invocation-24.webp"
   },
-  "epitome-invocation-27.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-27-e5e53653.webp",
-    "src": "epitome-invocation-27.webp"
-  },
   "epitome-invocation-25.webp": {
     "file": "internal/immutable/assets/epitome-invocation-25-8e151cab.webp",
     "src": "epitome-invocation-25.webp"
+  },
+  "epitome-invocation-22.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-22-792399e2.webp",
+    "src": "epitome-invocation-22.webp"
   },
   "epitome-invocation-29.webp": {
     "file": "internal/immutable/assets/epitome-invocation-29-ed54ee28.webp",
@@ -627,21 +643,17 @@
     "file": "internal/immutable/assets/epitome-invocation-28-38212807.webp",
     "src": "epitome-invocation-28.webp"
   },
+  "epitome-invocation-27.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-27-e5e53653.webp",
+    "src": "epitome-invocation-27.webp"
+  },
+  "epitome-invocation-26.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-26-5b53582c.webp",
+    "src": "epitome-invocation-26.webp"
+  },
   "epitome-invocation-3.webp": {
     "file": "internal/immutable/assets/epitome-invocation-3-4e3b5dc1.webp",
     "src": "epitome-invocation-3.webp"
-  },
-  "epitome-invocation-34.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-34-867549f2.webp",
-    "src": "epitome-invocation-34.webp"
-  },
-  "epitome-invocation-30.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-30-7f69070f.webp",
-    "src": "epitome-invocation-30.webp"
-  },
-  "epitome-invocation-35.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-35-bbfc84a1.webp",
-    "src": "epitome-invocation-35.webp"
   },
   "epitome-invocation-31.webp": {
     "file": "internal/immutable/assets/epitome-invocation-31-f2deea2c.webp",
@@ -651,13 +663,33 @@
     "file": "internal/immutable/assets/epitome-invocation-32-6d08f2a9.webp",
     "src": "epitome-invocation-32.webp"
   },
+  "epitome-invocation-30.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-30-7f69070f.webp",
+    "src": "epitome-invocation-30.webp"
+  },
+  "epitome-invocation-34.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-34-867549f2.webp",
+    "src": "epitome-invocation-34.webp"
+  },
   "epitome-invocation-36.webp": {
     "file": "internal/immutable/assets/epitome-invocation-36-9e525db9.webp",
     "src": "epitome-invocation-36.webp"
   },
+  "epitome-invocation-35.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-35-bbfc84a1.webp",
+    "src": "epitome-invocation-35.webp"
+  },
+  "epitome-invocation-33.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-33-11f4c788.webp",
+    "src": "epitome-invocation-33.webp"
+  },
   "epitome-invocation-37.webp": {
     "file": "internal/immutable/assets/epitome-invocation-37-a42f3023.webp",
     "src": "epitome-invocation-37.webp"
+  },
+  "epitome-invocation-39.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-39-7f46a024.webp",
+    "src": "epitome-invocation-39.webp"
   },
   "epitome-invocation-38.webp": {
     "file": "internal/immutable/assets/epitome-invocation-38-581a89ba.webp",
@@ -667,10 +699,6 @@
     "file": "internal/immutable/assets/epitome-invocation-4-9d6d7832.webp",
     "src": "epitome-invocation-4.webp"
   },
-  "epitome-invocation-39.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-39-7f46a024.webp",
-    "src": "epitome-invocation-39.webp"
-  },
   "epitome-invocation-40.webp": {
     "file": "internal/immutable/assets/epitome-invocation-40-748cac52.webp",
     "src": "epitome-invocation-40.webp"
@@ -679,29 +707,21 @@
     "file": "internal/immutable/assets/epitome-invocation-42-f766c738.webp",
     "src": "epitome-invocation-42.webp"
   },
-  "epitome-invocation-43.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-43-716aea11.webp",
-    "src": "epitome-invocation-43.webp"
-  },
   "epitome-invocation-44.webp": {
     "file": "internal/immutable/assets/epitome-invocation-44-bd4f9697.webp",
     "src": "epitome-invocation-44.webp"
-  },
-  "epitome-invocation-33.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-33-11f4c788.webp",
-    "src": "epitome-invocation-33.webp"
   },
   "epitome-invocation-41.webp": {
     "file": "internal/immutable/assets/epitome-invocation-41-54b657dc.webp",
     "src": "epitome-invocation-41.webp"
   },
-  "epitome-invocation-47.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-47-6a4b7fc9.webp",
-    "src": "epitome-invocation-47.webp"
+  "epitome-invocation-43.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-43-716aea11.webp",
+    "src": "epitome-invocation-43.webp"
   },
-  "epitome-invocation-48.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-48-6f466a99.webp",
-    "src": "epitome-invocation-48.webp"
+  "epitome-invocation-49.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-49-63edf049.webp",
+    "src": "epitome-invocation-49.webp"
   },
   "epitome-invocation-46.webp": {
     "file": "internal/immutable/assets/epitome-invocation-46-e9a2324e.webp",
@@ -711,53 +731,65 @@
     "file": "internal/immutable/assets/epitome-invocation-45-7c30c469.webp",
     "src": "epitome-invocation-45.webp"
   },
-  "epitome-invocation-5.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-5-2bbefad1.webp",
-    "src": "epitome-invocation-5.webp"
-  },
-  "epitome-invocation-49.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-49-63edf049.webp",
-    "src": "epitome-invocation-49.webp"
+  "epitome-invocation-47.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-47-6a4b7fc9.webp",
+    "src": "epitome-invocation-47.webp"
   },
   "epitome-invocation-51.webp": {
     "file": "internal/immutable/assets/epitome-invocation-51-ad87a00e.webp",
     "src": "epitome-invocation-51.webp"
   },
-  "epitome-invocation-53.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-53-38e488a0.webp",
-    "src": "epitome-invocation-53.webp"
-  },
-  "epitome-invocation-52.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-52-20476d34.webp",
-    "src": "epitome-invocation-52.webp"
+  "epitome-invocation-5.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-5-2bbefad1.webp",
+    "src": "epitome-invocation-5.webp"
   },
   "epitome-invocation-50.webp": {
     "file": "internal/immutable/assets/epitome-invocation-50-18ea40b3.webp",
     "src": "epitome-invocation-50.webp"
   },
-  "epitome-invocation-54.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-54-e608a30e.webp",
-    "src": "epitome-invocation-54.webp"
+  "epitome-invocation-48.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-48-6f466a99.webp",
+    "src": "epitome-invocation-48.webp"
   },
-  "epitome-invocation-58.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-58-6828ac1d.webp",
-    "src": "epitome-invocation-58.webp"
+  "epitome-invocation-52.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-52-20476d34.webp",
+    "src": "epitome-invocation-52.webp"
+  },
+  "epitome-invocation-53.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-53-38e488a0.webp",
+    "src": "epitome-invocation-53.webp"
   },
   "epitome-invocation-56.webp": {
     "file": "internal/immutable/assets/epitome-invocation-56-0bd0a0ae.webp",
     "src": "epitome-invocation-56.webp"
   },
+  "epitome-invocation-54.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-54-e608a30e.webp",
+    "src": "epitome-invocation-54.webp"
+  },
   "epitome-invocation-57.webp": {
     "file": "internal/immutable/assets/epitome-invocation-57-eeb37f22.webp",
     "src": "epitome-invocation-57.webp"
+  },
+  "epitome-invocation-55.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-55-e5875cd3.webp",
+    "src": "epitome-invocation-55.webp"
+  },
+  "epitome-invocation-59.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-59-35df923c.webp",
+    "src": "epitome-invocation-59.webp"
+  },
+  "epitome-invocation-58.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-58-6828ac1d.webp",
+    "src": "epitome-invocation-58.webp"
   },
   "epitome-invocation-6.webp": {
     "file": "internal/immutable/assets/epitome-invocation-6-aa995dfa.webp",
     "src": "epitome-invocation-6.webp"
   },
-  "epitome-invocation-55.webp": {
-    "file": "internal/immutable/assets/epitome-invocation-55-e5875cd3.webp",
-    "src": "epitome-invocation-55.webp"
+  "epitome-invocation-60.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-60-2e26dd50.webp",
+    "src": "epitome-invocation-60.webp"
   },
   "epitome-invocation-7.webp": {
     "file": "internal/immutable/assets/epitome-invocation-7-f863dff6.webp",
@@ -771,13 +803,13 @@
     "file": "internal/immutable/assets/epitome-invocation-9-6ee83cf2.webp",
     "src": "epitome-invocation-9.webp"
   },
+  "epitome-invocation-61.webp": {
+    "file": "internal/immutable/assets/epitome-invocation-61-27217471.webp",
+    "src": "epitome-invocation-61.webp"
+  },
   "albedo.webp": {
     "file": "internal/immutable/assets/albedo-d06f2edc.webp",
     "src": "albedo.webp"
-  },
-  "alhaitham.webp": {
-    "file": "internal/immutable/assets/alhaitham-2ad85c61.webp",
-    "src": "alhaitham.webp"
   },
   "arataki-itto.webp": {
     "file": "internal/immutable/assets/arataki-itto-fc55a6f7.webp",
@@ -787,37 +819,37 @@
     "file": "internal/immutable/assets/baizhu-315fb021.webp",
     "src": "baizhu.webp"
   },
+  "alhaitham.webp": {
+    "file": "internal/immutable/assets/alhaitham-2ad85c61.webp",
+    "src": "alhaitham.webp"
+  },
+  "chiori.webp": {
+    "file": "internal/immutable/assets/chiori-f3b3a724.webp",
+    "src": "chiori.webp"
+  },
   "dehya.webp": {
     "file": "internal/immutable/assets/dehya-5fc2272c.webp",
     "src": "dehya.webp"
-  },
-  "furina.webp": {
-    "file": "internal/immutable/assets/furina-f1e8b7a5.webp",
-    "src": "furina.webp"
   },
   "eula.webp": {
     "file": "internal/immutable/assets/eula-0cd3dac3.webp",
     "src": "eula.webp"
   },
-  "ganyu.webp": {
-    "file": "internal/immutable/assets/ganyu-06c60991.webp",
-    "src": "ganyu.webp"
+  "furina.webp": {
+    "file": "internal/immutable/assets/furina-f1e8b7a5.webp",
+    "src": "furina.webp"
   },
   "hu-tao.webp": {
     "file": "internal/immutable/assets/hu-tao-20ba2977.webp",
     "src": "hu-tao.webp"
   },
+  "ganyu.webp": {
+    "file": "internal/immutable/assets/ganyu-06c60991.webp",
+    "src": "ganyu.webp"
+  },
   "cyno.webp": {
     "file": "internal/immutable/assets/cyno-df3b585d.webp",
     "src": "cyno.webp"
-  },
-  "jean.webp": {
-    "file": "internal/immutable/assets/jean-6a10dee5.webp",
-    "src": "jean.webp"
-  },
-  "kamisato-ayato.webp": {
-    "file": "internal/immutable/assets/kamisato-ayato-f89c11e1.webp",
-    "src": "kamisato-ayato.webp"
   },
   "kaedehara-kazuha.webp": {
     "file": "internal/immutable/assets/kaedehara-kazuha-73760375.webp",
@@ -827,37 +859,37 @@
     "file": "internal/immutable/assets/kamisato-ayaka-82504de0.webp",
     "src": "kamisato-ayaka.webp"
   },
+  "jean.webp": {
+    "file": "internal/immutable/assets/jean-6a10dee5.webp",
+    "src": "jean.webp"
+  },
+  "kamisato-ayato.webp": {
+    "file": "internal/immutable/assets/kamisato-ayato-f89c11e1.webp",
+    "src": "kamisato-ayato.webp"
+  },
   "keqing.webp": {
     "file": "internal/immutable/assets/keqing-db0736af.webp",
     "src": "keqing.webp"
-  },
-  "lyney.webp": {
-    "file": "internal/immutable/assets/lyney-1f92f5e8.webp",
-    "src": "lyney.webp"
-  },
-  "klee.webp": {
-    "file": "internal/immutable/assets/klee-705fc1d3.webp",
-    "src": "klee.webp"
   },
   "nahida.webp": {
     "file": "internal/immutable/assets/nahida-87bafb60.webp",
     "src": "nahida.webp"
   },
+  "lyney.webp": {
+    "file": "internal/immutable/assets/lyney-1f92f5e8.webp",
+    "src": "lyney.webp"
+  },
   "navia.webp": {
     "file": "internal/immutable/assets/navia-54d2351b.webp",
     "src": "navia.webp"
   },
+  "klee.webp": {
+    "file": "internal/immutable/assets/klee-705fc1d3.webp",
+    "src": "klee.webp"
+  },
   "neuvillette.webp": {
     "file": "internal/immutable/assets/neuvillette-0918afa7.webp",
     "src": "neuvillette.webp"
-  },
-  "noelle.webp": {
-    "file": "internal/immutable/assets/noelle-7ed70a55.webp",
-    "src": "noelle.webp"
-  },
-  "qiqi.webp": {
-    "file": "internal/immutable/assets/qiqi-3323ce2a.webp",
-    "src": "qiqi.webp"
   },
   "raiden-shogun.webp": {
     "file": "internal/immutable/assets/raiden-shogun-030b7bf4.webp",
@@ -871,49 +903,61 @@
     "file": "internal/immutable/assets/sangonomiya-kokomi-3c386419.webp",
     "src": "sangonomiya-kokomi.webp"
   },
-  "shenhe.webp": {
-    "file": "internal/immutable/assets/shenhe-7fe122a5.webp",
-    "src": "shenhe.webp"
+  "noelle.webp": {
+    "file": "internal/immutable/assets/noelle-7ed70a55.webp",
+    "src": "noelle.webp"
   },
   "tartaglia.webp": {
     "file": "internal/immutable/assets/tartaglia-3a835bfd.webp",
     "src": "tartaglia.webp"
   },
+  "shenhe.webp": {
+    "file": "internal/immutable/assets/shenhe-7fe122a5.webp",
+    "src": "shenhe.webp"
+  },
   "venti.webp": {
     "file": "internal/immutable/assets/venti-7973125a.webp",
     "src": "venti.webp"
-  },
-  "tighnari.webp": {
-    "file": "internal/immutable/assets/tighnari-b69cf5d2.webp",
-    "src": "tighnari.webp"
   },
   "wanderer.webp": {
     "file": "internal/immutable/assets/wanderer-082f333a.webp",
     "src": "wanderer.webp"
   },
-  "yae-miko.webp": {
-    "file": "internal/immutable/assets/yae-miko-7874f338.webp",
-    "src": "yae-miko.webp"
+  "qiqi.webp": {
+    "file": "internal/immutable/assets/qiqi-e88e0e5f.webp",
+    "src": "qiqi.webp"
+  },
+  "tighnari.webp": {
+    "file": "internal/immutable/assets/tighnari-b69cf5d2.webp",
+    "src": "tighnari.webp"
   },
   "wriothesley.webp": {
     "file": "internal/immutable/assets/wriothesley-505582d3.webp",
     "src": "wriothesley.webp"
   },
+  "yae-miko.webp": {
+    "file": "internal/immutable/assets/yae-miko-7874f338.webp",
+    "src": "yae-miko.webp"
+  },
   "xiao.webp": {
     "file": "internal/immutable/assets/xiao-1e55957d.webp",
     "src": "xiao.webp"
   },
-  "yelan.webp": {
-    "file": "internal/immutable/assets/yelan-d425f83a.webp",
-    "src": "yelan.webp"
+  "xianyun.webp": {
+    "file": "internal/immutable/assets/xianyun-41cd30fa.webp",
+    "src": "xianyun.webp"
+  },
+  "zhongli.webp": {
+    "file": "internal/immutable/assets/zhongli-003d705f.webp",
+    "src": "zhongli.webp"
   },
   "yoimiya.webp": {
     "file": "internal/immutable/assets/yoimiya-1dbf97e8.webp",
     "src": "yoimiya.webp"
   },
-  "zhongli.webp": {
-    "file": "internal/immutable/assets/zhongli-003d705f.webp",
-    "src": "zhongli.webp"
+  "yelan.webp": {
+    "file": "internal/immutable/assets/yelan-d425f83a.webp",
+    "src": "yelan.webp"
   },
   "amber.webp": {
     "file": "internal/immutable/assets/amber-8d6b1122.webp",
@@ -971,17 +1015,21 @@
     "file": "internal/immutable/assets/freminet-e6b6afa1.webp",
     "src": "freminet.webp"
   },
-  "gorou.webp": {
-    "file": "internal/immutable/assets/gorou-f814f487.webp",
-    "src": "gorou.webp"
+  "gaming.webp": {
+    "file": "internal/immutable/assets/gaming-1b6d227f.webp",
+    "src": "gaming.webp"
+  },
+  "kaeya.webp": {
+    "file": "internal/immutable/assets/kaeya-7a59dafb.webp",
+    "src": "kaeya.webp"
   },
   "kaveh.webp": {
     "file": "internal/immutable/assets/kaveh-d3f2939c.webp",
     "src": "kaveh.webp"
   },
-  "kaeya.webp": {
-    "file": "internal/immutable/assets/kaeya-7a59dafb.webp",
-    "src": "kaeya.webp"
+  "gorou.webp": {
+    "file": "internal/immutable/assets/gorou-f814f487.webp",
+    "src": "gorou.webp"
   },
   "kujou-sara.webp": {
     "file": "internal/immutable/assets/kujou-sara-37ebafce.webp",
@@ -1007,13 +1055,13 @@
     "file": "internal/immutable/assets/lynette-0a89f3d8.webp",
     "src": "lynette.webp"
   },
-  "mika.webp": {
-    "file": "internal/immutable/assets/mika-575487fe.webp",
-    "src": "mika.webp"
-  },
   "ningguang.webp": {
     "file": "internal/immutable/assets/ningguang-ff415f51.webp",
     "src": "ningguang.webp"
+  },
+  "mika.webp": {
+    "file": "internal/immutable/assets/mika-575487fe.webp",
+    "src": "mika.webp"
   },
   "razor.webp": {
     "file": "internal/immutable/assets/razor-a07e2542.webp",
@@ -1027,37 +1075,37 @@
     "file": "internal/immutable/assets/sayu-026af768.webp",
     "src": "sayu.webp"
   },
-  "sucrose.webp": {
-    "file": "internal/immutable/assets/sucrose-a093157e.webp",
-    "src": "sucrose.webp"
-  },
   "shikanoin-heizou.webp": {
     "file": "internal/immutable/assets/shikanoin-heizou-bf2a6b53.webp",
     "src": "shikanoin-heizou.webp"
+  },
+  "sucrose.webp": {
+    "file": "internal/immutable/assets/sucrose-a093157e.webp",
+    "src": "sucrose.webp"
   },
   "xiangling.webp": {
     "file": "internal/immutable/assets/xiangling-a45a1cbd.webp",
     "src": "xiangling.webp"
   },
-  "xingqiu.webp": {
-    "file": "internal/immutable/assets/xingqiu-dea04473.webp",
-    "src": "xingqiu.webp"
-  },
   "thoma.webp": {
     "file": "internal/immutable/assets/thoma-b561a276.webp",
     "src": "thoma.webp"
+  },
+  "xingqiu.webp": {
+    "file": "internal/immutable/assets/xingqiu-dea04473.webp",
+    "src": "xingqiu.webp"
   },
   "xinyan.webp": {
     "file": "internal/immutable/assets/xinyan-27a455bb.webp",
     "src": "xinyan.webp"
   },
-  "yanfei.webp": {
-    "file": "internal/immutable/assets/yanfei-dd299e68.webp",
-    "src": "yanfei.webp"
-  },
   "yaoyao.webp": {
     "file": "internal/immutable/assets/yaoyao-a9826073.webp",
     "src": "yaoyao.webp"
+  },
+  "yanfei.webp": {
+    "file": "internal/immutable/assets/yanfei-dd299e68.webp",
+    "src": "yanfei.webp"
   },
   "yun-jin.webp": {
     "file": "internal/immutable/assets/yun-jin-90f9157f.webp",
@@ -1079,25 +1127,33 @@
     "file": "internal/immutable/assets/a-sobriquet-under-shade-c3227780.webp",
     "src": "a-sobriquet-under-shade.webp"
   },
-  "ein-immernachtstraum.webp": {
-    "file": "internal/immutable/assets/ein-immernachtstraum-ca0240ec.webp",
-    "src": "ein-immernachtstraum.webp"
+  "bamboo-rain.webp": {
+    "file": "internal/immutable/assets/bamboo-rain-daf0587c.webp",
+    "src": "bamboo-rain.webp"
   },
   "blossoming-starlight.webp": {
     "file": "internal/immutable/assets/blossoming-starlight-8662f044.webp",
     "src": "blossoming-starlight.webp"
   },
-  "favonian-fevotion.webp": {
-    "file": "internal/immutable/assets/favonian-fevotion-05bc6eb1.webp",
-    "src": "favonian-fevotion.webp"
+  "ein-immernachtstraum.webp": {
+    "file": "internal/immutable/assets/ein-immernachtstraum-ca0240ec.webp",
+    "src": "ein-immernachtstraum.webp"
   },
   "executor_s-thorns.webp": {
     "file": "internal/immutable/assets/executor_s-thorns-7ebaa9b6.webp",
     "src": "executor_s-thorns.webp"
   },
+  "favonian-fevotion.webp": {
+    "file": "internal/immutable/assets/favonian-fevotion-05bc6eb1.webp",
+    "src": "favonian-fevotion.webp"
+  },
   "flowing-fate.webp": {
     "file": "internal/immutable/assets/flowing-fate-7ad16287.webp",
     "src": "flowing-fate.webp"
+  },
+  "frostflower-dew.webp": {
+    "file": "internal/immutable/assets/frostflower-dew-cc5b28fe.webp",
+    "src": "frostflower-dew.webp"
   },
   "opulent-splendor.webp": {
     "file": "internal/immutable/assets/opulent-splendor-de0c0d11.webp",
@@ -1107,21 +1163,25 @@
     "file": "internal/immutable/assets/orchid_s-evening-gown-ed9f51bd.webp",
     "src": "orchid_s-evening-gown.webp"
   },
+  "red-dead-of-night.webp": {
+    "file": "internal/immutable/assets/red-dead-of-night-37d9e5b9.webp",
+    "src": "red-dead-of-night.webp"
+  },
   "sailwind-shadow.webp": {
     "file": "internal/immutable/assets/sailwind-shadow-a0858111.webp",
     "src": "sailwind-shadow.webp"
+  },
+  "springbloom-missive.webp": {
+    "file": "internal/immutable/assets/springbloom-missive-6c15963c.webp",
+    "src": "springbloom-missive.webp"
   },
   "sea-breeze-dandelion.webp": {
     "file": "internal/immutable/assets/sea-breeze-dandelion-a6819cf8.webp",
     "src": "sea-breeze-dandelion.webp"
   },
-  "red-dead-of-night.webp": {
-    "file": "internal/immutable/assets/red-dead-of-night-37d9e5b9.webp",
-    "src": "red-dead-of-night.webp"
-  },
-  "springbloom-missive.webp": {
-    "file": "internal/immutable/assets/springbloom-missive-6c15963c.webp",
-    "src": "springbloom-missive.webp"
+  "twilight-blossom.webp": {
+    "file": "internal/immutable/assets/twilight-blossom-5bfd6863.webp",
+    "src": "twilight-blossom.webp"
   },
   "summertime-sparkle.webp": {
     "file": "internal/immutable/assets/summertime-sparkle-a2d86509.webp",
@@ -1135,21 +1195,21 @@
     "file": "internal/immutable/assets/4star-bg-fe0ec4b8.webp",
     "src": "4star-bg.webp"
   },
-  "5star-bg.webp": {
-    "file": "internal/immutable/assets/5star-bg-7e695b0e.webp",
-    "src": "5star-bg.webp"
-  },
   "5star-special.webp": {
     "file": "internal/immutable/assets/5star-special-6fe89819.webp",
     "src": "5star-special.webp"
   },
-  "acquaint-fate.webp": {
-    "file": "internal/immutable/assets/acquaint-fate-eeae8a91.webp",
-    "src": "acquaint-fate.webp"
+  "5star-bg.webp": {
+    "file": "internal/immutable/assets/5star-bg-7e695b0e.webp",
+    "src": "5star-bg.webp"
   },
   "admin.webp": {
     "file": "internal/immutable/assets/admin-5c96b75a.webp",
     "src": "admin.webp"
+  },
+  "acquaint-fate.webp": {
+    "file": "internal/immutable/assets/acquaint-fate-eeae8a91.webp",
+    "src": "acquaint-fate.webp"
   },
   "bg-bonus.webp": {
     "file": "internal/immutable/assets/bg-bonus-a06911c7.webp",
@@ -1171,29 +1231,29 @@
     "file": "internal/immutable/assets/bg-claymore-45e9294d.webp",
     "src": "bg-claymore.webp"
   },
-  "book-select-bg.webp": {
-    "file": "internal/immutable/assets/book-select-bg-9a2e0c9b.webp",
-    "src": "book-select-bg.webp"
+  "bg-polearm.webp": {
+    "file": "internal/immutable/assets/bg-polearm-8bc23798.webp",
+    "src": "bg-polearm.webp"
   },
   "brand.png": {
     "file": "internal/immutable/assets/brand-d7e2d962.png",
     "src": "brand.png"
   },
-  "bg-polearm.webp": {
-    "file": "internal/immutable/assets/bg-polearm-8bc23798.webp",
-    "src": "bg-polearm.webp"
+  "button.webp": {
+    "file": "internal/immutable/assets/button-4401ab60.webp",
+    "src": "button.webp"
   },
   "donate-bnb.png": {
     "file": "internal/immutable/assets/donate-bnb-4ed23dae.png",
     "src": "donate-bnb.png"
   },
-  "button.webp": {
-    "file": "internal/immutable/assets/button-4401ab60.webp",
-    "src": "button.webp"
-  },
   "donate-btc.png": {
     "file": "internal/immutable/assets/donate-btc-cc1f4e65.png",
     "src": "donate-btc.png"
+  },
+  "donate-card.png": {
+    "file": "internal/immutable/assets/donate-card-356072e8.png",
+    "src": "donate-card.png"
   },
   "donate-dana.png": {
     "file": "internal/immutable/assets/donate-dana-003f18fc.png",
@@ -1207,17 +1267,21 @@
     "file": "internal/immutable/assets/donate-gopay-9da376a4.png",
     "src": "donate-gopay.png"
   },
+  "book-select-bg.webp": {
+    "file": "internal/immutable/assets/book-select-bg-9a2e0c9b.webp",
+    "src": "book-select-bg.webp"
+  },
   "donate-linkaja.png": {
     "file": "internal/immutable/assets/donate-linkaja-0baddcfa.png",
     "src": "donate-linkaja.png"
   },
+  "donate-kofi.png": {
+    "file": "internal/immutable/assets/donate-kofi-8b3dfa0b.png",
+    "src": "donate-kofi.png"
+  },
   "donate-ovo.png": {
     "file": "internal/immutable/assets/donate-ovo-182f1658.png",
     "src": "donate-ovo.png"
-  },
-  "donate-saweria.webp": {
-    "file": "internal/immutable/assets/donate-saweria-1b68205a.webp",
-    "src": "donate-saweria.webp"
   },
   "donate-shopeepay.png": {
     "file": "internal/immutable/assets/donate-shopeepay-47a167b9.png",
@@ -1227,9 +1291,13 @@
     "file": "internal/immutable/assets/donate-solana-1cdd7f9d.png",
     "src": "donate-solana.png"
   },
-  "donate-kofi.png": {
-    "file": "internal/immutable/assets/donate-kofi-8b3dfa0b.png",
-    "src": "donate-kofi.png"
+  "donate-saweria.webp": {
+    "file": "internal/immutable/assets/donate-saweria-1b68205a.webp",
+    "src": "donate-saweria.webp"
+  },
+  "donate-trakteer.png": {
+    "file": "internal/immutable/assets/donate-trakteer-383f63bc.png",
+    "src": "donate-trakteer.png"
   },
   "face-placeholder.webp": {
     "file": "internal/immutable/assets/face-placeholder-2b7eee97.webp",
@@ -1238,6 +1306,10 @@
   "bg-sword.webp": {
     "file": "internal/immutable/assets/bg-sword-230f75cd.webp",
     "src": "bg-sword.webp"
+  },
+  "fatepointbook-half.webp": {
+    "file": "internal/immutable/assets/fatepointbook-half-41f531cd.webp",
+    "src": "fatepointbook-half.webp"
   },
   "genesis-1980.webp": {
     "file": "internal/immutable/assets/genesis-1980-1b32f531.webp",
@@ -1251,29 +1323,25 @@
     "file": "internal/immutable/assets/genesis-3280-bbb37b16.webp",
     "src": "genesis-3280.webp"
   },
-  "fatepointbook-half.webp": {
-    "file": "internal/immutable/assets/fatepointbook-half-41f531cd.webp",
-    "src": "fatepointbook-half.webp"
-  },
   "genesis-60.webp": {
     "file": "internal/immutable/assets/genesis-60-16cb4b74.webp",
     "src": "genesis-60.webp"
-  },
-  "genesis-6480.webp": {
-    "file": "internal/immutable/assets/genesis-6480-e88d15f4.webp",
-    "src": "genesis-6480.webp"
   },
   "genesis-980.webp": {
     "file": "internal/immutable/assets/genesis-980-ac57ec7b.webp",
     "src": "genesis-980.webp"
   },
-  "genesis.webp": {
-    "file": "internal/immutable/assets/genesis-77e1510a.webp",
-    "src": "genesis.webp"
+  "genesis-6480.webp": {
+    "file": "internal/immutable/assets/genesis-6480-e88d15f4.webp",
+    "src": "genesis-6480.webp"
   },
   "fatepointbook.webp": {
     "file": "internal/immutable/assets/fatepointbook-30a10105.webp",
     "src": "fatepointbook.webp"
+  },
+  "genesis.webp": {
+    "file": "internal/immutable/assets/genesis-77e1510a.webp",
+    "src": "genesis.webp"
   },
   "genshin-logo-cn.webp": {
     "file": "internal/immutable/assets/genshin-logo-cn-99097c50.webp",
@@ -1283,57 +1351,57 @@
     "file": "internal/immutable/assets/genshin-logo-b0f0111b.webp",
     "src": "genshin-logo.webp"
   },
-  "imbroke.webp": {
-    "file": "internal/immutable/assets/imbroke-6820f50d.webp",
-    "src": "imbroke.webp"
-  },
   "history-select-bg.webp": {
     "file": "internal/immutable/assets/history-select-bg-9e24dca9.webp",
     "src": "history-select-bg.webp"
   },
-  "masterless-stardust.webp": {
-    "file": "internal/immutable/assets/masterless-stardust-c473e744.webp",
-    "src": "masterless-stardust.webp"
+  "imbroke.webp": {
+    "file": "internal/immutable/assets/imbroke-6820f50d.webp",
+    "src": "imbroke.webp"
   },
   "genesis-bg.webp": {
     "file": "internal/immutable/assets/genesis-bg-5a82b308.webp",
     "src": "genesis-bg.webp"
   },
-  "modal-bg-icon.png": {
-    "file": "internal/immutable/assets/modal-bg-icon-939867c4.png",
-    "src": "modal-bg-icon.png"
-  },
-  "intertwined-fate.webp": {
-    "file": "internal/immutable/assets/intertwined-fate-0f290cba.webp",
-    "src": "intertwined-fate.webp"
+  "masterless-stardust.webp": {
+    "file": "internal/immutable/assets/masterless-stardust-c473e744.webp",
+    "src": "masterless-stardust.webp"
   },
   "masterless-starglitter.webp": {
     "file": "internal/immutable/assets/masterless-starglitter-3991da8a.webp",
     "src": "masterless-starglitter.webp"
   },
-  "payment-tears.webp": {
-    "file": "internal/immutable/assets/payment-tears-c593f4a7.webp",
-    "src": "payment-tears.webp"
+  "modal-bg-icon.png": {
+    "file": "internal/immutable/assets/modal-bg-icon-939867c4.png",
+    "src": "modal-bg-icon.png"
   },
   "payment-childe.webp": {
     "file": "internal/immutable/assets/payment-childe-1521fa67.webp",
     "src": "payment-childe.webp"
   },
+  "payment-tears.webp": {
+    "file": "internal/immutable/assets/payment-tears-c593f4a7.webp",
+    "src": "payment-tears.webp"
+  },
   "payment-wakaranai.webp": {
     "file": "internal/immutable/assets/payment-wakaranai-eeb427d2.webp",
     "src": "payment-wakaranai.webp"
+  },
+  "intertwined-fate.webp": {
+    "file": "internal/immutable/assets/intertwined-fate-0f290cba.webp",
+    "src": "intertwined-fate.webp"
   },
   "paypal.png": {
     "file": "internal/immutable/assets/paypal-ea9fd7c5.png",
     "src": "paypal.png"
   },
-  "primogem.webp": {
-    "file": "internal/immutable/assets/primogem-f512384c.webp",
-    "src": "primogem.webp"
-  },
   "playstore-button.webp": {
     "file": "internal/immutable/assets/playstore-button-44ec43b9.webp",
     "src": "playstore-button.webp"
+  },
+  "primogem.webp": {
+    "file": "internal/immutable/assets/primogem-f512384c.webp",
+    "src": "primogem.webp"
   },
   "stella-fortuna-4star.webp": {
     "file": "internal/immutable/assets/stella-fortuna-4star-3746dfcc.webp",
@@ -1343,10 +1411,6 @@
     "file": "internal/immutable/assets/stella-fortuna-5star-7187149a.webp",
     "src": "stella-fortuna-5star.webp"
   },
-  "wechatpay.jpeg": {
-    "file": "internal/immutable/assets/wechatpay-e72d337c.jpeg",
-    "src": "wechatpay.jpeg"
-  },
   "resultcard-bg.webp": {
     "file": "internal/immutable/assets/resultcard-bg-aaaa01fb.webp",
     "src": "resultcard-bg.webp"
@@ -1354,6 +1418,14 @@
   "shop-nav-bg.webp": {
     "file": "internal/immutable/assets/shop-nav-bg-ba2a97b6.webp",
     "src": "shop-nav-bg.webp"
+  },
+  "wechatpay.jpeg": {
+    "file": "internal/immutable/assets/wechatpay-e72d337c.jpeg",
+    "src": "wechatpay.jpeg"
+  },
+  "welkin-moon-girl.webp": {
+    "file": "internal/immutable/assets/welkin-moon-girl-67797b1b.webp",
+    "src": "welkin-moon-girl.webp"
   },
   "welkin.webp": {
     "file": "internal/immutable/assets/welkin-224d0a2e.webp",
@@ -1363,13 +1435,9 @@
     "file": "internal/immutable/assets/welkin-card-965cc4e8.webp",
     "src": "welkin-card.webp"
   },
-  "welkin-moon-girl.webp": {
-    "file": "internal/immutable/assets/welkin-moon-girl-67797b1b.webp",
-    "src": "welkin-moon-girl.webp"
-  },
-  "slingshot.webp": {
-    "file": "internal/immutable/assets/slingshot-332093b2.webp",
-    "src": "slingshot.webp"
+  "book.webp": {
+    "file": "internal/immutable/assets/book-d6fb8ca7.webp",
+    "src": "book.webp"
   },
   "sharpshooter_s-oath.webp": {
     "file": "internal/immutable/assets/sharpshooter_s-oath-2eee30f9.webp",
@@ -1379,9 +1447,9 @@
     "file": "internal/immutable/assets/raven-bow-238edd42.webp",
     "src": "raven-bow.webp"
   },
-  "book.webp": {
-    "file": "internal/immutable/assets/book-d6fb8ca7.webp",
-    "src": "book.webp"
+  "slingshot.webp": {
+    "file": "internal/immutable/assets/slingshot-332093b2.webp",
+    "src": "slingshot.webp"
   },
   "alley-hunter.webp": {
     "file": "internal/immutable/assets/alley-hunter-2ee44b03.webp",
@@ -1399,10 +1467,6 @@
     "file": "internal/immutable/assets/mitternachts-waltz-098ec0ec.webp",
     "src": "mitternachts-waltz.webp"
   },
-  "sacrificial-bow.webp": {
-    "file": "internal/immutable/assets/sacrificial-bow-b0504242.webp",
-    "src": "sacrificial-bow.webp"
-  },
   "range-gauge.webp": {
     "file": "internal/immutable/assets/range-gauge-f6126513.webp",
     "src": "range-gauge.webp"
@@ -1410,6 +1474,10 @@
   "rust.webp": {
     "file": "internal/immutable/assets/rust-890b0edc.webp",
     "src": "rust.webp"
+  },
+  "sacrificial-bow.webp": {
+    "file": "internal/immutable/assets/sacrificial-bow-b0504242.webp",
+    "src": "sacrificial-bow.webp"
   },
   "the-stringless.webp": {
     "file": "internal/immutable/assets/the-stringless-6f4531d6.webp",
@@ -1419,13 +1487,13 @@
     "file": "internal/immutable/assets/amos-bow-dac33d6a.webp",
     "src": "amos-bow.webp"
   },
-  "elegy-for-the-end.webp": {
-    "file": "internal/immutable/assets/elegy-for-the-end-4e026f0a.webp",
-    "src": "elegy-for-the-end.webp"
-  },
   "aqua-simulacra.webp": {
     "file": "internal/immutable/assets/aqua-simulacra-51a222f5.webp",
     "src": "aqua-simulacra.webp"
+  },
+  "elegy-for-the-end.webp": {
+    "file": "internal/immutable/assets/elegy-for-the-end-4e026f0a.webp",
+    "src": "elegy-for-the-end.webp"
   },
   "hunter_s-path.webp": {
     "file": "internal/immutable/assets/hunter_s-path-56b53549.webp",
@@ -1435,33 +1503,33 @@
     "file": "internal/immutable/assets/polar-star-b325f492.webp",
     "src": "polar-star.webp"
   },
-  "emerald-orb.webp": {
-    "file": "internal/immutable/assets/emerald-orb-0cbdfa0f.webp",
-    "src": "emerald-orb.webp"
-  },
-  "the-first-great-magic.webp": {
-    "file": "internal/immutable/assets/the-first-great-magic-8e2ee2de.webp",
-    "src": "the-first-great-magic.webp"
-  },
   "skyward-harp.webp": {
     "file": "internal/immutable/assets/skyward-harp-6e549534.webp",
     "src": "skyward-harp.webp"
   },
-  "thundering-pulse.webp": {
-    "file": "internal/immutable/assets/thundering-pulse-40945c30.webp",
-    "src": "thundering-pulse.webp"
-  },
-  "eye-of-perception.webp": {
-    "file": "internal/immutable/assets/eye-of-perception-213b75a3.webp",
-    "src": "eye-of-perception.webp"
+  "emerald-orb.webp": {
+    "file": "internal/immutable/assets/emerald-orb-0cbdfa0f.webp",
+    "src": "emerald-orb.webp"
   },
   "magic-guide.webp": {
     "file": "internal/immutable/assets/magic-guide-e169fa66.webp",
     "src": "magic-guide.webp"
   },
+  "the-first-great-magic.webp": {
+    "file": "internal/immutable/assets/the-first-great-magic-8e2ee2de.webp",
+    "src": "the-first-great-magic.webp"
+  },
   "thrilling-tales-of-dragon-slayers.webp": {
     "file": "internal/immutable/assets/thrilling-tales-of-dragon-slayers-4114d83b.webp",
     "src": "thrilling-tales-of-dragon-slayers.webp"
+  },
+  "eye-of-perception.webp": {
+    "file": "internal/immutable/assets/eye-of-perception-213b75a3.webp",
+    "src": "eye-of-perception.webp"
+  },
+  "thundering-pulse.webp": {
+    "file": "internal/immutable/assets/thundering-pulse-40945c30.webp",
+    "src": "thundering-pulse.webp"
   },
   "favonius-codex.webp": {
     "file": "internal/immutable/assets/favonius-codex-51626bee.webp",
@@ -1483,33 +1551,41 @@
     "file": "internal/immutable/assets/wine-and-song-9cc88270.webp",
     "src": "wine-and-song.webp"
   },
-  "everlasting-moonglow.webp": {
-    "file": "internal/immutable/assets/everlasting-moonglow-767fc202.webp",
-    "src": "everlasting-moonglow.webp"
-  },
   "cashflow-supervision.webp": {
     "file": "internal/immutable/assets/cashflow-supervision-7051bdf8.webp",
     "src": "cashflow-supervision.webp"
   },
-  "jadefall-splendor.webp": {
-    "file": "internal/immutable/assets/jadefall-splendor-91f0f47b.webp",
-    "src": "jadefall-splendor.webp"
+  "everlasting-moonglow.webp": {
+    "file": "internal/immutable/assets/everlasting-moonglow-767fc202.webp",
+    "src": "everlasting-moonglow.webp"
+  },
+  "cranes-echoing-call.webp": {
+    "file": "internal/immutable/assets/cranes-echoing-call-ecb2b72a.webp",
+    "src": "cranes-echoing-call.webp"
   },
   "a-thousand-floating-dreams.webp": {
     "file": "internal/immutable/assets/a-thousand-floating-dreams-4151553c.webp",
     "src": "a-thousand-floating-dreams.webp"
   },
-  "lost-prayer-to-the-sacred-winds.webp": {
-    "file": "internal/immutable/assets/lost-prayer-to-the-sacred-winds-30e564fe.webp",
-    "src": "lost-prayer-to-the-sacred-winds.webp"
+  "jadefall-splendor.webp": {
+    "file": "internal/immutable/assets/jadefall-splendor-91f0f47b.webp",
+    "src": "jadefall-splendor.webp"
   },
   "kagura_s-verity.webp": {
     "file": "internal/immutable/assets/kagura_s-verity-03b2b505.webp",
     "src": "kagura_s-verity.webp"
   },
+  "lost-prayer-to-the-sacred-winds.webp": {
+    "file": "internal/immutable/assets/lost-prayer-to-the-sacred-winds-30e564fe.webp",
+    "src": "lost-prayer-to-the-sacred-winds.webp"
+  },
   "skyward-atlas.webp": {
     "file": "internal/immutable/assets/skyward-atlas-02b9dce2.webp",
     "src": "skyward-atlas.webp"
+  },
+  "tome-of-the-eternal-flow.webp": {
+    "file": "internal/immutable/assets/tome-of-the-eternal-flow-1f8af63c.webp",
+    "src": "tome-of-the-eternal-flow.webp"
   },
   "tulaytullah_s-remembrance.webp": {
     "file": "internal/immutable/assets/tulaytullah_s-remembrance-3598fcfc.webp",
@@ -1518,10 +1594,6 @@
   "memory-of-dust.webp": {
     "file": "internal/immutable/assets/memory-of-dust-2a9d8caa.webp",
     "src": "memory-of-dust.webp"
-  },
-  "tome-of-the-eternal-flow.webp": {
-    "file": "internal/immutable/assets/tome-of-the-eternal-flow-1f8af63c.webp",
-    "src": "tome-of-the-eternal-flow.webp"
   },
   "bloodtained-greatsword.webp": {
     "file": "internal/immutable/assets/bloodtained-greatsword-5f184595.webp",
@@ -1543,41 +1615,41 @@
     "file": "internal/immutable/assets/makhaira-aquamarine-76bd38a5.webp",
     "src": "makhaira-aquamarine.webp"
   },
-  "debate-club.webp": {
-    "file": "internal/immutable/assets/debate-club-5be7672b.webp",
-    "src": "debate-club.webp"
-  },
   "lithic-blade.webp": {
     "file": "internal/immutable/assets/lithic-blade-4c02dfbf.webp",
     "src": "lithic-blade.webp"
+  },
+  "debate-club.webp": {
+    "file": "internal/immutable/assets/debate-club-5be7672b.webp",
+    "src": "debate-club.webp"
   },
   "portable-power-saw.webp": {
     "file": "internal/immutable/assets/portable-power-saw-699e418a.webp",
     "src": "portable-power-saw.webp"
   },
-  "rainslasher.webp": {
-    "file": "internal/immutable/assets/rainslasher-bbc97a3f.webp",
-    "src": "rainslasher.webp"
-  },
   "sacrificial-greatsword.webp": {
     "file": "internal/immutable/assets/sacrificial-greatsword-435d0c28.webp",
     "src": "sacrificial-greatsword.webp"
   },
-  "beacon-of-the-reed-sea.webp": {
-    "file": "internal/immutable/assets/beacon-of-the-reed-sea-f08aea79.webp",
-    "src": "beacon-of-the-reed-sea.webp"
+  "rainslasher.webp": {
+    "file": "internal/immutable/assets/rainslasher-bbc97a3f.webp",
+    "src": "rainslasher.webp"
   },
   "the-bell.webp": {
     "file": "internal/immutable/assets/the-bell-b73418d9.webp",
     "src": "the-bell.webp"
   },
-  "redhorn-stonethresher.webp": {
-    "file": "internal/immutable/assets/redhorn-stonethresher-4a5fe56f.webp",
-    "src": "redhorn-stonethresher.webp"
+  "beacon-of-the-reed-sea.webp": {
+    "file": "internal/immutable/assets/beacon-of-the-reed-sea-f08aea79.webp",
+    "src": "beacon-of-the-reed-sea.webp"
   },
   "skyward-pride.webp": {
     "file": "internal/immutable/assets/skyward-pride-61774f53.webp",
     "src": "skyward-pride.webp"
+  },
+  "redhorn-stonethresher.webp": {
+    "file": "internal/immutable/assets/redhorn-stonethresher-4a5fe56f.webp",
+    "src": "redhorn-stonethresher.webp"
   },
   "song-of-broken-pines.webp": {
     "file": "internal/immutable/assets/song-of-broken-pines-44010dc3.webp",
@@ -1595,17 +1667,21 @@
     "file": "internal/immutable/assets/wolf_s-gravestone-d3e2d84f.webp",
     "src": "wolf_s-gravestone.webp"
   },
-  "dragon_s-bane.webp": {
-    "file": "internal/immutable/assets/dragon_s-bane-d4ae86c7.webp",
-    "src": "dragon_s-bane.webp"
-  },
   "black-tassel.webp": {
     "file": "internal/immutable/assets/black-tassel-3160907a.webp",
     "src": "black-tassel.webp"
   },
+  "dragon_s-bane.webp": {
+    "file": "internal/immutable/assets/dragon_s-bane-d4ae86c7.webp",
+    "src": "dragon_s-bane.webp"
+  },
   "favonius-lance.webp": {
     "file": "internal/immutable/assets/favonius-lance-eb4a71db.webp",
     "src": "favonius-lance.webp"
+  },
+  "prospector-drill.webp": {
+    "file": "internal/immutable/assets/prospector-drill-b35653b0.webp",
+    "src": "prospector-drill.webp"
   },
   "wavebreaker_s-fin.webp": {
     "file": "internal/immutable/assets/wavebreaker_s-fin-674af509.webp",
@@ -1615,10 +1691,6 @@
     "file": "internal/immutable/assets/lithic-spear-dbf28c65.webp",
     "src": "lithic-spear.webp"
   },
-  "prospector-drill.webp": {
-    "file": "internal/immutable/assets/prospector-drill-b35653b0.webp",
-    "src": "prospector-drill.webp"
-  },
   "calamity-queller.webp": {
     "file": "internal/immutable/assets/calamity-queller-be1a7765.webp",
     "src": "calamity-queller.webp"
@@ -1627,13 +1699,17 @@
     "file": "internal/immutable/assets/engulfing-lightning-089ffa76.webp",
     "src": "engulfing-lightning.webp"
   },
+  "primordial-jade-winged-spear.webp": {
+    "file": "internal/immutable/assets/primordial-jade-winged-spear-871377eb.webp",
+    "src": "primordial-jade-winged-spear.webp"
+  },
   "skyward-spine.webp": {
     "file": "internal/immutable/assets/skyward-spine-0f2c6ecc.webp",
     "src": "skyward-spine.webp"
   },
-  "primordial-jade-winged-spear.webp": {
-    "file": "internal/immutable/assets/primordial-jade-winged-spear-871377eb.webp",
-    "src": "primordial-jade-winged-spear.webp"
+  "staff-of-homa.webp": {
+    "file": "internal/immutable/assets/staff-of-homa-e3b059ef.webp",
+    "src": "staff-of-homa.webp"
   },
   "staff-of-the-scarlet-sands.webp": {
     "file": "internal/immutable/assets/staff-of-the-scarlet-sands-a3688b78.webp",
@@ -1643,10 +1719,6 @@
     "file": "internal/immutable/assets/vortex-vanquisher-3f236add.webp",
     "src": "vortex-vanquisher.webp"
   },
-  "staff-of-homa.webp": {
-    "file": "internal/immutable/assets/staff-of-homa-e3b059ef.webp",
-    "src": "staff-of-homa.webp"
-  },
   "cool-steel.webp": {
     "file": "internal/immutable/assets/cool-steel-1f2cbfee.webp",
     "src": "cool-steel.webp"
@@ -1655,33 +1727,37 @@
     "file": "internal/immutable/assets/harbinger-of-dawn-bb7e138c.webp",
     "src": "harbinger-of-dawn.webp"
   },
-  "favonius-sword.webp": {
-    "file": "internal/immutable/assets/favonius-sword-45b13707.webp",
-    "src": "favonius-sword.webp"
-  },
   "skyrider-sword.webp": {
     "file": "internal/immutable/assets/skyrider-sword-b586802c.webp",
     "src": "skyrider-sword.webp"
+  },
+  "favonius-sword.webp": {
+    "file": "internal/immutable/assets/favonius-sword-45b13707.webp",
+    "src": "favonius-sword.webp"
   },
   "lion_s-roar.webp": {
     "file": "internal/immutable/assets/lion_s-roar-949c66e0.webp",
     "src": "lion_s-roar.webp"
   },
-  "the-dockhands-assistant.webp": {
-    "file": "internal/immutable/assets/the-dockhands-assistant-a0469742.webp",
-    "src": "the-dockhands-assistant.webp"
+  "sacrificial-sword.webp": {
+    "file": "internal/immutable/assets/sacrificial-sword-1dd3b6b7.webp",
+    "src": "sacrificial-sword.webp"
   },
   "the-alley-flash.webp": {
     "file": "internal/immutable/assets/the-alley-flash-b59eb081.webp",
     "src": "the-alley-flash.webp"
   },
-  "sacrificial-sword.webp": {
-    "file": "internal/immutable/assets/sacrificial-sword-1dd3b6b7.webp",
-    "src": "sacrificial-sword.webp"
+  "the-dockhands-assistant.webp": {
+    "file": "internal/immutable/assets/the-dockhands-assistant-a0469742.webp",
+    "src": "the-dockhands-assistant.webp"
   },
   "the-flute.webp": {
     "file": "internal/immutable/assets/the-flute-e44fd714.webp",
     "src": "the-flute.webp"
+  },
+  "xiphos-moonlight.webp": {
+    "file": "internal/immutable/assets/xiphos-moonlight-c1ea3b4f.webp",
+    "src": "xiphos-moonlight.webp"
   },
   "aquila-favonia.webp": {
     "file": "internal/immutable/assets/aquila-favonia-89b0d8e6.webp",
@@ -1690,10 +1766,6 @@
   "freedom-sworn.webp": {
     "file": "internal/immutable/assets/freedom-sworn-59d9777c.webp",
     "src": "freedom-sworn.webp"
-  },
-  "xiphos-moonlight.webp": {
-    "file": "internal/immutable/assets/xiphos-moonlight-c1ea3b4f.webp",
-    "src": "xiphos-moonlight.webp"
   },
   "haran-geppaku-futsu.webp": {
     "file": "internal/immutable/assets/haran-geppaku-futsu-6128630c.webp",
@@ -1723,17 +1795,21 @@
     "file": "internal/immutable/assets/splendor-of-tranquil-waters-131e35be.webp",
     "src": "splendor-of-tranquil-waters.webp"
   },
+  "uraku-misugiri.webp": {
+    "file": "internal/immutable/assets/uraku-misugiri-e4cffcb9.webp",
+    "src": "uraku-misugiri.webp"
+  },
   "summit-shaper.webp": {
     "file": "internal/immutable/assets/summit-shaper-a4b99930.webp",
     "src": "summit-shaper.webp"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "internal/immutable/start-6e2b2fa2.js",
+    "file": "internal/immutable/start-f91f13e7.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
-      "_singletons-67e52e76.js",
+      "_singletons-00a48732.js",
       "_preload-helper-176e53da.js"
     ],
     "dynamicImports": [
@@ -1751,22 +1827,22 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "internal/immutable/components/pages/_layout.svelte-31cfe670.js",
+    "file": "internal/immutable/components/pages/_layout.svelte-7cf13f34.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_preload-helper-176e53da.js",
       "_runtime.esm-4bf604c8.js",
-      "_stores-65b20c67.js",
-      "_app-stores-358281e6.js",
-      "_outfit-bffb00d9.js",
-      "_custom-banner-3b9921d3.js",
+      "_stores-7215d485.js",
+      "_app-stores-fa402321.js",
+      "_outfit-35b977b8.js",
+      "_custom-banner-3f8b591c.js",
       "_api-cookie-d587b0da.js",
       "_index-123e2351.js",
-      "_sync-9a12991b.js",
+      "_sync-9514ec25.js",
       "_env-f184adc0.js",
-      "_i18n-ec7c8da1.js"
+      "_i18n-289b1d81.js"
     ],
     "dynamicImports": [
       "node_modules/workbox-window/build/workbox-window.prod.es5.mjs"
@@ -1777,27 +1853,27 @@
     ]
   },
   "src/routes/+error.svelte": {
-    "file": "internal/immutable/components/pages/_error.svelte-4f5ba18e.js",
+    "file": "internal/immutable/components/pages/_error.svelte-49e5013a.js",
     "src": "src/routes/+error.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
-      "_stores-65b20c67.js",
-      "_RandomBackground-34695851.js"
+      "_stores-7215d485.js",
+      "_RandomBackground-cc76db76.js"
     ],
     "css": [
       "internal/immutable/assets/_error-c9470412.css"
     ]
   },
   "src/routes/adkey/+page.svelte": {
-    "file": "internal/immutable/components/pages/adkey/_page.svelte-0e8e16a9.js",
+    "file": "internal/immutable/components/pages/adkey/_page.svelte-3a1bcf52.js",
     "src": "src/routes/adkey/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_audio-460a91c6.js",
-      "_app-stores-358281e6.js",
+      "_app-stores-fa402321.js",
       "_accessKey-2a3cada9.js",
       "_ButtonModal-7ee3a4a1.js"
     ],
@@ -1806,15 +1882,15 @@
     ]
   },
   "src/routes/bnlist/+page.svelte": {
-    "file": "internal/immutable/components/pages/bnlist/_page.svelte-42422615.js",
+    "file": "internal/immutable/components/pages/bnlist/_page.svelte-f89c6e3d.js",
     "src": "src/routes/bnlist/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_lazyload-05dfa468.js",
-      "_RandomBackground-34695851.js",
+      "_RandomBackground-cc76db76.js",
       "_env-f184adc0.js",
-      "_custom-banner-3b9921d3.js",
+      "_custom-banner-3f8b591c.js",
       "_timeago-17bb7280.js",
       "__pagination-cd90c7ad.js"
     ],
@@ -1823,14 +1899,14 @@
     ]
   },
   "src/routes/install/+page.svelte": {
-    "file": "internal/immutable/components/pages/install/_page.svelte-6780e863.js",
+    "file": "internal/immutable/components/pages/install/_page.svelte-eb3ceb4a.js",
     "src": "src/routes/install/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_runtime.esm-4bf604c8.js",
       "_env-f184adc0.js",
-      "_app-stores-358281e6.js"
+      "_app-stores-fa402321.js"
     ],
     "css": [
       "internal/immutable/assets/_page-c955f7fd.css"
@@ -1858,42 +1934,42 @@
     ]
   },
   "src/routes/screen/chars/+page.svelte": {
-    "file": "internal/immutable/components/pages/screen/chars/_page.svelte-35d178b5.js",
+    "file": "internal/immutable/components/pages/screen/chars/_page.svelte-cc3a3a64.js",
     "src": "src/routes/screen/chars/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
-      "_stores-65b20c67.js",
-      "_navigation-45e4daee.js"
+      "_stores-7215d485.js",
+      "_navigation-243cb518.js"
     ]
   },
   "src/routes/screen/wishitem/+page.svelte": {
-    "file": "internal/immutable/components/pages/screen/wishitem/_page.svelte-8e5d743d.js",
+    "file": "internal/immutable/components/pages/screen/wishitem/_page.svelte-08bb1903.js",
     "src": "src/routes/screen/wishitem/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
-      "_stores-65b20c67.js",
-      "_navigation-45e4daee.js",
+      "_stores-7215d485.js",
+      "_navigation-243cb518.js",
       "_runtime.esm-4bf604c8.js",
       "_env-f184adc0.js",
-      "_outfit-bffb00d9.js",
-      "_WishResult-901333c5.js"
+      "_outfit-35b977b8.js",
+      "_WishResult-2e6896ab.js"
     ],
     "css": [
       "internal/immutable/assets/_page-38811b6b.css"
     ]
   },
   "src/routes/screen/wishlist/+page.svelte": {
-    "file": "internal/immutable/components/pages/screen/wishlist/_page.svelte-4dd908c0.js",
+    "file": "internal/immutable/components/pages/screen/wishlist/_page.svelte-bc2e361a.js",
     "src": "src/routes/screen/wishlist/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-c0d078cd.js",
-      "_stores-65b20c67.js",
-      "_navigation-45e4daee.js",
-      "_outfit-bffb00d9.js",
-      "_WishResult-901333c5.js"
+      "_stores-7215d485.js",
+      "_navigation-243cb518.js",
+      "_outfit-35b977b8.js",
+      "_WishResult-2e6896ab.js"
     ],
     "css": [
       "internal/immutable/assets/_page-38811b6b.css"
@@ -1908,28 +1984,28 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "internal/immutable/components/pages/_page.svelte-7faf7689.js",
+    "file": "internal/immutable/components/pages/_page.svelte-301966b9.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_preload-helper-176e53da.js",
       "_index-c0d078cd.js",
-      "_stores-65b20c67.js",
+      "_stores-7215d485.js",
       "_index-123e2351.js",
       "_index-0189b6d0.js",
-      "_WishResult-901333c5.js",
-      "__page-87ee6ee5.js",
-      "_app-stores-358281e6.js",
+      "_WishResult-2e6896ab.js",
+      "__page-1ad70c7c.js",
+      "_app-stores-fa402321.js",
       "_audio-460a91c6.js",
       "_runtime.esm-4bf604c8.js",
       "_env-f184adc0.js",
-      "_custom-banner-3b9921d3.js",
+      "_custom-banner-3f8b591c.js",
       "_ButtonModal-7ee3a4a1.js",
       "_lazyload-05dfa468.js"
     ]
   },
-  "_singletons-67e52e76.js": {
-    "file": "internal/immutable/chunks/singletons-67e52e76.js",
+  "_singletons-00a48732.js": {
+    "file": "internal/immutable/chunks/singletons-00a48732.js",
     "imports": [
       "_index-0189b6d0.js"
     ]
@@ -1952,15 +2028,15 @@
       "_index-0189b6d0.js"
     ]
   },
-  "_stores-65b20c67.js": {
-    "file": "internal/immutable/chunks/stores-65b20c67.js",
+  "_stores-7215d485.js": {
+    "file": "internal/immutable/chunks/stores-7215d485.js",
     "imports": [
       "_index-c0d078cd.js",
-      "_singletons-67e52e76.js"
+      "_singletons-00a48732.js"
     ]
   },
-  "_app-stores-358281e6.js": {
-    "file": "internal/immutable/chunks/app-stores-358281e6.js",
+  "_app-stores-fa402321.js": {
+    "file": "internal/immutable/chunks/app-stores-fa402321.js",
     "imports": [
       "_index-0189b6d0.js"
     ]
@@ -1974,22 +2050,22 @@
   "_env-f184adc0.js": {
     "file": "internal/immutable/chunks/env-f184adc0.js"
   },
-  "_sync-9a12991b.js": {
-    "file": "internal/immutable/chunks/sync-9a12991b.js",
+  "_sync-9514ec25.js": {
+    "file": "internal/immutable/chunks/sync-9514ec25.js",
     "imports": [
-      "_app-stores-358281e6.js",
-      "_custom-banner-3b9921d3.js",
+      "_app-stores-fa402321.js",
+      "_custom-banner-3f8b591c.js",
       "_index-123e2351.js",
       "_index-0189b6d0.js",
-      "_i18n-ec7c8da1.js",
+      "_i18n-289b1d81.js",
       "_api-cookie-d587b0da.js"
     ]
   },
-  "_i18n-ec7c8da1.js": {
-    "file": "internal/immutable/chunks/i18n-ec7c8da1.js",
+  "_i18n-289b1d81.js": {
+    "file": "internal/immutable/chunks/i18n-289b1d81.js",
     "imports": [
-      "_outfit-bffb00d9.js",
-      "_app-stores-358281e6.js",
+      "_outfit-35b977b8.js",
+      "_app-stores-fa402321.js",
       "_index-123e2351.js",
       "_preload-helper-176e53da.js",
       "_runtime.esm-4bf604c8.js"
@@ -2017,8 +2093,8 @@
       "src/locales/items/zh-TW.json"
     ]
   },
-  "_custom-banner-3b9921d3.js": {
-    "file": "internal/immutable/chunks/custom-banner-3b9921d3.js",
+  "_custom-banner-3f8b591c.js": {
+    "file": "internal/immutable/chunks/custom-banner-3f8b591c.js",
     "imports": [
       "_env-f184adc0.js"
     ],
@@ -2095,6 +2171,7 @@
       "internal/immutable/assets/everbloom-violet-1-892371bd.webp",
       "internal/immutable/assets/everbloom-violet-2-70fc7a50.webp",
       "internal/immutable/assets/everbloom-violet-3-2c6b56f5.webp",
+      "internal/immutable/assets/everbloom-violet-4-20c048a0.webp",
       "internal/immutable/assets/farewell-of-snezhnaya-1-504b4c44.webp",
       "internal/immutable/assets/farewell-of-snezhnaya-2-b621b043.webp",
       "internal/immutable/assets/farewell-of-snezhnaya-3-c963d52e.webp",
@@ -2114,6 +2191,7 @@
       "internal/immutable/assets/invitation-to-mundane-life-2-38182309.webp",
       "internal/immutable/assets/invitation-to-mundane-life-3-3964311f.webp",
       "internal/immutable/assets/invitation-to-mundane-life-4-157420b1.webp",
+      "internal/immutable/assets/invitation-to-mundane-life-5-57df0996.webp",
       "internal/immutable/assets/leaves-in-the-wind-1-47b5098e.webp",
       "internal/immutable/assets/leaves-in-the-wind-2-bed80036.webp",
       "internal/immutable/assets/leaves-in-the-wind-3-808ecaf3.webp",
@@ -2121,9 +2199,11 @@
       "internal/immutable/assets/moment-of-bloom-2-ebb93ab8.webp",
       "internal/immutable/assets/moment-of-bloom-3-8f672b6c.webp",
       "internal/immutable/assets/moment-of-bloom-4-4b2c7059.webp",
+      "internal/immutable/assets/of-silken-clouds-woven-1-1b6415a2.webp",
       "internal/immutable/assets/oni_s-royale-1-1cb96177.webp",
       "internal/immutable/assets/oni_s-royale-2-6f859568.webp",
       "internal/immutable/assets/oni_s-royale-3-ba1cbf7d.webp",
+      "internal/immutable/assets/oni_s-royale-4-46373628.webp",
       "internal/immutable/assets/reign-of-serenity-1-4725e678.webp",
       "internal/immutable/assets/reign-of-serenity-2-e24fd12e.webp",
       "internal/immutable/assets/reign-of-serenity-3-d511b483.webp",
@@ -2141,12 +2221,14 @@
       "internal/immutable/assets/tapestry-of-golden-flames-4-0c57997a.webp",
       "internal/immutable/assets/tapestry-of-golden-flames-5-ed9de042.webp",
       "internal/immutable/assets/tempestuous-destiny-1-75164658.webp",
+      "internal/immutable/assets/the-crane-soars-skyward-1-cdb4a098.webp",
       "internal/immutable/assets/the-heron_s-court-1-155171f4.webp",
       "internal/immutable/assets/the-heron_s-court-2-258bec66.webp",
       "internal/immutable/assets/the-heron_s-court-3-c8c67ae7.webp",
       "internal/immutable/assets/the-heron_s-court-4-2177edba.webp",
       "internal/immutable/assets/the-moongrass-enlightenment-1-69dbb41f.webp",
       "internal/immutable/assets/the-moongrass-enlightenment-2-c80cbb50.webp",
+      "internal/immutable/assets/the-moongrass-enlightenment-3-b9da945b.webp",
       "internal/immutable/assets/the-transcendent-one-returns-1-36bb84b0.webp",
       "internal/immutable/assets/the-transcendent-one-returns-2-630d5506.webp",
       "internal/immutable/assets/twilight-arbiter-1-99173f34.webp",
@@ -2240,13 +2322,17 @@
       "internal/immutable/assets/epitome-invocation-56-053aaeb2.webp",
       "internal/immutable/assets/epitome-invocation-57-d999ab85.webp",
       "internal/immutable/assets/epitome-invocation-58-7682ae63.webp",
+      "internal/immutable/assets/epitome-invocation-59-eb9b71ff.webp",
       "internal/immutable/assets/epitome-invocation-6-86f6fca7.webp",
+      "internal/immutable/assets/epitome-invocation-60-bcfce4cf.webp",
+      "internal/immutable/assets/epitome-invocation-61-8104b84b.webp",
       "internal/immutable/assets/epitome-invocation-7-a19a8f6c.webp",
       "internal/immutable/assets/epitome-invocation-8-4b7ba21f.webp",
       "internal/immutable/assets/epitome-invocation-9-d83afe5e.webp",
       "internal/immutable/assets/everbloom-violet-1-07751188.webp",
       "internal/immutable/assets/everbloom-violet-2-a0e10b82.webp",
       "internal/immutable/assets/everbloom-violet-3-6b50dfaf.webp",
+      "internal/immutable/assets/everbloom-violet-4-54141543.webp",
       "internal/immutable/assets/farewell-of-snezhnaya-1-dff759c0.webp",
       "internal/immutable/assets/farewell-of-snezhnaya-2-ea196522.webp",
       "internal/immutable/assets/farewell-of-snezhnaya-3-81a14e49.webp",
@@ -2266,6 +2352,7 @@
       "internal/immutable/assets/invitation-to-mundane-life-2-2a737af5.webp",
       "internal/immutable/assets/invitation-to-mundane-life-3-23e2857b.webp",
       "internal/immutable/assets/invitation-to-mundane-life-4-adca74b4.webp",
+      "internal/immutable/assets/invitation-to-mundane-life-5-9e15ad0f.webp",
       "internal/immutable/assets/leaves-in-the-wind-1-40942e11.webp",
       "internal/immutable/assets/leaves-in-the-wind-2-8bb418c3.webp",
       "internal/immutable/assets/leaves-in-the-wind-3-6d6dea40.webp",
@@ -2273,9 +2360,11 @@
       "internal/immutable/assets/moment-of-bloom-2-a5e9c685.webp",
       "internal/immutable/assets/moment-of-bloom-3-e95a1bd0.webp",
       "internal/immutable/assets/moment-of-bloom-4-4a85f1eb.webp",
+      "internal/immutable/assets/of-silken-clouds-woven-1-02498e81.webp",
       "internal/immutable/assets/oni_s-royale-1-a971ba7c.webp",
       "internal/immutable/assets/oni_s-royale-2-6a07fede.webp",
       "internal/immutable/assets/oni_s-royale-3-7e1ad290.webp",
+      "internal/immutable/assets/oni_s-royale-4-eb82460f.webp",
       "internal/immutable/assets/reign-of-serenity-1-baf31a2d.webp",
       "internal/immutable/assets/reign-of-serenity-2-ccb25bcc.webp",
       "internal/immutable/assets/reign-of-serenity-3-11ff0135.webp",
@@ -2293,12 +2382,14 @@
       "internal/immutable/assets/tapestry-of-golden-flames-4-8b74dd09.webp",
       "internal/immutable/assets/tapestry-of-golden-flames-5-c058ea72.webp",
       "internal/immutable/assets/tempestuous-destiny-1-0decb86e.webp",
+      "internal/immutable/assets/the-crane-soars-skyward-1-88a80f1a.webp",
       "internal/immutable/assets/the-heron_s-court-1-b787b834.webp",
       "internal/immutable/assets/the-heron_s-court-2-671dc5c7.webp",
       "internal/immutable/assets/the-heron_s-court-3-d816d878.webp",
       "internal/immutable/assets/the-heron_s-court-4-5a3f75d6.webp",
       "internal/immutable/assets/the-moongrass-enlightenment-1-57f4d12f.webp",
       "internal/immutable/assets/the-moongrass-enlightenment-2-1b1a0926.webp",
+      "internal/immutable/assets/the-moongrass-enlightenment-3-4dc34368.webp",
       "internal/immutable/assets/the-transcendent-one-returns-1-44bcf6c3.webp",
       "internal/immutable/assets/the-transcendent-one-returns-2-9a28233c.webp",
       "internal/immutable/assets/twilight-arbiter-1-b95da829.webp",
@@ -2361,7 +2452,10 @@
       "internal/immutable/assets/epitome-invocation-56-0bd0a0ae.webp",
       "internal/immutable/assets/epitome-invocation-57-eeb37f22.webp",
       "internal/immutable/assets/epitome-invocation-58-6828ac1d.webp",
+      "internal/immutable/assets/epitome-invocation-59-35df923c.webp",
       "internal/immutable/assets/epitome-invocation-6-aa995dfa.webp",
+      "internal/immutable/assets/epitome-invocation-60-2e26dd50.webp",
+      "internal/immutable/assets/epitome-invocation-61-27217471.webp",
       "internal/immutable/assets/epitome-invocation-7-f863dff6.webp",
       "internal/immutable/assets/epitome-invocation-8-aa8fba89.webp",
       "internal/immutable/assets/epitome-invocation-9-6ee83cf2.webp",
@@ -2369,6 +2463,7 @@
       "internal/immutable/assets/alhaitham-3309c925.webp",
       "internal/immutable/assets/arataki-itto-9db1c47b.webp",
       "internal/immutable/assets/baizhu-09c1d81d.webp",
+      "internal/immutable/assets/chiori-d8509cc9.webp",
       "internal/immutable/assets/cyno-016ed971.webp",
       "internal/immutable/assets/dehya-2088c690.webp",
       "internal/immutable/assets/eula-02a08e5a.webp",
@@ -2396,6 +2491,7 @@
       "internal/immutable/assets/venti-400d3bc0.webp",
       "internal/immutable/assets/wanderer-821029a2.webp",
       "internal/immutable/assets/wriothesley-4cd21289.webp",
+      "internal/immutable/assets/xianyun-4ee3b9e3.webp",
       "internal/immutable/assets/xiao-80ccfa0f.webp",
       "internal/immutable/assets/yae-miko-3c2a217b.webp",
       "internal/immutable/assets/yelan-101c5019.webp",
@@ -2415,6 +2511,7 @@
       "internal/immutable/assets/faruzan-c31e94d3.webp",
       "internal/immutable/assets/fischl-80d20522.webp",
       "internal/immutable/assets/freminet-bc38fa75.webp",
+      "internal/immutable/assets/gaming-045eadd6.webp",
       "internal/immutable/assets/gorou-8d259071.webp",
       "internal/immutable/assets/kaeya-373b9b8b.webp",
       "internal/immutable/assets/kaveh-3184710d.webp",
@@ -2443,6 +2540,7 @@
       "internal/immutable/assets/alhaitham-60ae51e6.webp",
       "internal/immutable/assets/arataki-itto-f054a7f6.webp",
       "internal/immutable/assets/baizhu-ed20303f.webp",
+      "internal/immutable/assets/chiori-b7dec2ec.webp",
       "internal/immutable/assets/cyno-e50a3679.webp",
       "internal/immutable/assets/dehya-804f4fe1.webp",
       "internal/immutable/assets/diluc-b100ee3c.webp",
@@ -2471,6 +2569,7 @@
       "internal/immutable/assets/venti-f0812ee7.webp",
       "internal/immutable/assets/wanderer-0c008fe4.webp",
       "internal/immutable/assets/wriothesley-d3cb8f1a.webp",
+      "internal/immutable/assets/xianyun-d48d630d.webp",
       "internal/immutable/assets/xiao-ac588d17.webp",
       "internal/immutable/assets/yae-miko-7e7f31fc.webp",
       "internal/immutable/assets/yelan-a4bcee59.webp",
@@ -2490,6 +2589,7 @@
       "internal/immutable/assets/faruzan-0fa37bd5.webp",
       "internal/immutable/assets/fischl-8a20cb83.webp",
       "internal/immutable/assets/freminet-e6b6afa1.webp",
+      "internal/immutable/assets/gaming-1b6d227f.webp",
       "internal/immutable/assets/gorou-f814f487.webp",
       "internal/immutable/assets/kaeya-7a59dafb.webp",
       "internal/immutable/assets/kaveh-d3f2939c.webp",
@@ -2518,6 +2618,7 @@
       "internal/immutable/assets/alhaitham-2ad85c61.webp",
       "internal/immutable/assets/arataki-itto-fc55a6f7.webp",
       "internal/immutable/assets/baizhu-315fb021.webp",
+      "internal/immutable/assets/chiori-f3b3a724.webp",
       "internal/immutable/assets/cyno-df3b585d.webp",
       "internal/immutable/assets/dehya-5fc2272c.webp",
       "internal/immutable/assets/diluc-a7ffe513.webp",
@@ -2546,6 +2647,7 @@
       "internal/immutable/assets/venti-7973125a.webp",
       "internal/immutable/assets/wanderer-082f333a.webp",
       "internal/immutable/assets/wriothesley-505582d3.webp",
+      "internal/immutable/assets/xianyun-41cd30fa.webp",
       "internal/immutable/assets/xiao-1e55957d.webp",
       "internal/immutable/assets/yae-miko-7874f338.webp",
       "internal/immutable/assets/yelan-d425f83a.webp",
@@ -2553,11 +2655,13 @@
       "internal/immutable/assets/zhongli-003d705f.webp",
       "internal/immutable/assets/5-star-outrider-cba01d40.webp",
       "internal/immutable/assets/a-sobriquet-under-shade-c317fc47.webp",
+      "internal/immutable/assets/bamboo-rain-3a26375c.webp",
       "internal/immutable/assets/blossoming-starlight-34d62d3c.webp",
       "internal/immutable/assets/ein-immernachtstraum-0b70b906.webp",
       "internal/immutable/assets/executor_s-thorns-3d5b9868.webp",
       "internal/immutable/assets/favonian-fevotion-83ebffaf.webp",
       "internal/immutable/assets/flowing-fate-3565e7c4.webp",
+      "internal/immutable/assets/frostflower-dew-3defa653.webp",
       "internal/immutable/assets/opulent-splendor-963525f3.webp",
       "internal/immutable/assets/orchid_s-evening-gown-485e9770.webp",
       "internal/immutable/assets/red-dead-of-night-e240e0d3.webp",
@@ -2565,13 +2669,16 @@
       "internal/immutable/assets/sea-breeze-dandelion-0bca9349.webp",
       "internal/immutable/assets/springbloom-missive-8e524270.webp",
       "internal/immutable/assets/summertime-sparkle-ef9bad4d.webp",
+      "internal/immutable/assets/twilight-blossom-3587ee52.webp",
       "internal/immutable/assets/5-star-outrider-a1974a67.webp",
       "internal/immutable/assets/a-sobriquet-under-shade-695f3ba9.webp",
+      "internal/immutable/assets/bamboo-rain-daf0587c.webp",
       "internal/immutable/assets/blossoming-starlight-e407bd19.webp",
       "internal/immutable/assets/ein-immernachtstraum-67a2ea8b.webp",
       "internal/immutable/assets/executor_s-thorns-7ebaa9b6.webp",
       "internal/immutable/assets/favonian-fevotion-05bc6eb1.webp",
       "internal/immutable/assets/flowing-fate-7ad16287.webp",
+      "internal/immutable/assets/frostflower-dew-cc5b28fe.webp",
       "internal/immutable/assets/opulent-splendor-62c8cea5.webp",
       "internal/immutable/assets/orchid_s-evening-gown-9185bde9.webp",
       "internal/immutable/assets/red-dead-of-night-1641003e.webp",
@@ -2579,6 +2686,7 @@
       "internal/immutable/assets/sea-breeze-dandelion-a6819cf8.webp",
       "internal/immutable/assets/springbloom-missive-b4955e07.webp",
       "internal/immutable/assets/summertime-sparkle-0059652c.webp",
+      "internal/immutable/assets/twilight-blossom-5bfd6863.webp",
       "internal/immutable/assets/a-sobriquet-under-shade-c3227780.webp",
       "internal/immutable/assets/blossoming-starlight-8662f044.webp",
       "internal/immutable/assets/ein-immernachtstraum-ca0240ec.webp",
@@ -2608,6 +2716,7 @@
       "internal/immutable/assets/button-4401ab60.webp",
       "internal/immutable/assets/donate-bnb-4ed23dae.png",
       "internal/immutable/assets/donate-btc-cc1f4e65.png",
+      "internal/immutable/assets/donate-card-356072e8.png",
       "internal/immutable/assets/donate-dana-003f18fc.png",
       "internal/immutable/assets/donate-ethereum-efafab8a.png",
       "internal/immutable/assets/donate-gopay-9da376a4.png",
@@ -2617,6 +2726,7 @@
       "internal/immutable/assets/donate-saweria-1b68205a.webp",
       "internal/immutable/assets/donate-shopeepay-47a167b9.png",
       "internal/immutable/assets/donate-solana-1cdd7f9d.png",
+      "internal/immutable/assets/donate-trakteer-383f63bc.png",
       "internal/immutable/assets/face-placeholder-2b7eee97.webp",
       "internal/immutable/assets/fatepointbook-half-41f531cd.webp",
       "internal/immutable/assets/fatepointbook-30a10105.webp",
@@ -2642,6 +2752,7 @@
       "internal/immutable/assets/paypal-ea9fd7c5.png",
       "internal/immutable/assets/playstore-button-44ec43b9.webp",
       "internal/immutable/assets/primogem-f512384c.webp",
+      "internal/immutable/assets/qiqi-e88e0e5f.webp",
       "internal/immutable/assets/resultcard-bg-c725655d.svg",
       "internal/immutable/assets/resultcard-bg-aaaa01fb.webp",
       "internal/immutable/assets/shop-nav-bg-ba2a97b6.webp",
@@ -2681,6 +2792,7 @@
       "internal/immutable/assets/wine-and-song-9cc88270.webp",
       "internal/immutable/assets/a-thousand-floating-dreams-4151553c.webp",
       "internal/immutable/assets/cashflow-supervision-7051bdf8.webp",
+      "internal/immutable/assets/cranes-echoing-call-ecb2b72a.webp",
       "internal/immutable/assets/everlasting-moonglow-767fc202.webp",
       "internal/immutable/assets/jadefall-splendor-91f0f47b.webp",
       "internal/immutable/assets/kagura_s-verity-03b2b505.webp",
@@ -2739,11 +2851,12 @@
       "internal/immutable/assets/primordial-jade-cutter-b641118a.webp",
       "internal/immutable/assets/skyward-blade-2a775854.webp",
       "internal/immutable/assets/splendor-of-tranquil-waters-131e35be.webp",
-      "internal/immutable/assets/summit-shaper-a4b99930.webp"
+      "internal/immutable/assets/summit-shaper-a4b99930.webp",
+      "internal/immutable/assets/uraku-misugiri-e4cffcb9.webp"
     ]
   },
-  "_outfit-bffb00d9.js": {
-    "file": "internal/immutable/chunks/outfit-bffb00d9.js",
+  "_outfit-35b977b8.js": {
+    "file": "internal/immutable/chunks/outfit-35b977b8.js",
     "imports": [
       "_index-123e2351.js"
     ]
@@ -2754,35 +2867,35 @@
   "__layout-0ebf6292.js": {
     "file": "internal/immutable/chunks/_layout-0ebf6292.js"
   },
-  "_RandomBackground-34695851.js": {
-    "file": "internal/immutable/chunks/RandomBackground-34695851.js",
+  "_RandomBackground-cc76db76.js": {
+    "file": "internal/immutable/chunks/RandomBackground-cc76db76.js",
     "imports": [
       "_index-c0d078cd.js",
-      "_app-stores-358281e6.js"
+      "_app-stores-fa402321.js"
     ],
     "css": [
       "internal/immutable/assets/RandomBackground-c01fc64e.css"
     ]
   },
-  "__page-87ee6ee5.js": {
-    "file": "internal/immutable/chunks/_page-87ee6ee5.js",
+  "__page-1ad70c7c.js": {
+    "file": "internal/immutable/chunks/_page-1ad70c7c.js",
     "imports": [
       "_preload-helper-176e53da.js",
       "_index-c0d078cd.js",
-      "_stores-65b20c67.js",
+      "_stores-7215d485.js",
       "_index-123e2351.js",
       "_index-0189b6d0.js",
-      "_WishResult-901333c5.js",
-      "_app-stores-358281e6.js",
+      "_WishResult-2e6896ab.js",
+      "_app-stores-fa402321.js",
       "_api-cookie-d587b0da.js",
-      "_i18n-ec7c8da1.js",
-      "_custom-banner-3b9921d3.js",
+      "_i18n-289b1d81.js",
+      "_custom-banner-3f8b591c.js",
       "_audio-460a91c6.js",
       "_runtime.esm-4bf604c8.js",
       "_env-f184adc0.js",
       "_ButtonModal-7ee3a4a1.js",
       "_lazyload-05dfa468.js",
-      "_outfit-bffb00d9.js"
+      "_outfit-35b977b8.js"
     ],
     "dynamicImports": [
       "src/lib/data/banners/events/1.0.json",
@@ -2814,6 +2927,8 @@
       "src/lib/data/banners/events/4.1.json",
       "src/lib/data/banners/events/4.2.json",
       "src/lib/data/banners/events/4.3.json",
+      "src/lib/data/banners/events/4.4.json",
+      "src/lib/data/banners/events/4.5.json",
       "src/lib/components/ObtainedItem.svelte",
       "src/routes/_index/ModalConvert.svelte",
       "src/routes/_menu/index.svelte",
@@ -2827,15 +2942,15 @@
       "internal/immutable/assets/_page-75fbe034.css"
     ]
   },
-  "_WishResult-901333c5.js": {
-    "file": "internal/immutable/chunks/WishResult-901333c5.js",
+  "_WishResult-2e6896ab.js": {
+    "file": "internal/immutable/chunks/WishResult-2e6896ab.js",
     "imports": [
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
-      "_app-stores-358281e6.js",
+      "_app-stores-fa402321.js",
       "_audio-460a91c6.js",
-      "_outfit-bffb00d9.js",
+      "_outfit-35b977b8.js",
       "_lazyload-05dfa468.js",
       "_env-f184adc0.js"
     ],
@@ -2887,14 +3002,14 @@
       "internal/immutable/assets/_pagination-660172f1.css"
     ]
   },
-  "_navigation-45e4daee.js": {
-    "file": "internal/immutable/chunks/navigation-45e4daee.js",
+  "_navigation-243cb518.js": {
+    "file": "internal/immutable/chunks/navigation-243cb518.js",
     "imports": [
-      "_singletons-67e52e76.js"
+      "_singletons-00a48732.js"
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "internal/immutable/chunks/0-10f2ffe2.js",
+    "file": "internal/immutable/chunks/0-7d14de5d.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2903,7 +3018,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "internal/immutable/chunks/1-5f40e9fe.js",
+    "file": "internal/immutable/chunks/1-4ae921f8.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2911,15 +3026,15 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "internal/immutable/chunks/2-e802658e.js",
+    "file": "internal/immutable/chunks/2-37e831d5.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-87ee6ee5.js"
+      "__page-1ad70c7c.js"
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "internal/immutable/chunks/3-ec629fe3.js",
+    "file": "internal/immutable/chunks/3-4891e5ba.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2927,7 +3042,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "internal/immutable/chunks/4-80ff4ce0.js",
+    "file": "internal/immutable/chunks/4-419ae383.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2935,7 +3050,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/5.js": {
-    "file": "internal/immutable/chunks/5-f9b12e78.js",
+    "file": "internal/immutable/chunks/5-9265c06d.js",
     "src": ".svelte-kit/generated/nodes/5.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2959,7 +3074,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/8.js": {
-    "file": "internal/immutable/chunks/8-d7c5761b.js",
+    "file": "internal/immutable/chunks/8-8f851386.js",
     "src": ".svelte-kit/generated/nodes/8.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2967,7 +3082,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/9.js": {
-    "file": "internal/immutable/chunks/9-35d90427.js",
+    "file": "internal/immutable/chunks/9-6400caad.js",
     "src": ".svelte-kit/generated/nodes/9.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2975,7 +3090,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/10.js": {
-    "file": "internal/immutable/chunks/10-7182ee37.js",
+    "file": "internal/immutable/chunks/10-36a12048.js",
     "src": ".svelte-kit/generated/nodes/10.js",
     "isDynamicEntry": true,
     "imports": [
@@ -2988,115 +3103,115 @@
     "isDynamicEntry": true
   },
   "src/locales/de-DE.json": {
-    "file": "internal/immutable/chunks/de-DE-3814d14a.js",
+    "file": "internal/immutable/chunks/de-DE-c84656e0.js",
     "src": "src/locales/de-DE.json",
     "isDynamicEntry": true
   },
   "src/locales/en-US.json": {
-    "file": "internal/immutable/chunks/en-US-c052b9ea.js",
+    "file": "internal/immutable/chunks/en-US-723112d7.js",
     "src": "src/locales/en-US.json",
     "isDynamicEntry": true
   },
   "src/locales/fr-FR.json": {
-    "file": "internal/immutable/chunks/fr-FR-79ee7566.js",
+    "file": "internal/immutable/chunks/fr-FR-73e652bf.js",
     "src": "src/locales/fr-FR.json",
     "isDynamicEntry": true
   },
   "src/locales/id-ID.json": {
-    "file": "internal/immutable/chunks/id-ID-e1da9308.js",
+    "file": "internal/immutable/chunks/id-ID-4a550049.js",
     "src": "src/locales/id-ID.json",
     "isDynamicEntry": true
   },
   "src/locales/it-IT.json": {
-    "file": "internal/immutable/chunks/it-IT-298ecc6e.js",
+    "file": "internal/immutable/chunks/it-IT-a8d4f26b.js",
     "src": "src/locales/it-IT.json",
     "isDynamicEntry": true
   },
   "src/locales/ja-JP.json": {
-    "file": "internal/immutable/chunks/ja-JP-76868286.js",
+    "file": "internal/immutable/chunks/ja-JP-adc38ec0.js",
     "src": "src/locales/ja-JP.json",
     "isDynamicEntry": true
   },
   "src/locales/pt-BR.json": {
-    "file": "internal/immutable/chunks/pt-BR-ed487c6b.js",
+    "file": "internal/immutable/chunks/pt-BR-d5716c23.js",
     "src": "src/locales/pt-BR.json",
     "isDynamicEntry": true
   },
   "src/locales/ru-RU.json": {
-    "file": "internal/immutable/chunks/ru-RU-dec1a909.js",
+    "file": "internal/immutable/chunks/ru-RU-562d93db.js",
     "src": "src/locales/ru-RU.json",
     "isDynamicEntry": true
   },
   "src/locales/th-TH.json": {
-    "file": "internal/immutable/chunks/th-TH-4b2a93d4.js",
+    "file": "internal/immutable/chunks/th-TH-c4db5430.js",
     "src": "src/locales/th-TH.json",
     "isDynamicEntry": true
   },
   "src/locales/vi-VN.json": {
-    "file": "internal/immutable/chunks/vi-VN-32e2d47a.js",
+    "file": "internal/immutable/chunks/vi-VN-2e3398a5.js",
     "src": "src/locales/vi-VN.json",
     "isDynamicEntry": true
   },
   "src/locales/zh-CN.json": {
-    "file": "internal/immutable/chunks/zh-CN-0fc291e6.js",
+    "file": "internal/immutable/chunks/zh-CN-2c816ab2.js",
     "src": "src/locales/zh-CN.json",
     "isDynamicEntry": true
   },
   "src/locales/zh-TW.json": {
-    "file": "internal/immutable/chunks/zh-TW-f14f9f89.js",
+    "file": "internal/immutable/chunks/zh-TW-e1a8a771.js",
     "src": "src/locales/zh-TW.json",
     "isDynamicEntry": true
   },
   "src/locales/items/en-US.json": {
-    "file": "internal/immutable/chunks/en-US-633c48a0.js",
+    "file": "internal/immutable/chunks/en-US-9a1d611a.js",
     "src": "src/locales/items/en-US.json",
     "isDynamicEntry": true
   },
   "src/locales/items/it-IT.json": {
-    "file": "internal/immutable/chunks/it-IT-d4ace31e.js",
+    "file": "internal/immutable/chunks/it-IT-3cf53b31.js",
     "src": "src/locales/items/it-IT.json",
     "isDynamicEntry": true
   },
   "src/locales/items/ja-JP.json": {
-    "file": "internal/immutable/chunks/ja-JP-9a116936.js",
+    "file": "internal/immutable/chunks/ja-JP-54d87b3f.js",
     "src": "src/locales/items/ja-JP.json",
     "isDynamicEntry": true
   },
   "src/locales/items/pt-BR.json": {
-    "file": "internal/immutable/chunks/pt-BR-ef6f28e8.js",
+    "file": "internal/immutable/chunks/pt-BR-5c18cdc1.js",
     "src": "src/locales/items/pt-BR.json",
     "isDynamicEntry": true
   },
   "src/locales/items/ru-RU.json": {
-    "file": "internal/immutable/chunks/ru-RU-cce9fb85.js",
+    "file": "internal/immutable/chunks/ru-RU-ce6ad141.js",
     "src": "src/locales/items/ru-RU.json",
     "isDynamicEntry": true
   },
   "src/locales/items/vi-VN.json": {
-    "file": "internal/immutable/chunks/vi-VN-5f277aef.js",
+    "file": "internal/immutable/chunks/vi-VN-27580585.js",
     "src": "src/locales/items/vi-VN.json",
     "isDynamicEntry": true
   },
   "src/locales/items/zh-CN.json": {
-    "file": "internal/immutable/chunks/zh-CN-682e266a.js",
+    "file": "internal/immutable/chunks/zh-CN-bf2471c4.js",
     "src": "src/locales/items/zh-CN.json",
     "isDynamicEntry": true
   },
   "src/locales/items/zh-TW.json": {
-    "file": "internal/immutable/chunks/zh-TW-2597c741.js",
+    "file": "internal/immutable/chunks/zh-TW-9805154d.js",
     "src": "src/locales/items/zh-TW.json",
     "isDynamicEntry": true
   },
   "src/lib/components/ObtainedItem.svelte": {
-    "file": "internal/immutable/chunks/ObtainedItem-7d64abc9.js",
+    "file": "internal/immutable/chunks/ObtainedItem-8ec565ee.js",
     "src": "src/lib/components/ObtainedItem.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
-      "_WishResult-901333c5.js",
-      "_app-stores-358281e6.js",
+      "_WishResult-2e6896ab.js",
+      "_app-stores-fa402321.js",
       "_audio-460a91c6.js"
     ],
     "css": [
@@ -3104,55 +3219,55 @@
     ]
   },
   "src/routes/_index/ModalConvert.svelte": {
-    "file": "internal/immutable/chunks/ModalConvert-3a3233d8.js",
+    "file": "internal/immutable/chunks/ModalConvert-a4ac15ed.js",
     "src": "src/routes/_index/ModalConvert.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_runtime.esm-4bf604c8.js",
-      "_app-stores-358281e6.js",
+      "_app-stores-fa402321.js",
       "_index-123e2351.js",
       "_audio-460a91c6.js",
-      "_WishResult-901333c5.js",
-      "__page-87ee6ee5.js",
-      "__modal-balance-a6913f0e.js"
+      "_WishResult-2e6896ab.js",
+      "__page-1ad70c7c.js",
+      "__modal-balance-a0c90f7b.js"
     ],
     "css": [
       "internal/immutable/assets/ModalConvert-1cf56ccf.css"
     ]
   },
-  "__modal-balance-a6913f0e.js": {
-    "file": "internal/immutable/chunks/_modal-balance-a6913f0e.js",
+  "__modal-balance-a0c90f7b.js": {
+    "file": "internal/immutable/chunks/_modal-balance-a0c90f7b.js",
     "imports": [
       "_index-c0d078cd.js",
       "_audio-460a91c6.js",
       "_index-123e2351.js",
-      "_app-stores-358281e6.js",
-      "__page-87ee6ee5.js"
+      "_app-stores-fa402321.js",
+      "__page-1ad70c7c.js"
     ],
     "css": [
       "internal/immutable/assets/_modal-balance-4f630c28.css"
     ]
   },
   "src/routes/_menu/index.svelte": {
-    "file": "internal/immutable/chunks/index-47e956e7.js",
+    "file": "internal/immutable/chunks/index-003c84b4.js",
     "src": "src/routes/_menu/index.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
-      "_WishResult-901333c5.js",
-      "_app-stores-358281e6.js",
+      "_WishResult-2e6896ab.js",
+      "_app-stores-fa402321.js",
       "_audio-460a91c6.js",
-      "_sync-9a12991b.js",
-      "__page-87ee6ee5.js",
+      "_sync-9514ec25.js",
+      "__page-1ad70c7c.js",
       "_CheckBox-828e98c0.js",
       "_api-cookie-d587b0da.js",
-      "_i18n-ec7c8da1.js",
+      "_i18n-289b1d81.js",
       "_accessKey-2a3cada9.js",
       "_ButtonModal-7ee3a4a1.js",
-      "_custom-banner-3b9921d3.js",
+      "_custom-banner-3f8b591c.js",
       "_timeago-17bb7280.js",
       "_lazyload-05dfa468.js"
     ],
@@ -3171,23 +3286,23 @@
     ]
   },
   "src/routes/_gachainfo/index.svelte": {
-    "file": "internal/immutable/chunks/index-ea7fdfd5.js",
+    "file": "internal/immutable/chunks/index-4e5ce57c.js",
     "src": "src/routes/_gachainfo/index.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
-      "_WishResult-901333c5.js",
-      "_app-stores-358281e6.js",
+      "_WishResult-2e6896ab.js",
+      "_app-stores-fa402321.js",
       "_api-cookie-d587b0da.js",
       "_audio-460a91c6.js",
-      "__page-87ee6ee5.js",
-      "_i18n-ec7c8da1.js",
+      "__page-1ad70c7c.js",
+      "_i18n-289b1d81.js",
       "_env-f184adc0.js",
       "_lazyload-05dfa468.js",
       "_index-0189b6d0.js",
-      "_custom-banner-3b9921d3.js",
+      "_custom-banner-3f8b591c.js",
       "_CheckBox-828e98c0.js",
       "__pagination-cd90c7ad.js"
     ],
@@ -3197,21 +3312,21 @@
     ]
   },
   "src/routes/_allbanners/index.svelte": {
-    "file": "internal/immutable/chunks/index-67d0b527.js",
+    "file": "internal/immutable/chunks/index-45aa92b6.js",
     "src": "src/routes/_allbanners/index.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_preload-helper-176e53da.js",
-      "_i18n-ec7c8da1.js",
+      "_i18n-289b1d81.js",
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
       "_index-bd4a5be3.js",
-      "_WishResult-901333c5.js",
-      "_app-stores-358281e6.js",
+      "_WishResult-2e6896ab.js",
+      "_app-stores-fa402321.js",
       "_env-f184adc0.js",
-      "_custom-banner-3b9921d3.js",
-      "__page-87ee6ee5.js",
+      "_custom-banner-3f8b591c.js",
+      "__page-1ad70c7c.js",
       "_audio-460a91c6.js"
     ],
     "dynamicImports": [
@@ -3243,7 +3358,9 @@
       "src/lib/data/banners/events/4.0.json",
       "src/lib/data/banners/events/4.1.json",
       "src/lib/data/banners/events/4.2.json",
-      "src/lib/data/banners/events/4.3.json"
+      "src/lib/data/banners/events/4.3.json",
+      "src/lib/data/banners/events/4.4.json",
+      "src/lib/data/banners/events/4.5.json"
     ],
     "css": [
       "internal/immutable/assets/index-191c38e6.css"
@@ -3257,33 +3374,33 @@
     ]
   },
   "src/routes/_inventory/index.svelte": {
-    "file": "internal/immutable/chunks/index-e277ccfa.js",
+    "file": "internal/immutable/chunks/index-58f90f7b.js",
     "src": "src/routes/_inventory/index.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-c0d078cd.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
-      "_WishResult-901333c5.js",
+      "_WishResult-2e6896ab.js",
       "_index-0189b6d0.js",
       "_env-f184adc0.js",
       "_audio-460a91c6.js",
-      "_app-stores-358281e6.js",
-      "_outfit-bffb00d9.js",
+      "_app-stores-fa402321.js",
+      "_outfit-35b977b8.js",
       "_api-cookie-d587b0da.js",
-      "_custom-banner-3b9921d3.js",
+      "_custom-banner-3f8b591c.js",
       "_CheckBox-828e98c0.js",
       "_index-bd4a5be3.js",
-      "__page-87ee6ee5.js",
+      "__page-1ad70c7c.js",
       "_lazyload-05dfa468.js",
-      "_i18n-ec7c8da1.js"
+      "_i18n-289b1d81.js"
     ],
     "css": [
       "internal/immutable/assets/index-9dd1fc3f.css"
     ]
   },
   "src/routes/_shop/index.svelte": {
-    "file": "internal/immutable/chunks/index-c33d11af.js",
+    "file": "internal/immutable/chunks/index-051e56ef.js",
     "src": "src/routes/_shop/index.svelte",
     "isDynamicEntry": true,
     "imports": [
@@ -3291,30 +3408,30 @@
       "_index-0189b6d0.js",
       "_index-123e2351.js",
       "_runtime.esm-4bf604c8.js",
-      "_WishResult-901333c5.js",
-      "_app-stores-358281e6.js",
-      "_outfit-bffb00d9.js",
+      "_WishResult-2e6896ab.js",
+      "_app-stores-fa402321.js",
+      "_outfit-35b977b8.js",
       "_env-f184adc0.js",
       "_audio-460a91c6.js",
-      "_RandomBackground-34695851.js",
-      "__page-87ee6ee5.js",
-      "__modal-balance-a6913f0e.js",
+      "_RandomBackground-cc76db76.js",
+      "__page-1ad70c7c.js",
+      "__modal-balance-a0c90f7b.js",
       "_api-cookie-d587b0da.js",
       "_CheckBox-828e98c0.js",
       "_ButtonModal-7ee3a4a1.js",
-      "_i18n-ec7c8da1.js"
+      "_i18n-289b1d81.js"
     ],
     "css": [
       "internal/immutable/assets/index-2b8cdfa9.css"
     ]
   },
   "src/routes/_feedback/index.svelte": {
-    "file": "internal/immutable/chunks/index-853bb736.js",
+    "file": "internal/immutable/chunks/index-ed2ab3d9.js",
     "src": "src/routes/_feedback/index.svelte",
     "isDynamicEntry": true,
     "imports": [
       "_index-c0d078cd.js",
-      "_app-stores-358281e6.js",
+      "_app-stores-fa402321.js",
       "_env-f184adc0.js",
       "_index-123e2351.js"
     ],
@@ -3467,85 +3584,51 @@
     "src": "src/lib/data/banners/events/4.3.json",
     "isDynamicEntry": true
   },
-  "lazyload.css": {
-    "file": "internal/immutable/assets/lazyload-d703da40.css",
-    "src": "lazyload.css"
+  "src/lib/data/banners/events/4.4.json": {
+    "file": "internal/immutable/chunks/4.4-b60e4f57.js",
+    "src": "src/lib/data/banners/events/4.4.json",
+    "isDynamicEntry": true
   },
-  "src/lib/components/ObtainedItem.css": {
-    "file": "internal/immutable/assets/ObtainedItem-64c93daf.css",
-    "src": "src/lib/components/ObtainedItem.css"
-  },
-  "Iklan.css": {
-    "file": "internal/immutable/assets/Iklan-27674bcf.css",
-    "src": "Iklan.css"
-  },
-  "src/routes/screen/wishitem/+page.css": {
-    "file": "internal/immutable/assets/_page-38811b6b.css",
-    "src": "src/routes/screen/wishitem/+page.css"
-  },
-  "src/routes/_index/ModalConvert.css": {
-    "file": "internal/immutable/assets/ModalConvert-1cf56ccf.css",
-    "src": "src/routes/_index/ModalConvert.css"
-  },
-  "src/routes/adkey/+page.css": {
-    "file": "internal/immutable/assets/_page-41952c63.css",
-    "src": "src/routes/adkey/+page.css"
-  },
-  "src/routes/privacy-policy/+page.css": {
-    "file": "internal/immutable/assets/_page-3c659a81.css",
-    "src": "src/routes/privacy-policy/+page.css"
-  },
-  "ButtonModal.css": {
-    "file": "internal/immutable/assets/ButtonModal-dd0ea437.css",
-    "src": "ButtonModal.css"
-  },
-  "src/routes/install/+page.css": {
-    "file": "internal/immutable/assets/_page-c955f7fd.css",
-    "src": "src/routes/install/+page.css"
+  "src/lib/data/banners/events/4.5.json": {
+    "file": "internal/immutable/chunks/4.5-9bf093be.js",
+    "src": "src/lib/data/banners/events/4.5.json",
+    "isDynamicEntry": true
   },
   "src/routes/+error.css": {
     "file": "internal/immutable/assets/_error-c9470412.css",
     "src": "src/routes/+error.css"
   },
-  "_pagination.css": {
-    "file": "internal/immutable/assets/_pagination-660172f1.css",
-    "src": "_pagination.css"
+  "ButtonModal.css": {
+    "file": "internal/immutable/assets/ButtonModal-dd0ea437.css",
+    "src": "ButtonModal.css"
+  },
+  "lazyload.css": {
+    "file": "internal/immutable/assets/lazyload-d703da40.css",
+    "src": "lazyload.css"
+  },
+  "src/routes/adkey/+page.css": {
+    "file": "internal/immutable/assets/_page-41952c63.css",
+    "src": "src/routes/adkey/+page.css"
+  },
+  "src/routes/install/+page.css": {
+    "file": "internal/immutable/assets/_page-c955f7fd.css",
+    "src": "src/routes/install/+page.css"
+  },
+  "src/routes/_index/ModalConvert.css": {
+    "file": "internal/immutable/assets/ModalConvert-1cf56ccf.css",
+    "src": "src/routes/_index/ModalConvert.css"
+  },
+  "Iklan.css": {
+    "file": "internal/immutable/assets/Iklan-27674bcf.css",
+    "src": "Iklan.css"
   },
   "RandomBackground.css": {
     "file": "internal/immutable/assets/RandomBackground-c01fc64e.css",
     "src": "RandomBackground.css"
   },
-  "src/routes/_allbanners/index.css": {
-    "file": "internal/immutable/assets/index-191c38e6.css",
-    "src": "src/routes/_allbanners/index.css"
-  },
-  "CheckBox.css": {
-    "file": "internal/immutable/assets/CheckBox-4ae22161.css",
-    "src": "CheckBox.css"
-  },
-  "src/routes/_menu/index.css": {
-    "file": "internal/immutable/assets/index-99507031.css",
-    "src": "src/routes/_menu/index.css"
-  },
-  "src/routes/bnlist/+page.css": {
-    "file": "internal/immutable/assets/_page-8ecfd270.css",
-    "src": "src/routes/bnlist/+page.css"
-  },
-  "src/routes/_feedback/index.css": {
-    "file": "internal/immutable/assets/index-f0ee7e4a.css",
-    "src": "src/routes/_feedback/index.css"
-  },
-  "src/routes/_gachainfo/index.css": {
-    "file": "internal/immutable/assets/index-db37b75c.css",
-    "src": "src/routes/_gachainfo/index.css"
-  },
-  "src/routes/_inventory/index.css": {
-    "file": "internal/immutable/assets/index-9dd1fc3f.css",
-    "src": "src/routes/_inventory/index.css"
-  },
-  "WishResult.css": {
-    "file": "internal/immutable/assets/WishResult-effb9a08.css",
-    "src": "WishResult.css"
+  "src/routes/screen/wishitem/+page.css": {
+    "file": "internal/immutable/assets/_page-38811b6b.css",
+    "src": "src/routes/screen/wishitem/+page.css"
   },
   "src/routes/_shop/index.css": {
     "file": "internal/immutable/assets/index-2b8cdfa9.css",
@@ -3555,12 +3638,56 @@
     "file": "internal/immutable/assets/_modal-balance-4f630c28.css",
     "src": "_modal-balance.css"
   },
-  "_page.css": {
-    "file": "internal/immutable/assets/_page-75fbe034.css",
-    "src": "_page.css"
+  "CheckBox.css": {
+    "file": "internal/immutable/assets/CheckBox-4ae22161.css",
+    "src": "CheckBox.css"
+  },
+  "src/routes/_allbanners/index.css": {
+    "file": "internal/immutable/assets/index-191c38e6.css",
+    "src": "src/routes/_allbanners/index.css"
+  },
+  "src/lib/components/ObtainedItem.css": {
+    "file": "internal/immutable/assets/ObtainedItem-64c93daf.css",
+    "src": "src/lib/components/ObtainedItem.css"
+  },
+  "src/routes/_menu/index.css": {
+    "file": "internal/immutable/assets/index-99507031.css",
+    "src": "src/routes/_menu/index.css"
+  },
+  "src/routes/bnlist/+page.css": {
+    "file": "internal/immutable/assets/_page-8ecfd270.css",
+    "src": "src/routes/bnlist/+page.css"
+  },
+  "src/routes/privacy-policy/+page.css": {
+    "file": "internal/immutable/assets/_page-3c659a81.css",
+    "src": "src/routes/privacy-policy/+page.css"
+  },
+  "src/routes/_gachainfo/index.css": {
+    "file": "internal/immutable/assets/index-db37b75c.css",
+    "src": "src/routes/_gachainfo/index.css"
+  },
+  "src/routes/_feedback/index.css": {
+    "file": "internal/immutable/assets/index-f0ee7e4a.css",
+    "src": "src/routes/_feedback/index.css"
+  },
+  "src/routes/_inventory/index.css": {
+    "file": "internal/immutable/assets/index-9dd1fc3f.css",
+    "src": "src/routes/_inventory/index.css"
   },
   "src/routes/+layout.css": {
     "file": "internal/immutable/assets/_layout-1f2c5d23.css",
     "src": "src/routes/+layout.css"
+  },
+  "WishResult.css": {
+    "file": "internal/immutable/assets/WishResult-effb9a08.css",
+    "src": "WishResult.css"
+  },
+  "_pagination.css": {
+    "file": "internal/immutable/assets/_pagination-660172f1.css",
+    "src": "_pagination.css"
+  },
+  "_page.css": {
+    "file": "internal/immutable/assets/_page-75fbe034.css",
+    "src": "_page.css"
   }
 }
