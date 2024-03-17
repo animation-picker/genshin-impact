@@ -104,7 +104,6 @@ jobs:
         run: |
          cd Genshin-Impact-Wish-Simulator
          yarn run tauri build
-         ls
       - name: Upload (Windows)
         if: runner.os == 'windows'
         uses: actions/upload-artifact@v3
