@@ -26,6 +26,7 @@ jobs:
     name: Build app with Electron
     needs: Page
     strategy:
+      fail-fast: false
       matrix:
         os: [windows,ubuntu,macos]
     runs-on: ${{ matrix.os }}-latest
