@@ -141,15 +141,11 @@
 		const autoSkip = localConfig.get('autoskip');
 		if (autoSkip) return showSplashArt({ skip: true });
 
-		if (bannerType === 'member') {
-			meteorStar = Math.floor(Math.random() * 3) + 3;
-		} else {
-			const stars = result.map(({ rarity }) => rarity);
-			single = stars.length === 1;
-			meteorStar = 3;
-			if (stars.includes(4)) meteorStar = 4;
-			if (stars.includes(5)) meteorStar = 5;
-		}
+		const stars = result.map(({ rarity }) => rarity);
+		single = stars.length === 1;
+		meteorStar = 3;
+		if (stars.includes(4)) meteorStar = 4;
+		if (stars.includes(5)) meteorStar = 5;
 		showMeteor = true;
 	};
 
