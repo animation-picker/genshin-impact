@@ -2,15 +2,18 @@
 ![原神点名器](https://stats.deeptrain.net/repo/cyanial/genshin-impact-picker/?theme=light)
 
 [![Release](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml)[![Pages](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml)[![Build app](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml)
+
+[在线demo](https://picker.shawn404.top)
+
 ## Note
 
 > Thanks for [approve](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95) from author of [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator).
 ### 使用
 >将网站运行目录设置为genshin-impact-picker-main/electron-static/static文件夹
 >
->支持自定义明星，格式为明星+空格+姓名（如5张三，每行一个）
+>支持自定义明星，格式为明星+空格+姓名（如5 张三，每行一个）
 >
->提交名单在页面左上角问号里提交
+>提交名单(txt格式)在页面左上角问号里提交
 
 ### Docker部署
 ```shell
@@ -72,11 +75,10 @@ $ npm run tauri build
 
 ### Deploy with Vercel
 
-**暂未测试效果**
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/cyanial/genshin-impact-picker)
 
-部署成功后，点击 `Settings-General` , 将 `Build & Development Settings` 下的 ~~`Output Directory` 设置为 `.vercel/static`，(Vercel自己会设置的)~~ 将 `Root Directory` 设置为 `Genshin-Impact-Wish-Simulator`。回到 `Deployments` 下，点击当前部署最右侧的三个点，选择 `Redeploy`，等待部署完成后访问 Vercel 提供的域名即可使用。
+部署成功后，点击 `Settings-General` , 将 `Build & Development Settings` 下的`Root Directory` 设置为 `Genshin-Impact-Wish-Simulator`。回到 `Deployments` 下，点击当前部署最右侧的三个点，选择 `Redeploy`，等待部署完成后访问 Vercel 提供的域名即可使用。
 ## 许可证
 
 本仓库使用了`CC BY-NC-SA 4.0`协议，不可用于商业用途
