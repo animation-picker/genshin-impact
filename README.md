@@ -10,7 +10,7 @@
 > Thanks for [approve](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95) from author of [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator).
 ### 公共站点
 欢迎各位在不影响自己正常使用的情况下吧自己部署的点名器站点公开出来供大家一起使用
->dm.mznet.pro
+[dm.mznet.pro](dm.mznet.pro)
 >本站点由于使用Cloudflare减速器访问速度可能会有降低，请保持耐心，尽量保持长期运营
 ### 使用
 >将网站运行目录设置为genshin-impact-picker-main/electron-static/static文件夹
