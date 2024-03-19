@@ -1,98 +1,102 @@
-# 原神抽卡点名器
+# 原神抽卡模拟器
+
 ![原神点名器](https://stats.deeptrain.net/repo/cyanial/genshin-impact-picker/?theme=light)
 
-[![Release](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml)[![Pages](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml)[![Build app](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml)
+[![发布状态](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml) [![页面状态](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml) [![应用构建状态](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml)
 
-[在线demo](https://picker.shawn404.top)
+[在线演示](https://picker.shawn404.top)
 
-## Note
+## 注意
 
-> Thanks for [approve](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95) from author of [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator).
+> 感谢 [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator) 作者的[批准](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95)。
+
 ### 公共站点
-欢迎各位在不影响自己正常使用的情况下吧自己部署的点名器站点公开出来供大家一起使用
-[dm.mznet.pro](https://dm.mznet.pro)
->本站点由于使用Cloudflare减速器访问速度可能会有降低，请保持耐心，尽量保持长期运营
-### 使用
->将网站运行目录设置为genshin-impact-picker-main/electron-static/static文件夹
->
->支持自定义明星，格式为明星+空格+姓名（如5 张三，每行一个）
->
->提交名单(txt格式)在页面左上角问号里提交
 
-### Docker部署
+欢迎大家在不影响正常使用的情况下，分享自己部署的模拟器站点，以供大家共同使用：[dm.mznet.pro](https://dm.mznet.pro)
+
+> 本站点通过Cloudflare Workers访问，可能会有一定的访问延迟，请保持耐心。我们将尽力保持长期运营。
+
+### 使用说明
+
+- 将网站运行目录设置为 `genshin-impact-picker-main/electron-static/static` 文件夹。
+- 支持自定义角色，格式为“星级 空格 角色名”（例如：5 张三，每行一个）。
+- 可以通过页面左上角的问号提交名单（txt格式）。
+
+### Docker 部署
+
 ```shell
-   docker run -d --name ysdm \
-      -p 8000:80 \
-      maizig/ysdm:1.1.0
+docker run -d --name ysdm \
+  -p 8000:80 \
+  maizig/ysdm:1.1.0
 ```
- > 运行成功后，宿主机映射地址为 `http://localhost:8000`，使用 Nginx / Apache 进行反代是一个不错的选择（以及 SSL 配置）
+
+> 运行成功后，访问宿主机地址 `http://localhost:8000`。使用 Nginx 或 Apache 进行反向代理是一个不错的选择，同时也可以配置 SSL。
 
 ### 前端开发
 
-前端代码在目录 `Genshin-Impact-Wish-Simulator` . 基于 `Svelte` 框架.
+前端代码位于 `Genshin-Impact-Wish-Simulator` 目录，基于 `Svelte` 框架开发。
 
 #### 二次开发
 
 ```bash
-$ npm run install
+$ npm install
 $ npm run dev
 ```
 
-### 打包exe
+### 打包为可执行文件
 
-#### Electron
+#### Electron 打包
 
-在 `Genshin-Impact-Wish-Simulator` 中执行
+在 `Genshin-Impact-Wish-Simulator` 目录下执行：
 
 ```bash
 $ npm run build
 ```
 
-将生成的静态文件 `.vercel/static` 拷贝到 `electron-static/static` 目录中, 覆盖掉.
+将生成的静态文件 `.vercel/static` 拷贝到 `electron-static/static` 目录中，覆盖原有文件。
 
-进入 `electron-static` 目录执行
+然后进入 `electron-static` 目录执行：
 
 ```bash
 $ npm install
-$ npm run build (生成当前系统可执行文件)
-$ npm run build-win (生成win32-x64)
+$ npm run build # 生成当前系统的可执行文件
+$ npm run build-win # 生成 Windows x64 的可执行文件
 ```
 
-#### Tauri
+#### Tauri 打包
 
-使用Tauri打包的体积较小，因为其调用系统webview，打包体积可减少200-300M  127M(tauri打包)  418M(electron打包)
+使用 Tauri 打包体积更小，因为它调用系统的 webview，打包体积可减少 200-300MB（Tauri 打包为 127MB，Electron 打包为 418MB）。
 
-> ps: tauri由于调用系统webview，因此不支持win10以下的系统，但可通过配置文件内置webview解决，具体见：https://tauri.app/zh-cn/v1/guides/building/windows 的`Supporting Windows 7`这一部分
+> 注意：Tauri 调用系统 webview，不支持 Windows 10 以下的系统。但可以通过配置文件内置 webview 解决，详见：https://tauri.app/zh-cn/v1/guides/building/windows 的 `Supporting Windows 7` 部分。
 
-在 `Genshin-Impact-Wish-Simulator` 中执行
+在 `Genshin-Impact-Wish-Simulator` 目录下执行：
 
 ```bash
 $ npm run tauri build
 ```
 
-### Deploy with Netlify
+### Netlify 一键部署
 
-通过本按钮可直接一键部署至Netlify（本仓库已内置配置文件，**懒人专用**)
+通过下方按钮可直接一键部署至 Netlify（本仓库已内置配置文件，适合懒人使用）。
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cyanial/genshin-impact-picker&base=Genshin-Impact-Wish-Simulator)
 
-
-### Deploy with Vercel
-
+### Vercel 一键部署
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/cyanial/genshin-impact-picker)
 
-部署成功后，点击 `Settings-General` , 将 `Build & Development Settings` 下的`Root Directory` 设置为 `Genshin-Impact-Wish-Simulator`。回到 `Deployments` 下，点击当前部署最右侧的三个点，选择 `Redeploy`，等待部署完成后访问 Vercel 提供的域名即可使用。
+部署成功后，进入 `Settings-General`，将 `Build & Development Settings` 下的 `Root Directory` 设置为 `Genshin-Impact-Wish-Simulator`。回到 `Deployments` 页面，点击当前部署右侧的三个点，选择 `Redeploy`。等待部署完成后，访问 Vercel 提供的域名即可。
+
 ## 许可证
 
-本仓库使用了`CC BY-NC-SA 4.0`协议，不可用于商业用途
+本项目采用 `CC BY-NC-SA 4.0` 许可证，不得用于商业用途。
 
-### 原仓库：WishSimulator(MIT协议)
+### 原仓库许可证：WishSimulator（MIT 许可证）
 
 ```
 MIT License
 
-Copyright (c) 2022 WishSImulator.App
+Copyright (c) 2022 WishSimulator
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
