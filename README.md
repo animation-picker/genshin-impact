@@ -19,8 +19,9 @@
 ### 使用说明
 #### 从源代码部署（两种下载方法）
 ##### 直接clone本仓库使用仓库中的编译好的代码文件夹
-- 将网站运行目录设置为 `genshin-impact-picker-main/electron-static/static` 文件夹。
+> 将网站运行目录设置为 `genshin-impact-picker-main/electron-static/static` 文件夹。
 ##### 从action中的app下载编译好的文件包
+#### 如何上传名单以及名单文件格式
 - 支持自定义角色，格式为“星级 空格 角色名”（例如：5 张三，每行一个）。
 - 可以通过页面左上角的问号提交名单（txt格式）。
 - P.S.星级请设置3-5之间的整数，超过5或小于3会导致不显示点名结果
