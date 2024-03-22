@@ -15,7 +15,7 @@
 1. [dm.mznet.pro](https://dm.mznet.pro)
   > 本站点使用Cloudflare减速器，可能会有一定的访问延迟，请保持耐心。我将尽力保持长期运营。
 2. [genshin.jerryz.com.cn](https://genshin.jerryz.com.cn/)
-3. [picker.shawn404.top](https://picker.shawn404.top)
+3. [demo-picker.shawn404.top](https://demo-picker.shawn404.top)
 
 ### 使用说明
 #### 从源代码部署（两种下载方法）
