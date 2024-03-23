@@ -1,4 +1,5 @@
 <div align="center">
+
 # 原神抽卡模拟器
 
 [文档](http://docs.mznet.pro)·[下载](https://github.com/cyanial/genshin-impact-picker/releases/latest)
