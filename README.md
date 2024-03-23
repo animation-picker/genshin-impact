@@ -30,7 +30,7 @@
 2. [genshin.jerryz.com.cn](https://genshin.jerryz.com.cn/)
 3. [demo-picker.shawn404.top](https://demo-picker.shawn404.top)
 
-更多的公共站点可在[文档：公共站点](http://docs.mznet.pro/user/public)中查看
+更多的公共站点可在[文档：公共站点](http://docs.mznet.pro/users/public)中查看
 
 ## 更多
 
