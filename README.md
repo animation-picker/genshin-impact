@@ -15,20 +15,26 @@
 > 感谢 [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator) 作者的[批准](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95)。
 
 ## 使用方法
-### app
+### 应用
 
-
+从[github release](https://github.com/cyanial/genshin-impact-picker/releases/latest)中按照发行说明来获取对应系统的程序包即可
 
 ### 公共站点
 
-欢迎大家在不影响正常使用的情况下，分享自己部署的点名器站点，以供大家共同使用：
+> 尽量先考虑通过应用程序使用，站点可能存在网络波动
+
+> 欢迎大家在不影响正常使用的情况下，分享自己部署的点名器站点，以供大家共同使用：
 
 1. [dm.mznet.pro](https://dm.mznet.pro)
   > 本站点使用Cloudflare减速器，可能会有一定的访问延迟，请保持耐心。我将尽力保持长期运营。
 2. [genshin.jerryz.com.cn](https://genshin.jerryz.com.cn/)
 3. [demo-picker.shawn404.top](https://demo-picker.shawn404.top)
 
+更多的公共站点可在[文档：公共站点](http://docs.mznet.pro/user/public)中查看
 
+## 更多
+
+更多的使用方法及开发文档可在[这里](http://docs.mznet.pro)查看
 
 ## 许可证
 
