@@ -1,6 +1,11 @@
+<div align="center">
 # 原神抽卡模拟器
 
+[文档](http://docs.mznet.pro)·[下载](https://github.com/cyanial/genshin-impact-picker/releases/latest)
+
 ![原神点名器](https://stats.deeptrain.net/repo/cyanial/genshin-impact-picker/?theme=light)
+
+</div>
 
 [![发布状态](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/release.yml) [![页面状态](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/page.yml) [![应用构建状态](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml/badge.svg)](https://github.com/cyanial/genshin-impact-picker/actions/workflows/app.yml)
 
