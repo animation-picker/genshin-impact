@@ -16,7 +16,7 @@
 
 ## 使用方法
 
->以下方式完成后，请查看[配置教程](http://docs.mznet.pro/users/configure)
+>以下任一方式完成后，请查看[配置教程](http://docs.mznet.pro/users/configure)
 
 ### 应用程序(推荐)
 
