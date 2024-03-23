@@ -15,6 +15,9 @@
 > 感谢 [Genshin-Impact-Wish-Simulator](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator) 作者的[批准](https://github.com/Mantan21/Genshin-Impact-Wish-Simulator/issues/95)。
 
 ## 使用方法
+
+>以下方式完成后，请查看[配置教程](http://docs.mznet.pro/users/configure)
+
 ### 应用程序(推荐)
 
 从[github release](https://github.com/cyanial/genshin-impact-picker/releases/latest)中按照发行说明来获取对应系统的程序包即可
