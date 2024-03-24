@@ -37,6 +37,7 @@ jobs:
             with:
               prefix-key: "Cache-${{ runner.os }}"
               workspaces: "Genshin-Impact-Wish-Simulator/src-tauri"
+              shared-key: "tauri"
           - name: Install Dependencies
             run: |
              cd Genshin-Impact-Wish-Simulator
