@@ -32,6 +32,11 @@ jobs:
               key: ${{ runner.OS }}-npm-frontend-cache
               restore-keys: |
                 ${{ runner.OS }}-npm-frontend-cache
+          - name: Cache Rust
+            uses: Swatinem/rust-cache@v2
+            with:
+              prefix-key: "Tauri-cache-${{ runner.os }}"
+              workspaces: "Genshin-Impact-Wish-Simulator/src-tauri"
           - name: Install Dependencies
             run: |
              cd Genshin-Impact-Wish-Simulator
