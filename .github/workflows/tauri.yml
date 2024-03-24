@@ -35,7 +35,7 @@ jobs:
           - name: Cache Rust
             uses: Swatinem/rust-cache@v2
             with:
-              prefix-key: "Tauri-cache-${{ runner.os }}"
+              prefix-key: "Cache-${{ runner.os }}"
               workspaces: "Genshin-Impact-Wish-Simulator/src-tauri"
           - name: Install Dependencies
             run: |
