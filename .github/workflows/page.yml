@@ -42,3 +42,33 @@ jobs:
         with:
           name: frontend
           path: Genshin-Impact-Wish-Simulator/frontend.zip
+  updater:
+    if: ${{github.event_name == 'workflow_dispatch'}} || ${{github.event_name == 'push'}}
+    name: Update static files
+    needs: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Git config
+        run: |
+         git config --global user.name github-actions[bot]
+         git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+            name: frontend
+      - name: Remove old
+        run: |
+         cd electron-static
+         rm -rf static
+      - name: Extract new
+        run: |          
+         7z x ./frontend.zip -oelectron-static/ -y
+      - name: Create commit
+        run: |
+         git add electron-static/static/**/**
+         git commit -m "Update static files"
+      - name: Push commit
+        run: |
+         git push
