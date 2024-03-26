@@ -12,8 +12,7 @@ on:
     branches:
       - main # default branch
     paths:
-      - electron-static/**/**
-      - Genshin-Impact-Wish-Simulator/src-tauri/**/**
+      - Genshin-Impact-Wish-Simulator/src/**/**
 
 jobs:
   Build:
