@@ -68,11 +68,11 @@ jobs:
             if: runner.os == 'macos'
             uses: actions/upload-artifact@v3
             with:
-              name: genish-impact-Tauri-${{ runner.os }}
+              name: genish-impact-Tauri-${{ runner.os }}-dmg
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/dmg/*.dmg
           - name: Upload app (Macos)
             if: runner.os == 'macos'
             uses: actions/upload-artifact@v3
             with:
-              name: genish-impact-Tauri-${{ runner.os }}
+              name: genish-impact-Tauri-${{ runner.os }}-app
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/macos/*.app
