@@ -22,3 +22,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
             files: ./**/genish-impact*.*
+            body_path: ./CHANGELOG.md
