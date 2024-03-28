@@ -6,10 +6,14 @@ on:
    tags:
      - "v*"
 jobs:
-  Build:
+  app:
+    name: Build app
     uses: ./.github/workflows/app.yml
+  page:
+    name: Build&Update pages
+    uses: ./.github/workflows/page.yml
   release:
-    needs: Build
+    needs: app
     runs-on: ubuntu-latest
     steps:
       - name: Download Artifact
