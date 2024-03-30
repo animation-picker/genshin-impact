@@ -1,4 +1,4 @@
-name: Pages
+name: Docker
 
 on:
  workflow_dispatch:
@@ -40,7 +40,6 @@ jobs:
          yarn run build
       - name: Build Docker image
         run: |
-          cd ..
           docker build -t maizig/ysdm:latest .
       - name: Login to DockerHub
         uses: docker/login-action@v1
