@@ -1,0 +1,53 @@
+name: Docker
+
+on:
+ workflow_dispatch:
+ pull_request:
+    branches:
+      - main # default branch
+    paths:
+      - Genshin-Impact-Wish-Simulator/src/**/**
+ push:
+    branches:
+      - main # default branch
+    paths:
+      - Genshin-Impact-Wish-Simulator/src/**/**
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v3
+        with:
+          path: ./Genshin-Impact-Wish-Simulator/node_modules
+          key: ${{ runner.OS }}-npm-frontend-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-frontend-cache
+      - name: Install Dependencies
+        run: |
+         cd Genshin-Impact-Wish-Simulator
+         yarn install
+      - name: Build
+        run: |
+         cd Genshin-Impact-Wish-Simulator
+         yarn run build
+      - name: Build Docker image
+        run: |
+          docker build -t maizig/ysdm:latest .
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Push to DockerHub
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: maizig/ysdm:latest
