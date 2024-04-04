@@ -68,3 +68,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
+## Star History
+
+<a href="https://star-history.com/#cyanial/genshin-impact-picker&Timeline">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=cyanial/genshin-impact-picker&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=cyanial/genshin-impact-picker&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=cyanial/genshin-impact-picker&type=Timeline" />
+ </picture>
+</a>
