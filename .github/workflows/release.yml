@@ -16,11 +16,11 @@ jobs:
     needs: app
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.1.1
       - name: Download Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.4
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2.0.4
         with:
             files: ./**/genish-impact*.*
             body_path: ./CHANGELOG.md
