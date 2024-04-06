@@ -1,0 +1,19 @@
+name: GitHub Actions Version Updater
+
+# Controls when the action will run.
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.1.1
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+      - name: Run GitHub Actions Version Updater
+        uses: saadmk11/github-actions-version-updater@v0.8.1
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+          ignore: 'dtolnay/rust-toolchain@stable'
