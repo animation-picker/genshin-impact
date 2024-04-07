@@ -18,25 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v4.0.2
-        with:
-          node-version: "20"
-      - name: Cache NPM dependencies
-        uses: actions/cache@v4.0.2
-        with:
-          path: ./Genshin-Impact-Wish-Simulator/node_modules
-          key: ${{ runner.OS }}-npm-frontend-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-frontend-cache
-      - name: Install Dependencies
-        run: |
-         cd Genshin-Impact-Wish-Simulator
-         yarn install
-      - name: Build
-        run: |
-         cd Genshin-Impact-Wish-Simulator
-         yarn run build
       - name: Build Docker image
         run: |
           docker build -t maizig/ysdm:latest .
