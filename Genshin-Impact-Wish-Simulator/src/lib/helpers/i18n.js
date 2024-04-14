@@ -3,20 +3,21 @@ import { init, register, getLocaleFromNavigator } from 'svelte-i18n';
 import { localConfig } from './dataAPI/api-localstore';
 
 const supportedLocales = [
-	'zh-CN',
-	'zh-TW',
-	'de-DE',
-	'en-US',
-	'fr-FR',
-	'id-ID',
-	'it-IT',
-	'ja-JP',
-	'pt-BR',
-	'ru-RU',
-	'th-TH',
-	'vi-VN'
+	'zh-CN'
+	// 'zh-TW',
+	// 'de-DE',
+	// 'en-US',
+	// 'fr-FR',
+	// 'id-ID',
+	// 'it-IT',
+	// 'ja-JP',
+	// 'pt-BR',
+	// 'ru-RU',
+	// 'th-TH',
+	// 'vi-VN'
 ];
-const itemLocales = ['zh-CN', 'zh-TW', 'en-US', 'it-IT', 'ja-JP', 'pt-BR', 'ru-RU', 'vi-VN'];
+// const itemLocales = ['zh-CN', 'zh-TW', 'en-US', 'it-IT', 'ja-JP', 'pt-BR', 'ru-RU', 'vi-VN'];
+const itemLocales = ['zh-CN'];
 
 const checkLocale = () => {
 	const savedLocale = browser ? localConfig.get('locale') : null;

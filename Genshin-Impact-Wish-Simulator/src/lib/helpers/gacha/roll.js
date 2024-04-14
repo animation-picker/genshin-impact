@@ -14,7 +14,6 @@ const { addHistory } = HistoryManager;
  */
 const roll = async (banner, WishInstance, indexOfBanner) => {
 	if (banner === "member") {
-
 		// Get Item
 		const randomItem = WishInstance.getItem(5, banner, indexOfBanner);
 		// const { manual, wish } = owneditem.put({ itemID: randomItem.itemID });

@@ -15,7 +15,7 @@ import {
 } from '$lib/store/app-stores';
 import { localBalance, rollCounter, localConfig, localMemberList } from './api-localstore';
 import { noticeMark } from '../noticeMark';
-import { memberDB } from '../member-loader';
+// import { memberDB } from '../member-loader';
 
 /**
  * Read Balance From LocalStorage

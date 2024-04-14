@@ -18,6 +18,7 @@
 	import { APP_TITLE } from '$lib/env';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import WISH, { roll } from '$lib/helpers/gacha/Wish';
+	import { draw } from '$lib/helpers/drawpools/pool';
 
 	// Components
 	import Header from './_header.svelte';
@@ -27,6 +28,7 @@
 	import EpitomizedModal from './epitomized-path/EpitomizedPath.svelte';
 	import Meteor from './wish-result/_meteor.svelte';
 	import WishResult from './wish-result/WishResult.svelte';
+	import { memberDB } from '$lib/helpers/member-loader';
 
 	let rollCount = 0;
 	let result = [];
@@ -75,9 +77,21 @@
 		const indexOfCharBanner = bannerToRoll === 'character-event' ? getIndexOfCharBanner() : 0;
 		onWish.set(true);
 
-		for (let i = 0; i < count; i++) {
-			const result = await roll(bannerToRoll, WishInstance, indexOfCharBanner);
-			tmp.push(result);
+		if (bannerToRoll == 'member') {
+
+			const items = draw(count);
+
+			// bounusType = 'starglitter'
+
+			items.forEach(e => {
+				tmp.push({type: 'member', weaponType: 'catalyst', pity:10, isNew: false, bonusType: 'starglitter', bonusQty: 20, ...e});
+			});
+
+		} else {
+			for (let i = 0; i < count; i++) {
+				const result = await roll(bannerToRoll, WishInstance, indexOfCharBanner);
+				tmp.push(result);
+			}
 		}
 
 		result = tmp;
@@ -141,15 +155,13 @@
 		const autoSkip = localConfig.get('autoskip');
 		if (autoSkip) return showSplashArt({ skip: true });
 
-		if (bannerType === 'member') {
-			meteorStar = Math.floor(Math.random() * 3) + 3;
-		} else {
-			const stars = result.map(({ rarity }) => rarity);
-			single = stars.length === 1;
-			meteorStar = 3;
-			if (stars.includes(4)) meteorStar = 4;
-			if (stars.includes(5)) meteorStar = 5;
-		}
+
+		const stars = result.map(({ rarity }) => rarity);
+		single = stars.length === 1;
+		meteorStar = 3;
+		if (stars.includes(4)) meteorStar = 4;
+		if (stars.includes(5)) meteorStar = 5;
+
 		showMeteor = true;
 	};
 

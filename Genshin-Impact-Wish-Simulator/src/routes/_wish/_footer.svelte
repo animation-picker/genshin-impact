@@ -56,10 +56,11 @@
 	const roll = getContext('doRoll');
 	const handleSingleRollClick = () => {
 		if (bannerType === 'member') {
-			if (!Array.isArray(memberDB) || memberDB.length == 0) {
-				alert("请点击左上角问号去上传名单");
-				return;
-			}
+			// console.log(memberDB.length)
+			// if (!Array.isArray(memberDB) || memberDB.length == 0) {
+			// 	alert("请点击左上角问号去上传名单");
+			// 	return;
+			// }
 		}
 		
 
@@ -68,10 +69,10 @@
 	};
 	const handleMultiRollClick = () => {
 		if (bannerType === 'member') {
-			if (!Array.isArray(memberDB) || memberDB.length == 0) {
-				alert("请点击左上角问号去上传名单");
-				return;
-			}
+			// if (!Array.isArray(memberDB) || memberDB.length == 0) {
+			// 	alert("请点击左上角问号去上传名单");
+			// 	return;
+			// }
 		}
 
 		playSfx('roll');

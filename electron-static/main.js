@@ -4,10 +4,27 @@ const path = require('path');
 
 let e = express();
 
+e.use(express.json());
+
+e.delete('/api/shutdown', (req, res) => {
+    const magicNumber = req.body.magicNumber;
+    const correctMagicNumber = '9987'; // Replace with your actual magic number
+
+    if (magicNumber === correctMagicNumber) {
+        res.send('Server shutting down...');
+        process.exit();
+    } else {
+        res.status(403).send('Incorrect magic number');
+    }
+});
+
 // e.use(express.static('./static'))
 e.use(express.static(path.join(__dirname, 'static')))
 
-let s = e.listen(0, 'localhost')
+
+const port = 9989;
+
+let s = e.listen(port, 'localhost')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -18,7 +35,7 @@ function createWindow () {
     win.setFullScreen(true);
  
     // and load the index.html of the app.
-    const port = s.address().port;
+    // const port = s.address().port;
     win.loadURL(`http://localhost:${port}`);
  
     // win.once('ready-to-show', () => {

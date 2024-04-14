@@ -1,0 +1,30 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/adkey": [
+		"src/routes/+layout.js"
+	],
+	"/bnlist": [
+		"src/routes/+layout.js"
+	],
+	"/install": [
+		"src/routes/+layout.js"
+	],
+	"/privacy-policy": [
+		"src/routes/+layout.js"
+	],
+	"/screen": [
+		"src/routes/+layout.js"
+	],
+	"/screen/chars": [
+		"src/routes/+layout.js"
+	],
+	"/screen/wishitem": [
+		"src/routes/+layout.js"
+	],
+	"/screen/wishlist": [
+		"src/routes/+layout.js"
+	]
+}

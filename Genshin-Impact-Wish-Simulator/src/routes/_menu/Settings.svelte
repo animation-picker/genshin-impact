@@ -98,7 +98,7 @@
 		playSfx('wishBacksound');
 		handleAnimatedBG();
 		selectedAmount = 'default';
-		setMultiPull(10);
+		setMultiPull(5);
 	};
 
 	const cancelReset = () => {
@@ -208,8 +208,6 @@
 	<!-- <OptionMenu name="switchBanner">{$t('menu.switchBanner')}</OptionMenu> -->
 
 	<OptionMenu name="reset">{$t('menu.factoryReset')}</OptionMenu>
-
-	<OptionMenu name="upload">导入名单</OptionMenu>
 
 </div>
 

@@ -51,6 +51,22 @@
 	const previousClick = () => {
 		// navigate('allbanners');
 		// playSfx();
+
+		console.log('close')
+		fetch('http://localhost:9989/api/shutdown', {
+			method: 'DELETE',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				magicNumber: '9987', // Replace with your actual magic number
+			})
+		})
+			.then(response => response.json())
+			.then(data => console.log(data))
+			.catch((error) => {
+				console.error('错误:', error);
+			});
 	};
 
 	const handleMenu = getContext('handleMenu');
@@ -91,7 +107,7 @@
 			<img src={$assets['brand.png']} alt="Brand" crossorigin="anonymous" />
 
 			{#if !$editorMode}
-				<span> {$t('wish.wishTitle')} </span>
+				<span> Wish </span>
 			{:else}
 				<span> {$t('customBanner.title')} </span>
 			{/if}

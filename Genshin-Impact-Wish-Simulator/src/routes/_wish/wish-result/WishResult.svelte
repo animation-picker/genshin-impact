@@ -175,6 +175,7 @@
 								{custom}
 								{name}
 								{type}
+								{rarity}
 								{outfitName}
 								{weaponType}
 								{useOutfit}

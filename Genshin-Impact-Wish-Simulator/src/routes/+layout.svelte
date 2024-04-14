@@ -12,7 +12,8 @@
 		viewportWidth,
 		isMobile,
 		mobileMode,
-		isPWA
+		isPWA,
+
 	} from '$lib/store/app-stores';
 	import { IDBUpdater } from '$lib/helpers/migrator/IDBUpdater';
 	import { storageLocal } from '$lib/helpers/dataAPI/api-localstore';
@@ -94,6 +95,7 @@
 		document.addEventListener('storageUpdate', () => sync($autoExport));
 		// prevent Righ click (hold on android) on production mode
 		if (!dev) document.addEventListener('contextmenu', (e) => e.preventDefault());
+
 	});
 </script>
 
@@ -159,7 +161,6 @@
 		<link rel="manifest" href="/appmanifest.json" />
 	{/if}
 
-	<!-- <Iklan head /> -->
 </svelte:head>
 
 <Loader {isBannerLoaded} {directLoad} />

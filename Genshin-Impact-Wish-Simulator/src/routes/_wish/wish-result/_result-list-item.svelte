@@ -35,6 +35,7 @@
 		const pos = Math.floor(100 / (l + 1) * (i + 1));
 		return `top: ${pos}%;`
 	}
+
 </script>
 
 <div
@@ -57,9 +58,7 @@
 				</div>
 
 			{:else if type === 'member'}
-				{#each chineseChar as c, i}
-					<p id="chinese-char" style={getCssVarPercent(chineseChar.length, i)}>{c}</p>
-				{/each}
+				<p id="chinese-char" class="{rarity === 5 ? 'rainbow': rarity === 4 ? 'flux' : ''}" >{chineseChar}</p>
 				
 				<!-- <div class="zoomist-image weapon">
 					
@@ -226,18 +225,18 @@
 		left: 0;
 		width: 100%;
 		height: 50%;
-		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0));
+		/* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0)); */
 	}
 
 	#chinese-char {
 		font-family: 'AaQiShu';
 		position: absolute;
-		/* top: 44%; */
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		font-size: 15vh;
-		color: #2f2e2f;
-		filter: drop-shadow(0.2rem 0.2rem 0.02rem rgb(0, 0, 0))
+		filter: drop-shadow(0.2rem 0.2rem 0.02rem rgb(0, 0, 0));
+		writing-mode: vertical-lr;
 	}
 
 	.zoomist-image {
@@ -334,4 +333,44 @@
 			filter: brightness(100%);
 		}
 	}
+
+	.rainbow {
+    	color: #fff;
+		animation: animate 1.5s linear infinite;
+		text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+		filter: hue-rotate(0deg);
+		animation-delay: 0.1s;
+	}
+
+	@keyframes animate {
+		from {
+			filter: hue-rotate(0deg);
+		}
+		to {
+			filter: hue-rotate(360deg);
+		}	
+	}
+
+	.flux {
+		/* font-family: neon; */
+		/* color: #426DFB; */
+		/* text-shadow: 0 0 3vw #2356FF; */
+		animation: flux 1.5s linear infinite;
+		-moz-animation: flux 1.5s linear infinite;
+		-webkit-animation: flux 1.5s linear infinite;
+		-o-animation: flux 1.5s linear infinite;
+	}
+
+	@keyframes flux {
+		0%,
+		100% {
+			text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+			color: #28D7FE;
+		}
+		50% {
+			text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+			color: #146C80;
+		}
+	}
+
 </style>

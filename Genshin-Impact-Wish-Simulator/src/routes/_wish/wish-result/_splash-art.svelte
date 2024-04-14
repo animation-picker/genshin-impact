@@ -11,9 +11,11 @@
 	export let useOutfit;
 	export let custom;
 	export let chineseChar;
+	export let rarity;
 	export let clientHeight = 0;
 	export let clientWidth = 0;
 	export let offset = {};
+
 </script>
 
 <div class="zoomist-wrapper splash-art anim {type}" style="overflow: visible;" use:removeAnimClass>
@@ -36,7 +38,7 @@
 	{:else if type === 'member'}
 		<div class="zoomist-image weapon anim {weaponType}-parent" use:removeAnimClass>
 			<img src={$assets[`bg-${weaponType}.webp`]} alt={weaponType} class="weaponbg" />
-			<p id="chinese-char">{chineseChar}</p>
+			<p id="chinese-char" class="{rarity === 5 ? 'rainbow' : rarity === 4 ? 'flux' : ''}" >{chineseChar}</p>
 		</div>
 	{:else if type === 'outfit'}
 		<div class="zoomist-image" style={pos(offset, clientHeight, clientWidth)}>
@@ -88,7 +90,6 @@
 		width: 10%;
 		word-wrap: break-word;
 		line-height: 85%;
-		color: #1e1e1e;
 		filter: drop-shadow(0.2rem 0.2rem 0.02rem rgb(0, 0, 0));
 	}
 
@@ -207,4 +208,45 @@
 			filter: drop-shadow(0.7rem 0.6rem 0.2rem rgba(0, 0, 0, 0.7));
 		}
 	}
+
+	.rainbow {
+    	color: #fff;
+		animation: animate 1.5s linear infinite;
+		text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+		filter: hue-rotate(0deg);
+		animation-delay: 0.1s;
+	}
+
+	@keyframes animate {
+		from {
+			filter: hue-rotate(0deg);
+		}
+		to {
+			filter: hue-rotate(360deg);
+		}	
+	}
+
+
+	.flux {
+		/* font-family: neon; */
+		color: #426DFB;
+		text-shadow: 0 0 3vw #2356FF;
+		animation: flux 2s linear infinite;
+		-moz-animation: flux 2s linear infinite;
+		-webkit-animation: flux 2s linear infinite;
+		-o-animation: flux 2s linear infinite;
+	}
+
+	@keyframes flux {
+		0%,
+		100% {
+			text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+			color: #28D7FE;
+		}
+		50% {
+			text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+			color: #146C80;
+		}
+	}
+	
 </style>
