@@ -14,8 +14,7 @@
 		multipull,
 		editorMode,
 		preloadVersion,
-		editID,
-
+		editID
 	} from '$lib/store/app-stores';
 	import { playSfx } from '$lib/helpers/audio/audio';
 	import { isNewOutfitReleased } from '$lib/helpers/outfit';
@@ -28,6 +27,7 @@
 	import EpitomizedButton from './epitomized-path/_button.svelte';
 	import BannerPublisher from '../_custom-banner/Publisher.svelte';
 	import { memberDB } from '$lib/helpers/member-loader';
+	import { empty, fetchMember } from '$lib/helpers/drawpools/pool';
 
 	export let bannerType = 'beginner';
 
@@ -56,23 +56,29 @@
 	const roll = getContext('doRoll');
 	const handleSingleRollClick = () => {
 		if (bannerType === 'member') {
-			// console.log(memberDB.length)
-			// if (!Array.isArray(memberDB) || memberDB.length == 0) {
-			// 	alert("请点击左上角问号去上传名单");
-			// 	return;
-			// }
+			if (empty()) {
+				fetchMember();
+
+				if (empty()) {
+					alert('名单为空');
+					return;
+				}
+			}
 		}
-		
 
 		playSfx('roll');
 		roll(1, bannerType);
 	};
 	const handleMultiRollClick = () => {
 		if (bannerType === 'member') {
-			// if (!Array.isArray(memberDB) || memberDB.length == 0) {
-			// 	alert("请点击左上角问号去上传名单");
-			// 	return;
-			// }
+			if (empty()) {
+				fetchMember();
+
+				if (empty()) {
+					alert('名单为空');
+					return;
+				}
+			}
 		}
 
 		playSfx('roll');

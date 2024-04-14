@@ -1,26 +1,48 @@
 
-const member = [];
+let member = [];
+// let member = [];
+
+export const empty = () => {
+	return member.length === 0;
+}
+
+export const fetchMember = async () => {
+	try {
+		const response = await fetch('/api/members', {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			}
+		});
+
+		const data = await response.json();
+		member = data;
+
+	} catch (error) {
+		console.error('Error fetching member data:', error);
+	}
+};
+
+fetchMember();
 
 let pool = [];
 
 const initPool = (memArr) => {
 	memArr.forEach(({ name, chineseChar }) => {
-		pool.push({name, chineseChar});
+		pool.push({ name, chineseChar });
 	});
 
-    for (let i = pool.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [pool[i], pool[j]] = [pool[j], pool[i]];
-    }
+	for (let i = pool.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[pool[i], pool[j]] = [pool[j], pool[i]];
+	}
 
-    // console.log(pool);
+	// console.log(pool);
 };
-
 
 initPool(member);
 
 export const draw = (n) => {
-
 	// n > 0
 	if (n == 1) {
 		if (pool.length === 0) initPool(member);
@@ -30,16 +52,16 @@ export const draw = (n) => {
 		return [m];
 	}
 
-    let res = [];
+	let res = [];
 
-    if (n > pool.length) {
-		pool.forEach(({name, chineseChar}) => {
-			res.push({chineseChar, name})
-		})
+	if (n > pool.length) {
+		pool.forEach(({ name, chineseChar }) => {
+			res.push({ chineseChar, name });
+		});
 		initPool(member);
-    } 
+	}
 
-	let needN = n-res.length;
+	let needN = n - res.length;
 	if (needN <= 0) return res;
 
 	for (let i = 0; i < needN; i++) {
@@ -52,5 +74,5 @@ export const draw = (n) => {
 	}
 
 	return res;
-}
+};
 

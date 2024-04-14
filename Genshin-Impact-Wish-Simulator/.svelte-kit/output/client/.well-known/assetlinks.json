@@ -1,0 +1,13 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "twa.wishsimulator.app",
+			"sha256_cert_fingerprints": [
+				"64:37:0F:C3:47:0D:34:DA:C0:8B:3D:DA:4E:F6:FB:55:13:BD:92:6C:71:25:75:14:BB:9D:58:3F:7B:AD:70:84",
+				"D8:1F:F7:07:1A:99:D9:4C:06:88:51:FC:9F:C5:51:6C:1F:37:2E:BC:13:EE:89:64:F4:99:85:AA:CF:DC:2F:D4"
+			]
+		}
+	}
+]

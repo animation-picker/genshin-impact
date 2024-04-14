@@ -71,19 +71,30 @@
 
 	const handleMenu = getContext('handleMenu');
 	$: headerHeightstyle = $mobileMode ? `height: ${$viewportHeight}px` : '';
-	$: fullscreen = $viewportHeight === window.screen.height;
+	// $: fullscreen = $viewportHeight === window.screen.height;
+
+	let fullscreen = true;
 
 	const handleFullscreen = () => {
-		if (!fullscreen) {
-			const body = document.body;
-			if (body.requestFullscreen) return body.requestFullscreen();
-			if (body.webkitRequestFullscreen) return body.webkitRequestFullscreen();
-			if (body.msRequestFullscreen) return body?.msRequestFullscreen();
-		} else {
-			if (document.exitFullscreen) return document?.exitFullscreen();
-			if (document.webkitExitFullscreen) return document?.webkitExitFullscreen();
-			if (document.msExitFullscreen) return document?.msExitFullscreen();
-		}
+
+		// fullscreen = !fullscreen;
+
+		console.log('fullscreen')
+		fetch('http://localhost:9989/api/fullscreen', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				magicNumber: '9987', // Replace with your actual magic number
+			})
+		})
+			.then(() => {
+				fullscreen = !fullscreen;
+			})
+			.catch((error) => {
+				console.error('错误:', error);
+			});
 	};
 
 	// Shortcut

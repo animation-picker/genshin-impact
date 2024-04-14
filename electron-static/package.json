@@ -8,13 +8,14 @@
     "build": "electron-packager ./ genish-impact --electron-version=28.1.0 --overwrite --asar",
     "build-darwin-x64": "electron-packager ./ genish-impact --arch=x64 --electron-version=28.1.0 --overwrite --asar",
     "build-win": "electron-packager ./ genish-impact  --platform=win32 --electron-version=28.1.0 --arch=x64 --overwrite --asar"
-
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "electron-packager": "^17.1.2",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "iconv-lite": "^0.6.3"
   },
   "devDependencies": {
     "electron": "^28.1.0"
