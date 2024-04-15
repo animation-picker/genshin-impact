@@ -3,8 +3,7 @@
 </template>
 
 <script setup>
-import { inject, provide, ref } from 'vue'
-import { playSfx } from '@/lib/audio/audio'
+import { computed, inject, provide, ref } from 'vue'
 import { useAssetStore } from '@/stores/asset'
 
 // stores
@@ -30,9 +29,14 @@ const props = defineProps({
 })
 
 const preview = ref(props.standalone || false)
+const lc = ref('zh-CN'.toLowerCase())
+const isYuanshen = lc.value.match(/(cn|ja)/)
 
-// const splashBG = isOutfit ? $assets['outfit-background.webp'] : $assets['splash-background.webp'];
-const splashBG = ref('')
+const splashBG = computed(() =>
+  props.isOutfit
+    ? assetStore.assets['outfit-background.webp']
+    : assetStore.assets['splash-background.webp']
+)
 
 const showResultList = ref(false)
 const activeIndex = ref(0)

@@ -2,7 +2,7 @@
   <Initial :isBannerLoaded :directLoad />
 
   <main
-    :class="['zh', { preview, mobile: mobileStore.mobileMode }]"
+    :class="['zh-CN', { preview, mobile: mobileStore.mobileMode }]"
     :style="{
       '--screen-height': appStore.viewportHeight + 'px',
       '--screen-width': appStore.viewportWidth + 'px',
@@ -79,7 +79,7 @@ provide('loaded', () => {
   isLoaded.value = true
 
   // TODO: del this line
-  // isBannerLoaded.value = true
+  isBannerLoaded.value = true
 })
 
 onMounted(() => {

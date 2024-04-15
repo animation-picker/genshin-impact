@@ -1,5 +1,5 @@
 <template>
-  <div :class="['meteor-wrapper', { show }]" @mousedown="() => (showSkipButton.value = true)">
+  <div :class="['meteor-wrapper', { show }]" @mousedown="() => (showSkipButton = true)">
     <div class="video">
       <video ref="v3star" :src="assetStore.assets['3star-single.mp4']" type="video/mp4">
         <track kind="captions" />
@@ -32,16 +32,14 @@
 
 <script setup>
 import { ref, inject, onMounted, watch } from 'vue'
-import { playSfx } from '@/lib/audio/audio'
 import { useAssetStore } from '@/stores/asset'
 import { useToastStore } from '@/stores/toast'
-import { useLocalStore } from '@/stores/local'
+import { useAudioStore } from '@/stores/audio'
 import hotkeys from 'hotkeys-js'
 
-// stores
 const assetStore = useAssetStore()
 const toastStore = useToastStore()
-const localStore = useLocalStore()
+const audioStore = useAudioStore()
 
 const props = defineProps({
   rarity: {
@@ -58,13 +56,14 @@ const props = defineProps({
   }
 })
 
+const showSkipButton = ref(false)
+
 // refs
 const v3star = ref(null)
 const v4starSingle = ref(null)
 const v4star = ref(null)
 const v5starSingle = ref(null)
 const v5star = ref(null)
-const showSkipButton = ref(false)
 
 const showSplashArt = inject('showSplashArt')
 const meteorEnd = ({ skip = false } = {}) => {
@@ -73,14 +72,8 @@ const meteorEnd = ({ skip = false } = {}) => {
 }
 
 const skip = () => {
-  playSfx()
-  const videoDOMS = [
-    v3star.value,
-    v4starSingle.value,
-    v4star.value,
-    v5starSingle.value,
-    v5star.value
-  ]
+  audioStore.playSfx()
+  const videoDOMS = [v3star, v4starSingle, v4star, v5starSingle, v5star]
   meteorEnd({ skip: true })
   videoDOMS.forEach((video) => {
     video.load()
@@ -88,18 +81,20 @@ const skip = () => {
   })
 }
 
+const getContent = (rarity, single) => {
+  if (single && rarity !== 3) return rarity === 5 ? v5starSingle : v4starSingle
+  if (!single && rarity !== 3) return rarity === 5 ? v5star : v4star
+  return v3star
+}
+
 const showVideoHandle = async (rarity, single = true) => {
-  const muted = localStore.muted.value
-  let videoContent = v3star
-  if (single && rarity !== 3) {
-    videoContent.value = rarity === 5 ? v5starSingle : v4starSingle
-  }
-  if (!single && rarity !== 3) {
-    videoContent.value = rarity === 5 ? v5star : v4star
-  }
+  const muted = audioStore.muted
+  let videoContent = getContent(rarity, single)
+
+  console.log(videoContent.value)
 
   if (!videoContent.value || videoContent.value.error || isNaN(videoContent.value.duration)) {
-    toastStore.pushToast('祈愿动画加载失败')
+    toastStore.pushToast({ message: '祈愿动画加载失败' })
     console.error(
       "can't play Meteor Animation because it cannot be loaded",
       videoContent.value.error
@@ -109,7 +104,6 @@ const showVideoHandle = async (rarity, single = true) => {
   videoContent.value.style.display = 'unset'
   videoContent.value.muted = !!muted
   await videoContent.value.play()
-  return
 }
 
 watch(
@@ -120,14 +114,17 @@ watch(
   { immediate: true }
 )
 
-// shrotcut
+// shrotcut - esc
 hotkeys('esc', 'index', (e) => {
+  console.log('meteor esc')
   if (!props.show) return
   e.preventDefault()
   skip()
 })
 
+// shrotcut - enter
 hotkeys('enter', 'index', (e) => {
+  console.log('meteor enter')
   if (!props.show) return
   e.preventDefault()
   if (props.showSkipButton) return skip()
@@ -135,17 +132,11 @@ hotkeys('enter', 'index', (e) => {
 })
 
 onMounted(() => {
-  const videoDOMS = [
-    v3star.value,
-    v4starSingle.value,
-    v4star.value,
-    v5starSingle.value,
-    v5star.value
-  ]
+  const videoDOMS = [v3star, v4starSingle, v4star, v5starSingle, v5star]
   videoDOMS.forEach((video) => {
-    video.addEventListener('ended', () => {
-      video.style.display = 'none'
-      video.load()
+    video.value.addEventListener('ended', () => {
+      video.value.style.display = 'none'
+      video.value.load()
       meteorEnd()
     })
   })
