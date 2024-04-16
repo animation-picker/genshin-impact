@@ -55,6 +55,3 @@ jobs:
         with:
           name: genish-impact-${{ runner.os }}
           path: electron-static/genish-impact-${{ runner.os }}-x64.zip
-  Build-Tauri:
-    name: Build app with Tauri
-    uses: ./.github/workflows/tauri.yml
