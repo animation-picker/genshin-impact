@@ -48,7 +48,7 @@ jobs:
           name: frontend
           path: Genshin-Impact-Wish-Simulator/frontend.zip
   updater:
-    if: ${{github.event_name == 'workflow_dispatch'}}
+    if: false
     name: Update static files
     needs: Build
     runs-on: ubuntu-latest
