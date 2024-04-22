@@ -67,6 +67,7 @@ jobs:
           name: genish-impact-${{ runner.os }}
           path: electron-static/genish-impact-${{ runner.os }}-x64.zip
       - name: Remove old
+        if: false
         run: |
          cd electron-static
          rm -rf static
