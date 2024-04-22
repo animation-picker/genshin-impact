@@ -23,6 +23,7 @@ jobs:
     uses: ./.github/workflows/page.yml
   Build-app:
     name: Build app with Electron
+    needs: Page
     strategy:
       fail-fast: false
       matrix:
