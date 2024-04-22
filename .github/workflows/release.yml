@@ -1,0 +1,22 @@
+name: Release
+
+on:
+ workflow_dispatch:
+ push:
+   tags:
+     - "v*"
+jobs:
+  app:
+    name: Build app
+    uses: ./.github/workflows/app.yml
+  release:
+    needs: app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Download Artifact
+        uses: actions/download-artifact@v4.1.4
+      - name: Create Release
+        uses: softprops/action-gh-release@v2.0.4
+        with:
+            files: ./**/genish-impact*.*

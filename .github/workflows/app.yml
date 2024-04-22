@@ -1,0 +1,73 @@
+name: Build app
+
+on:
+ workflow_dispatch:
+ workflow_call:
+ push:
+    branches:
+      - main # default branch
+    paths:
+      - electron-static/**/**
+      - Genshin-Impact-Wish-Simulator/src-tauri/**/**
+ pull_request:
+    branches:
+      - main # default branch
+    paths:
+      - electron-static/**/**
+      - Genshin-Impact-Wish-Simulator/src-tauri/**/**
+
+
+jobs:
+  Page:
+    name: Build page
+    uses: ./.github/workflows/page.yml
+  Build-app:
+    name: Build app with Electron
+    needs: Page
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows,ubuntu,macos]
+    runs-on: ${{ matrix.os }}-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "20"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4.0.2
+        with:
+          path: ./electron-static/node_modules
+          key: ${{ runner.os }}-npm-app-cache
+          restore-keys: |
+            ${{ runner.os }}-npm-app-cache
+      - name: Install Dependencies
+        run: |
+         cd electron-static
+         yarn install
+      - name: Download Artifact
+        uses: actions/download-artifact@v4.1.4
+        with:
+          name: frontend
+      - name: extract new
+        run: |          
+         7z x frontend.zip -oelectron-static/ -y
+      - name: Build
+        run: |
+         cd electron-static
+         yarn run build
+      - name: Package (${{ runner.os }})
+        run: |
+         cd electron-static
+         7z a -tzip genish-impact-${{ runner.os }}-x64.zip ./genish-impact-*
+      - name: Upload (${{ runner.os }})
+        uses: actions/upload-artifact@v4.3.1
+        with:
+          name: genish-impact-${{ runner.os }}
+          path: electron-static/genish-impact-${{ runner.os }}-x64.zip
+      - name: Remove old
+        if: false
+        run: |
+         cd electron-static
+         rm -rf static
