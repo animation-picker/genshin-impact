@@ -18,6 +18,9 @@ on:
 
 
 jobs:
+  Page:
+    name: Build page
+    uses: ./.github/workflows/page.yml
   Build-app:
     name: Build app with Electron
     strategy:
