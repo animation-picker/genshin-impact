@@ -47,9 +47,9 @@ jobs:
          cd electron-static
          yarn install
       - name: Download Artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.4
         with:
-          name: frontend
+            name: frontend
       - name: extract new
         run: |          
          7z x frontend.zip -oelectron-static/ -y
