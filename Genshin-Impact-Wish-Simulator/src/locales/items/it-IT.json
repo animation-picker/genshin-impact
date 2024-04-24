@@ -12,6 +12,7 @@
 	"cashflow-supervision": "Supervisione pecuniaria",
 	"cool-steel": "Lama fredda",
 	"cranes-echoing-call": "Canto della gru echeggiante",
+	"crimson_moon_s-semblance": "Forma della Luna cremisi",
 	"debate-club": "Mazza della persuasione",
 	"dragon_s-bane": "Scacciadraghi",
 	"elegy-for-the-end": "Elegia finale",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "Alhaitham",
 		"title": "Insegnamento austero"
+	},
+	"arlecchino": {
+		"name": "Arlecchino",
+		"title": "Mezzaluna di presagi nefasti"
 	},
 	"amber": {
 		"name": "Amber",

@@ -12,6 +12,7 @@
 	"cashflow-supervision": "Казначейский надзор",
 	"cool-steel": "Холодное лезвие",
 	"cranes-echoing-call": "Звонкий клич журавля",
+	"crimson_moon_s-semblance": "Очертания алой луны",
 	"debate-club": "Дубина переговоров",
 	"dragon_s-bane": "Гроза драконов",
 	"elegy-for-the-end": "Элегия погибели",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "Аль-Хайтам",
 		"title": "Голос разума"
+	},
+	"arlecchino": {
+		"name": "Арлекино",
+		"title": "Роковая луна"
 	},
 	"amber": {
 		"name": "Эмбер",

@@ -433,12 +433,31 @@
 			]
 		},
 		{
-			"featured": true,
 			"date": "11 Mar 2024",
 			"description": [
 				"Add New Character: <strong> Chiori (5★)</strong>",
 				"Add New Weapon: <b> Uraku Misugiri (5★)</b>",
 				"Add <strong> Arataki Itto 3rd Rerun </strong> Banner"
+			]
+		},
+		{
+			"date": "24 Mar 2024",
+			"description": ["Add New Banner: <b>Chronicled Wish</b>"]
+		},
+		{
+			"date": "30 Mar 2024",
+			"description": [
+				"Activate <b>Neuvillette's 1st Rerun</b> Banner",
+				"Activate <b>Kazuha's 3th Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "24 Apr 2024",
+			"featured": true,
+			"description": [
+				"Add New Character: <strong> Arlecchino (5★)</strong>",
+				"Add New Weapon: <b> Crimson Moon's Semblance (5★)</b>",
+				"Add <strong> Lyney 1st rerun </strong> Banner"
 			]
 		}
 	]
