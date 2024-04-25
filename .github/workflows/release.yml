@@ -11,6 +11,7 @@ jobs:
     uses: ./.github/workflows/app.yml
   page:
     name: Build&Update pages
+    if: false
     uses: ./.github/workflows/page.yml
   release:
     needs: app
