@@ -1,3 +1,4 @@
+# Via https://github.com/wei/pull to Setup pull
 version: "1"
 rules:
   - base: main
