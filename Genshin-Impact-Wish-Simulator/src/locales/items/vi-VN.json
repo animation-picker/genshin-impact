@@ -12,6 +12,7 @@
 	"cashflow-supervision": "Quản Đốc Vàng Ròng",
 	"cool-steel": "Lãnh Nhẫn",
 	"cranes-echoing-call": "Dư Âm Tiếng Hạc",
+	"crimson_moon_s-semblance": "Hình Thái Xích Nguyệt",
 	"debate-club": "Gậy Thu Phục",
 	"dragon_s-bane": "Tai Ương Của Rồng",
 	"elegy-for-the-end": "Tiếng Thở Dài Vô Tận",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "Alhaitham",
 		"title": "Lời Khuyên Tận Tình"
+	},
+	"arlecchino": {
+		"name": "Arlecchino",
+		"title": "Vầng Trăng Tai Họa"
 	},
 	"amber": {
 		"name": "Amber",

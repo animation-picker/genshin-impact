@@ -12,6 +12,7 @@
 	"cashflow-supervision": "凛流の監視者",
 	"cool-steel": "冷刃",
 	"cranes-echoing-call": "鶴鳴の余韻",
+	"crimson_moon_s-semblance": "赤月のシルエット",
 	"debate-club": "理屈責め",
 	"dragon_s-bane": "匣中滅龍",
 	"elegy-for-the-end": "終焉を嘆く詩",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "アルハイゼン",
 		"title": "権謀教戒"
+	},
+	"arlecchino": {
+		"name": "アルレッキーノ",
+		"title": "暝天の凶月"
 	},
 	"amber": {
 		"name": "アンバー",

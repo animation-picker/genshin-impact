@@ -12,6 +12,7 @@
 	"cashflow-supervision": "Cashflow Supervision",
 	"cool-steel": "Cool Steel",
 	"cranes-echoing-call": "Crane's Echoing Call",
+	"crimson_moon_s-semblance": "Crimson Moon's Semblance",
 	"debate-club": "Debate Club",
 	"dragon_s-bane": "Dragon's Bane",
 	"elegy-for-the-end": "Elegy for the End",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "Alhaitham",
 		"title": "Admonishing Instruction"
+	},
+	"arlecchino": {
+		"name": "Arlecchino",
+		"title": "Dire Balemoon"
 	},
 	"amber": {
 		"name": "Amber",

@@ -12,6 +12,7 @@
 	"cashflow-supervision": "金流监督",
 	"cool-steel": "冷刃",
 	"cranes-echoing-call": "鹤鸣余音",
+	"crimson_moon_s-semblance": "赤月之形",
 	"debate-club": "以理服人",
 	"dragon_s-bane": "匣里灭辰",
 	"elegy-for-the-end": "终末嗟叹之诗",
@@ -80,7 +81,7 @@
 	"the-widsith": "流浪乐章",
 	"thrilling-tales-of-dragon-slayers": "讨龙英杰谭",
 	"thundering-pulse": "飞雷之弦振",
-	"tome-of-the-eternal-flow": "久遠流転の大典",
+	"tome-of-the-eternal-flow": "万世流涌大典",
 	"tulaytullah_s-remembrance": "图莱杜拉的回忆",
 	"uraku-misugiri": "有乐御簾切",
 	"verdict": "裁断",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "艾尔海森",
 		"title": "诲韬诤言"
+	},
+	"arlecchino": {
+		"name": "阿蕾奇诺",
+		"title": "孤暝厄月"
 	},
 	"amber": {
 		"name": "安柏",

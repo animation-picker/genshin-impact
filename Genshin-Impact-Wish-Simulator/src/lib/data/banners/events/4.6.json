@@ -1,0 +1,46 @@
+{
+	"patch": 4.6,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "the-hearths-ashen-shadow-1",
+							"character": "arlecchino",
+							"textOffset": { "l": 55, "b": 12.75 }
+						},
+						{
+							"bannerName": "conjuring-chiaroscuro-2",
+							"character": "lyney",
+							"textOffset": { "l": 55, "b": 12.75 }
+						}
+					],
+					"rateup": ["xiangling", "freminet", "lynette"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-63",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "crimson_moon_s-semblance" },
+						{ "name": "the-first-great-magic", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"the-dockhands-assistant",
+						"portable-power-saw",
+						"favonius-warbow",
+						"dragon_s-bane",
+						"eye-of-perception"
+					],
+					"textOffset": {
+						"featured": { "l": 45, "t": 70, "w": 29 },
+						"rateup": { "l": 78, "b": 17 }
+					}
+				}
+			}
+		}
+	]
+}
+

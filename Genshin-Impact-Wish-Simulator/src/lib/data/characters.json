@@ -2,6 +2,18 @@
 	"onlyStandard": ["amber", "kaeya", "lisa"],
 	"data": [
 		{
+			"itemID": 10000096,
+			"name": "arlecchino",
+			"vision": "pyro",
+			"rarity": 5,
+			"origin": "fontaine",
+			"offset": {
+				"splashArt": { "x": -3.4999999999999996, "y": 1.2493261455525606, "scale": 2.2 },
+				"wishCard": { "x": 2.5617977528089892, "y": 73.3375, "scale": 18.1 },
+				"button": { "l": 50, "w": 105, "t": 25 }
+			}
+		},
+		{
 			"itemID": 168,
 			"name": "chiori",
 			"vision": "geo",

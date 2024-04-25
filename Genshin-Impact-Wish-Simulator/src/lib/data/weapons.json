@@ -1,6 +1,17 @@
 {
 	"data": [
 		{
+			"itemID": 13512,
+			"name": "crimson_moon_s-semblance",
+			"rarity": 5,
+			"weaponType": "polearm",
+			"limited": true,
+			"origin": "inazuma",
+			"offset": {
+				"button": { "t": 15, "w": 95, "l": 30 }
+			}
+		},
+		{
 			"itemID": 169,
 			"name": "uraku-misugiri",
 			"rarity": 5,

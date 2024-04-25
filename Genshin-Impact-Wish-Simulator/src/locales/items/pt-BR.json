@@ -12,6 +12,7 @@
 	"cashflow-supervision": "Supervisão de Caixa",
 	"cool-steel": "Lâmina Fria",
 	"cranes-echoing-call": "Chamado Ecoante da Garça",
+	"crimson_moon_s-semblance": "Semblante da Lua Carmesim",
 	"debate-club": "Pacifista",
 	"dragon_s-bane": "Perdição do Dragão",
 	"elegy-for-the-end": "Elegia do Suspiro Final",
@@ -97,6 +98,10 @@
 	"alhaitham": {
 		"name": "Alhaitham",
 		"title": "Reprimenda Instrutiva"
+	},
+	"arlecchino": {
+		"name": "Arlecchino",
+		"title": "Lua Solitária da Escuridão"
 	},
 	"amber": {
 		"name": "Amber",
