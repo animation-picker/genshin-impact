@@ -1,0 +1,5 @@
+dist
+.temp
+.cache
+.vitepress
+node_modules
