@@ -11,7 +11,7 @@ app构建还需要安装好rust编程语言环境
 ## 克隆本仓库
 
 ```bash
-git clone https://github.com/cyanial/genshin-impact-picker.git
+git clone https://github.com/animation-picker/genshin-impact.git
 ```
 
 ## 项目结构
