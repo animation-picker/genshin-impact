@@ -1,0 +1,59 @@
+name: Deploy docs
+
+on:
+ workflow_dispatch:
+ workflow_call:
+ pull_request:
+    branches:
+      - main # default branch
+    paths:
+      - webdocs/**/**
+ push:
+    branches:
+      - main # default branch
+    paths:
+      - webdocs/**/**
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "20"
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4.0.2
+        with:
+          path: ./webdocs/node_modules
+          key: ${{ runner.OS }}-npm-frontend-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-frontend-cache
+      - name: Install Dependencies
+        run: |
+         cd webdocs
+         yarn install
+      - name: Build
+        run: |
+         cd webdocs
+         yarn run build
+      - name: Deploy
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./webdocs/docs/.vitepress/dist
+  deploy:
+    needs: Build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "name": "genshin-picker-docs",
+  "description": "原神点名器文档",
+  "type": "module",
+  "keywords": [
+    "docs",
+    "vitepress"
+  ],
+  "author": {
+    "name": "animation-picker",
+    "url": "https://github.com/animation-picker"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/animation-picker/genshin-impact",
+  "private": false,
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@vueuse/core": "^10.9.0",
+    "vitepress": "1.1.4",
+    "vue": "^3.4.26"
+  }
+}
