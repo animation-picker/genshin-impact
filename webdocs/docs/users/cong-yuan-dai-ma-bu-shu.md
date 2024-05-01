@@ -19,7 +19,7 @@ cd /www/wwwroot/example.com //使用宝塔面板创建网站的默认目录格�
 2. 克隆本仓库
 
 ```bash
-git clone https://github.com/cyanial/genshin-impact-picker.git
+git clone https://github.com/animation-picker/genshin-impact.git
 ```
 
 3. 返回网站设置，将网站运行目录设置为 `genshin-impact-picker-main/electron-static/static` 文件夹。
