@@ -33,7 +33,7 @@ jobs:
       - name: Install Dependencies
         run: |
          cd Genshin-Impact-Wish-Simulator
-         yarn install
+         yarn install --production
       - name: Build
         run: |
          cd Genshin-Impact-Wish-Simulator
