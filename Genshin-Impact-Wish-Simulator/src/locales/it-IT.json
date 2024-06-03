@@ -1,5 +1,6 @@
 {
 	"title": "Genshin Impact Wish Simulator",
+	"item": "Oggetto",
 	"character": "Personaggio",
 	"weapon": "Arma",
 	"vision": "Vision",
@@ -35,6 +36,7 @@
 		"beginner": "Wish per Principianti",
 		"wanderlust": "Wanderlust Invocation",
 		"epitome-invocation": "Incarnazione divina",
+		"ode-to-the-dawn-breeze": "Poesia del vento mattutino",
 		"adrift-in-the-harbor": "Alla deriva nel porto",
 		"auric-blaze": "Fiamma dorata",
 		"azure-excursion": "Azure Excursion",
@@ -51,6 +53,7 @@
 		"farewell-of-snezhnaya": "Farewell of Snezhnaya",
 		"from-ashes-reborn": "Rinato dalle ceneri",
 		"gentry-of-hermitage": "Gentry of Hermitage",
+		"illuminating-lightning": "Fulmine #squarciaombre#",
 		"immaculate-pulse": "Battito immacolato",
 		"in-the-name-of-the-rosula": "Nel nome della Rosula",
 		"invitation-to-mundane-life": "Invito alla Vita mondana",
@@ -81,7 +84,7 @@
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
 		"nonRateup": "(When losing 4-Star Item)",
-		"selectedRate": "Selected Weapon Rate:",
+		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
 		"backToDefault": "Back to Default",
 		"resetPrompt": "Are you sure to Reset <b>\"{banner}\"</b> probabilities back to default?",
@@ -91,6 +94,7 @@
 	},
 	"customBanner": {
 		"title": "Customize Banner",
+		"byTraveler": "Created by Travelers",
 		"deletePrompt": "Are You Sure to delete this banner ?",
 		"ownerDeleteNote": "If you've shared this banner publicly, The Travelers who have made wishes on your banner will no longer be able to access it.",
 		"userDeleteNote": "The Wishing History on this banner will not be deleted, but you will not be able to pull on this banner again.",
@@ -123,9 +127,11 @@
 		"deleteFailed": "Failed to Remove",
 		"bannerRemoved": "Banner Removed",
 		"edit": "Edit",
-		"editInfo": "Edit Info",
+		"editInfo": "Edit Details",
 		"editBanner": "Edit Banner Information",
 		"bannerName": "Banner Name",
+		"titleOfBanner": "The #Title of# the Banner",
+		"titleNote": "Letters between #_# will be highlighted",
 		"charName": "Character Name",
 		"charTitle": "Character Title",
 		"watermark": "Watermark",
@@ -134,6 +140,7 @@
 		"publish": "Publish Banner",
 		"updateAndShare": "Update & Share",
 		"rateupChar": "Rate Up Characters",
+		"rateupNote": "Minimum 1 Rate Up Character",
 		"yourBanners": "Your Banners",
 		"createBanner": "Create a Custom Banner",
 		"limitation": "You are not a member, please delete some banners to activate the editor",
@@ -160,6 +167,44 @@
 		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
+	"epitomizedPath": {
+		"heading": "Epitomized Path",
+		"fatePoint": "Punti Fato",
+		"confirm": "Confirm Selection",
+		"viewDetails": "View Details",
+		"details": "Details",
+		"rules": "Chronicled Path Rules",
+		"chartChronicled": "Chart course towards one of the following Characters or Weapons",
+		"currentSelection": "Current Selection: 5-Star {itemType} wish",
+		"dropType": "Only 5-Star {itemType} will be obtained from the Wish",
+		"cancelPrompt": "Desideri cancellare il tuo Percorso attuale ?",
+		"cancelDesc": "La cancellazione azzererà i Punti Fato accumulati",
+		"selectWeapon": "Seleziona l'Arma",
+		"chartCourseOf": "Grafico del Percorso per {target}",
+		"cancelCourse": "Annulla Percorso",
+		"chartCourse": "Grafico del Percorso",
+		"courseSetFor": "Percorso deciso per: {selectedCourse}",
+		"setFor": "Path Set For: ",
+		"notSetYet": "No Path Set",
+		"description": [
+			"\"Epitomized Path\" è una meccanica dei desideri per \"Epitome Invication\". I viaggiatori possono tracciare un percorso verso un'arma a 5 stelle che sperano di ottenere.",
+			"Una volta che avrai tracciato un percorso verso l'arma scelta, otterrai un Punto Fato se <span> riceverai un'arma a 5 stelle che non è quella che hai scelto</span>. Puoi ottenere un massimo di 2 Punti Fato.",
+			"Una volta che avrai raggiunto la quantità massima di Punti Fato, la prossima arma a 5 stelle che sceglierai sarà quella scelta con \"Epitomized Path\".",
+			"Quando otterrai l'arma scelta in Epitome Invocation con Epitomized Path, <span> i Punti Fato accumulati verranno cancellati</span>.",
+			"Se non usi Epitomized Path per ottenere un'arma, non accumulerai Punti Fato.",
+			"Il percorso tracciato verso un'arma può essere modificato o annullato. Tuttavia, dopo averlo fatto, tutti i Punti Fato correnti verranno cancellati.",
+			"Al termine del periodo di Epitome Invocation, tutti i Punti Fato correnti verranno cancellati."
+		],
+		"chronicledRules": [
+			"Chronicled Path is a unique mechanism for Chronicled Wishes:",
+			"Before making a Chronicled Wish, you must select a target amongst the 5-star characters or 5-star weapons for your Chronicled Path. After making a selection, during this Chronicled Wish period, <span>the 5-star items you receive from the Wish will only be of the same item type as the target you selected for your Chronicled Path</span>.",
+			"<span>You will receive 1 Fate Point when you receive a 5-star weapon or character that is not the one you chose </span> for this Chronicled Wish period.",
+			"Once you have accumulated enough Fate Points, the next 5-star character or weapon you receive through Chronicled Wish in this period will be the one you chose through Chronicled Path.",
+			"<span>Your already accumulated Fate Points will be reset when you receive the character or weapon you selected</span> in this Chronicled Wish period.",
+			"You may change or cancel the Path you have set. <span>Doing so will reset your already accumulated Fate Points</span>.",
+			"<span>When this Chronicled Wish period ends, accumulated Fate Points will be reset</span>."
+		]
+	},
 	"wish": {
 		"wishTitle": "Wish",
 		"rollButton": "Wish {count}",
@@ -179,6 +224,7 @@
 			"beginner": "Wish per Principianti",
 			"character-event": "Wish dell'Evento del Personaggio",
 			"weapon-event": "Wish per Armi",
+			"chronicled": "Chronicled Wish",
 			"standard": "Wish Standard",
 			"wishDescription": "Ogni 10 wish se ne ha almeno uno a 4 o più stelle",
 			"novice": "Wish per Principianti",
@@ -192,26 +238,6 @@
 			"probIncreased": "Probabilità aumentata !",
 			"eventNote": "I personaggi a 5 stelle esclusivi dell'evento possono essere ottenuti solo nel wish specifico durante il periodo/i determinato.",
 			"viewDetails": "Visualizza i Dettagli per maggiori informazioni."
-		},
-		"epitomizedPath": {
-			"text": "Epitomized Path",
-			"fatePoint": "Punti Fato",
-			"cancelPrompt": "Desideri cancellare il tuo Percorso attuale ?",
-			"cancelDesc": "La cancellazione azzererà i Punti Fato accumulati",
-			"selectWeapon": "Seleziona l'Arma",
-			"chartCourseOf": "Grafico del Percorso per {target}",
-			"cancelCourse": "Annulla Percorso",
-			"chartCourse": "Grafico del Percorso",
-			"courseSetFor": "Percorso deciso per: {selectedCourse}",
-			"description": [
-				"\"Epitomized Path\" è una meccanica dei desideri per \"Epitome Invication\". I viaggiatori possono tracciare un percorso verso un'arma a 5 stelle che sperano di ottenere.",
-				"Una volta che avrai tracciato un percorso verso l'arma scelta, otterrai un Punto Fato se <span> riceverai un'arma a 5 stelle che non è quella che hai scelto</span>. Puoi ottenere un massimo di 2 Punti Fato.",
-				"Una volta che avrai raggiunto la quantità massima di Punti Fato, la prossima arma a 5 stelle che sceglierai sarà quella scelta con \"Epitomized Path\".",
-				"Quando otterrai l'arma scelta in Epitome Invocation con Epitomized Path, <span> i Punti Fato accumulati verranno cancellati</span>.",
-				"Se non usi Epitomized Path per ottenere un'arma, non accumulerai Punti Fato.",
-				"Il percorso tracciato verso un'arma può essere modificato o annullato. Tuttavia, dopo averlo fatto, tutti i Punti Fato correnti verranno cancellati.",
-				"Al termine del periodo di Epitome Invocation, tutti i Punti Fato correnti verranno cancellati."
-			]
 		},
 		"result": {
 			"skip": "Salta",
@@ -297,7 +323,6 @@
 			}
 		}
 	},
-
 	"details": {
 		"text": "Dettagli",
 		"promotional": "Promotional Items",
@@ -313,6 +338,11 @@
 		"limited": "Evento a Tempo Limitato",
 		"permanent": "Permanente",
 		"alert": "※ Questo è un {wishName}. La garanzia dei desideri viene accumulata solo all'interno di questo evento ed è indipendente dalle garanzie di altri desideri.",
+		"designatable": "Designatable Items",
+		"targetList": "When the Designated Item is a 5-Star {itemType}, the list of 5-Star Items is as follows:",
+		"chronicledRate": "(If there are no guarantees or Chronicled Path in effect, the base probability of all characters or weapons will be evenly distributed.)",
+		"chronicledPeriod": "5-Star Designatable Items in This Period",
+		"chronicledCourse": "Chart a course towards one of the following 5-Star Items where the probability of it appearing in 5-Star Item Drops:",
 		"beginner": [
 			"Il <span> Wish </span> per principianti non ha limiti di tempo ed è rivolto ai viaggiatori che sono atterrati di recente a Teyvat. Sono disponibili personaggi e armi non promozionali. <br /> Nel Wish per principianti, i set da 10 wish costano il <span> 20%</span> in meno di Acquaint Fate, e il tuo primo set da 10 wish includerà sicuramente {character} , mentre il tuo secondo set da 10 wish includerà sicuramente un <span> altro </span> personaggio min. a 4 stelle! Il Wish per Principianti sparisce dopo <span> 20 </span> tentativi. Dopo essere sparito, la pagina scomparirà.",
 			"※ Nella maggior parte dei casi, la probabilità di base di tutti i personaggi e le armi è distribuita uniformemente. Se è in vigore un boost o una garanzia, fare riferimento alle regole corrispondenti.",
@@ -342,6 +372,19 @@
 			"Per l'Event Wish \"{bannerName}\": probabilità base di vincere un'arma a 5 stelle = <span>0.700%</span>; probabilità consolidata (incl. garanzia) = <span>1.850%</span>; è assicurata la vittoria di un'arma a 5 stelle almeno una volta ogni <span>80</span> tentativi.<br/> C'è un <span>75.000%</span> di possibilità che la prima arma a 5 stelle vinta sia una delle armi promozionali tra {featuredWeapon1} e {featuredWeapon2}. Se la prima arma a 5 stelle vinta in questo evento non è una delle armi promozionali, allora la prossima arma a 5 stelle che vincerai sarà <span>sicuramente</span> un'arma promozionale. Nel caso in cui si ottenga un oggetto promozionale a 5 stelle con un wish senza avere il massimo dei Punti Fato, la probabilità di ottenere una qualsiasi arma a 5 stelle è uguale per ciascuna di loro. <br/> Per l'Event Wish \"{bannerName}\", puoi tracciare un percorso verso l'arma promozionale a 5 stelle scelta con \"Epitomized Path.\" La scelta dell'arma sarà valida solo per il periodo dell'Event Wish \"{bannerName}\". <br/> Per l'Event Wish \"{bannerName}\", dopo aver tracciato un percorso verso un'arma scelta con \"Epitomized Path,\" se ottieni un'arma a 5 stelle che non è l'arma scelta, riceverai 1 Punto Fato. Una volta raggiunta la <span>quantità massima</span> di Punti Fato, l'arma a 5 stelle successiva sarà <span>sicuramente</span> l'arma scelta. Una volta ottenuta l'arma scelta, i Punti Fato si resetteranno a <span>0</span>, indipendentemente dal fatto che tu abbia raggiunto o meno il massimo dei punti, e dovrai accumularli nuovamente. Se non usi \"Epitomized Path\" per tracciare un percorso verso un'arma scelta, <span>not</span> riceverai Punti Fato. <br/> Dopo aver tracciato un percorso verso un'arma scelta, puoi cambiare la tua scelta o annullarla del tutto, ma così facendo resetterai i Punti Fato a <span>0</span> e dovrai accumularli nuovamente. <br/> ※ I Punti Fato per questo Wish in \"Epitome Invocation\" sono validi solo per il periodo dell'Event Wish. Al termine dell'Event Wish, i Punti Fato si resetteranno a <span>0</span>, e dovrai accumularli nuovamente.",
 			"Oggetti a 4 stelle",
 			"Per l'Event Wish \"{bannerName}\": probabilità base di vincere un oggetto a 4 stelle = <span>6.000%</span>; probabilità base di vincere un personaggio a 4 stelle = <span>3.000%</span>, e probabilità base di vincere un'arma a 4 stelle = <span>3.000%</span>; probabilità consolidata (incl. garanzia) di vincere un oggetto a 4 stelle = <span>14.500%</span>; è assicurata la vittoria di un oggetto a 4 o più stelle almeno una volta ogni <span>10</span> tentativi; probabilità di vincere un oggetto a 4 stelle grazie alla garanzia = <span>99.300%</span>, e probabilità di vincere un oggetto a 5 stelle grazie alla garanzia = <span>0.700%</span>. <br/> C'è un <span>75.000%</span> di possibilità che il primo oggetto a 4 stelle vinto sia una delle armi in primo piano tra {rateupWeapons}. Se il primo oggetto a 4 stelle vinto in questo evento non è una delle armi in primo piano, allora il prossimo oggetto a 4 stelle che vincerai sarà <span>sicuramente</span> un'arma in primo piano. Quando vinci un oggetto a 4 stelle in primo piano, la probabilità di ottenere una qualsiasi arma a 4 stelle in primo piano è uguale per ciascuna di loro."
+		],
+		"chronicled": [
+			"Chronicled Wish \"{bannerName}\" is now available. During this event wish, the <span>event-exclusive</span> 5-star characters {featuredCharacter}, the <span>event-exclusive</span> 5-star weapons {featuredWeapon} will be available for a limited time.",
+			"※ In most cases, the base probability of all characters and weapons is evenly distributed. If there is a boost or guarantee in effect, please refer to the corresponding rules.",
+			"〓Rules〓",
+			"5-Star Items",
+			"For Chronicled Wish \"{bannerName}\": Base probability of winning 5-star item = <span>0.600%</span>; consolidated probability of winning 5-star item (incl. guarantee) = <span>1.600%</span>; guaranteed to win 5-star item at least once per <span>90</span> attempts. For Chronicled Wish \"{bannerName}\", you can chart a course towards your chosen boosted 5-star character or weapon amongst all 5-star items with \"Chronicled Path.\" The choice of item will only be valid for this period of Chronicled Wish \"{bannerName}\".",
+			"※ When the Designated Item is a <span>5-Star Character</span>, the 5-star items you can obtain in the Wish are: <span>5-Star Characters</span>. When the Designated Item is a <span>5-Star Weapon</span>, the 5-star items you can obtain in the Wish are: <span>5-Star Weapons</span>.",
+			"When you obtain a 5-star item in this event wish, there is a <span>50.000%</span> chance it will be the Designated Item. If you obtain a 5-star item that was not your chosen item, you will receive 1 Fate Point. Once you have reached the <span>maximum amount</span> of Fate Points, the next 5-star item will be <span>guaranteed</span> to be your chosen item. Once you have obtained the chosen item, the number of Fate Points will reset to <span>0</span> whether or not you have reached maximum points, and you will have to accumulate them again.",
+			"After charting a course towards a Designated Item, you can change your choice, but doing so will reset the Fate Points to <span>0</span> and you will have to accumulate them again.",
+			"※ The Fate Points for this Wish are only valid for the current period of Chronicled Wish \"{bannerName}\". Once the Wish event is over, the number of Fate Points will reset to <span>0</span>, and you will have to accumulate them again.",
+			"4-Star Items",
+			"For Chronicled Wish \"{bannerName}\": Base probability of winning 4-star item = <span>5.100%</span>; base probability of winning 4-star character = <span>2.550%</span>, and base probability of winning 4-star weapon = <span>2.550%</span>; consolidated probability (incl. guarantee) of winning 4-star item = <span>13.000%</span>; guaranteed to win 4-star or above item at least once per 10 attempts; probability of winning 4-star item through the guarantee = <span>99.400%</span>, and probability of winning 5-star item through the guarantee = <span>0.600%</span>."
 		],
 		"convertion": {
 			"fiveStar": "Le armi a 5 stelle vinte con questo desiderio vengono fornite con {starglitter} ×10;",
@@ -374,7 +417,6 @@
 		"waiting": "Attendere",
 		"noData": "Nessun dato disponibile .",
 		"untracked": "Non Rintracciato",
-		"item": "Oggetto",
 		"win": "Vittoria 50/50",
 		"lose": "Perdita 50/50",
 		"guaranteed": "Assicurato",

@@ -67,7 +67,7 @@
 
 	{#if $course.selected !== null}
 		<div class="selected" class:fill={$course.point === 2}>
-			{$t('wish.epitomizedPath.courseSetFor', {
+			{$t('epitomizedPath.courseSetFor', {
 				values: { selectedCourse: $t(featured[$course.selected]?.name) }
 			})}
 		</div>

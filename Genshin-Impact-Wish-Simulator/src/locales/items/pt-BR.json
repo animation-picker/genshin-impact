@@ -1,5 +1,6 @@
 {
 	"a-thousand-floating-dreams": "Sonhos Flutuantes das Mil Noites",
+	"absolution": "Absolvição",
 	"akuoumaru": "Akuoumaru",
 	"alley-hunter": "Caçador do Beco",
 	"amos-bow": "Arco de Amos",
@@ -146,6 +147,10 @@
 	"chongyun": {
 		"name": "Chongyun",
 		"title": "Pegadas na Neve"
+	},
+	"clorinde": {
+		"name": "Clorinde",
+		"title": "Segurando a Vela, Espreitando as Sombras"
 	},
 	"collei": {
 		"name": "Collei",
@@ -322,6 +327,10 @@
 	"sayu": {
 		"name": "Sayu",
 		"title": "Mujina Ninja"
+	},
+	"sethos": {
+		"name": "Sethos",
+		"title": "Medida da Sabedoria"
 	},
 	"shenhe": {
 		"name": "Shenhe",

@@ -1,5 +1,6 @@
 {
 	"a-thousand-floating-dreams": "A Thousand Floating Dreams",
+	"absolution": "Absolution",
 	"akuoumaru": "Akuoumaru",
 	"alley-hunter": "Alley Hunter",
 	"amos-bow": "Amos' Bow",
@@ -142,6 +143,10 @@
 	"chongyun": {
 		"name": "Chongyun",
 		"title": "Frozen Ardor"
+	},
+	"clorinde": {
+		"name": "Clorinde",
+		"title": "Candlebearer, Shadowhunter"
 	},
 	"chiori": {
 		"name": "Chiori",
@@ -322,6 +327,10 @@
 	"sayu": {
 		"name": "Sayu",
 		"title": "Mujina Ninja"
+	},
+	"sethos": {
+		"name": "Sethos",
+		"title": "Wisdom's Measure"
 	},
 	"shenhe": {
 		"name": "Shenhe",
