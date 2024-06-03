@@ -3,6 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import { t } from 'svelte-i18n';
 	import OverlayScrollbars from 'overlayscrollbars';
+	import { highlightBannerName } from '$lib/helpers/nameText';
 
 	export let bannerName = '';
 	const oldStd = bannerName === 'wanderlust-invocation-1';
@@ -10,11 +11,11 @@
 	const chars = oldStd ? ['jean', 'diluc'] : ['qiqi', 'mona', 'keqing'];
 	const weap = oldStd ? 'skyward-blade' : 'skyward-spine';
 
-	const highlightBannerName = (bannerName) => {
-		const oldClass = oldStd ? 'old' : 'wanderlust-flat';
-		const splited = bannerName.split(' ');
-		return `${splited[0]} <span class="${oldClass}"> ${splited.slice(1).join(' ')}</span>`;
-	};
+	// const highlightBannerName = (bannerName) => {
+	// 	const oldClass = oldStd ? 'old' : 'wanderlust-flat';
+	// 	const splited = bannerName.split(' ');
+	// 	return `${splited[0]} <span class="${oldClass}"> ${splited.slice(1).join(' ')}</span>`;
+	// };
 
 	let bannerInfo;
 	onMount(() => {
@@ -31,7 +32,7 @@
 		{$t('wish.banner.standard')}
 	</div>
 	<h1 in:fly={{ x: 10, duration: 700 }} class="card-stroke">
-		{@html highlightBannerName($t('banner.wanderlust'))}
+		{@html highlightBannerName($t('banner.wanderlust'), oldStd ? 'old' : 'wanderlust')}
 	</h1>
 	<div class="info" bind:this={bannerInfo} in:fly={{ x: 15, duration: 700 }}>
 		<div class="content">

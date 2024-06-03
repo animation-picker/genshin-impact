@@ -1,0 +1,46 @@
+{
+	"patch": 4.7,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "illuminating-lightning-1",
+							"character": "clorinde",
+							"textOffset": { "l": 50.5, "b": 10.75 }
+						},
+						{
+							"bannerName": "caution-in-confidence-3",
+							"character": "alhaitham",
+							"textOffset": { "l": 50.5, "b": 10.75 }
+						}
+					],
+					"rateup": ["bennett", "thoma", "sethos"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-65",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "absolution" },
+						{ "name": "light-of-foliar-incision", "buttonPosition": { "l": 50 } }
+					],
+					"rateup": [
+						"lithic-spear",
+						"the-stringless",
+						"sacrificial-sword",
+						"the-widsith",
+						"sacrificial-greatsword"
+					],
+					"textOffset": {
+						"featured": { "l": 47, "t": 73, "w": 29 },
+						"rateup": { "l": 76.5, "b": 20 }
+					}
+				}
+			}
+		}
+	]
+}
+

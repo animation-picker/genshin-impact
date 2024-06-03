@@ -1,5 +1,6 @@
 {
 	"a-thousand-floating-dreams": "Cõi Mộng Ngàn Đêm",
+	"absolution": "Xá Tội",
 	"akuoumaru": "Akuoumaru",
 	"alley-hunter": "Thợ Săn Hẻm Tối",
 	"amos-bow": "Cung Amos",
@@ -146,6 +147,10 @@
 	"chongyun": {
 		"name": "Chongyun",
 		"title": "Bòng Hình Băng Giá"
+	},
+	"clorinde": {
+		"name": "Clorinde",
+		"title": "Thắp Nến Diệt Bóng Tối"
 	},
 	"collei": {
 		"name": "Collei",
@@ -322,6 +327,10 @@
 	"sayu": {
 		"name": "Sayu",
 		"title": "Ninja Mujina"
+	},
+	"sethos": {
+		"name": "Sethos",
+		"title": "Thước Đo Trí Tuệ"
 	},
 	"shenhe": {
 		"name": "Shenhe",

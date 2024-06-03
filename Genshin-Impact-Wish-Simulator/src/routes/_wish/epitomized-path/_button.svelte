@@ -54,7 +54,7 @@
 			{#if $course.selected !== null}
 				<span>{$course.point}</span>/2
 			{:else}
-				<span class="small">{$t('wish.epitomizedPath.text')}</span>
+				<span class="small">{$t('epitomizedPath.heading')}</span>
 			{/if}
 		</div>
 	</button>

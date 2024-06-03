@@ -138,10 +138,10 @@
 			style="display: flex; width:100%; height:100%; justify-content: center; align-items:center;"
 		>
 			<div>
-				{$t('wish.epitomizedPath.cancelPrompt')}
+				{$t('epitomizedPath.cancelPrompt')}
 				<br />
 				<span style="font-size: smaller; padding: 2rem">
-					{$t('wish.epitomizedPath.cancelDesc')}
+					{$t('epitomizedPath.cancelDesc')}
 				</span>
 			</div>
 		</div>
@@ -162,9 +162,9 @@
 		<div class="container">
 			{#if !half}
 				<div class="description">
-					<h1>{$t('wish.epitomizedPath.text')}</h1>
+					<h1>{$t('epitomizedPath.heading')}</h1>
 					<div class="content" bind:this={content}>
-						{#each $json('wish.epitomizedPath.description') as desc}
+						{#each $json('epitomizedPath.description') as desc}
 							<p>
 								· {@html desc}
 							</p>
@@ -176,7 +176,7 @@
 				<div class="bg">
 					<FatepointSVG mode={weaponName ? 'counter' : 'bg'} />
 				</div>
-				<div class="top">{$t('wish.epitomizedPath.selectWeapon')}</div>
+				<div class="top">{$t('epitomizedPath.selectWeapon')}</div>
 				<div class="weapon-item">
 					<div class="weapon-list" style="--item-width: {itemWidth}px">
 						{#if weaponName}
@@ -209,11 +209,11 @@
 					<div class="text">
 						<div>
 							{#if weaponName}
-								{$t('wish.epitomizedPath.fatePoint')} : <span>{$course.point}</span>/2
+								{$t('epitomizedPath.fatePoint')} : <span>{$course.point}</span>/2
 							{:else if targetActive === null}
-								{$t('wish.epitomizedPath.selectWeapon')}
+								{$t('epitomizedPath.selectWeapon')}
 							{:else}
-								{@html $t('wish.epitomizedPath.chartCourseOf', {
+								{@html $t('epitomizedPath.chartCourseOf', {
 									values: {
 										target: `<span> ${$t(weapons[targetActive].name)} </span>`
 									}
@@ -225,11 +225,11 @@
 				<div class="button">
 					{#if weaponName}
 						<ButtonModal on:click={cancelCourse} type="cancel">
-							{$t('wish.epitomizedPath.cancelCourse')}
+							{$t('epitomizedPath.cancelCourse')}
 						</ButtonModal>
 					{:else}
 						<ButtonModal on:click={setCourse} disabled={targetActive === null}>
-							{$t('wish.epitomizedPath.chartCourse')}
+							{$t('epitomizedPath.chartCourse')}
 						</ButtonModal>
 					{/if}
 				</div>

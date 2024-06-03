@@ -453,11 +453,27 @@
 		},
 		{
 			"date": "24 Apr 2024",
-			"featured": true,
 			"description": [
 				"Add New Character: <strong> Arlecchino (5★)</strong>",
 				"Add New Weapon: <b> Crimson Moon's Semblance (5★)</b>",
 				"Add <strong> Lyney 1st rerun </strong> Banner"
+			]
+		},
+		{
+			"date": "10 May 2024",
+			"description": [
+				"Activate <b>Wanderer's 2nd Rerun</b> Banner",
+				"Activate <b>Baizhu's 2nd Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "03 Jun 2024",
+			"featured": true,
+			"description": [
+				"Add New Character: <strong> Clorinde (5★)</strong>",
+				"Add New Character: <strong> Sethos (4★)</strong>",
+				"Add New Weapon: <b> Absolution (5★)</b>",
+				"Add <strong> Alhaitham 2nd rerun </strong> Banner"
 			]
 		}
 	]

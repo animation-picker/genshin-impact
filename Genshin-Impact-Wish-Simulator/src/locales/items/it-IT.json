@@ -1,5 +1,6 @@
 {
 	"a-thousand-floating-dreams": "Mille sogni fluttuanti",
+	"absolution": "Assoluzione",
 	"akuoumaru": "Spada di Akuou",
 	"alley-hunter": "Cacciatore urbano",
 	"amos-bow": "Arco di Amos",
@@ -146,6 +147,10 @@
 	"chongyun": {
 		"name": "Chongyun",
 		"title": "Ardore ghiacciato"
+	},
+	"clorinde": {
+		"name": "Clorinde",
+		"title": "Cacciatrice d'ombre"
 	},
 	"collei": {
 		"name": "Collei",
@@ -322,6 +327,10 @@
 	"sayu": {
 		"name": "Sayu",
 		"title": "Ninja mujina"
+	},
+	"sethos": {
+		"name": "Sethos",
+		"title": "Misurazione del sapere"
 	},
 	"shenhe": {
 		"name": "Shenhe",

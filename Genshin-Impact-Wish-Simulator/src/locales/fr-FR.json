@@ -1,5 +1,6 @@
 {
 	"title": "Simulateur de vœux Genshin Impact",
+	"item": "Item",
 	"character": "Personnage",
 	"weapon": "Arme",
 	"vision": "Vision",
@@ -52,6 +53,7 @@
 		"farewell-of-snezhnaya": "Adieux au #Nord#",
 		"from-ashes-reborn": "Renaissant des #cendres#",
 		"gentry-of-hermitage": "#Monts# et marchés",
+		"illuminating-lightning": "#Éclair# illuminant",
 		"immaculate-pulse": "#Pouls# immaculé",
 		"in-the-name-of-the-rosula": "Au nom de la #Rosula#",
 		"invitation-to-mundane-life": "Invitation #scintillante#",
@@ -82,7 +84,7 @@
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
 		"nonRateup": "(When losing 4-Star Item)",
-		"selectedRate": "Selected Weapon Rate:",
+		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
 		"backToDefault": "Back to Default",
 		"resetPrompt": "Are you sure to Reset <b>\"{banner}\"</b> probabilities back to default?",
@@ -92,6 +94,7 @@
 	},
 	"customBanner": {
 		"title": "Customize Banner",
+		"byTraveler": "Created by Travelers",
 		"deletePrompt": "Are You Sure to delete this banner ?",
 		"ownerDeleteNote": "If you've shared this banner publicly, The Travelers who have made wishes on your banner will no longer be able to access it.",
 		"userDeleteNote": "The Wishing History on this banner will not be deleted, but you will not be able to pull on this banner again.",
@@ -124,9 +127,11 @@
 		"deleteFailed": "Failed to Remove",
 		"bannerRemoved": "Banner Removed",
 		"edit": "Edit",
-		"editInfo": "Edit Info",
+		"editInfo": "Edit Details",
 		"editBanner": "Edit Banner Information",
 		"bannerName": "Banner Name",
+		"titleOfBanner": "The #Title of# the Banner",
+		"titleNote": "Letters between #_# will be highlighted",
 		"charName": "Character Name",
 		"charTitle": "Character Title",
 		"watermark": "Watermark",
@@ -135,6 +140,7 @@
 		"publish": "Publish Banner",
 		"updateAndShare": "Update & Share",
 		"rateupChar": "Rate Up Characters",
+		"rateupNote": "Minimum 1 Rate Up Character",
 		"yourBanners": "Your Banners",
 		"createBanner": "Create a Custom Banner",
 		"limitation": "You are not a member, please delete some banners to activate the editor",
@@ -161,6 +167,44 @@
 		"fileSize": "File Size",
 		"desNotFound": "Cannot find backup file location, please try to Export again"
 	},
+	"epitomizedPath": {
+		"heading": "Chemin divin",
+		"fatePoint": "Points de destin",
+		"confirm": "Confirm Selection",
+		"viewDetails": "View Details",
+		"details": "Details",
+		"rules": "Chronicled Path Rules",
+		"chartChronicled": "Chart course towards one of the following Characters or Weapons",
+		"currentSelection": "Current Selection: 5-Star {itemType} wish",
+		"dropType": "Only 5-Star {itemType} will be obtained from the Wish",
+		"cancelPrompt": "Souhaitez-vous annuler la sélection actuelle ?",
+		"cancelDesc": "Vos points de destin seront réinitialisés après l'annulation",
+		"selectWeapon": "Choisir une arme",
+		"chartCourseOf": "Vous obtiendez : {target}",
+		"cancelCourse": "Réinitialiser",
+		"chartCourse": "Choisir",
+		"courseSetFor": "Chemin défini pour: {selectedCourse}",
+		"setFor": "Path Set For: ",
+		"notSetYet": "No Path Set",
+		"description": [
+			"Le Chemin divin est un nouveau mécanisme inclus dans les vœux Incarnation divine:",
+			"Une fois que vous choisissez une arme 5*, vous recevez 1 point de destin <span>si l'arme 5* que vous obtenez via les vœux n'est pas celle souhaitée</span>.",
+			"Une fois suffisamment de points de destin accumulés, la prochaine arme 5* que vous obtiendrez via les vœux Incarnation divine sera celle choisie dans le Chemin divin.",
+			"Vos points de destin <span>se réinitialisent lorsque vous obtenez une arme du Chemin divin</span> pendant ces vœux Incarnation divine.",
+			"Vous ne cumulez pas de points de destin si vous n'avez pas choisi d'arme vers laquelle vous frayer un chemin.",
+			"Vous pouvez modifier ou annuler votre sélection, <span>mais cela réinitialisera vos points de destin déjà accumulés</span>.",
+			"<span>Les points de destin acccumulés lors de ces vœux Incarnation divine disparaissent lorsque ces vœux événements prennent fin</span>."
+		],
+		"chronicledRules": [
+			"Chronicled Path is a unique mechanism for Chronicled Wishes:",
+			"Before making a Chronicled Wish, you must select a target amongst the 5-star characters or 5-star weapons for your Chronicled Path. After making a selection, during this Chronicled Wish period, <span>the 5-star items you receive from the Wish will only be of the same item type as the target you selected for your Chronicled Path</span>.",
+			"<span>You will receive 1 Fate Point when you receive a 5-star weapon or character that is not the one you chose </span> for this Chronicled Wish period.",
+			"Once you have accumulated enough Fate Points, the next 5-star character or weapon you receive through Chronicled Wish in this period will be the one you chose through Chronicled Path.",
+			"<span>Your already accumulated Fate Points will be reset when you receive the character or weapon you selected</span> in this Chronicled Wish period.",
+			"You may change or cancel the Path you have set. <span>Doing so will reset your already accumulated Fate Points</span>.",
+			"<span>When this Chronicled Wish period ends, accumulated Fate Points will be reset</span>."
+		]
+	},
 	"wish": {
 		"wishTitle": "Vœux",
 		"rollButton": "Faire {count} vœu(x)",
@@ -180,6 +224,7 @@
 			"beginner": "Vœux pour les débutants",
 			"character-event": "Vœux événements de personnage",
 			"weapon-event": "Vœux événements d'arme",
+			"chronicled": "Chronicled Wish",
 			"standard": "Vœux permanents",
 			"wishDescription": "Garantie d'obtention d'un personnage 4* ou plus tous les 10 vœux",
 			"novice": "Vœux des débutants",
@@ -193,26 +238,6 @@
 			"probIncreased": "Chance d'obtention augmentée !",
 			"eventNote": "Les personnages 5* exclusifs de l'événement ne peuvent qu'être obtenus pendant une période limitée par le biais de vœux spécifiques. Pour en savoir plus, rendez-vous dans les détails de l'événement.",
 			"viewDetails": "Pour en savoir plus, rendez-vous dans les détails de l'événement."
-		},
-		"epitomizedPath": {
-			"text": "Chemin divin",
-			"fatePoint": "Points de destin",
-			"cancelPrompt": "Souhaitez-vous annuler la sélection actuelle ?",
-			"cancelDesc": "Vos points de destin seront réinitialisés après l'annulation",
-			"selectWeapon": "Choisir une arme",
-			"chartCourseOf": "Vous obtiendez : {target}",
-			"cancelCourse": "Réinitialiser",
-			"chartCourse": "Choisir",
-			"courseSetFor": "Chemin défini pour: {selectedCourse}",
-			"description": [
-				"Le Chemin divin est un nouveau mécanisme inclus dans les vœux Incarnation divine:",
-				"Une fois que vous choisissez une arme 5*, vous recevez 1 point de destin <span>si l'arme 5* que vous obtenez via les vœux n'est pas celle souhaitée</span>.",
-				"Une fois suffisamment de points de destin accumulés, la prochaine arme 5* que vous obtiendrez via les vœux Incarnation divine sera celle choisie dans le Chemin divin.",
-				"Vos points de destin <span>se réinitialisent lorsque vous obtenez une arme du Chemin divin</span> pendant ces vœux Incarnation divine.",
-				"Vous ne cumulez pas de points de destin si vous n'avez pas choisi d'arme vers laquelle vous frayer un chemin.",
-				"Vous pouvez modifier ou annuler votre sélection, <span>mais cela réinitialisera vos points de destin déjà accumulés</span>.",
-				"<span>Les points de destin acccumulés lors de ces vœux Incarnation divine disparaissent lorsque ces vœux événements prennent fin</span>."
-			]
 		},
 		"result": {
 			"skip": "Passer",
@@ -298,7 +323,6 @@
 			}
 		}
 	},
-
 	"details": {
 		"text": "Détails",
 		"promotional": "Objets boostés",
@@ -314,6 +338,11 @@
 		"limited": "Evénement à durée limitée",
 		"permanent": "Permanent",
 		"alert": "※ Ces vœux sont des {wishName}. Les vœux effectués lors des {wishName}, ils ne sont pas cumulables avec les vœux effectués lors d'autres types de vœux événements.",
+		"designatable": "Designatable Items",
+		"targetList": "When the Designated Item is a 5-Star {itemType}, the list of 5-Star Items is as follows:",
+		"chronicledRate": "(If there are no guarantees or Chronicled Path in effect, the base probability of all characters or weapons will be evenly distributed.)",
+		"chronicledPeriod": "5-Star Designatable Items in This Period",
+		"chronicledCourse": "Chart a course towards one of the following 5-Star Items where the probability of it appearing in 5-Star Item Drops:",
 		"beginner": [
 			"Les vœux <span>pour les débutants</span> n'ont pas de limite de temps et sont disponibles pour les Voyageurs récemment arrivés en Teyvat. Aucune personnage et aucune arme événement ne sont disponibles. <br /> Dans cette bannière un lot de 10 vœux coûte <span>20%</span> de pierres en moins, Et {character} et automatiquement inclus dans votre premier lot de 10 vœux , et votre second lot de 10 vœux vous garanti un <span>autre</span> personnage 4*! <br/> La bannière expire après <span>20</span> vœux effectués. Après l'expiration de la bannière, la page disparait.",
 			"※ Dans les circonstances habituelles, les taux d'obention de base des personnages et des armes sont répartis équitablement. Veuillez vous référer aux règles correspondantes en cas d'une augmentation du taux d'obtention ou d'une garantie d'obtention.",
@@ -343,6 +372,19 @@
 			"Taux d'obtention d'une arme 5* :  <span>0.700%</span>. Taux d'obtention total (obtention garantie incluse) :  <span>1.850%</span>. L'obtention d'une arme 5* est garantie au moins une fois tous les <span>80</span> vœux.<br/> Lorsque vous tirez une arme 5* pour la première fois, il y a <span>75.000%</span> de chance qu'il s'agisse de {featuredWeapon1} ou {featuredWeapon2}. Si ce n'est pas le cas, l'une de ces armes sera donc <span>garantie</span> lors de votre prochain tirage d'une arme 5*. Si vous obtenez une arme 5* par le biais d'un vœu sans avoir atteint le nombre de points de destin max, la probabilité d'obtention de chaque arme 5* à la une est égale.<br/> Au cours de ces Vœux événements \"{bannerName}\", vous pouvez vous frayer une voie vers l'arme 5* à la une que vous souhaitez obtenir avec le mécanisme de  \"Chemin divin.\". Le choix de l'arme ne sera valide que pendant la durée de ces Vœux événements \"{bannerName}\". <br/> Au cours de ces Vœux événements \"{bannerName}\", lorsque vous obtenez une arme 5* après avoir utilsié le \"Chemin divin\" et que cette arme 5* obtenue n'est pas votre arme choisie, 1 point de destin vous sera accordé. Une fois le <span>nombre maximum</span> de points de destin atteint, l'arme 5* que vous avez précédemment choisie sera donc <span>garantie</span> lors de votre prochain tirage d'une arme 5*. Après avoir obtenu l'arme choisie, le nombre de points de destin max sera réinitialisé à <span>0</span>, que vous ayez atteint ou non le nombre de points de destin max, et vous devrez les accumuler de nouveau. Si vous n'utilisez pas le \"Chemin divin\" pour vous frayer une voie vers une arme de votre choix, <span>aucun</span> point de destin ne vous sera accordé. <br/> Il est possible de modifier ou d'annuler votre choix d'arme. Une fois modifié ou annulé, vos points de destin seront <span>réinitialisés</span> par ces actions et vous devrez en cumuler à nouveau. <br/> ※ Les points de destin obtenus au cours de ces vœux ne seront valables que pendant cette période de Vœux événéments \"Incarnation divine\". Après la fin de ces vœux, les points de destin seront réinitialisés et vous devrez en cumuler à nouveau.",
 			"[Objets 4*]",
 			"Taux d'obtention de base d'un objet 4* : <span>6.000%</span>. Taux d'obtention de base d'un personnage 4* : <span>3.000%</span>. Taux d'obtention de base d'une arme 4* : <span>3.000%</span>. Taux d'obtention total d'un objet 4* (obtention garantie incluse) :  <span>14.500%</span>. L'obtention d'un objet 4* ou plus est garantie au moins une fois tous les <span>10</span> vœux effectués. Le taux d'obtention d'un objet 4* grâce à la garantie d'obtention est de <span>99.300%</span> et le taux d'obtention d'un objet 5* grâce à la garantie d'obtention est de <span>0.700%</span>. <br/> Lorsque vous tirez un objet 4* pour la première fois, il y a <span>75.000%</span> de chance qu'il s'agisse de {rateupWeapons}. Si ce n'est pas le cas, l'une de ces armes sera donc <span>garantie</span> lors de votre prochain tirage d'un objet 4*. Si vous obtenez une arme 4* par le biais d'un vœu , la probabilité de chaque arme 4* à la une est égale."
+		],
+		"chronicled": [
+			"Chronicled Wish \"{bannerName}\" is now available. During this event wish, the <span>event-exclusive</span> 5-star characters {featuredCharacter}, the <span>event-exclusive</span> 5-star weapons {featuredWeapon} will be available for a limited time.",
+			"※ In most cases, the base probability of all characters and weapons is evenly distributed. If there is a boost or guarantee in effect, please refer to the corresponding rules.",
+			"〓Rules〓",
+			"5-Star Items",
+			"For Chronicled Wish \"{bannerName}\": Base probability of winning 5-star item = <span>0.600%</span>; consolidated probability of winning 5-star item (incl. guarantee) = <span>1.600%</span>; guaranteed to win 5-star item at least once per <span>90</span> attempts. For Chronicled Wish \"{bannerName}\", you can chart a course towards your chosen boosted 5-star character or weapon amongst all 5-star items with \"Chronicled Path.\" The choice of item will only be valid for this period of Chronicled Wish \"{bannerName}\".",
+			"※ When the Designated Item is a <span>5-Star Character</span>, the 5-star items you can obtain in the Wish are: <span>5-Star Characters</span>. When the Designated Item is a <span>5-Star Weapon</span>, the 5-star items you can obtain in the Wish are: <span>5-Star Weapons</span>.",
+			"When you obtain a 5-star item in this event wish, there is a <span>50.000%</span> chance it will be the Designated Item. If you obtain a 5-star item that was not your chosen item, you will receive 1 Fate Point. Once you have reached the <span>maximum amount</span> of Fate Points, the next 5-star item will be <span>guaranteed</span> to be your chosen item. Once you have obtained the chosen item, the number of Fate Points will reset to <span>0</span> whether or not you have reached maximum points, and you will have to accumulate them again.",
+			"After charting a course towards a Designated Item, you can change your choice, but doing so will reset the Fate Points to <span>0</span> and you will have to accumulate them again.",
+			"※ The Fate Points for this Wish are only valid for the current period of Chronicled Wish \"{bannerName}\". Once the Wish event is over, the number of Fate Points will reset to <span>0</span>, and you will have to accumulate them again.",
+			"4-Star Items",
+			"For Chronicled Wish \"{bannerName}\": Base probability of winning 4-star item = <span>5.100%</span>; base probability of winning 4-star character = <span>2.550%</span>, and base probability of winning 4-star weapon = <span>2.550%</span>; consolidated probability (incl. guarantee) of winning 4-star item = <span>13.000%</span>; guaranteed to win 4-star or above item at least once per 10 attempts; probability of winning 4-star item through the guarantee = <span>99.400%</span>, and probability of winning 5-star item through the guarantee = <span>0.600%</span>."
 		],
 		"convertion": {
 			"fiveStar": "Les armes 5* obtenues par le biais de ces vœux s'accompagnent de 10 {starglitter}.",
@@ -375,7 +417,6 @@
 		"waiting": "En attente",
 		"noData": "Aucune donnée disponible.",
 		"untracked": "Non suivi",
-		"item": "Item",
 		"win": "50/50 gagné",
 		"lose": "50/50 perdu",
 		"guaranteed": "Garanti",

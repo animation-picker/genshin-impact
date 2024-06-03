@@ -1,5 +1,6 @@
 {
 	"a-thousand-floating-dreams": "千夜浮夢",
+	"absolution": "赦罪",
 	"akuoumaru": "惡王丸",
 	"alley-hunter": "暗巷獵手",
 	"amos-bow": "阿莫斯之弓",
@@ -146,6 +147,10 @@
 	"chongyun": {
 		"name": "重雲",
 		"title": "雪融有踪"
+	},
+	"clorinde": {
+		"name": "克洛琳德",
+		"title": "秉燭獮影"
 	},
 	"collei": {
 		"name": "柯萊",
@@ -322,6 +327,10 @@
 	"sayu": {
 		"name": "早柚",
 		"title": "忍里之貉"
+	},
+	"sethos": {
+		"name": "賽索斯",
+		"title": "衡明知度"
 	},
 	"shenhe": {
 		"name": "申鹤",
