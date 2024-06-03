@@ -1,6 +1,17 @@
 {
 	"data": [
 		{
+			"itemID": 11515,
+			"name": "absolution",
+			"rarity": 5,
+			"weaponType": "sword",
+			"limited": true,
+			"origin": "fontaine",
+			"offset": {
+				"button": { "t": -15, "w": 90, "l": 30 }
+			}
+		},
+		{
 			"itemID": 13512,
 			"name": "crimson_moon_s-semblance",
 			"rarity": 5,
@@ -17,6 +28,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "t": -15, "w": 90, "l": 30 }
 			}
@@ -27,6 +39,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "t": 1, "w": 70, "l": 38 }
 			}
@@ -37,6 +50,7 @@
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
+			"origin": "fontaine",
 			"offset": {
 				"button": { "t": 1, "w": 70, "l": 38 }
 			}
@@ -47,6 +61,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "fontaine",
 			"offset": {
 				"button": { "t": -15, "w": 90, "l": 30 }
 			}
@@ -56,14 +71,16 @@
 			"name": "prospector-drill",
 			"rarity": 4,
 			"weaponType": "polearm",
-			"limited": true
+			"limited": true,
+			"origin": "fontaine"
 		},
 		{
 			"itemID": 157,
 			"name": "range-gauge",
 			"rarity": 4,
 			"weaponType": "bow",
-			"limited": true
+			"limited": true,
+			"origin": "fontaine"
 		},
 		{
 			"itemID": 156,
@@ -71,6 +88,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "fontaine",
 			"offset": {
 				"button": { "t": 35, "w": 70, "l": 35 }
 			}
@@ -80,14 +98,16 @@
 			"name": "portable-power-saw",
 			"rarity": 4,
 			"weaponType": "claymore",
-			"limited": true
+			"limited": true,
+			"origin": "fontaine"
 		},
 		{
 			"itemID": 154,
 			"name": "the-dockhands-assistant",
 			"rarity": 4,
 			"weaponType": "sword",
-			"limited": true
+			"limited": true,
+			"origin": "fontaine"
 		},
 		{
 			"itemID": 153,
@@ -95,6 +115,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "fontaine",
 			"offset": {
 				"button": { "t": 15, "w": 80, "l": 35 }
 			}
@@ -105,6 +126,7 @@
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "bow",
+			"origin": "fontaine",
 			"offset": {
 				"button": { "t": 10, "w": 75, "l": 30 }
 			}
@@ -115,6 +137,7 @@
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "catalyst",
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 65, "t": 35, "l": 65 }
 			}
@@ -125,6 +148,7 @@
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "claymore",
+			"origin": "sumeru",
 			"offset": {
 				"button": { "t": 10, "w": 70, "l": 30 }
 			}
@@ -135,6 +159,7 @@
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "sword",
+			"origin": "sumeru",
 			"offset": {
 				"button": { "t": -15, "w": 90, "l": 30 }
 			}
@@ -145,6 +170,7 @@
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "catalyst",
+			"origin": "sumeru",
 			"offset": {
 				"button": { "w": 70, "t": 30, "l": 35 }
 			}
@@ -155,6 +181,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "sumeru",
 			"offset": {
 				"button": { "w": 70, "t": 30, "l": 65 }
 			}
@@ -165,6 +192,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "sumeru",
 			"offset": {
 				"button": { "t": -10, "w": 90, "l": 30 }
 			}
@@ -174,14 +202,16 @@
 			"name": "xiphos-moonlight",
 			"rarity": 4,
 			"weaponType": "sword",
-			"limited": true
+			"limited": true,
+			"origin": "sumeru"
 		},
 		{
 			"itemID": 144,
 			"name": "wandering-evenstar",
 			"rarity": 4,
 			"weaponType": "catalyst",
-			"limited": true
+			"limited": true,
+			"origin": "sumeru"
 		},
 		{
 			"itemID": 143,
@@ -189,6 +219,7 @@
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
+			"origin": "sumeru",
 			"offset": {
 				"button": { "w": 80, "t": 15, "l": 60 }
 			}
@@ -198,6 +229,7 @@
 			"name": "makhaira-aquamarine",
 			"rarity": 4,
 			"weaponType": "claymore",
+			"origin": "sumeru",
 			"limited": true
 		},
 		{
@@ -206,6 +238,7 @@
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
+			"origin": "sumeru",
 			"offset": {
 				"button": { "w": 70, "l": 35, "t": 0 }
 			}
@@ -216,6 +249,7 @@
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "t": 5, "w": 80, "l": 35 }
 			}
@@ -226,6 +260,7 @@
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "t": 10, "w": 80, "l": 60 }
 			}
@@ -236,6 +271,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "t": -35, "w": 120, "l": 55 }
 			}
@@ -246,6 +282,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "w": 70, "t": 25, "l": 37 }
 			}
@@ -256,6 +293,7 @@
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 80, "t": 10, "l": 60 }
 			}
@@ -265,14 +303,16 @@
 			"name": "mouun_s-moon",
 			"rarity": 4,
 			"weaponType": "bow",
-			"limited": true
+			"limited": true,
+			"origin": "inazuma"
 		},
 		{
 			"itemID": 134,
 			"name": "wavebreaker_s-fin",
 			"rarity": 4,
 			"weaponType": "polearm",
-			"limited": true
+			"limited": true,
+			"origin": "inazuma"
 		},
 		{
 			"itemID": 133,
@@ -280,6 +320,7 @@
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
+			"origin": "snezhnaya",
 			"offset": {
 				"button": { "w": 70, "t": 2, "l": 35 }
 			}
@@ -289,7 +330,8 @@
 			"name": "akuoumaru",
 			"rarity": 4,
 			"weaponType": "claymore",
-			"limited": true
+			"limited": true,
+			"origin": "inazuma"
 		},
 		{
 			"itemID": 131,
@@ -297,6 +339,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "w": 70, "t": 40, "l": 60 }
 			}
@@ -307,6 +350,7 @@
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "w": 80, "t": 20, "l": 30 }
 			}
@@ -317,6 +361,7 @@
 			"rarity": 5,
 			"limited": true,
 			"weaponType": "bow",
+			"origin": "inazuma",
 			"offset": {
 				"button": { "w": 70, "t": 10, "l": 35 }
 			}
@@ -327,6 +372,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "inazuma",
 			"offset": {
 				"button": { "w": 90, "t": -22, "l": 30 }
 			}
@@ -337,6 +383,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 100, "t": -20, "l": 30 }
 			}
@@ -346,7 +393,8 @@
 			"name": "mitternachts-waltz",
 			"rarity": 4,
 			"weaponType": "bow",
-			"limited": true
+			"limited": true,
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 125,
@@ -354,6 +402,7 @@
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 80, "t": 10, "l": 35 }
 			}
@@ -363,7 +412,8 @@
 			"name": "alley-hunter",
 			"rarity": 4,
 			"weaponType": "bow",
-			"limited": true
+			"limited": true,
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 123,
@@ -371,6 +421,7 @@
 			"rarity": 5,
 			"weaponType": "bow",
 			"limited": true,
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 70, "t": 10, "l": 35 }
 			}
@@ -380,14 +431,16 @@
 			"name": "the-alley-flash",
 			"rarity": 4,
 			"weaponType": "sword",
-			"limited": true
+			"limited": true,
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 121,
 			"name": "wine-and-song",
 			"rarity": 4,
 			"weaponType": "catalyst",
-			"limited": true
+			"limited": true,
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 120,
@@ -395,6 +448,7 @@
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 90, "t": 15, "l": 60 }
 			}
@@ -404,14 +458,16 @@
 			"name": "lithic-blade",
 			"rarity": 4,
 			"weaponType": "claymore",
-			"limited": true
+			"limited": true,
+			"origin": "liyue"
 		},
 		{
 			"itemID": 118,
 			"name": "lithic-spear",
 			"rarity": 4,
 			"weaponType": "polearm",
-			"limited": true
+			"limited": true,
+			"origin": "liyue"
 		},
 		{
 			"itemID": 117,
@@ -419,6 +475,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 100, "t": -14, "l": 60 }
 			}
@@ -428,6 +485,7 @@
 			"name": "primordial-jade-winged-spear",
 			"rarity": 5,
 			"weaponType": "polearm",
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 80, "t": 10, "l": 30 }
 			}
@@ -438,6 +496,7 @@
 			"rarity": 5,
 			"weaponType": "sword",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 90, "t": -10, "l": 30 }
 			}
@@ -448,6 +507,7 @@
 			"rarity": 5,
 			"weaponType": "polearm",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 90, "t": 20, "l": 30 }
 			}
@@ -458,6 +518,7 @@
 			"rarity": 5,
 			"weaponType": "claymore",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 60, "t": 20, "l": 60 }
 			}
@@ -468,6 +529,7 @@
 			"rarity": 5,
 			"weaponType": "catalyst",
 			"limited": true,
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 65, "t": 30, "l": 65 }
 			}
@@ -476,25 +538,29 @@
 			"itemID": 111,
 			"name": "eye-of-perception",
 			"rarity": 4,
-			"weaponType": "catalyst"
+			"weaponType": "catalyst",
+			"origin": "liyue"
 		},
 		{
 			"itemID": 110,
 			"name": "rainslasher",
 			"rarity": 4,
-			"weaponType": "claymore"
+			"weaponType": "claymore",
+			"origin": "liyue"
 		},
 		{
 			"itemID": 109,
 			"name": "rust",
 			"rarity": 4,
-			"weaponType": "bow"
+			"weaponType": "bow",
+			"origin": "liyue"
 		},
 		{
 			"itemID": 108,
 			"name": "lost-prayer-to-the-sacred-winds",
 			"rarity": 5,
 			"weaponType": "catalyst",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 55, "t": 40, "l": 40 }
 			}
@@ -504,6 +570,7 @@
 			"name": "wolf_s-gravestone",
 			"rarity": 5,
 			"weaponType": "claymore",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 80, "t": 15, "l": 65 }
 			}
@@ -513,6 +580,7 @@
 			"name": "amos-bow",
 			"rarity": 5,
 			"weaponType": "bow",
+			"origin": "liyue",
 			"offset": {
 				"button": { "w": 70, "t": 0, "l": 35 }
 			}
@@ -522,6 +590,7 @@
 			"name": "aquila-favonia",
 			"rarity": 5,
 			"weaponType": "sword",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 80, "t": -10, "l": 65 }
 			}
@@ -531,6 +600,7 @@
 			"name": "skyward-pride",
 			"rarity": 5,
 			"weaponType": "claymore",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 80, "t": 10, "l": 65 }
 			}
@@ -540,6 +610,7 @@
 			"name": "skyward-atlas",
 			"rarity": 5,
 			"weaponType": "catalyst",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 65, "t": 40, "l": 70 }
 			}
@@ -549,6 +620,7 @@
 			"name": "skyward-harp",
 			"rarity": 5,
 			"weaponType": "bow",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 70, "t": 10, "l": 35 }
 			}
@@ -558,6 +630,7 @@
 			"name": "skyward-spine",
 			"rarity": 5,
 			"weaponType": "polearm",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 80, "t": 10, "l": 60 }
 			}
@@ -567,6 +640,7 @@
 			"name": "skyward-blade",
 			"rarity": 5,
 			"weaponType": "sword",
+			"origin": "mondstadt",
 			"offset": {
 				"button": { "w": 90, "t": -10, "l": 60 }
 			}
@@ -575,91 +649,106 @@
 			"itemID": 99,
 			"name": "the-flute",
 			"rarity": 4,
-			"weaponType": "sword"
+			"weaponType": "sword",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 98,
 			"name": "the-widsith",
 			"rarity": 4,
-			"weaponType": "catalyst"
+			"weaponType": "catalyst",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 97,
 			"name": "dragon_s-bane",
 			"rarity": 4,
-			"weaponType": "polearm"
+			"weaponType": "polearm",
+			"origin": "liyue"
 		},
 		{
 			"itemID": 96,
 			"name": "lion_s-roar",
 			"rarity": 4,
-			"weaponType": "sword"
+			"weaponType": "sword",
+			"origin": "liyue"
 		},
 		{
 			"itemID": 95,
 			"name": "sacrificial-bow",
 			"rarity": 4,
-			"weaponType": "bow"
+			"weaponType": "bow",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 94,
 			"name": "sacrificial-fragments",
 			"rarity": 4,
-			"weaponType": "catalyst"
+			"weaponType": "catalyst",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 93,
 			"name": "sacrificial-greatsword",
 			"rarity": 4,
-			"weaponType": "claymore"
+			"weaponType": "claymore",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 92,
 			"name": "sacrificial-sword",
 			"rarity": 4,
-			"weaponType": "sword"
+			"weaponType": "sword",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 91,
 			"name": "favonius-greatsword",
 			"rarity": 4,
-			"weaponType": "claymore"
+			"weaponType": "claymore",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 90,
 			"name": "favonius-sword",
 			"rarity": 4,
-			"weaponType": "sword"
+			"weaponType": "sword",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 89,
 			"name": "favonius-warbow",
 			"rarity": 4,
-			"weaponType": "bow"
+			"weaponType": "bow",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 88,
 			"name": "favonius-codex",
 			"rarity": 4,
-			"weaponType": "catalyst"
+			"weaponType": "catalyst",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 87,
 			"name": "favonius-lance",
 			"rarity": 4,
-			"weaponType": "polearm"
+			"weaponType": "polearm",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 86,
 			"name": "the-bell",
 			"rarity": 4,
-			"weaponType": "claymore"
+			"weaponType": "claymore",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 85,
 			"name": "the-stringless",
 			"rarity": 4,
-			"weaponType": "bow"
+			"weaponType": "bow",
+			"origin": "mondstadt"
 		},
 		{
 			"itemID": 84,

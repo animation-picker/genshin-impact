@@ -1,10 +1,10 @@
 {
-	"version": "4.6",
+	"version": "4.7",
 	"wishPhase": 1,
-	"storageVersion": "4.6.1",
+	"storageVersion": "4.7.0",
 	"allPatch": [
 		1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 3.0, 3.1, 3.2,
-		3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6
+		3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7
 	],
 	"initialAmount": {
 		"primogem": 10000,
@@ -35,6 +35,16 @@
 			"max4": 10,
 			"hard4": 9,
 			"winRate": 75,
+			"charRate": 50,
+			"selectedRate": 50
+		},
+		"chronicled": {
+			"baseRate5": 0.6,
+			"max5": 90,
+			"hard5": 74,
+			"baseRate4": 5.1,
+			"max4": 10,
+			"hard4": 9,
 			"charRate": 50,
 			"selectedRate": 50
 		},

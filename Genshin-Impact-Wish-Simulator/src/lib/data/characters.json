@@ -2,14 +2,38 @@
 	"onlyStandard": ["amber", "kaeya", "lisa"],
 	"data": [
 		{
+			"itemID": 10000097,
+			"name": "sethos",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "4.7-1",
+			"origin": "sumeru",
+			"offset": {
+				"splashArt": { "x": 1.3598382749326146, "y": -1.446091644204852, "scale": 1.32 },
+				"wishCard": { "x": 33.621187800963085, "y": 54.912359550561796, "scale": 10.37 }
+			}
+		},
+		{
+			"itemID": 10000098,
+			"name": "clorinde",
+			"vision": "electro",
+			"rarity": 5,
+			"origin": "fontaine",
+			"offset": {
+				"splashArt": { "x": -2.6630727762803237, "y": -1.7830188679245285, "scale": 1.64 },
+				"wishCard": { "x": -44.831460674157306, "y": 56.07191011235956, "scale": 11.64 },
+				"button": { "l": 50, "w": 125, "t": 35 }
+			}
+		},
+		{
 			"itemID": 10000096,
 			"name": "arlecchino",
 			"vision": "pyro",
 			"rarity": 5,
 			"origin": "fontaine",
 			"offset": {
-				"splashArt": { "x": -3.4999999999999996, "y": 1.2493261455525606, "scale": 2.2 },
-				"wishCard": { "x": 2.5617977528089892, "y": 73.3375, "scale": 18.1 },
+				"splashArt": { "x": 3.778461538461538, "y": -9.604615384615386, "scale": 2 },
+				"wishCard": { "x": 42.50357142857143, "y": 54, "scale": 15.72 },
 				"button": { "l": 50, "w": 105, "t": 25 }
 			}
 		},
@@ -18,9 +42,10 @@
 			"name": "chiori",
 			"vision": "geo",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
-				"splashArt": { "x": -0.1204644412191582, "y": -2.7576197387518144, "scale": 1.35 },
-				"wishCard": { "x": 5.630053908355795, "y": 62.905660377358494, "scale": 10.69 },
+				"splashArt": { "x": 1.7650602409638554, "y": 0.5783132530120482, "scale": 1.44 },
+				"wishCard": { "x": 2.451973454418442, "y": 69.08068459657703, "scale": 10.95 },
 				"button": { "l": 50, "w": 105, "t": 25 }
 			}
 		},
@@ -30,6 +55,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "4.4-1",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 3.1118598382749325, "y": 2.095687331536388, "scale": 1.32 },
 				"wishCard": { "x": 39.35256861365236, "y": 54.08866995073891, "scale": 11.51 }
@@ -40,6 +66,7 @@
 			"name": "xianyun",
 			"vision": "anemo",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -3.095687331536388, "y": 2.7439353099730455, "scale": 1.64 },
 				"wishCard": { "x": -52.757624398073844, "y": 77.34831460674158, "scale": 14.35 },
@@ -52,6 +79,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "4.3-2",
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -0.49195710455764075, "y": -10.837801608579088, "scale": 1.09 },
 				"wishCard": { "x": 7.69894534995206, "y": 21.16331096196868, "scale": 7.91 }
@@ -62,6 +90,7 @@
 			"name": "navia",
 			"vision": "geo",
 			"rarity": 5,
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -5.14436090225564, "y": -0.968421052631579, "scale": 1.48 },
 				"wishCard": { "x": -82.53611556982344, "y": 68.28539325842696, "scale": 10.9 },
@@ -73,10 +102,11 @@
 			"name": "furina",
 			"vision": "hydro",
 			"rarity": 5,
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -3.4444444444444446, "y": -11.197368421052632, "scale": 2.08 },
 				"wishCard": { "x": -69.38581608415338, "y": 31.947743467933492, "scale": 13.73 },
-				"button": { "l": 52, "w": 130, "t": 35 }
+				"button": { "l": 55, "w": 115, "t": 27.5 }
 			}
 		},
 		{
@@ -85,6 +115,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "4.2-1",
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": 0.1495956873315364, "y": -3.9474393530997305, "scale": 1.1 },
 				"wishCard": { "x": -2.2293858160841533, "y": 39.605700712589076, "scale": 7.9 }
@@ -95,6 +126,7 @@
 			"name": "wriothesley",
 			"vision": "cryo",
 			"rarity": 5,
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -3.888888888888889, "y": 2.038011695906433, "scale": 1.56 },
 				"wishCard": { "x": -62.076688157448245, "y": 80.78859857482186, "scale": 12.43 },
@@ -106,6 +138,7 @@
 			"name": "neuvillette",
 			"vision": "hydro",
 			"rarity": 5,
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -2.5891812865497075, "y": -1.637426900584795, "scale": 1.45 },
 				"wishCard": { "x": -12.846963013233797, "y": 71.27553444180522, "scale": 12.02 },
@@ -118,6 +151,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "4.0-2",
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -4.552631578947368, "y": 3.0877192982456143, "scale": 1.5 },
 				"wishCard": { "x": -106.73566338649474, "y": 54.09738717339667, "scale": 9.56 }
@@ -129,6 +163,7 @@
 			"vision": "anemo",
 			"rarity": 4,
 			"release": "4.0-1",
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": 1.1023391812865497, "y": 0.10964912280701754, "scale": 1.36 },
 				"wishCard": { "x": 2.646759416355616, "y": 47.96199524940617, "scale": 8.03 }
@@ -139,6 +174,7 @@
 			"name": "lyney",
 			"vision": "pyro",
 			"rarity": 5,
+			"origin": "fontaine",
 			"offset": {
 				"splashArt": { "x": -1.8581871345029242, "y": 2.621345029239766, "scale": 1.76 },
 				"wishCard": { "x": -37.45164574143197, "y": 65, "scale": 12.4 },
@@ -151,6 +187,7 @@
 			"vision": "dendro",
 			"rarity": 4,
 			"release": "3.7-1",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": -0.5701754385964912, "y": 10.7953216374269, "scale": 1.52 },
 				"wishCard": { "x": 52.96572785883949, "y": 87.36579572446556, "scale": 10.5 }
@@ -161,6 +198,7 @@
 			"name": "baizhu",
 			"vision": "dendro",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 0.381578947368421, "y": 9.837719298245615, "scale": 1.51 },
 				"wishCard": { "x": 64.92704445198507, "y": 75.93824228028502, "scale": 11.26 },
@@ -173,6 +211,7 @@
 			"vision": "dendro",
 			"rarity": 4,
 			"release": "3.6-2",
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": -0.618421052631579, "y": -1.752923976608187, "scale": 1.24 },
 				"wishCard": { "x": -5.039022734984731, "y": 84.58669833729216, "scale": 10.12 }
@@ -184,6 +223,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "3.5-2",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": 0.638888888888889, "y": -1.6944444444444442, "scale": 1.09 },
 				"wishCard": { "x": 37.90973871733967, "y": 52.26128266033254, "scale": 7.23 }
@@ -194,6 +234,7 @@
 			"name": "dehya",
 			"vision": "pyro",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": -2.3304093567251463, "y": -0.3494152046783626, "scale": 1.72 },
 				"wishCard": { "x": -10.831353919239906, "y": 74.64133016627078, "scale": 13.16 },
@@ -205,6 +246,7 @@
 			"name": "alhaitham",
 			"vision": "dendro",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": 0.09502923976608187, "y": -1.4181286549707601, "scale": 1.28 },
 				"wishCard": { "x": -6.65761791652528, "y": 77.5059382422803, "scale": 9.98 },
@@ -217,6 +259,7 @@
 			"vision": "dendro",
 			"rarity": 4,
 			"release": "3.4-1",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -2.118421052631579, "y": -2.416666666666667, "scale": 1.2 },
 				"wishCard": { "x": -21.072276891754328, "y": 34.06175771971496, "scale": 5.94 }
@@ -227,6 +270,7 @@
 			"name": "wanderer",
 			"vision": "anemo",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": 2.8084795321637426, "y": -0.9035087719298245, "scale": 1.33 },
 				"wishCard": { "x": -10.851713607058025, "y": 57.80522565320665, "scale": 9.34 },
@@ -239,6 +283,7 @@
 			"vision": "anemo",
 			"rarity": 4,
 			"release": "3.3-1",
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": 0.7763157894736842, "y": -3.3362573099415203, "scale": 1.32 },
 				"wishCard": { "x": 29.27723108245674, "y": 52.073634204275535, "scale": 7.97 }
@@ -250,6 +295,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "3.2-2",
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": 2.103801169590643, "y": -2.5350877192982457, "scale": 1.19 },
 				"wishCard": { "x": 2.9216152019002375, "y": 42.89786223277909, "scale": 6.7 }
@@ -260,6 +306,7 @@
 			"name": "nahida",
 			"vision": "dendro",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": 0.7383040935672515, "y": -1.6695906432748537, "scale": 1.53 },
 				"wishCard": { "x": 41.136749236511704, "y": 35.771971496437054, "scale": 9.94 },
@@ -271,6 +318,7 @@
 			"name": "nilou",
 			"vision": "hydro",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": -2.320175438596491, "y": -1.6754385964912282, "scale": 1.44 },
 				"wishCard": { "x": -18.50695622667119, "y": 59.363420427553436, "scale": 9.74 },
@@ -282,6 +330,7 @@
 			"name": "cyno",
 			"vision": "electro",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": 3.491228070175439, "y": -9.956140350877192, "scale": 1.36 },
 				"wishCard": { "x": -0.01017984390906006, "y": 42.16627078384798, "scale": 9.55 },
@@ -294,6 +343,7 @@
 			"vision": "hydro",
 			"rarity": 4,
 			"release": "3.1-1",
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": -1.3814016172506738, "y": -1.04177897574124, "scale": 1.44 },
 				"wishCard": { "x": -21.004815409309792, "y": 46.05842696629214, "scale": 9.3 }
@@ -305,6 +355,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "3.0-2",
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "scale": 1.36 },
 				"wishCard": { "x": -27.02748557855446, "y": 49.93586698337292, "scale": 7.46 }
@@ -315,6 +366,7 @@
 			"name": "tighnari",
 			"vision": "dendro",
 			"rarity": 5,
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": -1.5555555555555556, "y": -1.3362573099415207, "scale": 1.2 },
 				"wishCard": { "x": 1.170682049541907, "y": 61.194774346793345, "scale": 7.84 },
@@ -327,6 +379,7 @@
 			"vision": "dendro",
 			"rarity": 4,
 			"release": "3.0-1",
+			"origin": "sumeru",
 			"offset": {
 				"splashArt": { "x": -0.31725146198830406, "y": -4.959064327485381, "scale": 1.31 },
 				"wishCard": { "x": 66.53545978961655, "y": 38.87648456057007, "scale": 8.42 }
@@ -338,6 +391,7 @@
 			"vision": "anemo",
 			"rarity": 4,
 			"release": "2.8-1",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 3.675438596491228, "y": -1.1140350877192984, "scale": 1.21 },
 				"wishCard": { "x": -2.3006447234475735, "y": 44.09263657957245, "scale": 7.27 }
@@ -349,6 +403,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "2.7-2",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 1.5526315789473684, "y": -0.12719298245614036, "scale": 1.28 },
 				"wishCard": { "x": -29.491007804547, "y": 48.66270783847981, "scale": 8.03 }
@@ -358,6 +413,7 @@
 			"itemID": 47,
 			"name": "yelan",
 			"vision": "hydro",
+			"origin": "liyue",
 			"rarity": 5,
 			"offset": {
 				"splashArt": { "x": 0.43713450292397665, "y": -5.400584795321637, "scale": 1.24 },
@@ -370,6 +426,7 @@
 			"name": "kamisato-ayato",
 			"vision": "hydro",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 5.092105263157895, "y": 0.9590643274853801, "scale": 1.41 },
 				"wishCard": { "x": 35.41567695961995, "y": 74.40380047505938, "scale": 10.5 },
@@ -381,6 +438,7 @@
 			"name": "yae-miko",
 			"vision": "electro",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": -3.988304093567251, "y": -1.3157894736842104, "scale": 1.21 },
 				"wishCard": { "x": -33.15575161180862, "y": 62.634204275534444, "scale": 8.44 },
@@ -392,6 +450,7 @@
 			"name": "shenhe",
 			"vision": "cryo",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -6.16812865497076, "y": -4.779239766081871, "scale": 1.44 },
 				"wishCard": { "x": -62.544960977265006, "y": 58.826603325415675, "scale": 9.93 },
@@ -404,6 +463,7 @@
 			"vision": "geo",
 			"rarity": 4,
 			"release": "2.4-1",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 0.3669590643274853, "y": -1.6871345029239766, "scale": 1.2 },
 				"wishCard": { "x": 9.100780454699695, "y": 49.19239904988124, "scale": 6.53 }
@@ -414,10 +474,11 @@
 			"name": "arataki-itto",
 			"vision": "geo",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 2.3187134502923974, "y": -1.5526315789473684, "scale": 1.38 },
 				"wishCard": { "x": 29.98982015609094, "y": 66.81710213776722, "scale": 9.98 },
-				"button": { "w": 190, "t": 30, "l": 50 }
+				"button": { "w": 180, "t": 20, "l": 60 }
 			}
 		},
 		{
@@ -426,6 +487,7 @@
 			"vision": "geo",
 			"rarity": 4,
 			"release": "2.3-2",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 3.1052631578947367, "y": -0.9312865497076023, "scale": 1.28 },
 				"wishCard": { "x": 35.54801493043773, "y": 49.82422802850356, "scale": 8.36 }
@@ -437,6 +499,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "2.2-2",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": -1.2514619883040936, "y": 0.8391812865497077, "scale": 1.36 },
 				"wishCard": { "x": 40.6277570410587, "y": 58.20902612826604, "scale": 8.41 }
@@ -447,6 +510,7 @@
 			"name": "sangonomiya-kokomi",
 			"vision": "hydro",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 2.7222222222222223, "y": 2.41812865497076, "scale": 1.21 },
 				"wishCard": { "x": 20.746521886664404, "y": 53.70071258907364, "scale": 7.460000000000001 },
@@ -458,6 +522,7 @@
 			"name": "raiden-shogun",
 			"vision": "electro",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 2.3406432748538015, "y": -2.334795321637427, "scale": 1.29 },
 				"wishCard": { "x": 13.172718018323717, "y": 54.24228028503564, "scale": 8.77 },
@@ -470,6 +535,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "2.1-1",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 4.29093567251462, "y": -0.3421052631578947, "scale": 1.31 },
 				"wishCard": { "x": 28.22870715982355, "y": 73.31591448931117, "scale": 9.45 }
@@ -480,6 +546,7 @@
 			"name": "yoimiya",
 			"vision": "pyro",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": -3.887426900584795, "y": -5.245614035087719, "scale": 1.5 },
 				"wishCard": { "x": -14.211062097047847, "y": 40.53681710213777, "scale": 8.27 },
@@ -492,6 +559,7 @@
 			"vision": "anemo",
 			"rarity": 4,
 			"release": "2.0-2",
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": -2.3596491228070176, "y": -6.853801169590644, "scale": 1.5 },
 				"wishCard": { "x": -71.29962673905668, "y": 42.02612826603326, "scale": 8.87 }
@@ -502,6 +570,7 @@
 			"name": "kamisato-ayaka",
 			"vision": "cryo",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": 1.8669590643274854, "y": -3.818713450292398, "scale": 1.61 },
 				"wishCard": { "x": 14.292500848320325, "y": 51.496437054631826, "scale": 12.67 },
@@ -513,6 +582,7 @@
 			"name": "kaedehara-kazuha",
 			"vision": "anemo",
 			"rarity": 5,
+			"origin": "inazuma",
 			"offset": {
 				"splashArt": { "x": -1.4853801169590644, "y": 2.1505847953216377, "scale": 1.33 },
 				"wishCard": { "x": 21.418391584662366, "y": 70.61520190023754, "scale": 9.52 },
@@ -524,10 +594,12 @@
 			"name": "eula",
 			"vision": "cryo",
 			"rarity": 5,
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": 3.56140350877193, "y": -1.8128654970760234, "scale": 1.34 },
 				"wishCard": { "x": 6.118086189345096, "y": 64.99287410926365, "scale": 9.74 },
-				"button": { "w": 140, "t": 32 }
+				"button": { "w": 140, "t": 32 },
+				"banner": { "w": 170, "t": 80, "l": 55 }
 			}
 		},
 		{
@@ -536,6 +608,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "1.5-1",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 7.014619883040934, "y": -0.15789473684210528, "scale": 1.46 },
 				"wishCard": { "x": 169.04648795385137, "y": 59.320665083135395, "scale": 8.9 }
@@ -547,6 +620,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "1.4-2",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -0.608187134502924, "y": -5.552631578947368, "scale": 1.24 },
 				"wishCard": { "x": 11.309806582965727, "y": 64.11163895486936, "scale": 8.95 }
@@ -557,6 +631,7 @@
 			"name": "hu-tao",
 			"vision": "pyro",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -3.0453216374269, "y": 2.6067251461988303, "scale": 1.64 },
 				"wishCard": { "x": -139.93213437393962, "y": 55.42992874109264, "scale": 11.75 },
@@ -568,6 +643,7 @@
 			"name": "xiao",
 			"vision": "anemo",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -0.4035087719298246, "y": -17.27777777777778, "scale": 1.56 },
 				"wishCard": { "x": 14.475738038683408, "y": 17.52256532066508, "scale": 9.55 },
@@ -579,6 +655,7 @@
 			"name": "ganyu",
 			"vision": "cryo",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 2.703216374269006, "y": -2.995614035087719, "scale": 1.36 },
 				"wishCard": { "x": 14.577536477774009, "y": 54.7790973871734, "scale": 8.03 },
@@ -590,10 +667,12 @@
 			"name": "albedo",
 			"vision": "geo",
 			"rarity": 5,
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": 0.35233918128654973, "y": -3.8289473684210527, "scale": 1.59 },
 				"wishCard": { "x": -44.16016287750254, "y": 57.07600950118764, "scale": 11.09 },
-				"button": { "w": 170, "t": 28, "l": 50 }
+				"button": { "w": 170, "t": 28, "l": 50 },
+				"banner": { "w": 180, "t": 70 }
 			}
 		},
 		{
@@ -601,6 +680,7 @@
 			"name": "zhongli",
 			"vision": "geo",
 			"rarity": 5,
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 4.168128654970761, "y": -8.782163742690058, "scale": 1.61 },
 				"wishCard": { "x": 41.58466236851035, "y": 43.56294536817102, "scale": 8.92 },
@@ -613,6 +693,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "1.1-2",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -2.2017543859649122, "y": -3.8976608187134505, "scale": 1.6 },
 				"wishCard": { "x": -8.245673566338649, "y": 48.96912114014252, "scale": 11.1 }
@@ -623,6 +704,7 @@
 			"name": "tartaglia",
 			"vision": "hydro",
 			"rarity": 5,
+			"origin": "snezhnaya",
 			"offset": {
 				"splashArt": { "x": 9.15204678362573, "y": -13.576023391812866, "scale": 1.73 },
 				"wishCard": { "x": 67.8486596538853, "y": 43.60095011876485, "scale": 13.21 },
@@ -635,6 +717,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "1.1-1",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "scale": 1 },
 				"wishCard": { "x": 53.44418052256532, "y": 39.942992874109265, "scale": 5.48 }
@@ -645,10 +728,12 @@
 			"name": "klee",
 			"vision": "pyro",
 			"rarity": 5,
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "scale": 1 },
 				"wishCard": { "x": -3.37970817780794, "y": 20.831353919239906, "scale": 5.18 },
-				"button": { "w": 110, "t": 32 }
+				"button": { "w": 110, "t": 32 },
+				"banner": { "t": 40, "l": 55 }
 			}
 		},
 		{
@@ -656,6 +741,7 @@
 			"name": "venti",
 			"vision": "anemo",
 			"rarity": 5,
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -2.776315789473684, "y": -3.442982456140351, "scale": 1.35 },
 				"wishCard": { "x": 33.0335934848999, "y": 43.27553444180523, "scale": 7.8 },
@@ -668,6 +754,7 @@
 			"vision": "electro",
 			"rarity": 5,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -7.773391812865498, "y": -3.5029239766081877, "scale": 1.4 },
 				"wishCard": { "x": -52.00882253138786, "y": 55.12351543942992, "scale": 8.41 },
@@ -680,9 +767,11 @@
 			"vision": "hydro",
 			"rarity": 5,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -1.1023391812865497, "y": -0.4473684210526315, "scale": 1.6 },
-				"wishCard": { "x": 10.902612826603326, "y": 52.65320665083135, "scale": 10.88 }
+				"wishCard": { "x": 10.902612826603326, "y": 52.65320665083135, "scale": 10.88 },
+				"banner": { "w": 185, "t": 70, "l": 55 }
 			}
 		},
 		{
@@ -691,6 +780,7 @@
 			"vision": "cryo",
 			"rarity": 5,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": 1.7865497076023393, "y": -6.584795321637427, "scale": 1.31 },
 				"wishCard": { "x": 0.1526976586359009, "y": 32.69121140142518, "scale": 7.84 },
@@ -703,9 +793,11 @@
 			"vision": "pyro",
 			"rarity": 5,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -7.963450292397662, "y": -22.713450292397663, "scale": 1.93 },
-				"wishCard": { "x": -75.45300305395317, "y": 17.840855106888363, "scale": 11.36 }
+				"wishCard": { "x": -75.45300305395317, "y": 17.840855106888363, "scale": 11.36 },
+				"banner": { "w": 200, "l": 42, "t": 35 }
 			}
 		},
 		{
@@ -714,10 +806,12 @@
 			"vision": "anemo",
 			"rarity": 5,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": 2.7412280701754383, "y": -3.0804093567251463, "scale": 1.36 },
 				"wishCard": { "x": 32.412623006447234, "y": 61.74109263657957, "scale": 9.17 },
-				"button": { "w": 90, "t": 35, "l": 55 }
+				"button": { "w": 90, "t": 35, "l": 55 },
+				"banner": { "w": 140, "l": 60, "t": 65 }
 			}
 		},
 		{
@@ -726,6 +820,7 @@
 			"vision": "anemo",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -0.9181286549707602, "y": -4.638888888888889, "scale": 1.19 },
 				"wishCard": { "x": -4.886325076348829, "y": 55.403800475059384, "scale": 8 }
@@ -737,6 +832,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -9.397660818713451, "y": -2.641812865497076, "scale": 1.33 },
 				"wishCard": { "x": -58.33050559891415, "y": 52.65320665083135, "scale": 8.6 }
@@ -748,6 +844,7 @@
 			"vision": "geo",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -1.2266081871345031, "y": -2.2002923976608186, "scale": 1.2 },
 				"wishCard": { "x": -40.84153376314896, "y": 56.8978622327791, "scale": 7.08 },
@@ -760,6 +857,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -1.196765498652291, "y": -6.913746630727763, "scale": 1.2 },
 				"wishCard": { "x": -73.58908507223114, "y": 34.95505617977528, "scale": 7.19 }
@@ -771,6 +869,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -0.10818713450292397, "y": -13.786549707602338, "scale": 1.3 },
 				"wishCard": { "x": -41.808618934509674, "y": 31.313539192399055, "scale": 7.32 }
@@ -782,6 +881,7 @@
 			"vision": "geo",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -4.739766081871346, "y": -3.9356725146198834, "scale": 1.56 },
 				"wishCard": { "x": -83.59687818120123, "y": 60.17577197149644, "scale": 10.49 }
@@ -793,6 +893,7 @@
 			"vision": "hydro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -0.10526315789473684, "y": -3.628654970760234, "scale": 1.09 },
 				"wishCard": { "x": -17.051238547675602, "y": 65.82660332541568, "scale": 7.65 }
@@ -804,6 +905,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -2.570080862533693, "y": 8.859838274932613, "scale": 1.49 },
 				"wishCard": { "x": -22.468699839486355, "y": 76.61123595505617, "scale": 10.08 }
@@ -815,6 +917,7 @@
 			"vision": "pyro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "liyue",
 			"offset": {
 				"splashArt": { "x": -3.4415204678362574, "y": -2.9517543859649122, "scale": 1.5 },
 				"wishCard": { "x": 60.73294876145232, "y": 59.62470308788599, "scale": 9.16 }
@@ -826,6 +929,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -3.8377192982456143, "y": -14.513157894736842, "scale": 1.24 },
 				"wishCard": { "x": -75.56498133695284, "y": 29.57007125890736, "scale": 8.22 }
@@ -837,6 +941,7 @@
 			"vision": "hydro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": -1.9663072776280326, "y": -0.6037735849056605, "scale": 1.3 },
 				"wishCard": { "x": -0.8042076688157448, "y": 52.12351543942992, "scale": 7.75 }
@@ -848,6 +953,7 @@
 			"vision": "electro",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "scale": 1 },
 				"wishCard": { "x": 7.695961995249406, "y": 68.85748218527316, "scale": 7.29 }
@@ -859,6 +965,7 @@
 			"vision": "cryo",
 			"rarity": 4,
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": 1.8786549707602338, "y": -0.3508771929824561, "scale": 1.28 },
 				"wishCard": { "x": -33.07431286053614, "y": 76.2541567695962, "scale": 9.2 }
@@ -870,6 +977,7 @@
 			"rarity": 4,
 			"vision": "pyro",
 			"release": "1.0-0",
+			"origin": "mondstadt",
 			"offset": {
 				"splashArt": { "x": 1.62, "y": -5.56, "scale": 1.46 },
 				"wishCard": { "x": 66, "y": 37.80674157303371, "scale": 7.71 }

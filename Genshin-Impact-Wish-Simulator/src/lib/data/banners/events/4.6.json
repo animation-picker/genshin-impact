@@ -40,6 +40,43 @@
 					}
 				}
 			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "from-ashes-reborn-3",
+							"character": "wanderer",
+							"textOffset": { "l": 55, "b": 13 }
+						},
+						{
+							"bannerName": "immaculate-pulse-3",
+							"character": "baizhu",
+							"textOffset": { "l": 55, "b": 13 }
+						}
+					],
+					"rateup": ["beidou", "faruzan", "layla"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-64",
+					"fatepointsystem": true,
+					"featured": [{ "name": "tulaytullah_s-remembrance" }, { "name": "jadefall-splendor" }],
+					"rateup": [
+						"prospector-drill",
+						"range-gauge",
+						"sacrificial-fragments",
+						"favonius-sword",
+						"rainslasher"
+					],
+					"textOffset": {
+						"featured": { "l": 45, "t": 68 },
+						"rateup": { "l": 75.5, "b": 22 }
+					}
+				}
+			}
 		}
 	]
 }
