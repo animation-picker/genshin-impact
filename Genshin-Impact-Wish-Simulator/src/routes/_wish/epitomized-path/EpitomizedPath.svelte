@@ -162,7 +162,7 @@
 		<div class="container">
 			{#if !half}
 				<div class="description">
-					<h1>{$t('epitomizedPath.text')}</h1>
+					<h1>{$t('epitomizedPath.heading')}</h1>
 					<div class="content" bind:this={content}>
 						{#each $json('epitomizedPath.description') as desc}
 							<p>
