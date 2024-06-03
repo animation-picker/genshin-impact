@@ -27,6 +27,7 @@ jobs:
         run: |
           docker build -t maizig/ysdm:latest .
       - name: Push to DockerHub
+        if: ${{github.event_name == 'push'}}
         uses: docker/build-push-action@v5.3.0
         with:
           context: .
