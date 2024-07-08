@@ -23,8 +23,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows,ubuntu,macos]
-    runs-on: ${{ matrix.os }}-latest
+        os: [windows-latest,ubuntu-latest,macos-latest,macos-13]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4.1.1
       - name: Use Node.js 20.x
