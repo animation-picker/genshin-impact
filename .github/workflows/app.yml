@@ -53,7 +53,7 @@ jobs:
       - name: Upload (${{ runner.os }})
         uses: actions/upload-artifact@v4.3.1
         with:
-          name: genish-impact-${{ runner.os }}
+          name: genish-impact-${{ runner.os }}-${{runner.arch}}
           path: electron-static/genish-impact-${{ runner.os }}-${{runner.arch}}.zip
   Build-Tauri:
     name: Build app with Tauri
