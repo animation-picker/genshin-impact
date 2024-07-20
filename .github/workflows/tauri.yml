@@ -29,13 +29,13 @@ jobs:
             uses: actions/cache@v4.0.2
             with:
               path: ./Genshin-Impact-Wish-Simulator/node_modules
-              key: ${{ runner.OS }}-npm-frontend-cache
+              key: ${{ runner.OS }}-${{runner.arch}}-npm-frontend-cache
               restore-keys: |
                 ${{ runner.OS }}-npm-frontend-cache
           - name: Cache Rust
             uses: Swatinem/rust-cache@v2.7.3
             with:
-              prefix-key: "Cache-${{ runner.os }}"
+              prefix-key: "Cache-${{ runner.os }}-${{runner.arch}}"
               workspaces: "Genshin-Impact-Wish-Simulator/src-tauri"
               shared-key: "tauri"
           - name: Install Dependencies
@@ -68,5 +68,5 @@ jobs:
             if: runner.os == 'macos'
             uses: actions/upload-artifact@v4.3.1
             with:
-              name: genish-impact-Tauri-${{ runner.os }}-dmg
+              name: genish-impact-Tauri-${{ runner.os }}-dmg-${{runner.arch}}
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/dmg/*.dmg

@@ -37,7 +37,7 @@ jobs:
           path: ./electron-static/node_modules
           key: ${{ runner.os }}-npm-app-cache
           restore-keys: |
-            ${{ runner.os }}-npm-app-cache
+            ${{ runner.os }}-${{runner.arch}}-npm-app-cache
       - name: Install Dependencies
         run: |
          cd electron-static
@@ -46,15 +46,15 @@ jobs:
         run: |
          cd electron-static
          yarn run build
-      - name: Package (${{ runner.os }})
+      - name: Package (${{ runner.os }}-${{runner.arch}})
         run: |
          cd electron-static
-         7z a -tzip genish-impact-${{ runner.os }}-x64.zip ./genish-impact-*
+         7z a -tzip genish-impact-${{ runner.os }}-${{runner.arch}}.zip ./genish-impact-*
       - name: Upload (${{ runner.os }})
         uses: actions/upload-artifact@v4.3.1
         with:
-          name: genish-impact-${{ runner.os }}
-          path: electron-static/genish-impact-${{ runner.os }}-x64.zip
+          name: genish-impact-${{ runner.os }}-${{runner.arch}}
+          path: electron-static/genish-impact-${{ runner.os }}-${{runner.arch}}.zip
   Build-Tauri:
     name: Build app with Tauri
     uses: ./.github/workflows/tauri.yml
