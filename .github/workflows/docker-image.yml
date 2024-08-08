@@ -25,8 +25,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Push to DockerHub
-        if: ${{github.event_name == 'push'}}
+      - name: Build & Push to DockerHub
         uses: docker/build-push-action@v5.3.0
         with:
           context: .
