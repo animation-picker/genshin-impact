@@ -31,5 +31,6 @@ jobs:
           context: .
           push: true
           tags: maizig/ysdm:latest
+          platforms: linux/amd64,linux/arm64
           cache-from: type=registry,ref=maizig/ysdm:latest
           cache-to: type=inline
