@@ -39,6 +39,7 @@
 	"lithic-blade": "Lama litica",
 	"lithic-spear": "Lancia litica",
 	"lost-prayer-to-the-sacred-winds": "Origine dei venti sacri",
+	"lumidouce-elegy": "Elegia di Lumidouce",
 	"magic-guide": "Manuale di magia",
 	"makhaira-aquamarine": "Acquamarina di Makhaira",
 	"memory-of-dust": "Memorie terrene",
@@ -60,6 +61,7 @@
 	"sacrificial-greatsword": "Spadone sacrificale",
 	"sacrificial-sword": "Spada sacrificale",
 	"sharpshooter_s-oath": "Patto del cecchino",
+	"silvershower-heartstrings": "Candido cuore della pioggia",
 	"skyrider-sword": "Spadone del Cavalcacieli",
 	"skyward-atlas": "Atlante celeste",
 	"skyward-blade": "Lama celeste",
@@ -72,6 +74,7 @@
 	"staff-of-homa": "Bastone di Homa",
 	"staff-of-the-scarlet-sands": "Bastone delle sabbie scarlatte",
 	"summit-shaper": "Affettavette",
+	"surfs-up": "Vai col surf",
 	"the-alley-flash": "Luce nei vicoli",
 	"the-bell": "Spadone del tempo",
 	"the-dockhands-assistant": "Aiutante del porto",
@@ -176,6 +179,10 @@
 		"name": "Dori",
 		"title": "Tesoro del giardino dei sogni"
 	},
+	"emilie": {
+		"name": "Émilie",
+		"title": "Scie di mille profumi"
+	},
 	"eula": {
 		"name": "Eula",
 		"title": "Danza dell'onda luccicante"
@@ -215,6 +222,10 @@
 	"jean": {
 		"name": "Jean",
 		"title": "Cavaliere del Dente di leone"
+	},
+	"kachina": {
+		"name": "Kachina",
+		"title": "Oro screziato allo stato grezzo"
 	},
 	"kaedehara-kazuha": {
 		"name": "Kaedehara Kazuha",
@@ -280,6 +291,10 @@
 		"name": "Mona",
 		"title": "Riflesso astrale"
 	},
+	"mualani": {
+		"name": "Mualani",
+		"title": "Cacciatrice di onde gorgoglianti"
+	},
 	"nahida": {
 		"name": "Nahida",
 		"title": "Fisica della purezza"
@@ -339,6 +354,10 @@
 	"shikanoin-heizou": {
 		"name": "Shikanoin Heizou",
 		"title": "Armonia analitica"
+	},
+	"sigewinne": {
+		"name": "Sigewinne",
+		"title": "Prodigiosa erede del drago"
 	},
 	"sucrose": {
 		"name": "Sucrose",

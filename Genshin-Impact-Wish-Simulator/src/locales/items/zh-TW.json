@@ -39,6 +39,7 @@
 	"lithic-blade": "千巖古劍",
 	"lithic-spear": "千巖長槍",
 	"lost-prayer-to-the-sacred-winds": "四風原典",
+	"lumidouce-elegy": "柔燈輓歌",
 	"magic-guide": "魔導緒論",
 	"makhaira-aquamarine": "瑪海菈的水色",
 	"memory-of-dust": "塵世之鎖",
@@ -60,6 +61,7 @@
 	"sacrificial-greatsword": "祭禮大劍",
 	"sacrificial-sword": "祭禮劍",
 	"sharpshooter_s-oath": "神射手之誓",
+	"silvershower-heartstrings": "白雨心弦",
 	"skyrider-sword": "飛天禦劍",
 	"skyward-atlas": "天空之卷",
 	"skyward-blade": "天空之刃",
@@ -72,6 +74,7 @@
 	"staff-of-homa": "護摩之杖",
 	"staff-of-the-scarlet-sands": "赤沙之杖",
 	"summit-shaper": "斫峰之刃",
+	"surfs-up": "衝浪時光",
 	"the-alley-flash": "暗巷閃光",
 	"the-bell": "鐘劍",
 	"the-dockhands-assistant": "船塢長劍",
@@ -176,6 +179,10 @@
 		"name": "多莉",
 		"title": "夢園藏金"
 	},
+	"emilie": {
+		"name": "艾梅莉埃",
+		"title": "千縷之蹤"
+	},
 	"eula": {
 		"name": "優菈",
 		"title": "浪沫的旋舞"
@@ -215,6 +222,10 @@
 	"jean": {
 		"name": "琴",
 		"title": "蒲公英騎士"
+	},
+	"kachina": {
+		"name": "卡齊娜",
+		"title": "斑金礦樸"
 	},
 	"kaedehara-kazuha": {
 		"name": "楓原萬葉",
@@ -280,6 +291,10 @@
 		"name": "莫娜",
 		"title": "星天水镜"
 	},
+	"mualani": {
+		"name": "瑪拉妮",
+		"title": "嘩啦啦逐浪客"
+	},
 	"nahida": {
 		"name": "納西妲",
 		"title": "白草淨華"
@@ -339,6 +354,10 @@
 	"shikanoin-heizou": {
 		"name": "鹿野院平藏",
 		"title": "心朝乂安"
+	},
+	"sigewinne": {
+		"name": "希格雯",
+		"title": "龍女妙變"
 	},
 	"sucrose": {
 		"name": "砂糖",

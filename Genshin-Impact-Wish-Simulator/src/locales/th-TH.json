@@ -38,6 +38,7 @@
 		"epitome-invocation": "#สรรค์สร้าง#เซียน",
 		"ode-to-the-dawn-breeze": "บทกวีแห่ง#สายลมรุ่งอรุณ#",
 		"adrift-in-the-harbor": "ม่านแห่งเมฆา",
+		"ambrosial-essence": "อวลกลิ่น#หยาดน้ำค้าง#",
 		"auric-blaze": "สุริยันสีทอง#ที่แผดเผา#",
 		"azure-excursion": "#ย่ำบุปผา#ธาราคราม",
 		"ballad-in-goblets": "#ถ้วย#แห่งบทกวี",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "พันเมฆาทอภูษา",
 		"oni_s-royale": "ห้วงอสูร ประจัญบาน",
 		"reign-of-serenity": "บัลลังก์แห่งนิรันดร์",
+		"romaritime-meluserenity": "ดวงใจสมุทร#ผู้อารี#",
+		"sharktacular-surfari": "#ฉลาม#ผจญคลื่น",
 		"secretum-secretorum": "ความลับในห้วงลึก",
 		"sparkling-steps": "ก้าวย่างพร่างพราย",
 		"tapestry-of-golden-flames": "ทะเลดาวแห่ งเปลวเพลิง",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "ไผ่พิรุณ",
 				"description": "ชุดงานเลี้ยงที่ทางสมาคมการค้า Feiyun จัดเตรียมไว้ให้แก่ Xingqiu ลวดลายไม้ไผ่ที่ดูหรูหรา และเสื้อผ้าที่ตัดเย็บอย่างดี แต่สิ่งที่ Xingqiu พอใจมากที่สุดก็คือกระเป๋าด้านในของมัน ที่เพียงพอให้ใส่นิยายเล่มบาง ๆ ได้"
+			},
+			"phantom-in-boots": {
+				"name": "บูทเงามายา",
+				"description": "คอสตูมของ Kirara นักดาบแมวเหมียวผู้กล้าหาญในเทพนิยาย สาวน้อยเจ้าเล่ห์ผู้ถ่ายทอดความปรารถนา เป็นเกียรติอย่างยิ่งที่ได้รู้จักคุณ"
+			},
+			"breeze-of-sabaa": {
+				"name": "สายลมแห่ง Sabaa",
+				"description": "ชุดเดรสอันหรูหราของ Nilou ที่ราวกับถักทอขึ้นจากดอกไม้นับพัน กรุ่นกลิ่นหอมอ่อน ๆ ราวกับสายลมตะวันออกยามรุ่งอรุณ บรรจุพรอันแสนวิเศษ จากโลกนิทานเอาไว้"
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "ชนะ 50/50",
 		"lose": "แพ้ 50/50",
 		"guaranteed": "รับประกัน",
+		"captured": "Capturing Radiance",
 		"selected": "อาวุธที่เลือก",
 		"olderLayout": "เค้าโครงที่เก่ากว่า",
 		"switchv2": "Switch to V2"

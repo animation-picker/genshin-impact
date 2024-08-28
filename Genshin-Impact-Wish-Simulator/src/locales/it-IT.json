@@ -38,6 +38,7 @@
 		"epitome-invocation": "Incarnazione divina",
 		"ode-to-the-dawn-breeze": "Poesia del vento mattutino",
 		"adrift-in-the-harbor": "Alla deriva nel porto",
+		"ambrosial-essence": "Essenza #d'ambrosia#",
 		"auric-blaze": "Fiamma dorata",
 		"azure-excursion": "Azure Excursion",
 		"ballad-in-goblets": "Ballad in Goblets",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "Seta delle mille nuvole",
 		"oni_s-royale": "Contesa di Oni",
 		"reign-of-serenity": "Reign of Serenity",
+		"romaritime-meluserenity": "Meluserenità di Romaritime",
+		"sharktacular-surfari": "Surfari squalorditivo",
 		"secretum-secretorum": "Secretum Secretorum",
 		"sparkling-steps": "Sparkling Steps",
 		"tapestry-of-golden-flames": "Tapestry of Golden Flames",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "Pioggia di bambù",
 				"description": "Un abito formale preparato dalla Gilda dei commercianti di Feiyun per Xingqiu. Il bambù è disegnato in modo raffinato e il taglio è lusinghiero, ma la parte preferita di Xingqiu sono le tasche interne, dentro le quali entrerebbe un libro non troppo spesso."
+			},
+			"phantom-in-boots": {
+				"name": "Fantasma con gli stivali",
+				"description": "Il completo di Kirara. L'eroica spadaccina felina dalla fama fiabesca, l'astuta fattorina dei sogni più cari... è lieta di fare la tua conoscenza!"
+			},
+			"breeze-of-sabaa": {
+				"name": "Brezza di Sabaa",
+				"description": "Un abito elegante per Nilou. Sembra che il tessuto di questo leggerissimo abito sia composto da innumerevoli fiori, e per tale motivo emana una fragranza delicata come il vento orientale all'alba, portando con sé graziose benedizioni di una terra fiabesca."
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "Vittoria 50/50",
 		"lose": "Perdita 50/50",
 		"guaranteed": "Assicurato",
+		"captured": "Capturing Radiance",
 		"selected": "Oggetto Selezionato",
 		"olderLayout": "Older Layout",
 		"switchv2": "Switch to V2"

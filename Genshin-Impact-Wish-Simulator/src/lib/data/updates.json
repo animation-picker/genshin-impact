@@ -468,12 +468,47 @@
 		},
 		{
 			"date": "03 Jun 2024",
-			"featured": true,
 			"description": [
 				"Add New Character: <strong> Clorinde (5★)</strong>",
 				"Add New Character: <strong> Sethos (4★)</strong>",
 				"Add New Weapon: <b> Absolution (5★)</b>",
 				"Add <strong> Alhaitham 2nd rerun </strong> Banner"
+			]
+		},
+		{
+			"date": "21 Jun 2024",
+			"description": [
+				"Add New Character: <strong> Sigewinner (5★)</strong>",
+				"Add New Weapon: <b> Silvershower Heartstrings (5★)</b>",
+				"Add <strong> Furina 1st rerun </strong> Banner"
+			]
+		},
+		{
+			"date": "15 Jul 2024",
+			"description": [
+				"Add new Outfit: <b>\"Breeze of Sabaa)\"</b> (Nillou)",
+				"Add new Outfit: <b>\"Phantom in Boots)\"</b> (Kirara)",
+				"Add <b>Navia's 1st Rerun</b> Banner",
+				"Add <b>Nilou's 2nd Rerun</b> Banner"
+			]
+		},
+		{
+			"date": "01 Aug 2024",
+			"description": [
+				"Add New Character: <strong> Emilie (5★)</strong>",
+				"Add New Weapon: <b> Lumidouce Elegy (5★)</b>",
+				"Add <strong> Yelan 3rd rerun </strong> Banner"
+			]
+		},
+		{
+			"date": "26 Aug 2023",
+			"featured": true,
+			"description": [
+				"<b>WELCOME TO NATLAN!</b>",
+				"New Character: <b>Mualani ( 5★ )</b> & <b>Kachina ( 4★ )</b>",
+				"New Weapon: <b>Surf's Up ( 5★ ) </b>",
+				"<b>New Mechanism:</b> Capturing Radiance - Can be triggered during 50:50 Condition, You can customize the rate via Rates Editor",
+				"<b>Adjustment:</b> Reduce Fatepoint needed from 2 to 1, starting from v5.0"
 			]
 		}
 	]

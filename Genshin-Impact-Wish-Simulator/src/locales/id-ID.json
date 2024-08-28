@@ -38,6 +38,7 @@
 		"epitome-invocation": "Epitome Invocation",
 		"ode-to-the-dawn-breeze": "Balada #Angin Fajar#",
 		"adrift-in-the-harbor": "#Misteri# Keabadian",
+		"ambrosial-essence": "#Semerbak# Sari Wewangian",
 		"auric-blaze": "Kilauan Bara #Api Surya#",
 		"azure-excursion": "Ketenangan #Riak Air#",
 		"ballad-in-goblets": "Syair Dalam #Piala#",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "Tenunan Warna #Ribuan Awan#",
 		"oni_s-royale": "Perjamuan #Oni#",
 		"reign-of-serenity": "Sang Penguasa #Tunggal#",
+		"romaritime-meluserenity": "Romaritime #Rahayu#",
+		"sharktacular-surfari": "#Hiu# Penakluk Ombak Biru",
 		"secretum-secretorum": "#Enigma# Kehidupan",
 		"sparkling-steps": "Percikan Langkah #Api#",
 		"tapestry-of-golden-flames": "#Pijar Api# di Angkasa",
@@ -83,6 +86,8 @@
 		"currentPity": "Piti {rarity}★ saat ini",
 		"winRate": "Peluang mendapat item RateUP:",
 		"charRate": "Peluang mendapat Karakter dibanding Senjata",
+		"radRate": "Peluang memicu Capturing Radiance",
+		"radTrigger": "(Terjadi ketika kalah 50:50)",
 		"nonRateup": "(Item 4★ saat kalah)",
 		"selectedRate": "Peluang mendapat {itemType} terpilih:",
 		"guaranteedSystem": "Sistem Jaminan",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "Bamboo Rain",
 				"description": "Baju formal yang disediakan Feiyun Commerce Guild untuk Xingqiu. Motif bambunya elok dan potongannya serasi di badan, namun yang paling Xingqiu sukai dari baju ini adalah kantong dalamnya, yang bisa dipakai untuk menyimpan buku novel tipis."
+			},
+			"phantom-in-boots": {
+				"name": "Phantom in Boots",
+				"description": "Model pakaian Kirara. Seorang pendekar kucing di dalam dongeng yang bertarung untuk membela keadilan, sekaligus seorang gadis cerdik yang mengantarkan harapan. Salam dari gadis pendekar kucing."
+			},
+			"breeze-of-sabaa": {
+				"name": "Breeze of Sabaa",
+				"description": "Gaun elegan yang dibuat untuk Nilou. Gaun ringan yang ditenun dari begitu banyaknya jenis bunga ini beraroma sangat harum tatkala ia diterpa oleh angin timur di kala fajar, dan juga membawakan berkah yang begitu indah dari negeri dongeng."
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "Menang 50/50",
 		"lose": "Kalah 50/50",
 		"guaranteed": "Item Jaminan",
+		"captured": "Capturing Radiance",
 		"selected": "Item Pilihan",
 		"olderLayout": "Layout Lama",
 		"switchv2": "Ganti ke V2"

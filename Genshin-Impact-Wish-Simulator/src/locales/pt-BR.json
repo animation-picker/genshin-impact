@@ -38,6 +38,7 @@
 		"epitome-invocation": "Encarnação Divina",
 		"ode-to-the-dawn-breeze": "#Poesia da# Manhã",
 		"adrift-in-the-harbor": "Perguntas Temporárias",
+		"ambrosial-essence": "#Fragrância do# Orvalho",
 		"auric-blaze": "Fulgor Dourado",
 		"azure-excursion": "Correntes Florais",
 		"ballad-in-goblets": "#Poemas# em Taças",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "#Haori# das Mil Nuvens",
 		"oni_s-royale": "Batalha do #Reino Oni#",
 		"reign-of-serenity": "#Reino# da Serenidade",
+		"romaritime-meluserenity": "Coração Rociomarinho",
+		"sharktacular-surfari": "#Tubarão# Surfando nas Ondas",
 		"secretum-secretorum": "Noites Enigmáticas",
 		"sparkling-steps": "Passos #Flamejantes#",
 		"tapestry-of-golden-flames": "#Chama# da Via Láctea",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "Bambu da Chuva",
 				"description": "Roupas formais da Guilda de Comerciantes de Feiyun para Xingqiu. Os bordados de bambu são refinados e lhe fazem vantagem, mas o aspecto favorito da roupa para Xingqiu são os bolsos internos, assim ele pode guardar uma novel."
+			},
+			"phantom-in-boots": {
+				"name": "Beleza Errante",
+				"description": "Vestuário de Kirara. A espadachim felina famosa nos contos de fada, a esperta mensageira de sonhos queridos... Prazer em conhecer!"
+			},
+			"breeze-of-sabaa": {
+				"name": "Suspiro do Acrídio",
+				"description": "Um traje elegante para Nilou, este vestido leve parece ser tecido de inúmeras flores, e com ele flutua uma fragrância suave como o vento leste ao amanhecer, trazendo belas bênçãos de uma terra de contos de fadas."
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "Ganhar 50/50",
 		"lose": "Perder 50/50",
 		"guaranteed": "Garantido",
+		"captured": "Capturing Radiance",
 		"selected": "Arma Selecionada",
 		"olderLayout": "Layout Antigo",
 		"switchv2": "Voltar para a V2"

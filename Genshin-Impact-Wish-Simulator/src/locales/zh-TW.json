@@ -38,6 +38,7 @@
 		"epitome-invocation": "神鑄#賦形#",
 		"ode-to-the-dawn-breeze": "#晨風#之詩",
 		"adrift-in-the-harbor": "#浮生#孰來",
+		"ambrosial-essence": "#凝露#輕芳",
 		"auric-blaze": "#烈陽#爍金",
 		"azure-excursion": "#蒼流#踏花",
 		"ballad-in-goblets": "#杯裝#之詩",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "#千雲#繪羽織",
 		"oni_s-royale": "#鬼門#斗宴",
 		"reign-of-serenity": "#影寂#天下人",
+		"romaritime-meluserenity": "#柔柔#海露心",
+		"sharktacular-surfari": "#鯊鯊#逐浪遊",
 		"secretum-secretorum": "#深秘#之息",
 		"sparkling-steps": "#閃焰#的駐足",
 		"tapestry-of-golden-flames": "#焰色#天河",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "雨化竹身",
 				"description": "飛雲商會為行秋準備的宴會衣裝。竹紋清雅、剪裁服貼，但最令行秋滿意的還是其內層的口袋，足夠塞下一冊較薄的小說了。"
+			},
+			"phantom-in-boots": {
+				"name": "倩影遊俠",
+				"description": "綺良良的裝扮款式。童話中行俠仗義的貓貓劍客，傳遞願望的狡黠少女，向您致意。"
+			},
+			"breeze-of-sabaa": {
+				"name": "莎邦之息",
+				"description": "妮露的典雅服飾，千花編織般的輕盈裙裝，如有黎明時東風捎來的淡香，承載著童話世界的美好祝福。"
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "小保底",
 		"lose": "歪",
 		"guaranteed": "大保底",
+		"captured": "Capturing Radiance",
 		"selected": "已定軌",
 		"olderLayout": "舊布局",
 		"switchv2": "切换到新版布局"

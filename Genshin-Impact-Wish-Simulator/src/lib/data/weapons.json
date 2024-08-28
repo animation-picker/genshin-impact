@@ -1,6 +1,39 @@
 {
 	"data": [
 		{
+			"itemID": 14516,
+			"name": "surfs-up",
+			"rarity": 5,
+			"weaponType": "catalyst",
+			"limited": true,
+			"origin": "natlan",
+			"offset": {
+				"button": { "t": 30, "w": 60, "l": 35 }
+			}
+		},
+		{
+			"itemID": 13513,
+			"name": "lumidouce-elegy",
+			"rarity": 5,
+			"weaponType": "polearm",
+			"limited": true,
+			"origin": "fontaine",
+			"offset": {
+				"button": { "t": 15, "w": 95, "l": 30 }
+			}
+		},
+		{
+			"itemID": 15513,
+			"name": "silvershower-heartstrings",
+			"rarity": 5,
+			"weaponType": "bow",
+			"limited": true,
+			"origin": "inazuma",
+			"offset": {
+				"button": { "t": 10, "w": 75, "l": 30 }
+			}
+		},
+		{
 			"itemID": 11515,
 			"name": "absolution",
 			"rarity": 5,

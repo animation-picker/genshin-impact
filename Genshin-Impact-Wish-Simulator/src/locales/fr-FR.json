@@ -38,6 +38,7 @@
 		"epitome-invocation": "Incarnation divine",
 		"ode-to-the-dawn-breeze": "Ode à la #brise matinale#",
 		"adrift-in-the-harbor": "Doute #passager#",
+		"ambrosial-essence": "Essence #ambrosiale#",
 		"auric-blaze": "Brasier #aurique#",
 		"azure-excursion": "Excursion #azurée#",
 		"ballad-in-goblets": "Ballade #en pintes#",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "Tissé de #nuages soyeux#",
 		"oni_s-royale": "Baroud d'#Oni#",
 		"reign-of-serenity": "#Règne# de sérénité",
+		"romaritime-meluserenity": "Mélusinité romaritime ",
+		"sharktacular-surfari": "Surfari #requinfini#",
 		"secretum-secretorum": "#Nouvelles# mystérieuses",
 		"sparkling-steps": "Foulées #étincelantes#",
 		"tapestry-of-golden-flames": "Draperie d'#étincelles dorées#",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "Pluie de bambous",
 				"description": "Une tenue de banquet préparée par la Guilde des marchands de Feiyun pour Xingqiu. Les imprimés en bambou sont raffinés et la coupe est des plus flatteuses, mais l'aspect préféré de Xingqiu réside dans ses poches intérieures, dans lesquelles on pourrait glisser un petit roman."
+			},
+			"phantom-in-boots": {
+				"name": "Fantôme en bottes",
+				"description": "Tenue de Kirara. La féline fanfaronne des contes de fées, la messagère rusée des rêves... est heureuse de faire votre connaissance !"
+			},
+			"breeze-of-sabaa": {
+				"name": "Brise de Sabaa",
+				"description": "Une tenue élégante pour Nilou. Cette robe légère est apparemment tissée d'innombrables fleurs, et avec elle dérive un léger parfum comme le vent d'est à l'aube, transportant de belles bénédictions venues d'un pays de conte de fées."
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "50/50 gagné",
 		"lose": "50/50 perdu",
 		"guaranteed": "Garanti",
+		"captured": "Capturing Radiance",
 		"selected": "Arme sélectionnée",
 		"olderLayout": "Ancienne mise en page",
 		"switchv2": "Changer pour la V2"
