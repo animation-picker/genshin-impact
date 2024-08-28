@@ -38,6 +38,7 @@
 		"epitome-invocation": "Thân hình Thần Đúc",
 		"ode-to-the-dawn-breeze": "Áng Thơ #Gió Sớm#",
 		"adrift-in-the-harbor": "#Hội Ngộ# Nơi Trần Thế",
+		"ambrosial-essence": "#Làn Hương# Phảng Phất",
 		"auric-blaze": "#Nắng Vàng# Rực Rỡ",
 		"azure-excursion": "#Dạo Bước# Bên Hoa",
 		"ballad-in-goblets": "#Bài Thơ# Cốc Thánh",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "#Thêu Mây# Dệt Gấm",
 		"oni_s-royale": "#Quỷ Môn# Đấu Yến",
 		"reign-of-serenity": "#Cô Độc# Giữa Nhân Gian",
+		"romaritime-meluserenity": "Romaritime #Dịu Dàng#",
+		"sharktacular-surfari": "#Cá Mập# Lướt Sóng",
 		"secretum-secretorum": "#Hơi Thở# Thần Bí",
 		"sparkling-steps": "Dấu Chân #Của Lửa#",
 		"tapestry-of-golden-flames": "Thiên Hà #Rực Lửa#",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "Màn Mưa Rừng Trúc",
 				"description": "Trang phục dự tiệc do Thương Hội Phi Vân chuẩn bị cho Xingqiu. Hoa văn hình trúc thanh tao, những đường cắt xẻ tuyệt mỹ, nhưng Xingqiu hài lòng nhất vẫn là chiếc túi bên trong, đủ để nhét một quyển tiểu thuyết mỏng vào."
+			},
+			"phantom-in-boots": {
+				"name": "Ảo Ảnh Đi Hia",
+				"description": "Phong cách của Kirara. Mèo kiếm khách hành hiệp trượng nghĩa, thiếu nữ lanh lợi truyền đạt nguyện vọng trong câu chuyện cổ tích, xin được gửi lời chào."
+			},
+			"breeze-of-sabaa": {
+				"name": "Ngọn Gió Sabaa",
+				"description": "Trang phục tao nhã của Nilou. Chiếc váy nhẹ nhàng như hàng ngàn bông hoa, mang theo hương thơm nhẹ nhàng của gió đông khi bình minh đến, chứa đựng lời chúc phúc tuyệt vời của thế giới cổ tích."
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "Thắng 50/50",
 		"lose": "Thua 50/50",
 		"guaranteed": "Được Đảm Bảo",
+		"captured": "Capturing Radiance",
 		"selected": "Vũ khí Đã Chọn",
 		"olderLayout": "Kiểu Cũ Hơn",
 		"switchv2": "Chuyển Sang V2"

@@ -38,6 +38,7 @@
 		"epitome-invocation": "Epitome Invocation",
 		"ode-to-the-dawn-breeze": "Ode to the #Dawn Breeze#",
 		"adrift-in-the-harbor": "#Adrift# in The Harbor",
+		"ambrosial-essence": "Ambrosial Essence",
 		"auric-blaze": "#Auric# Blaze",
 		"azure-excursion": "#Azure# Excursion",
 		"ballad-in-goblets": "#Ballad# in Goblets",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "Of #Silken Clouds# Woven",
 		"oni_s-royale": "#Oni's# Royale",
 		"reign-of-serenity": "Reign of #Serenity#",
+		"romaritime-meluserenity": "Romaritime Meluserenity",
+		"sharktacular-surfari": "Sharktacular Surfari",
 		"secretum-secretorum": "#Secretum# Secretorum",
 		"sparkling-steps": "#Sparkling# Steps",
 		"tapestry-of-golden-flames": "Tapestry of #Golden Flames#",
@@ -83,6 +86,8 @@
 		"currentPity": "{rarity}-Star Current Pity",
 		"winRate": "Chance to get Featured Item:",
 		"charRate": "Chance to get Character instead of Weapon",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(When losing 4-Star Item)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "Guaranteed System",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "Bamboo Rain",
 				"description": "Formal wear prepared by the Feiyun Commerce Guild for Xingqiu. The bamboo prints are refined and the cut is most flattering, but Xingqiu's favorite aspect of the outfit is its inner pockets, into which a thinner novel might be stuffed."
+			},
+			"phantom-in-boots": {
+				"name": "Phantom in Boots",
+				"description": "Kirara's outfit. The swashbuckling feline of fairytale fame, the crafty courier of dearly-held dreams... is pleased to make your acquaintance!"
+			},
+			"breeze-of-sabaa": {
+				"name": "Breeze of Sabaa",
+				"description": "An elegant outfit for Nilou, this featherweight dress is seemingly woven of countless flowers, and with it drifts a light fragrance like the east wind at dawn, carrying beauteous blessings from a fairytale land."
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "Win 50/50",
 		"lose": "Lose 50/50",
 		"guaranteed": "Guaranteed",
+		"captured": "Capturing Radiance",
 		"selected": "Selected Weapon",
 		"olderLayout": "Older Layout",
 		"switchv2": "Switch to V2"

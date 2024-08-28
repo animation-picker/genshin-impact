@@ -2,6 +2,54 @@
 	"onlyStandard": ["amber", "kaeya", "lisa"],
 	"data": [
 		{
+			"itemID": 10000102,
+			"name": "mualani",
+			"vision": "hydro",
+			"rarity": 5,
+			"origin": "natlan",
+			"offset": {
+				"splashArt": { "x": 3.6693766937669374, "y": 3.781842818428184, "scale": 1.57 },
+				"wishCard": { "x": -56.16326530612245, "y": 61.77857142857144, "scale": 11.13 },
+				"button": { "l": 52, "w": 115, "t": 37 }
+			}
+		},
+		{
+			"itemID": 10000100,
+			"name": "kachina",
+			"vision": "geo",
+			"rarity": 4,
+			"release": "5.0-1",
+			"origin": "natlan",
+			"offset": {
+				"splashArt": { "x": -0.5203252032520325, "y": 0.5040650406504066, "scale": 1.1 },
+				"wishCard": { "x": -20.722347629796843, "y": 51.65237020316027, "scale": 7.88 }
+			}
+		},
+		{
+			"itemID": 10000099,
+			"name": "emilie",
+			"vision": "dendro",
+			"rarity": 5,
+			"origin": "fontaine",
+			"offset": {
+				"splashArt": { "x": 0.12195121951219512, "y": -3.384823848238482, "scale": 1.38 },
+				"wishCard": { "x": -5.291841341502741, "y": 55.98194130925508, "scale": 10.38 },
+				"button": { "l": 45, "w": 86, "t": 36 }
+			}
+		},
+		{
+			"itemID": 10000095,
+			"name": "sigewinne",
+			"vision": "hydro",
+			"rarity": 5,
+			"origin": "fontaine",
+			"offset": {
+				"splashArt": { "x": -4.485175202156334, "y": -12.950134770889488, "scale": 1.42 },
+				"wishCard": { "x": -31.30979133226324, "y": 24.140515222482435, "scale": 10.17 },
+				"button": { "l": 52, "w": 115, "t": 37 }
+			}
+		},
+		{
 			"itemID": 10000097,
 			"name": "sethos",
 			"vision": "electro",
@@ -20,8 +68,8 @@
 			"rarity": 5,
 			"origin": "fontaine",
 			"offset": {
-				"splashArt": { "x": -2.6630727762803237, "y": -1.7830188679245285, "scale": 1.64 },
-				"wishCard": { "x": -44.831460674157306, "y": 56.07191011235956, "scale": 11.64 },
+				"splashArt": { "x": 0.42140921409214094, "y": 0.39701897018970195, "scale": 1.24 },
+				"wishCard": { "x": -57.94904869396969, "y": 54.09706546275396, "scale": 9.55 },
 				"button": { "l": 50, "w": 125, "t": 35 }
 			}
 		},

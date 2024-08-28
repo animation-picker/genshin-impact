@@ -39,6 +39,7 @@
 	"lithic-blade": "Каменный меч",
 	"lithic-spear": "Каменное копьё",
 	"lost-prayer-to-the-sacred-winds": "Молитва святым ветрам",
+	"lumidouce-elegy": "Элегия Люмидус",
 	"magic-guide": "Руководство по магии",
 	"makhaira-aquamarine": "Аквамарин махайры",
 	"memory-of-dust": "Память о пыли",
@@ -60,6 +61,7 @@
 	"sacrificial-greatsword": "Церемониальный двуручный меч",
 	"sacrificial-sword": "Церемониальный меч",
 	"sharpshooter_s-oath": "Клятва стрелка",
+	"silvershower-heartstrings": "Сердечные струны дождя",
 	"skyrider-sword": "Меч небесного всадника",
 	"skyward-atlas": "Небесный атлас",
 	"skyward-blade": "Небесный меч",
@@ -72,6 +74,7 @@
 	"staff-of-homa": "Посох Хомы",
 	"staff-of-the-scarlet-sands": "Посох алых песков",
 	"summit-shaper": "Кромсатель пиков",
+	"surfs-up": "Лови волну",
 	"the-alley-flash": "Вспышка во тьме",
 	"the-bell": "Меч-колокол",
 	"the-dockhands-assistant": "Верфь",
@@ -176,6 +179,10 @@
 		"name": "Дори",
 		"title": "Сокровище сада снов"
 	},
+	"emilie": {
+		"name": "Эмилия",
+		"title": "След тысячи ароматов"
+	},
 	"eula": {
 		"name": "Эола",
 		"title": "Танец морской пены"
@@ -215,6 +222,10 @@
 	"jean": {
 		"name": "Джинн",
 		"title": "Рыцарь Одуванчик"
+	},
+	"kachina": {
+		"name": "Качина",
+		"title": "Крапчатое самородное золото"
 	},
 	"kaedehara-kazuha": {
 		"name": "Кадзуха",
@@ -280,6 +291,10 @@
 		"name": "Мона",
 		"title": "Звёздное отражение"
 	},
+	"mualani": {
+		"name": "Муалани",
+		"title": "Укротительница волн"
+	},
 	"nahida": {
 		"name": "Нахида",
 		"title": "Средоточие чистоты"
@@ -339,6 +354,10 @@
 	"shikanoin-heizou": {
 		"name": "Хэйдзо",
 		"title": "Невозмутимое спокойствие"
+	},
+	"sigewinne": {
+		"name": "Сиджвин",
+		"title": "Преображённая дочь дракона"
 	},
 	"sucrose": {
 		"name": "Сахароза",

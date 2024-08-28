@@ -39,6 +39,7 @@
 	"lithic-blade": "千岩古剣",
 	"lithic-spear": "千岩長槍",
 	"lost-prayer-to-the-sacred-winds": "四風原典",
+	"lumidouce-elegy": "ルミドゥースの挽歌",
 	"magic-guide": "魔導緒論",
 	"makhaira-aquamarine": "マカイラの水色",
 	"memory-of-dust": "浮世の錠",
@@ -60,6 +61,7 @@
 	"sacrificial-greatsword": "祭礼の大剣",
 	"sacrificial-sword": "祭礼の剣",
 	"sharpshooter_s-oath": "シャープシューターの誓い",
+	"silvershower-heartstrings": "白雨心弦",
 	"skyrider-sword": "飛天御剣",
 	"skyward-atlas": "天空の巻",
 	"skyward-blade": "天空の刃",
@@ -72,6 +74,7 @@
 	"staff-of-homa": "護摩の杖",
 	"staff-of-the-scarlet-sands": "赤砂の杖",
 	"summit-shaper": "斬山の刃",
+	"surfs-up": "サーフィンタイム",
 	"the-alley-flash": "ダークアレイの閃光",
 	"the-bell": "鐘の剣",
 	"the-dockhands-assistant": "船渠剣",
@@ -176,6 +179,10 @@
 		"name": "ドリー",
 		"title": "夢の庭に隠せし財宝"
 	},
+	"emilie": {
+		"name": "エミリエ",
+		"title": "千の跡を辿って"
+	},
 	"eula": {
 		"name": "エウルア",
 		"title": "波沫のワルツ"
@@ -215,6 +222,10 @@
 	"jean": {
 		"name": "ジン",
 		"title": "蒲公英騎士"
+	},
+	"kachina": {
+		"name": "カチーナ",
+		"title": "金の混じる原鉱"
 	},
 	"kaedehara-kazuha": {
 		"name": "楓原万葉",
@@ -280,6 +291,10 @@
 		"name": "モナ",
 		"title": "星天水鏡"
 	},
+	"mualani": {
+		"name": "ムアラニ",
+		"title": "ざぶざぶウェーブチェイサー"
+	},
 	"nahida": {
 		"name": "ナヒーダ",
 		"title": "白草浄華"
@@ -339,6 +354,10 @@
 	"shikanoin-heizou": {
 		"name": "鹿野院平藏",
 		"title": "乂安を願うもの"
+	},
+	"sigewinne": {
+		"name": "シグウィン",
+		"title": "龍の愛娘"
 	},
 	"sucrose": {
 		"name": "スクロース",

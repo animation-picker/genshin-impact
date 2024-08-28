@@ -39,6 +39,7 @@
 	"lithic-blade": "Lithic Blade",
 	"lithic-spear": "Lithic Spear",
 	"lost-prayer-to-the-sacred-winds": "Lost Prayer to the Sacred Winds",
+	"lumidouce-elegy": "Lumidouce Elegy",
 	"magic-guide": "Magic Guide",
 	"makhaira-aquamarine": "Makhaira Aquamarine",
 	"memory-of-dust": "Memory of Dust",
@@ -60,6 +61,7 @@
 	"sacrificial-greatsword": "Sacrificial Greatsword",
 	"sacrificial-sword": "Sacrificial Sword",
 	"sharpshooter_s-oath": "Sharpshooter's Oath",
+	"silvershower-heartstrings": "Silvershower Heartstrings",
 	"skyrider-sword": "Skyrider Sword",
 	"skyward-atlas": "Skyward Atlas",
 	"skyward-blade": "Skyward Blade",
@@ -72,6 +74,7 @@
 	"staff-of-homa": "Staff of Homa",
 	"staff-of-the-scarlet-sands": "Staff of the Scarlet Sands",
 	"summit-shaper": "Summit Shaper",
+	"surfs-up": "Surf's Up",
 	"the-alley-flash": "The Alley Flash",
 	"the-bell": "The Bell",
 	"the-dockhands-assistant": "The Dockhand's Assistant",
@@ -176,6 +179,10 @@
 		"name": "Dori",
 		"title": "Treasure of Dream Garden"
 	},
+	"emilie": {
+		"name": "Emilie",
+		"title": "A Thousand Scents Traced"
+	},
 	"eula": {
 		"name": "Eula",
 		"title": "The Sprindrift Knight"
@@ -215,6 +222,10 @@
 	"jean": {
 		"name": "Jean",
 		"title": "Dandelion Knight"
+	},
+	"kachina": {
+		"name": "Kachina",
+		"title": "Mottled Gold Yet Unsmelted"
 	},
 	"kaedehara-kazuha": {
 		"name": "Kaedehara Kazuha",
@@ -280,6 +291,10 @@
 		"name": "Mona",
 		"title": "Astral Reflection"
 	},
+	"mualani": {
+		"name": "Mualani",
+		"title": "Splish-Splash Wavechaser"
+	},
 	"nahida": {
 		"name": "Nahida",
 		"title": "Physic of Purity"
@@ -339,6 +354,10 @@
 	"shikanoin-heizou": {
 		"name": "Shikanoin Heizou",
 		"title": "Analytical Harmoni"
+	},
+	"sigewinne": {
+		"name": "Sigewinne",
+		"title": "Wondrous Dragonheir"
 	},
 	"sucrose": {
 		"name": "Sucrose",

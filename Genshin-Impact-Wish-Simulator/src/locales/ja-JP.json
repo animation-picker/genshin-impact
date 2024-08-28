@@ -38,6 +38,7 @@
 		"epitome-invocation": "#神鋳#賦形",
 		"ode-to-the-dawn-breeze": "#暁風#の詩",
 		"adrift-in-the-harbor": "#逸俗#逡巡",
+		"ambrosial-essence": "ひとしずくの#馨香#",
 		"auric-blaze": "黄金を熔かす#烈日#",
 		"azure-excursion": "花踏み歩む#蒼流#",
 		"ballad-in-goblets": "#杯に#注がれた詩",
@@ -62,6 +63,8 @@
 		"of-silken-clouds-woven": "#千の雲#で彩なす羽織",
 		"oni_s-royale": "#鬼門#闘宴",
 		"reign-of-serenity": "#影寂#の天下人",
+		"romaritime-meluserenity": "ロマリタイム#ハート#",
+		"sharktacular-surfari": "#波追い#のサメ",
 		"secretum-secretorum": "#神秘#の生息",
 		"sparkling-steps": "#フレア#の訪れ",
 		"tapestry-of-golden-flames": "天の川に咲きし#大輪#",
@@ -83,6 +86,8 @@
 		"currentPity": "★{rarity} 現在の天井カウント",
 		"winRate": "ピックアップ獲得確率:",
 		"charRate": "武器ではなくキャラを入手する確率",
+		"radRate": "Capturing Radiance Rate",
+		"radTrigger": "(Triggered when losing 50:50)",
 		"nonRateup": "(★4PUキャラを引けなかった場合)",
 		"selectedRate": "Selected {itemType} Rate:",
 		"guaranteedSystem": "ピックアップ確定",
@@ -320,6 +325,14 @@
 			"bamboo-rain": {
 				"name": "竹身雨化",
 				"description": "飛雲商会が行秋のために用意した礼服。優雅な竹の模様が入っており、体にぴったり合うよう仕立てられている。なにより行秋が最も気に入っている点は、服の内側にあるほどよい大きさのポケット。薄めの小説がちょうど入るようになっている。"
+			},
+			"phantom-in-boots": {
+				"name": "麗しき怪傑",
+				"description": "綺良々の衣装。童話の中で弱きを助けるニャンコ剣士——願いを届ける可憐な少女、ここに参上！"
+			},
+			"breeze-of-sabaa": {
+				"name": "東風はこぶ花の吐息",
+				"description": "ニィロウの優雅な衣装。まるで千の花で織ったかのような、軽やかなスカート。夜明けの東風に運ばれてきたと錯覚する淡い香りには、童話の世界の美しい祝福が秘められている。"
 			}
 		}
 	},
@@ -420,6 +433,7 @@
 		"win": "50%に勝利",
 		"lose": "50%に敗北",
 		"guaranteed": "確定獲得",
+		"captured": "Capturing Radiance",
 		"selected": "軌定獲得",
 		"olderLayout": "Ver.1レイアウトに切替",
 		"switchv2": "Ver.2レイアウトに切替"

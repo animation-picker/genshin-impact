@@ -1,0 +1,46 @@
+{
+	"patch": 5.0,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "sharktacular-surfari-1",
+							"character": "mualani",
+							"textOffset": { "l": 49, "b": 14 }
+						},
+						{
+							"bannerName": "leaves-in-the-wind-5",
+							"character": "kaedehara-kazuha",
+							"textOffset": { "l": 50, "b": 14 }
+						}
+					],
+					"rateup": ["kachina", "bennett", "xinyan"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-69",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "surfs-up" },
+						{ "name": "freedom-sworn", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"favonius-sword",
+						"the-stringless",
+						"dragon_s-bane",
+						"sacrificial-fragments",
+						"favonius-greatsword"
+					],
+					"textOffset": {
+						"featured": { "l": 49.5, "t": 71 },
+						"rateup": { "l": 79.5, "b": 18, "w": 17 }
+					}
+				}
+			}
+		}
+	]
+}
+
