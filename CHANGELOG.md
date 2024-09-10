@@ -1,4 +1,9 @@
 ## 更新日志
+### v0.1.2
+
+更新至5.0上半卡池(感谢 @6DDUU6 #71 #75 )
+
+
 ### v0.1.1
 
 > Tips:重构版本被标记为pre-release，可以通过[这里](https://github.com/cyanial/genshin-impact-picker/releases/tag/v0.2.0-beta)自行下载测试
