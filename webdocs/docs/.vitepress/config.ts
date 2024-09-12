@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
 	lang: 'zh-CN',
-	base: '/',
+	base: '/genshin-impact/',
 	title: '原神点名器文档',
 	description: '原神点名器文档',
 	head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
