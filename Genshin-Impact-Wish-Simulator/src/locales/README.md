@@ -71,6 +71,10 @@ If you are not familiar with javascript especially sveltekit or don't know how t
             <a href="https://github.com/LA1211">
                <img width="20px" src="https://avatars.githubusercontent.com/u/70387228?s=20" />
                LA1211
+            </a>,
+            <a href="https://github.com/Alextocode">
+               <img width="20px" src="https://avatars.githubusercontent.com/u/11820339?s=20" />
+               Alexander Schüßler
             </a>
          </td>
       </tr>

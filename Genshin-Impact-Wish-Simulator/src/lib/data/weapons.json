@@ -1,6 +1,79 @@
 {
 	"data": [
 		{
+			"itemID": 14430,
+			"name": "waveriding-whirl",
+			"rarity": 4,
+			"weaponType": "catalyst",
+			"limited": true,
+			"origin": "natlan"
+		},
+		{
+			"itemID": 15430,
+			"name": "flower-wreathed-feathers",
+			"rarity": 4,
+			"weaponType": "bow",
+			"limited": true,
+			"origin": "natlan"
+		},
+		{
+			"itemID": 15514,
+			"name": "astral-vultures-crimson-plumage",
+			"rarity": 5,
+			"weaponType": "bow",
+			"limited": true,
+			"origin": "natlan",
+			"offset": {
+				"button": { "t": 10, "w": 75, "l": 30 }
+			}
+		},
+		{
+			"itemID": 11430,
+			"name": "sturdy-bone",
+			"rarity": 4,
+			"weaponType": "sword",
+			"limited": true,
+			"origin": "natlan"
+		},
+		{
+			"itemID": 12430,
+			"name": "fruitful-hook",
+			"rarity": 4,
+			"weaponType": "claymore",
+			"limited": true,
+			"origin": "natlan"
+		},
+		{
+			"itemID": 13430,
+			"name": "mountain-bracing-bolt",
+			"rarity": 4,
+			"weaponType": "polearm",
+			"limited": true,
+			"origin": "natlan"
+		},
+		{
+			"itemID": 11516,
+			"name": "peak-patrol-song",
+			"rarity": 5,
+			"weaponType": "sword",
+			"limited": true,
+			"origin": "natlan",
+			"offset": {
+				"button": { "t": -15, "w": 90, "l": 30 }
+			}
+		},
+		{
+			"itemID": 12513,
+			"name": "fang-of-the-mountain-king",
+			"rarity": 5,
+			"weaponType": "claymore",
+			"limited": true,
+			"origin": "natlan",
+			"offset": {
+				"button": { "t": 1, "w": 70, "l": 38 }
+			}
+		},
+		{
 			"itemID": 14516,
 			"name": "surfs-up",
 			"rarity": 5,

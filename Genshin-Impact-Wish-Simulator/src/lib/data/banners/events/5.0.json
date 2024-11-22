@@ -40,6 +40,46 @@
 					}
 				}
 			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "seeker-of-flame-wrought-secrets-1",
+							"character": "kinich",
+							"textOffset": { "l": 51, "b": 13 }
+						},
+						{
+							"bannerName": "reign-of-serenity-5",
+							"character": "raiden-shogun",
+							"textOffset": { "l": 47, "b": 13 }
+						}
+					],
+					"rateup": ["chevreuse", "kujou-sara", "thoma"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-70",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "fang-of-the-mountain-king" },
+						{ "name": "engulfing-lightning", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"sacrificial-sword",
+						"the-widsith",
+						"sacrificial-bow",
+						"favonius-lance",
+						"rainslasher"
+					],
+					"textOffset": {
+						"featured": { "l": 48.5, "t": 68 },
+						"rateup": { "l": 78.5, "b": 21 }
+					}
+				}
+			}
 		}
 	]
 }

@@ -4,6 +4,7 @@
 	"akuoumaru": "Akuoumaru",
 	"alley-hunter": "Alley Hunter",
 	"amos-bow": "Amos' Bow",
+	"astral-vultures-crimson-plumage": "Astral Vulture's Crimson Plumage",
 	"aqua-simulacra": "Aqua Simulacra",
 	"aquila-favonia": "Aquila Favonia",
 	"beacon-of-the-reed-sea": "Beacon of the Reed Sea",
@@ -21,13 +22,16 @@
 	"engulfing-lightning": "Engulfing Lightning",
 	"everlasting-moonglow": "Everlasting Moonglow",
 	"eye-of-perception": "Eye of Perception",
+	"fang-of-the-mountain-king": "Fang of The Mountain King",
 	"favonius-codex": "Favonius Codex",
 	"favonius-greatsword": "Favonius Greatsword",
 	"favonius-lance": "Favonius Lance",
 	"favonius-sword": "Favonius Sword",
 	"favonius-warbow": "Favonius Warbow",
 	"ferrous-shadow": "Ferrous Shadow",
+	"flower-wreathed-feathers": "Flower-Wreathed Feathers",
 	"freedom-sworn": "Freedom-Sworn",
+	"fruitful-hook": "Fruitful Hook",
 	"haran-geppaku-futsu": "Haran Geppaku Futsu",
 	"harbinger-of-dawn": "Harbinger of Dawn",
 	"hunter_s-path": "Hunter's Path",
@@ -45,7 +49,9 @@
 	"memory-of-dust": "Memory of Dust",
 	"mistsplitter-reforged": "Mistsplitter Reforged",
 	"mitternachts-waltz": "Mitternachts Waltz",
+	"mountain-bracing-bolt": "Mountain-Bracing Bolt",
 	"mouun_s-moon": "Mouun's Moon",
+	"peak-patrol-song": "Peak Patrol Song",
 	"polar-star": "Polar Star",
 	"portable-power-saw": "Portable Power Saw",
 	"primordial-jade-cutter": "Primordial Jade Cutter",
@@ -73,6 +79,7 @@
 	"splendor-of-tranquil-waters": "Splendor of Tranquil Waters",
 	"staff-of-homa": "Staff of Homa",
 	"staff-of-the-scarlet-sands": "Staff of the Scarlet Sands",
+	"sturdy-bone": "Sturdy Bone",
 	"summit-shaper": "Summit Shaper",
 	"surfs-up": "Surf's Up",
 	"the-alley-flash": "The Alley Flash",
@@ -91,8 +98,9 @@
 	"verdict": "Verdict",
 	"vortex-vanquisher": "Vortex Vanquisher",
 	"wavebreaker_s-fin": "Wavebreaker's Fin",
-	"wine-and-song": "Wine and Song",
 	"wandering-evenstar": "Wandering Evenstar",
+	"waveriding-whirl": "Waveriding Whirl",
+	"wine-and-song": "Wine and Song",
 	"wolf_s-gravestone": "Wolf's Gravestone",
 	"xiphos-moonlight": "Xiphos' Moonlight",
 	"albedo": {
@@ -138,6 +146,10 @@
 	"charlotte": {
 		"name": "Charlotte",
 		"title": "Lens of Verity"
+	},
+	"chasca": {
+		"name": "Chasca",
+		"title": "Skyborne Arbiter"
 	},
 	"chevreuse": {
 		"name": "Chevreuse",
@@ -193,7 +205,7 @@
 	},
 	"fischl": {
 		"name": "Fischl",
-		"title": "Prinzessin der Verurteilung"
+		"title": "Prinzessin der Verurteilung!"
 	},
 	"freminet": {
 		"name": "Freminet",
@@ -250,6 +262,10 @@
 	"keqing": {
 		"name": "Keqing",
 		"title": "Driving Thunder"
+	},
+	"kinich": {
+		"name": "Kinich",
+		"title": "Turnfire Hunt"
 	},
 	"kirara": {
 		"name": "Kirara",
@@ -319,6 +335,10 @@
 		"name": "Noelle",
 		"title": "Chivalric Blossom"
 	},
+	"ororon": {
+		"name": "Ororon",
+		"title": "Shadow of the Night-Wind"
+	},
 	"qiqi": {
 		"name": "Qiqi",
 		"title": "Icy Resurrection"
@@ -329,7 +349,7 @@
 	},
 	"razor": {
 		"name": "Razor",
-		"title": "Legend of Wolvendom"
+		"title": "Wolf Boy"
 	},
 	"rosaria": {
 		"name": "Rosaria",
@@ -398,6 +418,10 @@
 	"xiao": {
 		"name": "Xiao",
 		"title": "Vigilant Yaksha"
+	},
+	"xilonen": {
+		"name": "Xilonen",
+		"title": "Ardent Flames Forge the Soul"
 	},
 	"xingqiu": {
 		"name": "Xingqiu",

@@ -4,6 +4,7 @@
 	"akuoumaru": "Акуомару",
 	"alley-hunter": "Охотник во тьме",
 	"amos-bow": "Лук Амоса",
+	"astral-vultures-crimson-plumage": "Алое перо звёздного грифа",
 	"aqua-simulacra": "Аква симулякрум",
 	"aquila-favonia": "Меч Сокола",
 	"beacon-of-the-reed-sea": "Маяк тростникового моря",
@@ -21,13 +22,16 @@
 	"engulfing-lightning": "Сияющая жатва",
 	"everlasting-moonglow": "Вечное лунное сияние",
 	"eye-of-perception": "Око сознания",
+	"fang-of-the-mountain-king": "Клык Горного короля",
 	"favonius-codex": "Кодекс Фавония",
 	"favonius-greatsword": "Двуручный меч Фавония",
 	"favonius-lance": "Копьё Фавония",
 	"favonius-sword": "Меч Фавония",
 	"favonius-warbow": "Боевой лук Фавония",
 	"ferrous-shadow": "Металлическая тень",
+	"flower-wreathed-feathers": "Украшенные цветами перья",
 	"freedom-sworn": "Клятва свободы",
+	"fruitful-hook": "Плодотворный крюк",
 	"haran-geppaku-futsu": "Харан гэппаку фуцу",
 	"harbinger-of-dawn": "Предвестник зари",
 	"hunter_s-path": "Охотничья тропа",
@@ -45,7 +49,9 @@
 	"memory-of-dust": "Память о пыли",
 	"mistsplitter-reforged": "Рассекающий туман",
 	"mitternachts-waltz": "Вальс Нирваны Ночи",
+	"mountain-bracing-bolt": "Крепящий горы шип",
 	"mouun_s-moon": "Луна Моун",
+	"peak-patrol-song": "Песнь патруля пиков",
 	"polar-star": "Полярная звезда",
 	"portable-power-saw": "Переносная мотопила",
 	"primordial-jade-cutter": "Драгоценный омут",
@@ -73,6 +79,7 @@
 	"splendor-of-tranquil-waters": "Блеск тихих вод",
 	"staff-of-homa": "Посох Хомы",
 	"staff-of-the-scarlet-sands": "Посох алых песков",
+	"sturdy-bone": "Крепкая кость",
 	"summit-shaper": "Кромсатель пиков",
 	"surfs-up": "Лови волну",
 	"the-alley-flash": "Вспышка во тьме",
@@ -91,8 +98,9 @@
 	"verdict": "Вердикт",
 	"vortex-vanquisher": "Покоритель вихря",
 	"wavebreaker_s-fin": "Режущий волны плавник",
-	"wine-and-song": "Вино и песни",
 	"wandering-evenstar": "Скитающаяся звезда",
+	"waveriding-whirl": "Вихрь на волнах",
+	"wine-and-song": "Вино и песни",
 	"wolf_s-gravestone": "Волчья погибель",
 	"xiphos-moonlight": "Лунное сияние ксифоса",
 	"albedo": {
@@ -138,6 +146,10 @@
 	"charlotte": {
 		"name": "Шарлотта",
 		"title": "Объективная реальность"
+	},
+	"chasca": {
+		"name": "Часка",
+		"title": "Небесный примиритель"
 	},
 	"chevreuse": {
 		"name": "Шеврёз",
@@ -251,6 +263,10 @@
 		"name": "Кэ Цин",
 		"title": "Раскаты грома"
 	},
+	"kinich": {
+		"name": "Кинич",
+		"title": "Охотник Пламени поворота"
+	},
 	"kirara": {
 		"name": "Кирара",
 		"title": "Кошка на гребне крыши"
@@ -318,6 +334,10 @@
 	"noelle": {
 		"name": "Ноэлль",
 		"title": "Нераспустившийся цветок"
+	},
+	"ororon": {
+		"name": "Оророн",
+		"title": "Тень Ночного Ветра"
 	},
 	"qiqi": {
 		"name": "Ци Ци",
@@ -398,6 +418,10 @@
 	"xiao": {
 		"name": "Сяо",
 		"title": "Защитник Якса"
+	},
+	"xilonen": {
+		"name": "Шилонен",
+		"title": "Закалённая пламенем душа"
 	},
 	"xingqiu": {
 		"name": "Син Цю",
