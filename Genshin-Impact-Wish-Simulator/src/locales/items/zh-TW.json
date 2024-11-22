@@ -4,6 +4,7 @@
 	"akuoumaru": "惡王丸",
 	"alley-hunter": "暗巷獵手",
 	"amos-bow": "阿莫斯之弓",
+	"astral-vultures-crimson-plumage": "星鷲赤羽",
 	"aqua-simulacra": "若水",
 	"aquila-favonia": "風鷹劍",
 	"beacon-of-the-reed-sea": "葦海信標",
@@ -21,13 +22,16 @@
 	"engulfing-lightning": "薙草之稻光",
 	"everlasting-moonglow": "不滅月華",
 	"eye-of-perception": "昭心",
+	"fang-of-the-mountain-king": "山王長牙",
 	"favonius-codex": "西風秘典",
 	"favonius-greatsword": "西風大劍",
 	"favonius-lance": "西風長槍",
 	"favonius-sword": "西風劍",
 	"favonius-warbow": "西風獵弓",
 	"ferrous-shadow": "鐵影闊劍",
+	"flower-wreathed-feathers": "綴花之翎",
 	"freedom-sworn": "蒼古自由之誓",
+	"fruitful-hook": "碩果鉤",
 	"haran-geppaku-futsu": "波乱月白经津",
 	"harbinger-of-dawn": "黎明神劍",
 	"hunter_s-path": "獵人之徑",
@@ -45,7 +49,9 @@
 	"memory-of-dust": "塵世之鎖",
 	"mistsplitter-reforged": "霧切之迴光",
 	"mitternachts-waltz": "幽夜華爾滋",
+	"mountain-bracing-bolt": "鎮山之釘",
 	"mouun_s-moon": "曚雲之月",
+	"peak-patrol-song": "岩峰巡歌",
 	"polar-star": "冬極白星",
 	"portable-power-saw": "便攜動力鋸",
 	"primordial-jade-cutter": "磐岩結綠",
@@ -73,6 +79,7 @@
 	"splendor-of-tranquil-waters": "靜水流湧之輝",
 	"staff-of-homa": "護摩之杖",
 	"staff-of-the-scarlet-sands": "赤沙之杖",
+	"sturdy-bone": "彌堅骨",
 	"summit-shaper": "斫峰之刃",
 	"surfs-up": "衝浪時光",
 	"the-alley-flash": "暗巷閃光",
@@ -91,8 +98,9 @@
 	"verdict": "裁斷",
 	"vortex-vanquisher": "貫虹之槊",
 	"wavebreaker_s-fin": "斷浪長鰭",
-	"wine-and-song": "暗巷的酒與詩",
 	"wandering-evenstar": "流浪的晚星",
+	"waveriding-whirl": "乘浪的迴旋",
+	"wine-and-song": "暗巷的酒與詩",
 	"wolf_s-gravestone": "狼的末路",
 	"xiphos-moonlight": "西福斯的月光",
 	"albedo": {
@@ -138,6 +146,10 @@
 	"charlotte": {
 		"name": "夏洛蒂",
 		"title": "朗鏡索真"
+	},
+	"chasca": {
+		"name": "恰斯卡",
+		"title": "巡宇翦定"
 	},
 	"chevreuse": {
 		"name": "夏沃蕾",
@@ -247,6 +259,10 @@
 		"name": "刻晴",
 		"title": "霆霓快雨"
 	},
+	"kinich": {
+		"name": "基尼奇",
+		"title": "回火之狩"
+	},
 	"klee": {
 		"name": "可莉",
 		"title": "逃跑的太陽"
@@ -318,6 +334,10 @@
 	"noelle": {
 		"name": "諾艾爾",
 		"title": "未受勳之花"
+	},
+	"ororon": {
+		"name": "歐洛倫",
+		"title": "深黯的謎煙"
 	},
 	"qiqi": {
 		"name": "七七",
@@ -398,6 +418,10 @@
 	"xiao": {
 		"name": "魈",
 		"title": "護法夜叉"
+	},
+	"xilonen": {
+		"name": "希諾寧",
+		"title": "焮火鑄魂"
 	},
 	"xingqiu": {
 		"name": "行秋",

@@ -502,13 +502,43 @@
 		},
 		{
 			"date": "26 Aug 2023",
-			"featured": true,
 			"description": [
 				"<b>WELCOME TO NATLAN!</b>",
 				"New Character: <b>Mualani ( 5★ )</b> & <b>Kachina ( 4★ )</b>",
 				"New Weapon: <b>Surf's Up ( 5★ ) </b>",
-				"<b>New Mechanism:</b> Capturing Radiance - Can be triggered during 50:50 Condition, You can customize the rate via Rates Editor",
+				"<b>New Mechanism:</b> Capturing Radiance - Can be triggered during 50:50 Condition",
 				"<b>Adjustment:</b> Reduce Fatepoint needed from 2 to 1, starting from v5.0"
+			]
+		},
+		{
+			"date": "12 Sep 2024",
+			"description": [
+				"Add New Character: <strong> Kinich (5★)</strong>",
+				"Add New Weapon: <b> Fang of The Mountain King (5★)</b>",
+				"Add <strong> Raiden Shogun 4th rerun </strong> Banner"
+			]
+		},
+		{
+			"date": "6 Oct 2024",
+			"description": [
+				"Add New Character: <strong> Xilonen (5★)</strong>",
+				"Add New Weapon: <b> Peak Patrol Song (5★)</b>",
+				"Add New Weapons: <b>Sturdy Bone</b>, <b>Fruitful Hook</b> & <b>Mountain-Bracing Bolt</b> (4★)"
+			]
+		},
+		{
+			"date": "20 Oct 2024",
+			"description": [
+				"Add <strong> Nahida 3rd rerun (5★)</strong>",
+				"Add <b> Hu Tao 4rd rerun (5★)</b>"
+			]
+		},
+		{
+			"date": "18 Nov 2024",
+			"description": [
+				"Add New Character: <strong> Chasca (5★)</strong>",
+				"Add New Weapon: <b> Astral Vulture's Crimson Plumage (5★)</b>",
+				"Add New Weapons: <b>Sturdy Bone</b>, <b>Flower-Wreathed Feathers</b> & <b>Waveriding Whirl</b> (4★)"
 			]
 		}
 	]

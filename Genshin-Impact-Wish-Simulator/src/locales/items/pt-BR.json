@@ -4,6 +4,7 @@
 	"akuoumaru": "Akuoumaru",
 	"alley-hunter": "Caçador do Beco",
 	"amos-bow": "Arco de Amos",
+	"astral-vultures-crimson-plumage": "Plumagem Escarlate do Abutre Astral",
 	"aqua-simulacra": "Aqua Simulacra",
 	"aquila-favonia": "Falcão",
 	"beacon-of-the-reed-sea": "Sinal dos Mares",
@@ -21,13 +22,16 @@
 	"engulfing-lightning": "Luz do Cortador de Grama",
 	"everlasting-moonglow": "Fumetsu Gekka",
 	"eye-of-perception": "Olho da Percepção",
+	"fang-of-the-mountain-king": "Presa do Rei da Montanhag",
 	"favonius-codex": "Codex de Favonius",
 	"favonius-greatsword": "Espadão de Favonius",
 	"favonius-lance": "Lança de Favonius",
 	"favonius-sword": "Espada de Favonius",
 	"favonius-warbow": "Arco de Favonius",
 	"ferrous-shadow": "Espadão de Ferro Branco",
+	"flower-wreathed-feathers": "Penas Cercadas de Flores",
 	"freedom-sworn": "Juramento pela Liberdade",
+	"fruitful-hook": "Gancho Frutífero",
 	"haran-geppaku-futsu": "Maremoto da Lua de Futsu",
 	"harbinger-of-dawn": "Prenúncio do Alvorecer",
 	"hunter_s-path": "Caminho do Caçador",
@@ -45,7 +49,9 @@
 	"memory-of-dust": "Memória da Poeira",
 	"mistsplitter-reforged": "Cortadora da Neblina Reforjada",
 	"mitternachts-waltz": "Valsa do Crepúsculo",
+	"mountain-bracing-bolt": "Prego Esmagador de Montanhas",
 	"mouun_s-moon": "Lua de Mouun",
+	"peak-patrol-song": "Canção da Patrulha do Pico",
 	"polar-star": "Polar Star",
 	"portable-power-saw": "Serra Elétrica Portátil",
 	"primordial-jade-cutter": "Cortador de Jade Primordial",
@@ -73,6 +79,7 @@
 	"splendor-of-tranquil-waters": "Esplendor das Águas Silenciosas",
 	"staff-of-homa": "Báculo de Homa",
 	"staff-of-the-scarlet-sands": "Báculo das Areias Escarlates",
+	"sturdy-bone": "Osso Robusto",
 	"summit-shaper": "Cortador de Montanhas",
 	"surfs-up": "Hora do Surfe",
 	"the-alley-flash": "Brilho do Beco",
@@ -91,8 +98,9 @@
 	"verdict": "Veredito",
 	"vortex-vanquisher": "Perfuradora Prismática",
 	"wavebreaker_s-fin": "Barbatana do Quebra Ondas",
-	"wine-and-song": "Vinho e Música",
 	"wandering-evenstar": "Estrela Itinerante",
+	"waveriding-whirl": "Redemoinho das Ondas",
+	"wine-and-song": "Vinho e Música",
 	"wolf_s-gravestone": "Túmulo do Lobo",
 	"xiphos-moonlight": "Luz Lunar de Xiphos",
 	"albedo": {
@@ -138,6 +146,10 @@
 	"charlotte": {
 		"name": "Charlotte",
 		"title": "Lentes em Busca da Verdade"
+	},
+	"chasca": {
+		"name": "Chasca",
+		"title": "Exploradora Celestial"
 	},
 	"chevreuse": {
 		"name": "Chevreuse",
@@ -251,6 +263,10 @@
 		"name": "Keqing",
 		"title": "Trovão Condutor"
 	},
+	"kinich": {
+		"name": "Kinich",
+		"title": "Caçador da Têmpera"
+	},
 	"kirara": {
 		"name": "Kirara",
 		"title": "Gatinha dos Beirais"
@@ -318,6 +334,10 @@
 	"noelle": {
 		"name": "Noelle",
 		"title": "Flor da Cavalaria"
+	},
+	"ororon": {
+		"name": "Ororon",
+		"title": "Sombra do Vento Noturno"
 	},
 	"qiqi": {
 		"name": "Qiqi",
@@ -398,6 +418,10 @@
 	"xiao": {
 		"name": "Xiao",
 		"title": "Guardião Yaksha"
+	},
+	"xilonen": {
+		"name": "Xilonen",
+		"title": "Fogo Ardente Forja a Alma"
 	},
 	"xingqiu": {
 		"name": "Xingqiu",

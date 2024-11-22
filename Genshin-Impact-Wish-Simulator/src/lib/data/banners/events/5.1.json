@@ -1,0 +1,86 @@
+{
+	"patch": 5.1,
+	"data": [
+		{
+			"phase": 1,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "forgefires-blessing-1",
+							"character": "xilonen",
+							"textOffset": { "l": 50, "b": 10.5 }
+						},
+						{
+							"bannerName": "of-silken-clouds-woven-2",
+							"character": "chiori",
+							"textOffset": { "l": 50, "b": 10.5 }
+						}
+					],
+					"rateup": ["collei", "dori", "candace"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-71",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "peak-patrol-song" },
+						{ "name": "uraku-misugiri", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"favonius-greatsword",
+						"rust",
+						"sturdy-bone",
+						"mountain-bracing-bolt",
+						"favonius-codex"
+					],
+					"textOffset": {
+						"featured": { "l": 48.5, "t": 70 },
+						"rateup": { "l": 78, "b": 20, "w": 18 }
+					}
+				}
+			}
+		},
+		{
+			"phase": 2,
+			"banners": {
+				"standardVersion": 4,
+				"events": {
+					"featured": [
+						{
+							"bannerName": "the-moongrass-enlightenment-4",
+							"character": "nahida",
+							"textOffset": { "l": 50.5, "b": 10.5 }
+						},
+						{
+							"bannerName": "moment-of-bloom-5",
+							"character": "hu-tao",
+							"textOffset": { "l": 50.5, "b": 8.5 }
+						}
+					],
+					"rateup": ["kuki-shinobu", "xingqiu", "sethos"]
+				},
+				"weapons": {
+					"bannerName": "epitome-invocation-72",
+					"fatepointsystem": true,
+					"featured": [
+						{ "name": "a-thousand-floating-dreams", "buttonPosition": { "l": 35 } },
+						{ "name": "staff-of-homa", "buttonPosition": { "l": 65 } }
+					],
+					"rateup": [
+						"fruitful-hook",
+						"favonius-warbow",
+						"lion_s-roar",
+						"dragon_s-bane",
+						"eye-of-perception"
+					],
+					"textOffset": {
+						"featured": { "l": 47.5, "t": 70 },
+						"rateup": { "l": 77, "b": 22, "w": 18 }
+					}
+				}
+			}
+		}
+	]
+}
+

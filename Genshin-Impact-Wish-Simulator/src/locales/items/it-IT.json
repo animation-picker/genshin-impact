@@ -4,6 +4,7 @@
 	"akuoumaru": "Spada di Akuou",
 	"alley-hunter": "Cacciatore urbano",
 	"amos-bow": "Arco di Amos",
+	"astral-vultures-crimson-plumage": "Piuma cremisi dell'avvoltoio astrale",
 	"aqua-simulacra": "Aqua simulacra",
 	"aquila-favonia": "Aquila Favonia",
 	"beacon-of-the-reed-sea": "Faro del Mare dei Giunchi",
@@ -21,13 +22,16 @@
 	"engulfing-lightning": "Fulmine fagocitante",
 	"everlasting-moonglow": "Luna perenne",
 	"eye-of-perception": "Occhio della percezione",
+	"fang-of-the-mountain-king": "Zanna del Re della Montagna",
 	"favonius-codex": "Codice di Favonius",
 	"favonius-greatsword": "Spadone di Favonius",
 	"favonius-lance": "Lancia di Favonius",
 	"favonius-sword": "Spada di Favonius",
 	"favonius-warbow": "Arco da guerra di Favonius",
 	"ferrous-shadow": "Ombra di ferro",
+	"flower-wreathed-feathers": "Piume coronate di fiori",
 	"freedom-sworn": " Giuramento di libertà",
+	"fruitful-hook": "Gancio fruttuoso",
 	"haran-geppaku-futsu": "Haran Geppaku Futsu",
 	"harbinger-of-dawn": "Messaggera dell'alba",
 	"hunter_s-path": "Sentiero del cacciatore",
@@ -45,7 +49,9 @@
 	"memory-of-dust": "Memorie terrene",
 	"mistsplitter-reforged": "Squarcianebbia riforgiata",
 	"mitternachts-waltz": "Valzer notturno",
+	"mountain-bracing-bolt": "Chiodo reggimonti",
 	"mouun_s-moon": "Luna di Mouun",
+	"peak-patrol-song": "Canzone della Pattuglia delle Sommità",
 	"polar-star": "Stella polare",
 	"portable-power-saw": "Sega elettrica portatile",
 	"primordial-jade-cutter": "Spada di giada primordiale",
@@ -73,6 +79,7 @@
 	"splendor-of-tranquil-waters": "Fulgore delle placide acque",
 	"staff-of-homa": "Bastone di Homa",
 	"staff-of-the-scarlet-sands": "Bastone delle sabbie scarlatte",
+	"sturdy-bone": "Osso tenace",
 	"summit-shaper": "Affettavette",
 	"surfs-up": "Vai col surf",
 	"the-alley-flash": "Luce nei vicoli",
@@ -91,8 +98,9 @@
 	"verdict": "Verdetto",
 	"vortex-vanquisher": "Squarciavortice",
 	"wavebreaker_s-fin": "Pinna del Frangionde",
-	"wine-and-song": "Vino e musica",
 	"wandering-evenstar": "Astro del vespro errante",
+	"waveriding-whirl": "Vortice del Cavalcaonde",
+	"wine-and-song": "Vino e musica",
 	"wolf_s-gravestone": "Trapasso ululante",
 	"xiphos-moonlight": "Chiarore di Xiphos",
 	"albedo": {
@@ -138,6 +146,10 @@
 	"charlotte": {
 		"name": "Charlotte",
 		"title": "Lente della verità"
+	},
+	"chasca": {
+		"name": "Chasca",
+		"title": "Mediatrice celeste"
 	},
 	"chevreuse": {
 		"name": "Chevreuse",
@@ -251,6 +263,10 @@
 		"name": "Keqing",
 		"title": "Dominatrice del tuono"
 	},
+	"kinich": {
+		"name": "Kinich",
+		"title": "Cacciatore del Voltafuoco"
+	},
 	"kirara": {
 		"name": "Kirara",
 		"title": "Gatta sulle grondaie"
@@ -318,6 +334,10 @@
 	"noelle": {
 		"name": "Noelle",
 		"title": "Fiore cavalleresco"
+	},
+	"ororon": {
+		"name": "Ororon",
+		"title": "Ombra del Vento della Notte"
 	},
 	"qiqi": {
 		"name": "Qiqi",
@@ -398,6 +418,10 @@
 	"xiao": {
 		"name": "Xiao",
 		"title": "Custode Yaksha"
+	},
+	"xilonen": {
+		"name": "Xilonen",
+		"title": "Anima forgiata da fiamme ardenti"
 	},
 	"xingqiu": {
 		"name": "Xingqiu",

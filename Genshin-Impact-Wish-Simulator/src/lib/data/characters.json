@@ -2,6 +2,54 @@
 	"onlyStandard": ["amber", "kaeya", "lisa"],
 	"data": [
 		{
+			"itemID": 10000104,
+			"name": "chasca",
+			"vision": "anemo",
+			"rarity": 5,
+			"origin": "natlan",
+			"offset": {
+				"splashArt": { "x": 12.36722306525038, "y": 3.960546282245827, "scale": 1.86 },
+				"wishCard": { "x": 103.39549612948629, "y": 63.32019704433497, "scale": 14.68 },
+				"button": { "l": 52, "w": 130, "t": 35 }
+			}
+		},
+		{
+			"itemID": 10000105,
+			"name": "ororon",
+			"vision": "electro",
+			"rarity": 4,
+			"release": "5.2-1",
+			"origin": "natlan",
+			"offset": {
+				"splashArt": { "x": -1.6282245827010624, "y": 1.0440060698027314, "scale": 1.27 },
+				"wishCard": { "x": -38.149190710767066, "y": 80.44334975369458, "scale": 11.45 }
+			}
+		},
+		{
+			"itemID": 10000103,
+			"name": "xilonen",
+			"vision": "geo",
+			"rarity": 5,
+			"origin": "natlan",
+			"offset": {
+				"splashArt": { "x": 0.45528455284552843, "y": -0.09891598915989158, "scale": 1.57 },
+				"wishCard": { "x": -15.98194130925508, "y": 65.66591422121896, "scale": 11.45 },
+				"button": { "l": 52, "w": 115, "t": 25 }
+			}
+		},
+		{
+			"itemID": 10000101,
+			"name": "kinich",
+			"vision": "dendro",
+			"rarity": 5,
+			"origin": "natlan",
+			"offset": {
+				"splashArt": { "x": 0.49189189189189186, "y": -0.5472972972972973, "scale": 1.44 },
+				"wishCard": { "x": 54.05998065140278, "y": 33.25507900677201, "scale": 9.55 },
+				"button": { "l": 52, "w": 115, "t": 37 }
+			}
+		},
+		{
 			"itemID": 10000102,
 			"name": "mualani",
 			"vision": "hydro",
