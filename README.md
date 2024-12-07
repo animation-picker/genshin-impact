@@ -2,7 +2,7 @@
 
 # 原神抽卡模拟器
 
-[文档](http://docs.mznet.pro)·[下载](https://github.com/cyanial/genshin-impact-picker/releases/latest)
+[文档](https://docs.tpsw.xyz/)·[下载](https://github.com/cyanial/genshin-impact-picker/releases/latest)
 
 ![原神点名器](https://stats.deeptrain.net/repo/cyanial/genshin-impact-picker/?theme=light)
 
@@ -28,10 +28,9 @@
 
 > 欢迎大家在不影响正常使用的情况下，分享自己部署的点名器站点，以供大家共同使用：
 
-1. [dm.mznet.pro](https://dm.mznet.pro)
-  > 本站点使用Cloudflare减速器，可能会有一定的访问延迟，请保持耐心。我将尽力保持长期运营。
-2. [genshin.jerryz.com.cn](https://genshin.jerryz.com.cn/)
-3. [demo-picker.shawn404.top](https://demo-picker.shawn404.top)
+
+1. [genshin.jerryz.com.cn](https://genshin.jerryz.com.cn/)
+2. [demo-picker.shawn404.top](https://demo-picker.shawn404.top)
 
 更多的公共站点可在[文档：公共站点](http://docs.mznet.pro/users/public)中查看
 
