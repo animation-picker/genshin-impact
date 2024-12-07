@@ -32,11 +32,11 @@
 1. [genshin.jerryz.com.cn](https://genshin.jerryz.com.cn/)
 2. [demo-picker.shawn404.top](https://demo-picker.shawn404.top)
 
-更多的公共站点可在[文档：公共站点](http://docs.mznet.pro/users/public)中查看
+更多的公共站点可在[文档：公共站点](http://docs.tpsw.xyz/users/public)中查看
 
 ## 更多
 
-更多的使用方法及开发文档可在[这里](http://docs.mznet.pro)查看
+更多的使用方法及开发文档可在[这里](http://docs.tpsw.xyz)查看
 
 ## 许可证
 
