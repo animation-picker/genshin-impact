@@ -1,3 +1,7 @@
+LABEL org.opencontainers.image.source=https://github.com/animation-picker/genshin-impact
+LABEL org.opencontainers.image.description="A genshin-impact style of picker"
+LABEL org.opencontainers.image.licenses=OTHER
+
 #
 # 构建前端
 #
