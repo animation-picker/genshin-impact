@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.1
         with:
-          token: ${{ secrets.WORKFLOW_SECRET }}
+          token: ${{ secrets.GH_TOKEN }}
       - name: Run GitHub Actions Version Updater
         uses: saadmk11/github-actions-version-updater@v0.8.1
         with:
-          token: ${{ secrets.WORKFLOW_SECRET }}
+          token: ${{ secrets.GH_TOKEN }}
           ignore: 'dtolnay/rust-toolchain@stable'
