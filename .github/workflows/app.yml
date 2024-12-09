@@ -26,13 +26,13 @@ jobs:
         os: [windows-latest,ubuntu-latest,macos-latest,macos-13]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4.2.2
       - name: Use Node.js 20.x
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: "20"
       - name: Cache NPM dependencies
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v4.2.0
         with:
           path: ./electron-static/node_modules
           key: ${{ runner.os }}-npm-app-cache
@@ -51,7 +51,7 @@ jobs:
          cd electron-static
          7z a -tzip genish-impact-${{ runner.os }}-${{runner.arch}}.zip ./genish-impact-*
       - name: Upload (${{ runner.os }})
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: genish-impact-${{ runner.os }}-${{runner.arch}}
           path: electron-static/genish-impact-${{ runner.os }}-${{runner.arch}}.zip
