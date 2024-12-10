@@ -48,7 +48,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: animation-picker/genshin-impact:latest
+          tags: ghcr.io/animation-picker/genshin-impact:latest
           platforms: linux/amd64,linux/arm64
-          cache-from: type=registry,ref=animation-picker/genshin-impact:latest
+          cache-from: type=registry,ref=ghcr.io/animation-picker/genshin-impact:latest
           cache-to: type=inline
