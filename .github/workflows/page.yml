@@ -18,13 +18,13 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4.2.2
       - name: Use Node.js 20.x
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: "20"
       - name: Cache NPM dependencies
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v4.2.0
         with:
           path: ./Genshin-Impact-Wish-Simulator/node_modules
           key: ${{ runner.OS }}-npm-frontend-cache
@@ -43,7 +43,7 @@ jobs:
          cd Genshin-Impact-Wish-Simulator
          7z a -tzip frontend.zip ./.vercel/output/static
       - name: Upload
-        uses: actions/upload-artifact@v4.3.1
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: frontend
           path: Genshin-Impact-Wish-Simulator/frontend.zip
@@ -58,9 +58,9 @@ jobs:
          git config --global user.name github-actions[bot]
          git config --global user.email 41898282+github-actions[bot]@users.noreply.github.com
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4.2.2
       - name: Download Artifact
-        uses: actions/download-artifact@v4.1.4
+        uses: actions/download-artifact@v4.1.8
         with:
             name: frontend
       - name: Remove old

@@ -20,13 +20,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4.2.2
       - name: Use Node.js 20.x
-        uses: actions/setup-node@v4.0.2
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: "20"
       - name: Cache NPM dependencies
-        uses: actions/cache@v4.0.2
+        uses: actions/cache@v4.2.0
         with:
           path: ./webdocs/node_modules
           key: ${{ runner.OS }}-npm-frontend-cache
@@ -41,7 +41,7 @@ jobs:
          cd webdocs
          yarn run build
       - name: Deploy
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: ./webdocs/docs/.vitepress/dist
   deploy:
@@ -56,4 +56,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4.0.5
