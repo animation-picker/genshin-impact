@@ -9,18 +9,19 @@ on:
       - Genshin-Impact-Wish-Simulator/src/**/**
 
 jobs:
-  Build:
+  DockerHub:
+    name: Publish to dockerhub
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
       - name: Setup Docker Buildx
         uses: docker/setup-buildx-action@v3
-      - name: Login to DockerHub
+      - name: Login
         uses: docker/login-action@v3.1.0
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build & Push to DockerHub
+      - name: Build & Push
         uses: docker/build-push-action@v5.3.0
         with:
           context: .
@@ -28,4 +29,26 @@ jobs:
           tags: maizig/ysdm:latest
           platforms: linux/amd64,linux/arm64
           cache-from: type=registry,ref=maizig/ysdm:latest
+          cache-to: type=inline
+  Ghcr:
+    name: Publish to ghcr.io
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login
+        uses: docker/login-action@v3.1.0
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GH_USERNAME }}
+          password: ${{ secrets.GH_TOKEN }}
+      - name: Build & Push
+        uses: docker/build-push-action@v5.3.0
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/animation-picker/genshin-impact:latest
+          platforms: linux/amd64,linux/arm64
+          cache-from: type=registry,ref=ghcr.io/animation-picker/genshin-impact:latest
           cache-to: type=inline
