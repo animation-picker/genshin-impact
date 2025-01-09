@@ -43,7 +43,7 @@ jobs:
          cd Genshin-Impact-Wish-Simulator
          7z a -tzip frontend.zip ./.vercel/output/static
       - name: Upload
-        uses: actions/upload-artifact@v4.4.3
+        uses: actions/upload-artifact@v4.5.0
         with:
           name: frontend
           path: Genshin-Impact-Wish-Simulator/frontend.zip
