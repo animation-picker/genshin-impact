@@ -21,7 +21,7 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@v4.1.8
       - name: Create Release
-        uses: softprops/action-gh-release@v2.1.0
+        uses: softprops/action-gh-release@v2.2.1
         with:
             files: ./**/genish-impact*.*
             body_path: ./CHANGELOG.md

@@ -33,7 +33,7 @@ jobs:
               restore-keys: |
                 ${{ runner.OS }}-npm-frontend-cache
           - name: Cache Rust
-            uses: Swatinem/rust-cache@v2.7.5
+            uses: Swatinem/rust-cache@v2.7.7
             with:
               prefix-key: "Cache-${{ runner.os }}-${{runner.arch}}"
               workspaces: "Genshin-Impact-Wish-Simulator/src-tauri"
@@ -48,25 +48,25 @@ jobs:
              yarn run tauri build
           - name: Upload (Windows)
             if: runner.os == 'windows'
-            uses: actions/upload-artifact@v4.4.3
+            uses: actions/upload-artifact@v4.5.0
             with:
               name: genish-impact-Tauri-${{ runner.os }}
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/
           - name: Upload Appimage (Linux)
             if: runner.os == 'Linux'
-            uses: actions/upload-artifact@v4.4.3
+            uses: actions/upload-artifact@v4.5.0
             with:
               name: genish-impact-Tauri-${{ runner.os }}-appimage
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/appimage/genish-impact_*.AppImage
           - name: Upload deb (Linux)
             if: runner.os == 'Linux'
-            uses: actions/upload-artifact@v4.4.3
+            uses: actions/upload-artifact@v4.5.0
             with:
               name: genish-impact-Tauri-${{ runner.os }}-deb
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/deb/genish-impact_*.deb
           - name: Upload dmg (Macos)
             if: runner.os == 'macos'
-            uses: actions/upload-artifact@v4.4.3
+            uses: actions/upload-artifact@v4.5.0
             with:
               name: genish-impact-Tauri-${{ runner.os }}-dmg-${{runner.arch}}
               path: Genshin-Impact-Wish-Simulator/src-tauri/target/release/bundle/dmg/*.dmg
